@@ -27,6 +27,12 @@ En Google Sites: **Insertar → Insertar → Por URL**, pega la dirección de la
 
 Para tus propias páginas no necesitas revisión de Meta: basta con que tu cuenta sea administradora de la app.
 
+**Camino recomendado para Instagram (inicio de sesión de Instagram):** en el caso de uso de Instagram de tu app,
+agrega el permiso `instagram_business_content_publish`; en *Generar tokens de acceso* pulsa **Agregar cuenta**, entra
+con cada Instagram y genera su token. Guárdalo como secreto `IG_TOKEN_BNY`, `IG_TOKEN_KOTIZO`, `IG_TOKEN_VARELIA`
+(o `IG_TOKEN_INVITACIONES`) y corre **Actions → Conectar Meta**. Pulso guarda el token cifrado en `config/meta.enc`
+y lo renueva solo cada semana, así que no caduca.
+
 ### 3. Threads
 En la misma app agrega el producto **Threads**, autoriza tu cuenta con `threads_basic` y `threads_content_publish`, y guarda `THREADS_USER_ID_BNY` y `THREADS_TOKEN_BNY`. El token dura 60 días: Pulso te avisa para renovarlo.
 

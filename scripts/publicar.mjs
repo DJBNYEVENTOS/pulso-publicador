@@ -17,6 +17,8 @@ if (env.PULSO_KEY && existsSync(join(ROOT, 'config/meta.enc'))) {
       const M = marca.toUpperCase();
       env[`FB_PAGE_ID_${M}`] ||= m.pageId; env[`FB_TOKEN_${M}`] ||= m.token;
       if (m.igId) env[`IG_USER_ID_${M}`] ||= m.igId;
+      // El token de Instagram guardado se renueva solo, así que manda sobre el secreto original (que caduca).
+      if (m.igLogin) { env[`IG_TOKEN_${M}`] = m.igLogin.token; env[`IG_LOGIN_ID_${M}`] = m.igLogin.igId; }
     }
   } catch (e) { console.log('No se pudo leer config/meta.enc: revisa el secreto PULSO_KEY.'); }
 }
@@ -60,35 +62,48 @@ async function facebook(p) {
 }
 
 /* ---------------- Instagram (cuenta profesional) ---------------- */
-async function igEsperar(container, token) {
+// Dos caminos: inicio de sesión de Instagram (IG_TOKEN_<MARCA>, graph.instagram.com)
+// o inicio de sesión de Facebook (IG_USER_ID + FB_TOKEN, graph.facebook.com).
+async function igAcceso(marca) {
+  const t = S('IG_TOKEN', marca);
+  if (t) {
+    let id = S('IG_LOGIN_ID', marca);
+    if (!id) id = (await api(`https://graph.instagram.com/${GV}/me?fields=user_id&access_token=${t}`)).data.user_id;
+    return { host: `https://graph.instagram.com/${GV}`, ig: id, token: t };
+  }
+  const ig = S('IG_USER_ID', marca), token = S('FB_TOKEN', marca);
+  if (!ig || !token) throw new Error('Falta IG_TOKEN (o IG_USER_ID + FB_TOKEN)');
+  return { host: `https://graph.facebook.com/${GV}`, ig, token };
+}
+async function igEsperar(host, container, token) {
   for (let i = 0; i < 40; i++) {
-    const { data } = await api(`https://graph.facebook.com/${GV}/${container}?fields=status_code&access_token=${token}`);
+    const { data } = await api(`${host}/${container}?fields=status_code&access_token=${token}`);
     if (data.status_code === 'FINISHED') return;
-    if (data.status_code === 'ERROR' || data.status_code === 'EXPIRED') throw new Error('Instagram no pudo procesar el archivo: ' + data.status_code);
-    await sleep(6000);
+    if (data.status_code === 'ERROR' || data.status_code === 'EXPIRED') throw new Error('Instagram rechazó el archivo: ' + data.status_code);
+    await sleep(5000);
   }
   throw new Error('Instagram tardó demasiado en procesar el archivo');
 }
 async function instagram(p) {
-  const ig = S('IG_USER_ID', p.marca), token = S('FB_TOKEN', p.marca);
-  if (!ig || !token) throw new Error('Faltan IG_USER_ID o FB_TOKEN');
+  const { host, ig, token } = await igAcceso(p.marca);
   const mp4 = join(ROOT, 'media', p.id + '.mp4');
   let container;
   if (p.formato === 'Reel' && existsSync(mp4)) {
-    const { data } = await api(`https://graph.facebook.com/${GV}/${ig}/media`, { method: 'POST', body: form({ media_type: 'REELS', upload_type: 'resumable', caption: caption(p, 'instagram'), share_to_feed: 'true', access_token: token }) });
+    const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form({ media_type: 'REELS', upload_type: 'resumable', caption: caption(p, 'instagram'), share_to_feed: 'true', access_token: token }) });
     container = data.id;
     const buf = readFileSync(mp4);
-    await api(`https://rupload.facebook.com/ig-api-upload/${GV}/${container}`, { method: 'POST', headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(buf.length) }, body: buf });
+    const sube = data.uri || `https://rupload.facebook.com/ig-api-upload/${GV}/${container}`;
+    await api(sube, { method: 'POST', headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(buf.length) }, body: buf });
   } else {
     const body = { image_url: rawUrl(p.id + '.png'), access_token: token };
     if (p.formato === 'Historia') body.media_type = 'STORIES'; else body.caption = caption(p, 'instagram');
-    const { data } = await api(`https://graph.facebook.com/${GV}/${ig}/media`, { method: 'POST', body: form(body) });
+    const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form(body) });
     container = data.id;
   }
-  await igEsperar(container, token);
-  const { data } = await api(`https://graph.facebook.com/${GV}/${ig}/media_publish`, { method: 'POST', body: form({ creation_id: container, access_token: token }) });
+  await igEsperar(host, container, token);
+  const { data } = await api(`${host}/${ig}/media_publish`, { method: 'POST', body: form({ creation_id: container, access_token: token }) });
   let url = '';
-  try { url = (await api(`https://graph.facebook.com/${GV}/${data.id}?fields=permalink&access_token=${token}`)).data.permalink || ''; } catch {}
+  try { url = (await api(`${host}/${data.id}?fields=permalink&access_token=${token}`)).data.permalink || ''; } catch {}
   return { id: data.id, url };
 }
 
@@ -156,7 +171,7 @@ function redesDe(p) {
   const r = redes[p.marca] || {};
   const lista = [];
   if (r.facebook) lista.push('facebook');
-  if (r.instagram) lista.push('instagram');
+  if (r.instagram || S('IG_TOKEN', p.marca)) lista.push('instagram');
   if (r.threads && p.formato !== 'Historia') lista.push('threads');
   if (r.linkedin && p.formato !== 'Historia') lista.push('linkedin');
   const video = p.formato === 'Reel' || r.videoParaTodo;

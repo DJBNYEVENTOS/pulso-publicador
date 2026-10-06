@@ -30,6 +30,10 @@ jobs:
           git config user.email "pulso@users.noreply.github.com"
           git add media
           if ! git diff --cached --quiet; then git commit -m "Pulso: nuevos diseños" && git push; sleep 20; fi
+      - name: Renovar accesos de Instagram
+        env:
+          SECRETS_JSON: ${{ toJSON(secrets) }}
+        run: node scripts/conectar-meta.mjs --renovar
       - name: Publicar en redes
         env:
           SECRETS_JSON: ${{ toJSON(secrets) }}
@@ -37,5 +41,5 @@ jobs:
       - name: Actualizar sitio y registro
         run: |
           npm run sitio
-          git add estado docs
+          git add estado docs config/meta.enc
           if ! git diff --cached --quiet; then git commit -m "Pulso: registro de publicación" && git pull --rebase && git push; fi
