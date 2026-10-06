@@ -61,11 +61,14 @@ await page.evaluate(async (fams) => {
 async function dibujar(p, size) {
   const m = Object.assign({}, marcas[p.marca] || {});
   const d = { plantilla: p.plantilla || 'impacto', titular: p.titular || p.gancho, subtitulo: p.subtitulo || '', cta: p.cta || m.cta, size };
-  const logo = m.logo && existsSync(join(ROOT, m.logo)) ? 'data:image/png;base64,' + readFileSync(join(ROOT, m.logo)).toString('base64') : null;
-  const dataUrl = await page.evaluate(async ({ d, m, logo }) => {
-    if (logo) { m.logoImg = await new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); im.src = logo; }); }
+  const b64 = (f) => f && existsSync(join(ROOT, f)) ? 'data:image/png;base64,' + readFileSync(join(ROOT, f)).toString('base64') : null;
+  const logo = b64(m.logo), logoClaro = b64(m.logoClaro);
+  const dataUrl = await page.evaluate(async ({ d, m, logo, logoClaro }) => {
+    const cargar = (src) => new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); im.src = src; });
+    if (logo) m.logoImg = await cargar(logo);
+    if (logoClaro) m.logoClaroImg = await cargar(logoClaro);
     const cv = document.getElementById('c'); drawDesign(cv, d, m, null); return cv.toDataURL('image/png');
-  }, { d, m, logo });
+  }, { d, m, logo, logoClaro });
   return Buffer.from(dataUrl.split(',')[1], 'base64');
 }
 

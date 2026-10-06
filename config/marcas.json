@@ -45,16 +45,20 @@
   },
   "invitaciones": {
     "nombre": "Invitaciones BNY",
-    "estilo": "romantico",
-    "colorPrincipal": "#2F3A26",
-    "colorAcento": "#55613F",
-    "colorDetalle": "#8C9A6E",
-    "colorFondo": "#F4EEE6",
-    "colorTexto": "#2A2320",
+    "estilo": "invitaciones",
+    "colorPrincipal": "#1F2328",
+    "colorAcento": "#C2186A",
+    "colorDetalle": "#C2186A",
+    "colorFondo": "#F8F7F4",
+    "colorTexto": "#1F2328",
+    "colorGris": "#8E9399",
     "fuenteTitulo": "Cormorant Garamond",
     "fuenteTexto": "Jost",
-    "firma": "",
+    "etiqueta": "Diseño · Personalización · Envío digital",
+    "firma": "Tus invitaciones, como las imaginas",
     "cta": "Quiero mi invitación",
-    "web": ""
+    "logo": "render/logos/invitaciones.png",
+    "logoClaro": "render/logos/invitaciones-claro.png",
+    "web": "https://wa.me/527861628600"
   }
 }
