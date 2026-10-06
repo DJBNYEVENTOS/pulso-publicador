@@ -3,11 +3,23 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { descifrar } from './meta-boveda.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const redes = JSON.parse(readFileSync(join(ROOT, 'config/redes.json'), 'utf8'));
 const marcas = JSON.parse(readFileSync(join(ROOT, 'config/marcas.json'), 'utf8'));
 const env = Object.assign({}, process.env, process.env.SECRETS_JSON ? JSON.parse(process.env.SECRETS_JSON) : {});
+// Accesos de Meta guardados por "Conectar Meta" (cifrados). Los secretos escritos a mano tienen prioridad.
+if (env.PULSO_KEY && existsSync(join(ROOT, 'config/meta.enc'))) {
+  try {
+    const b = descifrar(readFileSync(join(ROOT, 'config/meta.enc'), 'utf8'), env.PULSO_KEY);
+    for (const [marca, m] of Object.entries(b.marcas || {})) {
+      const M = marca.toUpperCase();
+      env[`FB_PAGE_ID_${M}`] ||= m.pageId; env[`FB_TOKEN_${M}`] ||= m.token;
+      if (m.igId) env[`IG_USER_ID_${M}`] ||= m.igId;
+    }
+  } catch (e) { console.log('No se pudo leer config/meta.enc: revisa el secreto PULSO_KEY.'); }
+}
 const GV = env.META_GRAPH_VERSION || 'v25.0';
 const REPO = env.GITHUB_REPOSITORY || '';
 const RAMA = env.GITHUB_REF_NAME || 'main';
