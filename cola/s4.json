@@ -3,14 +3,15 @@
  "fecha": "2026-10-11",
  "hora": "18:00",
  "formato": "Historia",
- "gancho": "El momento que más se olvida planear: la entrada.",
- "texto": "El momento que más se olvida planear: la entrada.\n\nLa canción, la luz y el tiempo exacto hacen que tus invitados se pongan de pie. Lo diseñamos contigo en el minuto a minuto de tu evento.",
+ "gancho": "¿Ya tienes la canción de tu entrada?",
+ "texto": "¿Ya tienes la canción de tu entrada? Si dudas entre dos, escríbenos y te ayudamos a elegir la que cuenta su historia. WhatsApp 786 162 8600",
  "hashtags": "#BNYEventos #ExperienciaBNY",
- "titular": "Planea tu entrada",
- "subtitulo": "Canción, luz y tiempo exacto para que todos se pongan de pie",
- "cta": "Aparta tu fecha",
+ "titular": "¿Ya tienes la canción de tu entrada?",
+ "subtitulo": "Si dudas entre dos, te ayudamos a elegir la que cuenta su historia",
+ "cta": "Escríbenos",
  "plantilla": "tip",
- "guion": "Historia con encuesta: ¿Ya elegiste tu canción de entrada? Sí / Todavía no.",
+ "guion": "Historia con encuesta: '¿Ya tienes la canción de tu entrada?' Opciones: 'Sí, ya la tengo' / 'Dudo entre dos'.",
  "estado": "listo",
- "id": "s4"
+ "id": "s4",
+ "pilar": "Secretos de cabina"
 }

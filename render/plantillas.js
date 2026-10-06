@@ -58,7 +58,7 @@ function drawDesign(cv,d,m,img){
   if(tpl==='impacto'){
     var BGI=BNY?F:P;bg(BGI);dark=lum(BGI)<0.55;fg=BNY?T:onColor(P,m);ornaments(dark);
     var FR=LOGO?(INV?200:150):110,tTop=INV?0.2:(CEN?0.34:0.32);
-    var t=fitText(c,titular,tW+' {s}px "'+tf+'"',TW,INV?H*0.34:H*0.46,H>1200?150:(INV?104:128),52,1.06);
+    var tMax=INV?H*0.34:H*0.46,t,sP;for(var k=0;k<6;k++){t=fitText(c,titular,tW+' {s}px "'+tf+'"',TW,tMax,H>1200?150:(INV?104:128),52,1.06);if(INV)break;var yE=H*tTop+t.size+(t.lines.length-1)*t.size*1.06+64;if(sub){sP=fitText(c,sub,'400 {s}px "'+bf+'"',TW,200,40,24,1.4);yE+=18+(sP.lines.length-1)*sP.size*1.4+70}if(yE<=H-M-200)break;tMax*=0.85;tTop=Math.max(0.2,tTop-0.04)}
     y=H*tTop+t.size;y=lines(t.lines,y,t.size,1.06,fg,tW+' '+t.size+'px "'+tf+'"')+64;
     if(est==='nocturno'||est==='editorial'){c.fillStyle=G;c.fillRect(CEN?W/2-40:M,y-28,80,3)}
     if(sub){var s=fitText(c,sub,'400 {s}px "'+bf+'"',TW,INV?110:200,INV?34:40,24,1.4);y=lines(s.lines,y+18,s.size,1.4,hexA(fg,0.86),'400 '+s.size+'px "'+bf+'"')+(INV?54:70)}
