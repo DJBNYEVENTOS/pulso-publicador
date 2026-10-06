@@ -1,0 +1,13 @@
+{
+  "name": "pulso-publicador",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "publicar": "node scripts/publicar.mjs",
+    "sitio": "node scripts/sitio.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.47.2"
+  }
+}
