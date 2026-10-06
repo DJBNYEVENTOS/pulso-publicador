@@ -20,6 +20,8 @@ const FACES = [
   ['Figtree', 'Figtree.ttf', 'normal'],
   ['Cormorant Garamond', 'CormorantGaramond.ttf', 'normal'], ['Cormorant Garamond', 'CormorantGaramond-Italic.ttf', 'italic'],
   ['Jost', 'Jost.ttf', 'normal'],
+  ['Tinos', 'Tinos-Regular.ttf', 'normal', '400'], ['Tinos', 'Tinos-Italic.ttf', 'italic', '400'], ['Tinos', 'Tinos-Bold.ttf', 'normal', '700'], ['Tinos', 'Tinos-BoldItalic.ttf', 'italic', '700'],
+  ['Arimo', 'Arimo.ttf', 'normal'],
 ];
 
 export function necesitaVideo(p) {
@@ -45,7 +47,7 @@ const pendientes = posts.filter(p => {
 });
 if (!pendientes.length) { console.log('Nada que dibujar.'); process.exit(0); }
 
-const css = FACES.map(([fam, file, style]) => `@font-face{font-family:'${fam}';src:url(data:font/ttf;base64,${readFileSync(join(ROOT, 'fonts', file)).toString('base64')}) format('truetype');font-style:${style};font-weight:100 900}`).join('');
+const css = FACES.map(([fam, file, style, weight]) => `@font-face{font-family:'${fam}';src:url(data:font/ttf;base64,${readFileSync(join(ROOT, 'fonts', file)).toString('base64')}) format('truetype');font-style:${style};font-weight:${weight || '100 900'}}`).join('');
 const browser = await chromium.launch();
 const page = await browser.newPage();
 await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><canvas id="c"></canvas><script>${plantillas}</script></body></html>`);
@@ -59,7 +61,11 @@ await page.evaluate(async (fams) => {
 async function dibujar(p, size) {
   const m = Object.assign({}, marcas[p.marca] || {});
   const d = { plantilla: p.plantilla || 'impacto', titular: p.titular || p.gancho, subtitulo: p.subtitulo || '', cta: p.cta || m.cta, size };
-  const dataUrl = await page.evaluate(({ d, m }) => { const cv = document.getElementById('c'); drawDesign(cv, d, m, null); return cv.toDataURL('image/png'); }, { d, m });
+  const logo = m.logo && existsSync(join(ROOT, m.logo)) ? 'data:image/png;base64,' + readFileSync(join(ROOT, m.logo)).toString('base64') : null;
+  const dataUrl = await page.evaluate(async ({ d, m, logo }) => {
+    if (logo) { m.logoImg = await new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); im.src = logo; }); }
+    const cv = document.getElementById('c'); drawDesign(cv, d, m, null); return cv.toDataURL('image/png');
+  }, { d, m, logo });
   return Buffer.from(dataUrl.split(',')[1], 'base64');
 }
 
