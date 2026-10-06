@@ -1,7 +1,39 @@
 {
   "_ayuda": "Pon true en cada red que ya conectaste (con sus secretos en GitHub). videoParaTodo convierte cada publicación en video para TikTok y YouTube Shorts.",
-  "bny":          {"facebook": false, "instagram": false, "threads": false, "linkedin": false, "youtube": false, "tiktok": false, "videoParaTodo": true},
-  "kotizo":       {"facebook": false, "instagram": false, "threads": false, "linkedin": false, "youtube": false, "tiktok": false, "videoParaTodo": false},
-  "varelia":      {"facebook": false, "instagram": false, "threads": false, "linkedin": false, "youtube": false, "tiktok": false, "videoParaTodo": false},
-  "invitaciones": {"facebook": false, "instagram": false, "threads": false, "linkedin": false, "youtube": false, "tiktok": false, "videoParaTodo": false}
+  "bny": {
+    "facebook": false,
+    "instagram": true,
+    "threads": false,
+    "linkedin": false,
+    "youtube": false,
+    "tiktok": false,
+    "videoParaTodo": true
+  },
+  "kotizo": {
+    "facebook": false,
+    "instagram": true,
+    "threads": false,
+    "linkedin": false,
+    "youtube": false,
+    "tiktok": false,
+    "videoParaTodo": false
+  },
+  "varelia": {
+    "facebook": false,
+    "instagram": true,
+    "threads": false,
+    "linkedin": false,
+    "youtube": false,
+    "tiktok": false,
+    "videoParaTodo": false
+  },
+  "invitaciones": {
+    "facebook": false,
+    "instagram": false,
+    "threads": false,
+    "linkedin": false,
+    "youtube": false,
+    "tiktok": false,
+    "videoParaTodo": false
+  }
 }
