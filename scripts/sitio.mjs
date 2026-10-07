@@ -46,4 +46,5 @@ h2{font:500 28px/1.2 "${m.fuenteTitulo}",Georgia,serif;margin:6px 0 10px}article
 }
 writeFileSync(join(ROOT, 'docs', 'index.html'), `<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pulso</title></head><body style="font-family:system-ui;padding:40px"><h1>Marcas</h1><ul>${indice}</ul></body></html>`);
 writeFileSync(join(ROOT, 'docs', '.nojekyll'), '');
+writeFileSync(join(ROOT, 'docs', '_redirects'), '/   /bny/   301\n'); // Netlify: la dirección principal abre el sitio de BNY
 console.log('Sitio actualizado:', publicados.length, 'publicaciones.');
