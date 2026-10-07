@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-10-07T01:50:28.453Z",
+  "facebook": [
+    {
+      "error": "Error validating client secret."
+    }
+  ],
+  "instagram": [
+    {
+      "marca": "bny",
+      "usuario": "dj.bny.eventos"
+    },
+    {
+      "marca": "kotizo",
+      "usuario": "kotizoapp"
+    },
+    {
+      "marca": "varelia",
+      "usuario": "varelia.app"
+    }
+  ]
+}
