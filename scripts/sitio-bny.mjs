@@ -25,7 +25,7 @@ export function paginaBNY(posts, fecha) {
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Arimo:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Arimo:wght@400;600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Jost:wght@400;500&display=swap">
 <style>
 :root{--negro:#0D0D0F;--magenta:#A31E55;--marfil:#F7F2EB;--linea:rgba(13,13,15,.14);--suave:rgba(13,13,15,.68)}
 *{box-sizing:border-box}
@@ -127,6 +127,20 @@ footer .envoltura{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justif
 footer img{height:44px;width:auto}
 footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--suave)}
 
+
+/* Invitaciones BNY (su propia identidad dentro del sitio) */
+.invitaciones{background:#F8F7F4;color:#1F2328;padding:100px 0;border-top:1px solid var(--linea)}
+.invitaciones .rejilla{display:grid;gap:40px;align-items:center}
+@media(min-width:860px){.invitaciones .rejilla{grid-template-columns:1fr 1.2fr;gap:72px}}
+.invitaciones img{width:min(320px,80%);height:auto}
+.invitaciones .etq{font:500 12px/1.2 "Jost","Arimo",Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#C2186A}
+.invitaciones h2{font:italic 500 clamp(36px,5vw,54px)/1.08 "Cormorant Garamond","Tinos",Georgia,serif;margin:14px 0 18px}
+.invitaciones p{margin:0 0 14px;color:#4b5057;font:400 17px/1.65 "Jost","Arimo",Arial,sans-serif;max-width:52ch}
+.invitaciones ul{margin:0 0 28px;padding:0;list-style:none;display:grid;gap:8px;font:400 16px/1.5 "Jost","Arimo",Arial,sans-serif;color:#1F2328}
+.invitaciones li::before{content:"";display:inline-block;width:18px;height:1px;background:#C2186A;vertical-align:middle;margin-right:12px}
+.invitaciones .boton{border-color:#C2186A;background:#C2186A;color:#F8F7F4;font-family:"Jost","Arimo",Arial,sans-serif}
+.invitaciones .boton:hover{background:#1F2328;border-color:#1F2328}
+
 /* Botón flotante */
 .flotante{position:fixed;right:16px;bottom:16px;z-index:6;width:56px;height:56px;border-radius:50%;background:var(--magenta);display:grid;place-items:center;box-shadow:0 8px 24px rgba(13,13,15,.25)}
 .flotante svg{width:26px;height:26px;fill:var(--marfil)}
@@ -141,6 +155,7 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
     <nav aria-label="Secciones">
       <a href="#momentos">Momentos</a>
       <a href="#experiencias">Experiencias</a>
+      <a href="#invitaciones">Invitaciones</a>
       <a href="#proceso">Cómo trabajamos</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -210,6 +225,24 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       <div class="privada">
         <p>Te enviamos la propuesta completa de forma privada.</p>
         <a class="boton linea" href="${wa('Hola, me gustaría recibir la propuesta de experiencias de BNY Eventos.')}">Solicitar propuesta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="invitaciones" id="invitaciones">
+    <div class="envoltura rejilla">
+      <div><img src="invitaciones.png" alt="Invitaciones BNY" width="320" height="160" loading="lazy"></div>
+      <div>
+        <div class="etq">Diseño · Personalización · Envío digital</div>
+        <h2>Tus invitaciones, como las imaginas.</h2>
+        <p>La invitación es lo primero que tus invitados ven de tu evento. La diseñamos a la medida, con el nombre de cada familia, y la enviamos por WhatsApp.</p>
+        <ul>
+          <li>Nombre y pases por familia</li>
+          <li>Confirmación de asistencia en un clic</li>
+          <li>Pase QR para la entrada</li>
+          <li>Panel para saber quién viene</li>
+        </ul>
+        <a class="boton" href="${wa('Hola, quiero mi invitación digital de Invitaciones BNY.')}">Quiero mi invitación</a>
       </div>
     </div>
   </section>

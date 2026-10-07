@@ -19,7 +19,7 @@ const publicados = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json
 mkdirSync(join(ROOT, 'docs', 'media'), { recursive: true });
 let indice = '';
 for (const [id, m] of Object.entries(marcas)) {
-  const ps = publicados.filter(p => p.marca === id).slice(0, 60);
+  const ps = publicados.filter(p => p.marca === id || (id === 'bny' && p.marca === 'invitaciones')).slice(0, 60);
   mkdirSync(join(ROOT, 'docs', id), { recursive: true });
   ps.forEach(p => { const src = join(ROOT, 'media', p.id + '.png'); if (existsSync(src)) copyFileSync(src, join(ROOT, 'docs', 'media', p.id + '.png')); });
   const dark = m.estilo === 'nocturno';
@@ -40,6 +40,7 @@ h2{font:500 28px/1.2 "${m.fuenteTitulo}",Georgia,serif;margin:6px 0 10px}article
   if (id === 'bny') {
     // BNY tiene sitio completo con su logo real.
     if (m.logo && existsSync(join(ROOT, m.logo))) copyFileSync(join(ROOT, m.logo), join(ROOT, 'docs', id, 'logo.png'));
+    const inv = marcas.invitaciones; if (inv && inv.logo && existsSync(join(ROOT, inv.logo))) copyFileSync(join(ROOT, inv.logo), join(ROOT, 'docs', id, 'invitaciones.png'));
     writeFileSync(join(ROOT, 'docs', id, 'index.html'), paginaBNY(ps, fecha));
   } else writeFileSync(join(ROOT, 'docs', id, 'index.html'), html);
   indice += `<li><a href="${id}/">${esc(m.nombre)}</a></li>`;

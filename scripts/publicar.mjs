@@ -30,7 +30,9 @@ const MAX_INTENTOS = 3;
 const VENTANA_HORAS = 36; // no publica piezas con más de 36 h de retraso
 
 function linkedinVersion() { const d = new Date(); d.setUTCMonth(d.getUTCMonth() - 2); return env.LINKEDIN_VERSION || `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, '0')}`; }
-const S = (name, marca) => env[`${name}_${marca.toUpperCase()}`];
+// Una marca puede publicar en las cuentas de otra (p. ej. Invitaciones BNY en las de BNY Eventos): redes.<marca>.cuentaDe
+const cuenta = (marca) => (redes[marca] && redes[marca].cuentaDe) || marca;
+const S = (name, marca) => env[`${name}_${marca.toUpperCase()}`] || env[`${name}_${cuenta(marca).toUpperCase()}`];
 const rawUrl = (file) => `https://raw.githubusercontent.com/${REPO}/${RAMA}/media/${file}`;
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -168,7 +170,7 @@ async function tiktok(p) {
 
 const PUBLICADORES = { facebook, instagram, threads, linkedin, youtube, tiktok };
 function redesDe(p) {
-  const r = redes[p.marca] || {};
+  const r = Object.assign({}, redes[cuenta(p.marca)] || {}, redes[p.marca] || {});
   const lista = [];
   if (r.facebook) lista.push('facebook');
   if (r.instagram || S('IG_TOKEN', p.marca)) lista.push('instagram');

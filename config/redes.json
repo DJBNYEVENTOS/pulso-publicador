@@ -28,12 +28,13 @@
     "videoParaTodo": false
   },
   "invitaciones": {
-    "facebook": false,
-    "instagram": false,
+    "facebook": true,
+    "instagram": true,
     "threads": false,
     "linkedin": false,
     "youtube": false,
     "tiktok": false,
-    "videoParaTodo": false
+    "videoParaTodo": false,
+    "cuentaDe": "bny"
   }
 }
