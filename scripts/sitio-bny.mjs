@@ -1,4 +1,18 @@
-<!doctype html>
+// Sitio web completo de BNY Eventos (marca registrada: logo real, colores y tipografías oficiales sin cambios).
+// Colores: #0D0D0F (negro), #A31E55 (magenta), #F7F2EB (marfil). Tipografías: Tinos (títulos y texto), Arimo (etiquetas).
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const WA = 'https://wa.me/527861628600';
+const wa = (t) => `${WA}?text=${encodeURIComponent(t)}`;
+
+export function paginaBNY(posts, fecha) {
+  const diario = posts.slice(0, 9).map(p => `
+      <article class="pieza">
+        <img src="../media/${esc(p.id)}.png" alt="${esc(p.titular || p.gancho)}" loading="lazy" width="540" height="540">
+        <time datetime="${esc(p.fecha)}">${esc(fecha(p.fecha))}</time>
+        <h3>${esc(p.gancho || p.titular)}</h3>
+      </article>`).join('');
+
+  return `<!doctype html>
 <html lang="es-MX">
 <head>
 <meta charset="utf-8">
@@ -130,7 +144,7 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       <a href="#proceso">Cómo trabajamos</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="boton lleno" href="https://wa.me/527861628600?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20con%20BNY%20Eventos.">Agenda tu cita</a>
+    <a class="boton lleno" href="${wa('Hola, me gustaría agendar una cita con BNY Eventos.')}">Agenda tu cita</a>
   </div>
 </header>
 
@@ -142,7 +156,7 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       <div class="filete"></div>
       <p>Curaduría musical, audio, iluminación y coordinación de cada momento para bodas y celebraciones que se sienten, no que se oyen fuerte.</p>
       <div class="acciones">
-        <a class="boton lleno" href="https://wa.me/527861628600?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20una%20propuesta%20privada%20para%20mi%20evento.">Solicita tu propuesta privada</a>
+        <a class="boton lleno" href="${wa('Hola, me gustaría recibir una propuesta privada para mi evento.')}">Solicita tu propuesta privada</a>
         <a class="boton linea" href="#experiencias">Conoce las experiencias</a>
       </div>
     </div>
@@ -195,7 +209,7 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       </div>
       <div class="privada">
         <p>Te enviamos la propuesta completa de forma privada.</p>
-        <a class="boton linea" href="https://wa.me/527861628600?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20la%20propuesta%20de%20experiencias%20de%20BNY%20Eventos.">Solicitar propuesta</a>
+        <a class="boton linea" href="${wa('Hola, me gustaría recibir la propuesta de experiencias de BNY Eventos.')}">Solicitar propuesta</a>
       </div>
     </div>
   </section>
@@ -214,14 +228,25 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       </div>
     </div>
   </section>
-
+${diario ? `
+  <section class="bloque" id="diario" style="padding-top:0">
+    <div class="envoltura">
+      <div class="encabezado">
+        <div class="etiqueta">Diario BNY</div>
+        <h2>Lo más reciente.</h2>
+      </div>
+      <div class="diario">${diario}
+      </div>
+    </div>
+  </section>
+` : ''}
   <section class="oscuro contacto" id="contacto">
     <div class="envoltura">
       <div class="etiqueta">Fechas por temporada</div>
       <h2>Recibimos pocas bodas por temporada.</h2>
       <p>Para cuidar cada una. Cuéntanos tu fecha y te enviamos una propuesta privada por WhatsApp.</p>
       <div class="acciones">
-        <a class="boton lleno" href="https://wa.me/527861628600?text=Hola%2C%20quiero%20consultar%20disponibilidad%20para%20mi%20fecha.">WhatsApp 786 162 8600</a>
+        <a class="boton lleno" href="${wa('Hola, quiero consultar disponibilidad para mi fecha.')}">WhatsApp 786 162 8600</a>
         <a class="boton linea" href="https://www.instagram.com/dj.bny.eventos/">Instagram</a>
       </div>
       <small>Cd. Hidalgo, Michoacán · Oriente de Michoacán y Morelia</small>
@@ -236,6 +261,7 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
   </div>
 </footer>
 
-<a class="flotante" href="https://wa.me/527861628600?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20BNY%20Eventos." aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<a class="flotante" href="${wa('Hola, me gustaría información de BNY Eventos.')}" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
 </body>
-</html>
+</html>`;
+}

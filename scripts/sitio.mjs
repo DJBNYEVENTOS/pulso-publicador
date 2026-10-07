@@ -3,6 +3,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, copyFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { paginaBNY } from './sitio-bny.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const marcas = JSON.parse(readFileSync(join(ROOT, 'config/marcas.json'), 'utf8'));
@@ -36,7 +37,11 @@ main{max-width:980px;margin:0 auto;padding:32px 0 80px;display:flex;flex-directi
 h2{font:500 28px/1.2 "${m.fuenteTitulo}",Georgia,serif;margin:6px 0 10px}article p{margin:0;opacity:.88;max-width:62ch}.vacio{opacity:.7}</style></head><body>
 <header><h1>${esc(m.nombre)}</h1><p>${esc(m.firma || '')}</p>${m.web ? `<a href="${esc(m.web)}">${esc(m.cta || 'Contáctanos')}</a>` : ''}</header>
 <main>${items || '<p class="vacio">Pronto verás aquí nuestras publicaciones.</p>'}</main></body></html>`;
-  writeFileSync(join(ROOT, 'docs', id, 'index.html'), html);
+  if (id === 'bny') {
+    // BNY tiene sitio completo con su logo real.
+    if (m.logo && existsSync(join(ROOT, m.logo))) copyFileSync(join(ROOT, m.logo), join(ROOT, 'docs', id, 'logo.png'));
+    writeFileSync(join(ROOT, 'docs', id, 'index.html'), paginaBNY(ps, fecha));
+  } else writeFileSync(join(ROOT, 'docs', id, 'index.html'), html);
   indice += `<li><a href="${id}/">${esc(m.nombre)}</a></li>`;
 }
 writeFileSync(join(ROOT, 'docs', 'index.html'), `<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pulso</title></head><body style="font-family:system-ui;padding:40px"><h1>Marcas</h1><ul>${indice}</ul></body></html>`);
