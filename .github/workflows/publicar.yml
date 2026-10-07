@@ -43,3 +43,4 @@ jobs:
           npm run sitio
           git add estado docs config/meta.enc
           if ! git diff --cached --quiet; then git commit -m "Pulso: registro de publicación" && git pull --rebase && git push; fi
+
