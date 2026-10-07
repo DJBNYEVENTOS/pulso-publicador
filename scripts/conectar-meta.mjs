@@ -40,6 +40,7 @@ if (existsSync(BOVEDA)) {
 }
 const redes = JSON.parse(readFileSync(REDES, 'utf8'));
 let cambios = 0;
+const diag = { fecha: new Date().toISOString(), facebook: [], instagram: [] }; // sin tokens: se puede publicar en el repo
 
 async function renovarIG(token) {
   const d = await get(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${encodeURIComponent(token)}`);
@@ -67,12 +68,14 @@ if (env.META_USER_TOKEN) {
     let url = `https://graph.facebook.com/${GV}/me/accounts?fields=id,name,access_token,instagram_business_account{id,username}&limit=100&access_token=${largo.access_token}`;
     const paginas = [];
     while (url) { const d = await get(url); paginas.push(...(d.data || [])); url = d.paging && d.paging.next; }
+    diag.facebook.push({ paginasRecibidas: paginas.length });
     if (!paginas.length) console.log('· Facebook: no llegó ninguna página. Al generar el token, selecciona tus páginas en la ventana de Facebook.');
     const vistas = new Set();
     for (const p of paginas) {
       const marca = marcaDePagina(p.name);
       const ig = p.instagram_business_account;
       console.log(`· Página "${p.name}" → ${marca || 'sin marca asignada'}${ig ? ` · Instagram @${ig.username}` : ''}`);
+      diag.facebook.push({ pagina: p.name, marca: marca || null, instagram: ig ? ig.username : null });
       if (!marca || vistas.has(marca)) continue;
       vistas.add(marca);
       boveda.marcas[marca] = Object.assign({}, boveda.marcas[marca], { pageId: p.id, pageName: p.name, token: p.access_token, igId: ig ? ig.id : null, igUser: ig ? ig.username : null });
@@ -80,7 +83,7 @@ if (env.META_USER_TOKEN) {
       if (ig) redes[marca].instagram = true;
       cambios++;
     }
-  } catch (e) { console.log(`· Facebook: ${e.message}`); }
+  } catch (e) { console.log(`· Facebook: ${e.message}`); diag.facebook.push({ error: e.message }); }
 }
 
 /* ---------- Instagram (inicio de sesión de Instagram) ---------- */
@@ -95,9 +98,11 @@ for (const marca of MARCAS) {
     redes[marca] = Object.assign({}, redes[marca], { instagram: true });
     cambios++;
     console.log(`· Instagram de ${marca} → @${yo.username} conectado.`);
-  } catch (e) { console.log(`· Instagram de ${marca}: ${e.message}`); }
+    diag.instagram.push({ marca, usuario: yo.username });
+  } catch (e) { console.log(`· Instagram de ${marca}: ${e.message}`); diag.instagram.push({ marca, error: e.message }); }
 }
 
+if (!RENOVAR) writeFileSync(join(ROOT, 'config/meta-diagnostico.json'), JSON.stringify(diag, null, 2));
 if (!cambios) {
   console.error('No se conectó nada. Agrega META_USER_TOKEN (+ META_APP_ID y META_APP_SECRET) para Facebook, o IG_TOKEN_<MARCA> para Instagram.');
   process.exit(1);

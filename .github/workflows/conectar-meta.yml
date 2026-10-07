@@ -20,5 +20,5 @@ jobs:
         run: |
           git config user.name "DJBNYEVENTOS"
           git config user.email "160455752+DJBNYEVENTOS@users.noreply.github.com"
-          git add config/meta.enc config/redes.json
+          git add config/meta.enc config/redes.json config/meta-diagnostico.json
           if ! git diff --cached --quiet; then git commit -m "Pulso: Meta conectado" && git push; fi
