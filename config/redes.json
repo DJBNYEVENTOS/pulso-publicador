@@ -1,7 +1,7 @@
 {
   "_ayuda": "Pon true en cada red que ya conectaste (con sus secretos en GitHub). videoParaTodo convierte cada publicación en video para TikTok y YouTube Shorts.",
   "bny": {
-    "facebook": false,
+    "facebook": true,
     "instagram": true,
     "threads": false,
     "linkedin": false,
@@ -10,7 +10,7 @@
     "videoParaTodo": true
   },
   "kotizo": {
-    "facebook": false,
+    "facebook": true,
     "instagram": true,
     "threads": false,
     "linkedin": false,
@@ -19,7 +19,7 @@
     "videoParaTodo": false
   },
   "varelia": {
-    "facebook": false,
+    "facebook": true,
     "instagram": true,
     "threads": false,
     "linkedin": false,

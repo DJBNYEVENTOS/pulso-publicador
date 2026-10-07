@@ -1,8 +1,63 @@
 {
-  "fecha": "2026-10-07T01:50:28.453Z",
+  "fecha": "2026-10-07T01:55:36.636Z",
   "facebook": [
     {
-      "error": "Error validating client secret."
+      "paginasRecibidas": 11
+    },
+    {
+      "pagina": "Varelia · Wedding Planners",
+      "marca": "varelia",
+      "instagram": null
+    },
+    {
+      "pagina": "Kotizo App",
+      "marca": "kotizo",
+      "instagram": null
+    },
+    {
+      "pagina": "Servicio Mecánico Montes",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "Moda KGB Kids",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "Dj Bny Eventos",
+      "marca": "bny",
+      "instagram": null
+    },
+    {
+      "pagina": "Point BTL",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "Bocaditos",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "GEOMICH",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "90's Alive Fiesta Retro Cd Hidalgo",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "Jakuna",
+      "marca": null,
+      "instagram": null
+    },
+    {
+      "pagina": "Diplomado de la Apreciación y Enseñanza de la Música. Cd Hidalgo Michoacán.",
+      "marca": null,
+      "instagram": null
     }
   ],
   "instagram": [
