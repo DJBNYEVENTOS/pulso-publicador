@@ -16,7 +16,7 @@ function drawDesign(cv,d,m,img){
   cv.width=W;cv.height=H;
   var c=cv.getContext('2d');c.textBaseline='alphabetic';
   var tf=m.fuenteTitulo,bf=m.fuenteTexto,P=m.colorPrincipal,A=m.colorAcento,F=m.colorFondo,T=m.colorTexto,G=m.colorDetalle||A;
-  var est=m.estilo||'nocturno',tpl=(d.plantilla==='foto'&&!img)?'impacto':(d.plantilla||'impacto'),titular=d.titular||'Tu titular aquí',sub=d.subtitulo||'',cta=d.cta||m.cta||'';
+  var est=m.estilo||'nocturno',tpl=(d.plantilla==='foto'&&!img)?'impacto':(d.plantilla||'impacto'),titular=d.titular||'Tu titular aquí',sub=d.subtitulo||'',cta=d.sinCta?'':(d.cta||m.cta||'');
   var BNY=est==='bny';if(BNY){est='nocturno';G=A;}var INV=est==='invitaciones';if(INV){est='editorial';}var lf=m.fuenteEtiqueta||bf,LOGO=m.logoImg||null;
   var CEN=est==='editorial'||est==='romantico';
   var M=est==='nocturno'?112:96, X=CEN?W/2:M, TW=W-2*M;
@@ -81,7 +81,7 @@ function drawDesign(cv,d,m,img){
     if(LOGO&&typeof LOGOTOP==='undefined'){var olh=64,olw=LOGO.width*olh/LOGO.height;c.drawImage(LOGO,CEN?(W-olw)/2:W-M-olw,H-48-olh,olw,olh)}else if(!LOGO){c.save();c.font='700 26px "'+lf+'"';c.fillStyle=hexA(T,0.7);c.textAlign=CEN?'center':'right';c.fillText(String(m.nombre||'').toUpperCase(),CEN?W/2:W-M,H-56);c.restore();}
   } else if(tpl==='tip'){
     bg(est==='nocturno'?P:F);dark=est==='nocturno';fg=dark?'#FFFFFF':T;ornaments(dark);
-    var lab=m.etiquetaTip?m.etiquetaTip:INV?'Para anfitriones':est==='nocturno'?'Secreto de cabina':est==='editorial'?'Para planners':est==='tecnico'?'Tip de negocio':'Detalle';
+    var lab=d.etiqueta?d.etiqueta:m.etiquetaTip?m.etiquetaTip:INV?'Para anfitriones':est==='nocturno'?'Secreto de cabina':est==='editorial'?'Para planners':est==='tecnico'?'Tip de negocio':'Detalle';
     spaced(lab,X,M+(est==='nocturno'?110:est==='editorial'?150:60),26,est==='nocturno'?G:A,'700 26px "'+bf+'"',6);
     var t4=fitText(c,titular,tW+' {s}px "'+tf+'"',TW,H*0.38,H>1200?120:98,46,1.08);
     y=M+(est==='editorial'?260:220)+t4.size;y=lines(t4.lines,y,t4.size,1.08,fg,tW+' '+t4.size+'px "'+tf+'"')+70;

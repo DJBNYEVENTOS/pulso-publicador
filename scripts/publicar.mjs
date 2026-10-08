@@ -56,10 +56,40 @@ const form = (o) => new URLSearchParams(Object.entries(o).filter(([, v]) => v !=
 async function facebook(p) {
   const id = S('FB_PAGE_ID', p.marca), token = S('FB_TOKEN', p.marca);
   if (!id || !token) throw new Error('Faltan FB_PAGE_ID o FB_TOKEN');
-  const fd = new FormData();
-  fd.append('caption', caption(p, 'facebook')); fd.append('access_token', token);
-  fd.append('source', new Blob([readFileSync(join(ROOT, 'media', p.id + '.png'))], { type: 'image/png' }), p.id + '.png');
-  const { data } = await api(`https://graph.facebook.com/${GV}/${id}/photos`, { method: 'POST', body: fd });
+  const G = `https://graph.facebook.com/${GV}`;
+  const foto = async (archivo, extra) => {
+    const fd = new FormData();
+    for (const [k, v] of Object.entries(extra)) fd.append(k, v);
+    fd.append('access_token', token);
+    fd.append('source', new Blob([readFileSync(join(ROOT, 'media', archivo))], { type: 'image/png' }), archivo);
+    return (await api(`${G}/${id}/photos`, { method: 'POST', body: fd })).data;
+  };
+  const mp4 = join(ROOT, 'media', p.id + '.mp4');
+  // Reel: se sube el video a la página.
+  if (p.formato === 'Reel' && existsSync(mp4)) {
+    const fd = new FormData();
+    fd.append('description', caption(p, 'facebook')); fd.append('access_token', token);
+    fd.append('source', new Blob([readFileSync(mp4)], { type: 'video/mp4' }), p.id + '.mp4');
+    const { data } = await api(`https://graph-video.facebook.com/${GV}/${id}/videos`, { method: 'POST', body: fd });
+    return { id: data.id, url: `https://www.facebook.com/${id}/videos/${data.id}` };
+  }
+  // Historia: foto sin publicar y luego historia de la página.
+  if (p.formato === 'Historia') {
+    const ph = await foto(p.id + '.png', { published: 'false' });
+    const { data } = await api(`${G}/${id}/photo_stories`, { method: 'POST', body: form({ photo_id: ph.id, access_token: token }) });
+    return { id: data.post_id || data.id, url: `https://www.facebook.com/${id}` };
+  }
+  // Carrusel: varias fotos en una sola publicación.
+  if (p.formato === 'Carrusel' && existsSync(join(ROOT, 'media', p.id + '-c2.png'))) {
+    const archivos = [p.id + '.png', ...readdirSync(join(ROOT, 'media')).filter(f => new RegExp(`^${p.id}-c\\d+\\.png$`).test(f)).sort((x, y) => parseInt(x.split('-c')[1]) - parseInt(y.split('-c')[1]))];
+    const ids = [];
+    for (const f of archivos) ids.push((await foto(f, { published: 'false' })).id);
+    const body = { message: caption(p, 'facebook'), access_token: token };
+    ids.forEach((fid, i) => { body[`attached_media[${i}]`] = JSON.stringify({ media_fbid: fid }); });
+    const { data } = await api(`${G}/${id}/feed`, { method: 'POST', body: form(body) });
+    return { id: data.id, url: `https://www.facebook.com/${data.id}` };
+  }
+  const data = await foto(p.id + '.png', { caption: caption(p, 'facebook') });
   return { id: data.post_id || data.id, url: `https://www.facebook.com/${data.post_id || data.id}` };
 }
 
@@ -96,6 +126,15 @@ async function instagram(p) {
     const buf = readFileSync(mp4);
     const sube = data.uri || `https://rupload.facebook.com/ig-api-upload/${GV}/${container}`;
     await api(sube, { method: 'POST', headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(buf.length) }, body: buf });
+  } else if (p.formato === 'Carrusel' && existsSync(join(ROOT, 'media', p.id + '-c2.png'))) {
+    const archivos = [p.id + '.png', ...readdirSync(join(ROOT, 'media')).filter(f => new RegExp(`^${p.id}-c\\d+\\.png$`).test(f)).sort((x, y) => parseInt(x.split('-c')[1]) - parseInt(y.split('-c')[1]))].slice(0, 10);
+    const hijos = [];
+    for (const f of archivos) {
+      const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form({ image_url: rawUrl(f), is_carousel_item: 'true', access_token: token }) });
+      await igEsperar(host, data.id, token); hijos.push(data.id);
+    }
+    const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form({ media_type: 'CAROUSEL', children: hijos.join(','), caption: caption(p, 'instagram'), access_token: token }) });
+    container = data.id;
   } else {
     const body = { image_url: rawUrl(p.id + '.png'), access_token: token };
     if (p.formato === 'Historia') body.media_type = 'STORIES'; else body.caption = caption(p, 'instagram');

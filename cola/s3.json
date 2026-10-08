@@ -13,5 +13,25 @@
  "guion": "Lámina 1: titular sobre negro con el logo. Láminas 2-4: una experiencia por lámina (Petit, Elegance, Experience) con una frase y una foto de detalle. Lámina 5: 'Solicita tu propuesta privada'. Sin precios en las imágenes.",
  "estado": "listo",
  "id": "s3",
- "pilar": "Elige tu experiencia"
+ "pilar": "Elige tu experiencia",
+ "laminas": [
+  {
+   "titular": "Petit",
+   "subtitulo": "De 60 a 100 invitados. Para celebrar con quienes más quieres, con el cuidado de una gran producción."
+  },
+  {
+   "titular": "Elegance",
+   "subtitulo": "Hasta 150 invitados. Para una boda que se recuerda por sus detalles."
+  },
+  {
+   "titular": "Experience",
+   "subtitulo": "Hasta 250 invitados. Cada momento coreografiado de principio a fin."
+  },
+  {
+   "titular": "Tu propuesta, en privado",
+   "subtitulo": "Escríbenos por WhatsApp: 786 162 8600",
+   "cta": "Solicita tu propuesta",
+   "final": true
+  }
+ ]
 }

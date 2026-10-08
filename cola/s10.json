@@ -2,7 +2,7 @@
  "marca": "varelia",
  "fecha": "2026-10-10",
  "hora": "19:00",
- "formato": "Post",
+ "formato": "Carrusel",
  "gancho": "Precio de fundadora para las primeras 20 planners.",
  "texto": "Precio de fundadora para las primeras 20 planners.\n\nVarelia está abriendo sus puertas y queremos que las primeras planners que confíen en nosotros lo hagan con 30% de descuento de por vida, mientras sigan activas.\n\nPlan Esencial desde $590 al mes, Profesional $1,190 y Estudio $2,390 (más IVA). Con el código FUNDADORA quedan en $413, $833 y $1,673.\n\nEmpieza con 14 días gratis, sin tarjeta. Link en bio.",
  "hashtags": "#Varelia #WeddingPlanner #BodasMexico #Fundadoras #EstudioDeBodas",
@@ -12,5 +12,25 @@
  "plantilla": "oferta",
  "guion": "Foto elegante de mesa de boda en la parte superior; precios en la inferior.",
  "estado": "listo",
- "id": "s10"
+ "id": "s10",
+ "laminas": [
+  {
+   "titular": "Esencial",
+   "subtitulo": "$590 al mes · con FUNDADORA $413 (más IVA)"
+  },
+  {
+   "titular": "Profesional",
+   "subtitulo": "$1,190 al mes · con FUNDADORA $833 (más IVA)"
+  },
+  {
+   "titular": "Estudio",
+   "subtitulo": "$2,390 al mes · con FUNDADORA $1,673 (más IVA)"
+  },
+  {
+   "titular": "30% de por vida para las primeras 20",
+   "subtitulo": "Empieza con 14 días gratis, sin tarjeta.",
+   "cta": "Prueba 14 días gratis",
+   "final": true
+  }
+ ]
 }

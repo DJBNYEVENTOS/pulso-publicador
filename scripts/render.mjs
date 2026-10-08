@@ -28,6 +28,26 @@ export function necesitaVideo(p) {
   const r = redes[p.marca] || {};
   return p.formato === 'Reel' || (r.videoParaTodo && (r.tiktok || r.youtube || r.instagram));
 }
+
+// Frase corta para una escena o lámina (primera oración, máx. ~110 caracteres).
+const frase = (t) => { const f = String(t).split(/(?<=[.!?])\s+/)[0].trim(); return f.length > 110 ? f.slice(0, 107).replace(/\s+\S*$/, '') + '…' : f; };
+const esContacto = (t) => /whatsapp|link en bio|netlify|\d{3} \d{3} \d{4}|es una experiencia bny|como las imaginas|gu[aá]rdalo|guarda este/i.test(t);
+// Escenas de un reel: gancho, 2-3 ideas del texto y cierre con llamado a la acción.
+export function escenasDe(p) {
+  const m = marcas[p.marca] || {};
+  if (Array.isArray(p.escenas) && p.escenas.length) return p.escenas;
+  const parr = String(p.texto || '').split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+  const cuerpo = parr.slice(1).filter(x => !esContacto(x)).slice(0, 3).map(x => ({ titular: frase(x) }));
+  return [{ titular: p.titular || p.gancho, subtitulo: p.subtitulo || '' }, ...cuerpo, { titular: m.firma || p.cta, cta: p.cta || m.cta, final: true }];
+}
+// Láminas de un carrusel (la portada es la imagen principal).
+export function laminasDe(p) {
+  const m = marcas[p.marca] || {};
+  if (Array.isArray(p.laminas) && p.laminas.length) return p.laminas;
+  const parr = String(p.texto || '').split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+  const cuerpo = parr.slice(1).filter(x => !esContacto(x)).slice(0, 3).map(x => ({ titular: frase(x) }));
+  return [...cuerpo, { titular: p.cta || m.cta, subtitulo: m.firma || '', final: true }];
+}
 function tamano(p) {
   if (p.formato === 'Historia' || p.formato === 'Reel') return 'historia';
   if (p.formato === 'Carrusel') return 'vertical';
@@ -35,7 +55,7 @@ function tamano(p) {
 }
 function huella(p) {
   const m = marcas[p.marca] || {};
-  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, m])).digest('hex').slice(0, 12);
+  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 2])).digest('hex').slice(0, 12);
 }
 
 const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
@@ -43,7 +63,8 @@ const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
 const pendientes = posts.filter(p => {
   const marca = join(ROOT, 'media', p.id + '.huella');
   return !existsSync(join(ROOT, 'media', p.id + '.png')) || !existsSync(marca) || readFileSync(marca, 'utf8') !== huella(p)
-    || (necesitaVideo(p) && !existsSync(join(ROOT, 'media', p.id + '.mp4')));
+    || (necesitaVideo(p) && !existsSync(join(ROOT, 'media', p.id + '.mp4')))
+    || (p.formato === 'Carrusel' && !existsSync(join(ROOT, 'media', p.id + '-c2.png')));
 });
 if (!pendientes.length) { console.log('Nada que dibujar.'); process.exit(0); }
 
@@ -58,9 +79,9 @@ await page.evaluate(async (fams) => {
   if (faltan.length) throw new Error('No cargaron las fuentes: ' + faltan.join(', '));
 }, [...new Set(FACES.map(f => f[0]))]);
 
-async function dibujar(p, size) {
+async function dibujar(p, size, extra) {
   const m = Object.assign({}, marcas[p.marca] || {});
-  const d = { plantilla: p.plantilla || 'impacto', titular: p.titular || p.gancho, subtitulo: p.subtitulo || '', cta: p.cta || m.cta, size };
+  const d = Object.assign({ plantilla: p.plantilla || 'impacto', titular: p.titular || p.gancho, subtitulo: p.subtitulo || '', cta: p.cta || m.cta, size }, extra || {});
   const b64 = (f) => f && existsSync(join(ROOT, f)) ? 'data:image/png;base64,' + readFileSync(join(ROOT, f)).toString('base64') : null;
   const logo = b64(m.logo), logoClaro = b64(m.logoClaro);
   const dataUrl = await page.evaluate(async ({ d, m, logo, logoClaro }) => {
@@ -75,13 +96,40 @@ async function dibujar(p, size) {
 for (const p of pendientes) {
   const png = join(ROOT, 'media', p.id + '.png');
   writeFileSync(png, await dibujar(p, tamano(p)));
+  if (p.formato === 'Carrusel') {
+    // Carrusel real: portada + láminas (1080x1350).
+    const ls = laminasDe(p), total = ls.length + 1;
+    for (let i = 0; i < ls.length; i++) {
+      const l = ls[i], n = i + 2;
+      const extra = l.final
+        ? { plantilla: 'oferta', titular: l.titular, subtitulo: l.subtitulo || '', cta: l.cta || p.cta }
+        : { plantilla: 'tip', titular: l.titular, subtitulo: l.subtitulo || '', sinCta: true, etiqueta: l.etiqueta || `${String(n).padStart(2, '0')} / ${String(total).padStart(2, '0')}` };
+      writeFileSync(join(ROOT, 'media', `${p.id}-c${n}.png`), await dibujar(p, 'vertical', extra));
+    }
+  }
   if (necesitaVideo(p)) {
-    const vpng = join(ROOT, 'media', p.id + '-vertical.png');
-    writeFileSync(vpng, tamano(p) === 'historia' ? readFileSync(png) : await dibujar(p, 'historia'));
-    // Video de 9 s con acercamiento lento (efecto Ken Burns), 1080x1920, sin audio.
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-loop', '1', '-i', vpng,
-      '-vf', "scale=1188:2112,zoompan=z='min(zoom+0.0006,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=270:s=1080x1920:fps=30,format=yuv420p",
-      '-t', '9', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4')]);
+    // Reel de varias escenas: cada idea en su propia pantalla, con acercamiento lento y fundido entre escenas.
+    const es = p.formato === 'Reel' ? escenasDe(p) : [{ titular: p.titular || p.gancho, subtitulo: p.subtitulo || '' }];
+    const archivos = [];
+    for (let i = 0; i < es.length; i++) {
+      const e = es[i];
+      const extra = i === 0 ? { subtitulo: e.subtitulo || p.subtitulo || '', titular: e.titular, sinCta: es.length > 1 }
+        : e.final ? { plantilla: 'impacto', titular: e.titular, subtitulo: e.subtitulo || '', cta: e.cta || p.cta }
+        : { plantilla: 'impacto', titular: e.titular, subtitulo: e.subtitulo || '', sinCta: true };
+      const f = join(ROOT, 'media', `${p.id}-e${i + 1}.png`);
+      writeFileSync(f, await dibujar(p, 'historia', extra));
+      archivos.push(f);
+    }
+    writeFileSync(join(ROOT, 'media', p.id + '-vertical.png'), readFileSync(archivos[0]));
+    const dur = (i) => (archivos.length === 1 ? 8 : i === 0 ? 3.6 : i === archivos.length - 1 ? 3.8 : 3.0), X = 0.5;
+    const args = ['-y', '-loglevel', 'error'];
+    archivos.forEach((f) => args.push('-i', f)); // una sola imagen por escena: zoompan genera los cuadros
+    let fil = archivos.map((_, i) => `[${i}:v]scale=1188:2112,zoompan=z='min(zoom+0.0007,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${Math.round(dur(i) * 30)}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v${i}]`).join(';');
+    let prev = 'v0', t = dur(0);
+    for (let i = 1; i < archivos.length; i++) { const out = i === archivos.length - 1 ? 'vout' : `x${i}`; fil += `;[${prev}][v${i}]xfade=transition=fade:duration=${X}:offset=${(t - X).toFixed(2)}[${out}]`; prev = out; t += dur(i) - X; }
+    if (archivos.length === 1) fil += ';[v0]copy[vout]';
+    args.push('-filter_complex', fil, '-map', '[vout]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4'));
+    execFileSync('ffmpeg', args);
   }
   writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p));
   console.log('Dibujado', p.id);

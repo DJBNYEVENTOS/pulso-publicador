@@ -12,5 +12,25 @@
  "plantilla": "oferta",
  "guion": "Lámina 1: titular. Láminas 2-4: capturas del demo de distintos giros. Lámina 5: link del demo.",
  "estado": "listo",
- "id": "s7"
+ "id": "s7",
+ "laminas": [
+  {
+   "titular": "Renta de mobiliario",
+   "subtitulo": "Sillas, mesas y mantelería: tu cliente elige y ve el total al momento."
+  },
+  {
+   "titular": "Banquetes",
+   "subtitulo": "Número de invitados y menú: la cotización sale sola."
+  },
+  {
+   "titular": "Fotografía",
+   "subtitulo": "Horas, sesión previa y álbum, con tus precios exactos."
+  },
+  {
+   "titular": "Pruébalo como si fueras tu cliente",
+   "subtitulo": "kotizo-app.netlify.app",
+   "cta": "Prueba el demo",
+   "final": true
+  }
+ ]
 }

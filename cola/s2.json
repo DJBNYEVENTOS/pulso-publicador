@@ -13,5 +13,26 @@
  "guion": "0-3 s: salón vacío en penumbra, texto 'Horas antes'. 3-8 s: manos ajustando una luz cálida sobre la pista. 8-12 s: pista iluminada y silueta de una pareja. 12-15 s: logo BNY sobre negro. Música instrumental suave. Sin cables ni cajas en cuadro.",
  "estado": "listo",
  "id": "s2",
- "pilar": "La noche contada desde cabina"
+ "pilar": "La noche contada desde cabina",
+ "escenas": [
+  {
+   "titular": "Lo que nadie ve antes de tu primer baile",
+   "subtitulo": ""
+  },
+  {
+   "titular": "Horas antes, con el salón vacío"
+  },
+  {
+   "titular": "Probamos tu canción en cada rincón"
+  },
+  {
+   "titular": "Y marcamos el segundo exacto en que empieza"
+  },
+  {
+   "titular": "Tú solo vas a escuchar la música",
+   "subtitulo": "Del resto nos encargamos nosotros.",
+   "cta": "Agenda tu cita",
+   "final": true
+  }
+ ]
 }
