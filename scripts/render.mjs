@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { musicaPara } from './musica.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const marcas = JSON.parse(readFileSync(join(ROOT, 'config/marcas.json'), 'utf8'));
@@ -55,7 +56,7 @@ function tamano(p) {
 }
 function huella(p) {
   const m = marcas[p.marca] || {};
-  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 2])).digest('hex').slice(0, 12);
+  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 3])).digest('hex').slice(0, 12);
 }
 
 const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
@@ -128,8 +129,15 @@ for (const p of pendientes) {
     let prev = 'v0', t = dur(0);
     for (let i = 1; i < archivos.length; i++) { const out = i === archivos.length - 1 ? 'vout' : `x${i}`; fil += `;[${prev}][v${i}]xfade=transition=fade:duration=${X}:offset=${(t - X).toFixed(2)}[${out}]`; prev = out; t += dur(i) - X; }
     if (archivos.length === 1) fil += ';[v0]copy[vout]';
-    args.push('-filter_complex', fil, '-map', '[vout]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4'));
+    // Música: pista libre de derechos de musica/<marca>/ o composición original.
+    const total = archivos.length === 1 ? dur(0) : t;
+    const wav = join(ROOT, 'media', p.id + '.wav');
+    const origen = musicaPara(ROOT, p.marca, p.id + (p.titular || ''), total, wav);
+    args.push('-i', wav);
+    args.push('-filter_complex', fil, '-map', '[vout]', '-map', `${archivos.length}:a`, '-c:a', 'aac', '-b:a', '192k', '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4'));
     execFileSync('ffmpeg', args);
+    try { (await import('node:fs')).unlinkSync(wav); } catch {}
+    console.log('  música:', origen);
   }
   writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p));
   console.log('Dibujado', p.id);
