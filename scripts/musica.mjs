@@ -2,7 +2,7 @@
 // 1) Si existe musica/<marca>/ con pistas (mp3, m4a, wav) libres de derechos, usa una (elegida por publicación).
 // 2) Si no, compone una pieza original con el estilo de la marca (piano, pads, campanas, plucks, ritmo).
 // Todo en JavaScript puro: no necesita librerías.
-import { writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 
@@ -199,16 +199,44 @@ function componer(marca, semilla, dur) {
   return wav;
 }
 
-// Deja en `salida` (wav) la música del reel. Devuelve una descripción de su origen.
-export function musicaPara(ROOT, marca, semilla, dur, salida) {
+// Pistas por marca: archivos en musica/<marca>/ y, además, las de config/musica.json
+// (enlaces a música de estudio libre de derechos), que se descargan una vez y se guardan en media/_musica/<marca>/.
+async function pistasDe(ROOT, marca) {
+  const out = [];
   const dir = join(ROOT, 'musica', marca);
-  const pistas = existsSync(dir) ? readdirSync(dir).filter(f => /\.(mp3|m4a|wav|ogg)$/i.test(f)).sort() : [];
+  if (existsSync(dir)) for (const f of readdirSync(dir).sort()) if (/\.(mp3|m4a|wav|ogg)$/i.test(f)) out.push(join(dir, f));
+  const cfg = join(ROOT, 'config', 'musica.json');
+  if (existsSync(cfg)) {
+    const lista = (JSON.parse(readFileSync(cfg, 'utf8'))[marca] || []);
+    const cache = join(ROOT, 'media', '_musica', marca);
+    mkdirSync(cache, { recursive: true });
+    for (const item of lista) {
+      const url = typeof item === 'string' ? item : item.url;
+      const nombre = url.split('/').pop().split('?')[0];
+      const f = join(cache, nombre);
+      if (!existsSync(f)) {
+        try { const r = await fetch(url); if (!r.ok) throw new Error('HTTP ' + r.status); writeFileSync(f, Buffer.from(await r.arrayBuffer())); }
+        catch (e) { console.log('  no se pudo descargar', nombre, e.message); continue; }
+      }
+      out.push(f);
+    }
+  }
+  return out;
+}
+
+// Deja en `salida` (wav) la música del reel y devuelve su origen, o null si la marca no tiene pistas.
+// La composición original solo se usa si PULSO_MUSICA_ORIGINAL=1.
+export async function musicaPara(ROOT, marca, semilla, dur, salida) {
+  const pistas = await pistasDe(ROOT, marca);
   if (pistas.length) {
     const r = rng(semilla), pista = pistas[Math.floor(r() * pistas.length)];
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', join(dir, pista), '-t', String(dur), '-af',
-      `afade=t=in:d=0.5,afade=t=out:st=${Math.max(0, dur - 1.6)}:d=1.6,loudnorm=I=-14:TP=-1.5`, '-ar', String(SR), '-ac', '2', salida]);
-    return 'pista: ' + pista;
+    // Empieza en un punto con energía (salta la intro si la pista es larga).
+    let inicio = 0;
+    try { const d = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', pista]).toString()); if (d > dur + 20) inicio = Math.min(12, d - dur - 2); } catch {}
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', String(inicio), '-i', pista, '-t', String(dur), '-af',
+      `afade=t=in:d=0.6,afade=t=out:st=${Math.max(0, dur - 1.8)}:d=1.8,loudnorm=I=-14:TP=-1.5`, '-ar', String(SR), '-ac', '2', salida]);
+    return 'pista: ' + pista.split('/').pop();
   }
-  writeFileSync(salida, componer(marca, semilla, dur));
-  return 'música original de Pulso';
+  if (process.env.PULSO_MUSICA_ORIGINAL === '1') { writeFileSync(salida, componer(marca, semilla, dur)); return 'música original de Pulso'; }
+  return null;
 }

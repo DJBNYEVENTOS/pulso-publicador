@@ -132,12 +132,12 @@ for (const p of pendientes) {
     // Música: pista libre de derechos de musica/<marca>/ o composición original.
     const total = archivos.length === 1 ? dur(0) : t;
     const wav = join(ROOT, 'media', p.id + '.wav');
-    const origen = musicaPara(ROOT, p.marca, p.id + (p.titular || ''), total, wav);
-    args.push('-i', wav);
-    args.push('-filter_complex', fil, '-map', '[vout]', '-map', `${archivos.length}:a`, '-c:a', 'aac', '-b:a', '192k', '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4'));
+    const origen = await musicaPara(ROOT, p.marca, p.id + (p.titular || ''), total, wav);
+    if (origen) args.push('-i', wav);
+    args.push('-filter_complex', fil, '-map', '[vout]', ...(origen ? ['-map', `${archivos.length}:a`, '-c:a', 'aac', '-b:a', '192k', '-shortest'] : []), '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4'));
     execFileSync('ffmpeg', args);
     try { (await import('node:fs')).unlinkSync(wav); } catch {}
-    console.log('  música:', origen);
+    console.log('  música:', origen || 'sin música (agrega pistas en musica/ o config/musica.json)');
   }
   writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p));
   console.log('Dibujado', p.id);
