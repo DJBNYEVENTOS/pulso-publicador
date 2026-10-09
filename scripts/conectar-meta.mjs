@@ -102,6 +102,28 @@ for (const marca of MARCAS) {
   } catch (e) { console.log(`· Instagram de ${marca}: ${e.message}`); diag.instagram.push({ marca, error: e.message }); }
 }
 
+/* ---------- TikTok (cuenta de BNY Eventos) ---------- */
+if (env.TIKTOK_CODE) {
+  diag.tiktok = [];
+  try {
+    if (!env.TIKTOK_CLIENT_KEY || !env.TIKTOK_CLIENT_SECRET) throw new Error('Faltan TIKTOK_CLIENT_KEY o TIKTOK_CLIENT_SECRET');
+    // Acepta el código solo o la dirección completa que quedó en el navegador.
+    let code = env.TIKTOK_CODE.trim(), marca = (env.TIKTOK_MARCA || 'bny').toLowerCase();
+    const m = code.match(/[?&]code=([^&]+)/); if (m) code = decodeURIComponent(m[1]);
+    const res = await fetch('https://open.tiktokapis.com/v2/oauth/token/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ client_key: env.TIKTOK_CLIENT_KEY, client_secret: env.TIKTOK_CLIENT_SECRET, code, grant_type: 'authorization_code', redirect_uri: 'https://djbnyeventos.github.io/pulso-publicador/tiktok/' }) });
+    const tok = await res.json();
+    if (!tok.refresh_token) throw new Error(tok.error_description || tok.error || ('HTTP ' + res.status));
+    let usuario = '';
+    try { const u = await (await fetch('https://open.tiktokapis.com/v2/user/info/?fields=display_name', { headers: { Authorization: 'Bearer ' + tok.access_token } })).json(); usuario = (u.data && u.data.user && u.data.user.display_name) || ''; } catch {}
+    boveda.marcas[marca] = Object.assign({}, boveda.marcas[marca], { tiktok: { refresh: tok.refresh_token, openId: tok.open_id, usuario, renovado: new Date().toISOString() } });
+    redes[marca] = Object.assign({}, redes[marca], { tiktok: true });
+    cambios++;
+    console.log(`· TikTok de ${marca} conectado${usuario ? ' (' + usuario + ')' : ''}.`);
+    diag.tiktok.push({ marca, usuario, ok: true });
+  } catch (e) { console.log('· TikTok: ' + e.message); diag.tiktok.push({ error: e.message }); }
+}
+
 if (!RENOVAR) writeFileSync(join(ROOT, 'config/meta-diagnostico.json'), JSON.stringify(diag, null, 2));
 if (!cambios) {
   console.error('No se conectó nada. Agrega META_USER_TOKEN (+ META_APP_ID y META_APP_SECRET) para Facebook, o IG_TOKEN_<MARCA> para Instagram.');

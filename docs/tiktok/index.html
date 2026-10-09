@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pulso · Conectar TikTok</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--n:#0D0D0F;--m:#A31E55;--f:#F7F2EB}
+*{box-sizing:border-box}body{margin:0;background:var(--f);color:var(--n);font:17px/1.6 Georgia,"Times New Roman",serif;padding:48px 16px}
+main{max-width:620px;margin:0 auto}h1{font:italic 400 40px/1.1 Georgia,serif;margin:0 0 16px}
+p{margin:0 0 16px}label{display:block;font:600 13px/1.4 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin:24px 0 8px;color:var(--m)}
+input,textarea{width:100%;padding:12px;font:15px/1.4 ui-monospace,Menlo,monospace;border:1px solid #0D0D0F33;background:#fff}
+textarea{min-height:110px}
+button{margin-top:16px;min-height:48px;padding:0 24px;border:0;background:var(--m);color:var(--f);font:600 14px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.nota{font-size:15px;opacity:.75}[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <section id="pedir">
+    <h1>Conectar TikTok</h1>
+    <p>Pega la <strong>Client key</strong> de tu app de TikTok (no es secreta) y pulsa el botón. TikTok te pedirá entrar con la cuenta y autorizar a Pulso.</p>
+    <label for="ck">Client key</label>
+    <input id="ck" autocomplete="off" spellcheck="false">
+    <button id="ir">Autorizar en TikTok</button>
+  </section>
+  <section id="listo" hidden>
+    <h1>Autorización recibida</h1>
+    <p>Copia este código y guárdalo en GitHub como secreto <strong>TIKTOK_CODE</strong>. Después corre <strong>Conectar Meta</strong> en Actions. Hazlo en los próximos minutos: el código vence pronto.</p>
+    <label for="code">Código</label>
+    <textarea id="code" readonly></textarea>
+    <button id="copiar">Copiar código</button>
+    <p class="nota" id="msg"></p>
+  </section>
+  <section id="error" hidden>
+    <h1>TikTok no autorizó</h1>
+    <p id="err"></p>
+  </section>
+</main>
+<script>
+var q = new URLSearchParams(location.search);
+var REDIRECT = 'https://djbnyeventos.github.io/pulso-publicador/tiktok/';
+if (q.get('code')) {
+  document.getElementById('pedir').hidden = true; document.getElementById('listo').hidden = false;
+  document.getElementById('code').value = q.get('code');
+} else if (q.get('error')) {
+  document.getElementById('pedir').hidden = true; document.getElementById('error').hidden = false;
+  document.getElementById('err').textContent = (q.get('error_description') || q.get('error'));
+}
+document.getElementById('ir').onclick = function () {
+  var ck = document.getElementById('ck').value.trim(); if (!ck) return;
+  var st = Math.random().toString(36).slice(2);
+  location.href = 'https://www.tiktok.com/v2/auth/authorize/?client_key=' + encodeURIComponent(ck) +
+    '&scope=' + encodeURIComponent('user.info.basic,video.upload') + '&response_type=code&redirect_uri=' + encodeURIComponent(REDIRECT) + '&state=' + st;
+};
+document.getElementById('copiar').onclick = function () {
+  var t = document.getElementById('code'); t.select();
+  try { navigator.clipboard.writeText(t.value).then(function(){ document.getElementById('msg').textContent = 'Copiado.'; }); }
+  catch (e) { document.execCommand('copy'); document.getElementById('msg').textContent = 'Copiado.'; }
+};
+</script>
+</body>
+</html>

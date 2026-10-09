@@ -3,22 +3,24 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { descifrar } from './meta-boveda.mjs';
+import { descifrar, cifrar } from './meta-boveda.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const redes = JSON.parse(readFileSync(join(ROOT, 'config/redes.json'), 'utf8'));
 const marcas = JSON.parse(readFileSync(join(ROOT, 'config/marcas.json'), 'utf8'));
 const env = Object.assign({}, process.env, process.env.SECRETS_JSON ? JSON.parse(process.env.SECRETS_JSON) : {});
 // Accesos de Meta guardados por "Conectar Meta" (cifrados). Los secretos escritos a mano tienen prioridad.
+let BOVEDA = null;
 if (env.PULSO_KEY && existsSync(join(ROOT, 'config/meta.enc'))) {
   try {
-    const b = descifrar(readFileSync(join(ROOT, 'config/meta.enc'), 'utf8'), env.PULSO_KEY);
+    const b = BOVEDA = descifrar(readFileSync(join(ROOT, 'config/meta.enc'), 'utf8'), env.PULSO_KEY);
     for (const [marca, m] of Object.entries(b.marcas || {})) {
       const M = marca.toUpperCase();
       env[`FB_PAGE_ID_${M}`] ||= m.pageId; env[`FB_TOKEN_${M}`] ||= m.token;
       if (m.igId) env[`IG_USER_ID_${M}`] ||= m.igId;
       // El token de Instagram guardado se renueva solo, así que manda sobre el secreto original (que caduca).
       if (m.igLogin) { env[`IG_TOKEN_${M}`] = m.igLogin.token; env[`IG_LOGIN_ID_${M}`] = m.igLogin.igId; }
+      if (m.tiktok) env[`TIKTOK_REFRESH_TOKEN_${M}`] = m.tiktok.refresh;
     }
   } catch (e) { console.log('No se pudo leer config/meta.enc: revisa el secreto PULSO_KEY.'); }
 }
@@ -198,6 +200,13 @@ async function tiktok(p) {
   const mp4 = join(ROOT, 'media', p.id + '.mp4');
   if (!existsSync(mp4)) throw new Error('No hay video para esta pieza');
   const { data: tok } = await api('https://open.tiktokapis.com/v2/oauth/token/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: form({ client_key: key, client_secret: secret, grant_type: 'refresh_token', refresh_token: refresh }) });
+  // TikTok puede entregar un refresh token nuevo: se guarda cifrado para la próxima vez.
+  const cm = cuenta(p.marca);
+  if (tok.refresh_token && tok.refresh_token !== refresh && BOVEDA && BOVEDA.marcas && BOVEDA.marcas[cm] && BOVEDA.marcas[cm].tiktok) {
+    BOVEDA.marcas[cm].tiktok.refresh = tok.refresh_token; BOVEDA.marcas[cm].tiktok.renovado = new Date().toISOString();
+    env[`TIKTOK_REFRESH_TOKEN_${cm.toUpperCase()}`] = tok.refresh_token;
+    writeFileSync(join(ROOT, 'config/meta.enc'), cifrar(BOVEDA, env.PULSO_KEY));
+  }
   const size = statSync(mp4).size;
   const { data: init } = await api('https://open.tiktokapis.com/v2/post/publish/inbox/video/init/', { method: 'POST', headers: { Authorization: `Bearer ${tok.access_token}`, 'Content-Type': 'application/json; charset=UTF-8' }, body: JSON.stringify({ source_info: { source: 'FILE_UPLOAD', video_size: size, chunk_size: size, total_chunk_count: 1 } }) });
   const put = await fetch(init.data.upload_url, { method: 'PUT', headers: { 'Content-Type': 'video/mp4', 'Content-Range': `bytes 0-${size - 1}/${size}` }, body: readFileSync(mp4) });
