@@ -239,6 +239,8 @@ async function pistasDe(ROOT, marca) {
       }
       out.push(f);
     }
+    // Pistas ya descargadas en ejecuciones anteriores.
+    for (const f of readdirSync(cache).sort()) if (/\.mp3$/i.test(f) && !out.includes(join(cache, f))) out.push(join(cache, f));
   }
   return out;
 }
