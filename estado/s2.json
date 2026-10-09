@@ -1,0 +1,18 @@
+{
+  "id": "s2",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1671778391658358",
+      "url": "https://www.facebook.com/145245832842598/videos/1671778391658358",
+      "en": "2026-10-09T04:30:51.436Z"
+    },
+    "instagram": {
+      "ok": false,
+      "error": "400 {\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AWsyFqa9bHVaTETZQLWHF_N\"}",
+      "intentos": 1,
+      "en": "2026-10-09T04:30:51.984Z"
+    }
+  }
+}
