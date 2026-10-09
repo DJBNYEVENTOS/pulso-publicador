@@ -121,11 +121,9 @@ async function instagram(p) {
   const mp4 = join(ROOT, 'media', p.id + '.mp4');
   let container;
   if (p.formato === 'Reel' && existsSync(mp4)) {
-    const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form({ media_type: 'REELS', upload_type: 'resumable', caption: caption(p, 'instagram'), share_to_feed: 'true', access_token: token }) });
+    // El video se entrega por enlace público (el repositorio es público).
+    const { data } = await api(`${host}/${ig}/media`, { method: 'POST', body: form({ media_type: 'REELS', video_url: rawUrl(p.id + '.mp4'), caption: caption(p, 'instagram'), share_to_feed: 'true', access_token: token }) });
     container = data.id;
-    const buf = readFileSync(mp4);
-    const sube = data.uri || `https://rupload.facebook.com/ig-api-upload/${GV}/${container}`;
-    await api(sube, { method: 'POST', headers: { Authorization: `OAuth ${token}`, offset: '0', file_size: String(buf.length) }, body: buf });
   } else if (p.formato === 'Carrusel' && existsSync(join(ROOT, 'media', p.id + '-c2.png'))) {
     const archivos = [p.id + '.png', ...readdirSync(join(ROOT, 'media')).filter(f => new RegExp(`^${p.id}-c\\d+\\.png$`).test(f)).sort((x, y) => parseInt(x.split('-c')[1]) - parseInt(y.split('-c')[1]))].slice(0, 10);
     const hijos = [];
