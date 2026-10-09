@@ -210,8 +210,26 @@ async function pistasDe(ROOT, marca) {
     const lista = (JSON.parse(readFileSync(cfg, 'utf8'))[marca] || []);
     const cache = join(ROOT, 'media', '_musica', marca);
     mkdirSync(cache, { recursive: true });
+    // Entradas tipo {pagina, incluir, max}: se leen los mp3 de una página del catálogo (p. ej. Mixkit) una sola vez.
+    const urls = [];
+    const yaHay = readdirSync(cache).some(f => /\.mp3$/i.test(f));
     for (const item of lista) {
-      const url = typeof item === 'string' ? item : item.url;
+      if (item && item.pagina) {
+        if (yaHay) continue;
+        try {
+          const html = await (await fetch(item.pagina, { headers: { 'User-Agent': 'Mozilla/5.0' } })).text();
+          let encontrados = [...new Set(html.match(/https:\/\/assets\.mixkit\.co\/music\/[^"'\s<>]+?\.mp3/g) || [])];
+          // Prefiere el archivo de descarga sobre la vista previa del mismo tema.
+          const porTema = new Map();
+          for (const u of encontrados) { const k = u.split('/').pop(); if (!porTema.has(k) || u.includes('/download/')) porTema.set(k, u); }
+          encontrados = [...porTema.values()];
+          if (item.incluir) encontrados = encontrados.filter(u => item.incluir.some(t => u.toLowerCase().includes('mixkit-' + t + '-')));
+          urls.push(...encontrados.slice(0, item.max || 6));
+          writeFileSync(join(cache, 'origen.json'), JSON.stringify({ pagina: item.pagina, encontrados: encontrados.length, usados: urls }, null, 2));
+        } catch (e) { console.log('  no se pudo leer', item.pagina, e.message); }
+      } else urls.push(typeof item === 'string' ? item : item.url);
+    }
+    for (const url of urls) {
       const nombre = url.split('/').pop().split('?')[0];
       const f = join(cache, nombre);
       if (!existsSync(f)) {

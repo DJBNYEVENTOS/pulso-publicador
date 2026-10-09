@@ -1,1 +1,15 @@
-{ "_ayuda": "Enlaces directos (mp3) a música libre de derechos para uso comercial, por marca. Se descargan una vez.", "bny": [], "kotizo": [], "varelia": [], "invitaciones": [] }
+{
+  "_ayuda": "Música de estudio libre de derechos (licencia gratuita de Mixkit: uso comercial y en redes sin atribución). Cada marca toma pistas de una página del catálogo; se descargan una vez a media/_musica/<marca>/. También acepta enlaces directos a mp3.",
+  "bny": [
+    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["wedding-01", "wedding-02", "romantic", "classical-3", "wedding-harp", "violin-uplift", "classique", "classical-vibes-5", "classical-2"], "max": 8 }
+  ],
+  "invitaciones": [
+    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["forever-in-my-heart", "true-love", "special-days", "when-in-love", "romantic-04", "wedding-music", "wedding-song-03"], "max": 7 }
+  ],
+  "varelia": [
+    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["sicilian-cafe", "skyline", "possible-dreams", "wind-leaves", "discover"], "max": 5 }
+  ],
+  "kotizo": [
+    { "pagina": "https://mixkit.co/free-stock-music/tag/corporate/", "max": 6 }
+  ]
+}
