@@ -223,7 +223,8 @@ async function pistasDe(ROOT, marca) {
           const porTema = new Map();
           for (const u of encontrados) { const k = u.split('/').pop(); if (!porTema.has(k) || u.includes('/download/')) porTema.set(k, u); }
           encontrados = [...porTema.values()];
-          if (item.incluir) encontrados = encontrados.filter(u => item.incluir.some(t => u.toLowerCase().includes('mixkit-' + t + '-')));
+          if (item.posiciones) encontrados = item.posiciones.map(n => encontrados[n - 1]).filter(Boolean);
+          else if (item.incluir) encontrados = encontrados.filter(u => item.incluir.some(t => u.toLowerCase().includes('mixkit-' + t + '-')));
           urls.push(...encontrados.slice(0, item.max || 6));
           writeFileSync(join(cache, 'origen.json'), JSON.stringify({ pagina: item.pagina, encontrados: encontrados.length, usados: urls }, null, 2));
         } catch (e) { console.log('  no se pudo leer', item.pagina, e.message); }

@@ -1,15 +1,57 @@
 {
   "_ayuda": "Música de estudio libre de derechos (licencia gratuita de Mixkit: uso comercial y en redes sin atribución). Cada marca toma pistas de una página del catálogo; se descargan una vez a media/_musica/<marca>/. También acepta enlaces directos a mp3.",
   "bny": [
-    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["wedding-01", "wedding-02", "romantic", "classical-3", "wedding-harp", "violin-uplift", "classique", "classical-vibes-5", "classical-2"], "max": 8 }
+    {
+      "pagina": "https://mixkit.co/free-stock-music/tag/wedding/",
+      "posiciones": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        11,
+        19,
+        29,
+        32
+      ],
+      "max": 9,
+      "temas": "Wedding 01, Romantic, Classical 3, Classical vibes 5, Classical 2, Wedding Harp, Wedding 02, Violin Uplift, Classique"
+    }
   ],
   "invitaciones": [
-    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["forever-in-my-heart", "true-love", "special-days", "when-in-love", "romantic-04", "wedding-music", "wedding-song-03"], "max": 7 }
+    {
+      "pagina": "https://mixkit.co/free-stock-music/tag/wedding/",
+      "posiciones": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        27,
+        30
+      ],
+      "max": 7,
+      "temas": "Forever in My Heart, Wedding Music, Special Days, True Love, Wedding Song 03, Romantic 04, When in Love"
+    }
   ],
   "varelia": [
-    { "pagina": "https://mixkit.co/free-stock-music/tag/wedding/", "incluir": ["sicilian-cafe", "skyline", "possible-dreams", "wind-leaves", "discover"], "max": 5 }
+    {
+      "pagina": "https://mixkit.co/free-stock-music/tag/wedding/",
+      "posiciones": [
+        1,
+        3,
+        7,
+        12,
+        24
+      ],
+      "max": 5,
+      "temas": "Discover, Skyline, Possible Dreams, Wind Leaves, Sicilian Cafe"
+    }
   ],
   "kotizo": [
-    { "pagina": "https://mixkit.co/free-stock-music/tag/corporate/", "max": 6 }
+    {
+      "pagina": "https://mixkit.co/free-stock-music/tag/corporate/",
+      "max": 6
+    }
   ]
 }
