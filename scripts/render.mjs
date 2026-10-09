@@ -56,7 +56,7 @@ function tamano(p) {
 }
 function huella(p) {
   const m = marcas[p.marca] || {};
-  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 3])).digest('hex').slice(0, 12);
+  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 4])).digest('hex').slice(0, 12);
 }
 
 const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
