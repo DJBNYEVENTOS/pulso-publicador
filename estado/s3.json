@@ -1,0 +1,18 @@
+{
+  "id": "s3",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "145245832842598_1580487834102291",
+      "url": "https://www.facebook.com/145245832842598_1580487834102291",
+      "en": "2026-10-10T19:00:58.436Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17991489027046865",
+      "url": "https://www.instagram.com/p/DeUyZghCUyO/",
+      "en": "2026-10-10T19:01:56.418Z"
+    }
+  }
+}
