@@ -1,3 +1,7 @@
+const INV_PROMO = Date.now() < Date.parse('2026-11-17T23:59:00-06:00');
+const INV_PRECIOS = INV_PROMO
+  ? '<p><strong>Precio especial de lanzamiento</strong> hasta el 17 de noviembre: Esencial $590, Premium $990 y Gala $1,890, más IVA, por evento. Si tu evento es en 2027, también puedes apartarlo.</p>'
+  : '<p>Esencial $990, Premium $1,790 y Gala $3,490, más IVA, por evento.</p>';
 // Sitio web completo de BNY Eventos (marca registrada: logo real, colores y tipografías oficiales sin cambios).
 // Colores: #0D0D0F (negro), #A31E55 (magenta), #F7F2EB (marfil). Tipografías: Tinos (títulos y texto), Arimo (etiquetas).
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -235,13 +239,15 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
       <div>
         <div class="etq">Diseño · Personalización · Envío digital</div>
         <h2>Tus invitaciones, como las imaginas.</h2>
-        <p>La invitación es lo primero que tus invitados ven de tu evento. La diseñamos a la medida, con el nombre de cada familia, y la enviamos por WhatsApp.</p>
+        <p>La única invitación que trabaja antes, durante y después de tu fiesta. Nuestro equipo la diseña, tú llenas una ficha de 10 minutos y cada invitado la recibe por WhatsApp con su nombre y sus pases.</p>
         <ul>
-          <li>Nombre y pases por familia</li>
-          <li>Confirmación de asistencia en un clic</li>
-          <li>Pase QR para la entrada</li>
-          <li>Panel para saber quién viene</li>
+          <li>Nombre y pases por familia, confirmación en un toque</li>
+          <li>Panel para saber quién la abrió y quién confirmó</li>
+          <li>Cámara de invitados y Pide tu canción (Premium)</li>
+          <li>Pase QR, Encuentra tu mesa y Muro en vivo (Gala)</li>
         </ul>
+        ${INV_PRECIOS}
+        <p style="margin-top:6px"><a href="https://invitacionesbny.netlify.app" style="color:#C2186A">Mira los modelos</a></p>
         <a class="boton" href="${wa('Hola, quiero mi invitación digital de Invitaciones BNY.')}">Quiero mi invitación</a>
       </div>
     </div>
