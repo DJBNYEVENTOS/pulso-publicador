@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { musicaPara } from './musica.mjs';
+import { capturar } from './capturas.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const marcas = JSON.parse(readFileSync(join(ROOT, 'config/marcas.json'), 'utf8'));
@@ -72,6 +73,7 @@ if (!pendientes.length) { console.log('Nada que dibujar.'); process.exit(0); }
 
 const css = FACES.map(([fam, file, style, weight]) => `@font-face{font-family:'${fam}';src:url(data:font/ttf;base64,${readFileSync(join(ROOT, 'fonts', file)).toString('base64')}) format('truetype');font-style:${style};font-weight:${weight || '100 900'}}`).join('');
 const browser = await chromium.launch();
+try { await capturar(ROOT, browser); } catch (e) { console.log('Capturas:', e.message); }
 const page = await browser.newPage();
 await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><canvas id="c"></canvas><script>${plantillas}</script></body></html>`);
 await page.evaluate(async (fams) => {

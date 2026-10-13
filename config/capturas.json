@@ -1,0 +1,73 @@
+{
+ "nota": "Ejemplos reales del catálogo para la publicidad (los captura el render en GitHub).",
+ "capturas": [
+  {
+   "id": "ejemplorosa",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplorosa"
+  },
+  {
+   "id": "ejemploprincesa",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemploprincesa"
+  },
+  {
+   "id": "ejemplodiscoxv",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplodiscoxv"
+  },
+  {
+   "id": "ejemploinvierno",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemploinvierno"
+  },
+  {
+   "id": "ejemploeditorial",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemploeditorial"
+  },
+  {
+   "id": "ejemploboceto",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemploboceto"
+  },
+  {
+   "id": "ejemplorococo",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplorococo"
+  },
+  {
+   "id": "ejemplocalabazascorporativo",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplocalabazascorporativo"
+  },
+  {
+   "id": "ejemplocalabazascumple",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplocalabazascumple"
+  },
+  {
+   "id": "ejemplogeneracion",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplogeneracion"
+  },
+  {
+   "id": "ejemplodiploma",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemplodiploma"
+  },
+  {
+   "id": "ejemploonix",
+   "url": "https://invitacionesbny.netlify.app/inv/ejemploonix"
+  },
+  {
+   "id": "catalogo",
+   "url": "https://invitacionesbny.netlify.app",
+   "tocar": false
+  },
+  {
+   "id": "precios",
+   "url": "https://invitacionesbny.netlify.app/precios",
+   "tocar": false
+  },
+  {
+   "id": "promo-post",
+   "url": "https://invitacionesbny.netlify.app/api/promo?f=post",
+   "tipo": "imagen"
+  },
+  {
+   "id": "promo-historia",
+   "url": "https://invitacionesbny.netlify.app/api/promo?f=historia",
+   "tipo": "imagen"
+  }
+ ]
+}
