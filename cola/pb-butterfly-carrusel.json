@@ -15,11 +15,6 @@
    "subtitulo": "Caen justo cuando empieza su primer baile."
   },
   {
-   "foto": "biblioteca/bny/primer-baile-byn.jpg",
-   "titular": "Todos se ponen de pie",
-   "subtitulo": ""
-  },
-  {
    "titular": "Diseñado contigo, minuto a minuto",
    "subtitulo": "El momento exacto, la canción exacta, la luz exacta."
   },
@@ -34,5 +29,5 @@
  "marca": "bny",
  "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
  "plantilla": "galeria",
- "estado": "listo"
+ "estado": "revision"
 }
