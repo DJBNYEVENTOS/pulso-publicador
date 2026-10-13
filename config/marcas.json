@@ -13,7 +13,8 @@
     "firma": "No es un evento, es una Experiencia BNY.",
     "cta": "Aparta tu fecha",
     "logo": "render/logos/bny.png",
-    "web": "https://wa.me/527861628600"
+    "web": "https://wa.me/527861628600",
+    "logoClaro": "render/logos/bny-claro.png"
   },
   "kotizo": {
     "nombre": "Kotizo",
