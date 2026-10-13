@@ -16,7 +16,7 @@ function drawDesign(cv,d,m,img){
   cv.width=W;cv.height=H;
   var c=cv.getContext('2d');c.textBaseline='alphabetic';
   var tf=m.fuenteTitulo,bf=m.fuenteTexto,P=m.colorPrincipal,A=m.colorAcento,F=m.colorFondo,T=m.colorTexto,G=m.colorDetalle||A;
-  var est=m.estilo||'nocturno',tpl=(d.plantilla==='foto'&&!img)?'impacto':(d.plantilla||'impacto'),titular=d.titular||'Tu titular aquí',sub=d.subtitulo||'',cta=d.sinCta?'':(d.cta||m.cta||'');
+  var est=m.estilo||'nocturno',tpl=((d.plantilla==='foto'||d.plantilla==='galeria')&&!img)?'impacto':(d.plantilla||'impacto'),titular=d.titular||'Tu titular aquí',sub=d.subtitulo||'',cta=d.sinCta?'':(d.cta||m.cta||'');
   var BNY=est==='bny';if(BNY){est='nocturno';G=A;}var INV=est==='invitaciones';if(INV){est='editorial';}var lf=m.fuenteEtiqueta||bf,LOGO=m.logoImg||null;
   var CEN=est==='editorial'||est==='romantico';
   var M=est==='nocturno'?112:96, X=CEN?W/2:M, TW=W-2*M;
@@ -79,6 +79,15 @@ function drawDesign(cv,d,m,img){
     if(sub){var s3=fitText(c,sub,'400 {s}px "'+bf+'"',TW,130,34,24,1.35);y=lines(s3.lines,y,s3.size,1.35,hexA(T,0.85),'400 '+s3.size+'px "'+bf+'"')+40}
     if(y+84<H-80)ctaPill(y,P,onColor(P,m));
     if(LOGO&&typeof LOGOTOP==='undefined'){var olh=64,olw=LOGO.width*olh/LOGO.height;c.drawImage(LOGO,CEN?(W-olw)/2:W-M-olw,H-48-olh,olw,olh)}else if(!LOGO){c.save();c.font='700 26px "'+lf+'"';c.fillStyle=hexA(T,0.7);c.textAlign=CEN?'center':'right';c.fillText(String(m.nombre||'').toUpperCase(),CEN?W/2:W-M,H-56);c.restore();}
+  } else if(tpl==='galeria'){
+    // Foto protagonista arriba y franja de marca abajo: editorial, deja respirar la imagen.
+    bg(F);dark=false;var ph=Math.round(H*(H>1200?0.74:0.70));
+    if(img)cover(img,0,0,W,ph);else{c.fillStyle=P;c.fillRect(0,0,W,ph)}
+    c.fillStyle=A;c.fillRect(CEN?W/2-30:M,ph+46,60,3);
+    var tg=fitText(c,titular,tW+' {s}px "'+tf+'"',TW,(H-ph)*0.42,H>1200?78:64,38,1.08);
+    y=ph+74+tg.size;y=lines(tg.lines,y,tg.size,1.08,T,tW+' '+tg.size+'px "'+tf+'"')+14;
+    if(sub){var sg=fitText(c,sub,'400 {s}px "'+bf+'"',TW*0.72,64,30,22,1.3);lines(sg.lines,y+18+sg.size,sg.size,1.3,hexA(T,0.72),'400 '+sg.size+'px "'+bf+'"')}
+    if(LOGO){var gh=H>1200?58:50,gw=LOGO.width*gh/LOGO.height;c.drawImage(LOGO,CEN?(W-gw)/2:W-M-gw,H-gh-46,gw,gh)}
   } else if(tpl==='tip'){
     bg(est==='nocturno'?P:F);dark=est==='nocturno';fg=dark?'#FFFFFF':T;ornaments(dark);
     var lab=d.etiqueta?d.etiqueta:m.etiquetaTip?m.etiquetaTip:INV?'Para anfitriones':est==='nocturno'?'Secreto de cabina':est==='editorial'?'Para planners':est==='tecnico'?'Tip de negocio':'Detalle';

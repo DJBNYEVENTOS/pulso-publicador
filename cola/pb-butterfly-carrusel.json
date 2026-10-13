@@ -1,0 +1,38 @@
+{
+ "id": "pb-butterfly-carrusel",
+ "fecha": "2026-10-16",
+ "hora": "19:00",
+ "formato": "Carrusel",
+ "foto": "biblioteca/bny/mariposas-beso.jpg",
+ "titular": "Butterfly Moment",
+ "subtitulo": "El segundo en que todo se detiene",
+ "cta": "Agenda tu cita",
+ "gancho": "El segundo en que todo se detiene.",
+ "texto": "Butterfly Moment.\n\nEmpieza su canción, mil mariposas caen sobre la pista y el salón entero guarda silencio para verlos.\n\nLo diseñamos contigo: el momento exacto, la canción exacta y la luz que lo vuelve inolvidable.\n\nRecibimos pocas bodas por temporada para cuidar cada una.\n\nNo es un evento, es una Experiencia BNY. 🦋\nAgenda tu cita privada por WhatsApp: 786 162 8600",
+ "laminas": [
+  {
+   "titular": "Mil mariposas, una sola canción",
+   "subtitulo": "Caen justo cuando empieza su primer baile."
+  },
+  {
+   "foto": "biblioteca/bny/primer-baile-byn.jpg",
+   "titular": "Todos se ponen de pie",
+   "subtitulo": ""
+  },
+  {
+   "titular": "Diseñado contigo, minuto a minuto",
+   "subtitulo": "El momento exacto, la canción exacta, la luz exacta."
+  },
+  {
+   "titular": "Resérvalo para tu boda",
+   "subtitulo": "Propuesta privada por WhatsApp: 786 162 8600",
+   "cta": "Agenda tu cita",
+   "final": true
+  }
+ ],
+ "pilar": "El segundo exacto",
+ "marca": "bny",
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "plantilla": "galeria",
+ "estado": "listo"
+}

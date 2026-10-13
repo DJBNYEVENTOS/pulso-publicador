@@ -1,7 +1,7 @@
 // Dibuja la imagen (y el video vertical cuando hace falta) de cada publicación en cola/.
 // Usa las mismas plantillas que la app Pulso. Solo vuelve a dibujar si el contenido cambió.
 import { chromium } from 'playwright';
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, copyFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
@@ -50,13 +50,14 @@ export function laminasDe(p) {
   return [...cuerpo, { titular: p.cta || m.cta, subtitulo: m.firma || '', final: true }];
 }
 function tamano(p) {
+  if (p.foto && p.formato === 'Post') return 'vertical';
   if (p.formato === 'Historia' || p.formato === 'Reel') return 'historia';
   if (p.formato === 'Carrusel') return 'vertical';
   return 'post';
 }
 function huella(p) {
   const m = marcas[p.marca] || {};
-  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, m, 6])).digest('hex').slice(0, 12);
+  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, p.foto, p.imagenFija, p.videoFijo, m, 6])).digest('hex').slice(0, 12);
 }
 
 const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
@@ -85,17 +86,32 @@ async function dibujar(p, size, extra) {
   const d = Object.assign({ plantilla: p.plantilla || 'impacto', titular: p.titular || p.gancho, subtitulo: p.subtitulo || '', cta: p.cta || m.cta, size }, extra || {});
   const b64 = (f) => f && existsSync(join(ROOT, f)) ? 'data:image/png;base64,' + readFileSync(join(ROOT, f)).toString('base64') : null;
   const logo = b64(m.logo), logoClaro = b64(m.logoClaro);
-  const dataUrl = await page.evaluate(async ({ d, m, logo, logoClaro }) => {
+  const rutaFoto = (extra && 'foto' in extra) ? extra.foto : p.foto;
+  const foto = rutaFoto && existsSync(join(ROOT, rutaFoto)) ? 'data:image/jpeg;base64,' + readFileSync(join(ROOT, rutaFoto)).toString('base64') : null;
+  if (foto && d.plantilla !== 'foto') d.plantilla = 'galeria'; // foto real: diseño editorial por defecto
+  const dataUrl = await page.evaluate(async ({ d, m, logo, logoClaro, foto }) => {
     const cargar = (src) => new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); im.src = src; });
     if (logo) m.logoImg = await cargar(logo);
     if (logoClaro) m.logoClaroImg = await cargar(logoClaro);
-    const cv = document.getElementById('c'); drawDesign(cv, d, m, null); return cv.toDataURL('image/png');
-  }, { d, m, logo, logoClaro });
+    const im = foto ? await cargar(foto) : null;
+    const cv = document.getElementById('c'); drawDesign(cv, d, m, im); return cv.toDataURL('image/png');
+  }, { d, m, logo, logoClaro, foto });
   return Buffer.from(dataUrl.split(',')[1], 'base64');
 }
 
 for (const p of pendientes) {
   const png = join(ROOT, 'media', p.id + '.png');
+  // Piezas ya terminadas (fotos editadas o reels montados con material real): se copian tal cual.
+  if (p.videoFijo && existsSync(join(ROOT, p.videoFijo))) {
+    copyFileSync(join(ROOT, p.videoFijo), join(ROOT, 'media', p.id + '.mp4'));
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', '1', '-i', join(ROOT, p.videoFijo), '-frames:v', '1', png]);
+    copyFileSync(png, join(ROOT, 'media', p.id + '-vertical.png'));
+    writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p)); console.log('Copiado', p.id, '(video terminado)'); continue;
+  }
+  if (p.imagenFija && existsSync(join(ROOT, p.imagenFija))) {
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', join(ROOT, p.imagenFija), png]);
+    writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p)); console.log('Copiado', p.id, '(imagen terminada)'); continue;
+  }
   writeFileSync(png, await dibujar(p, tamano(p)));
   if (p.formato === 'Carrusel') {
     // Carrusel real: portada + láminas (1080x1350).
@@ -103,8 +119,9 @@ for (const p of pendientes) {
     for (let i = 0; i < ls.length; i++) {
       const l = ls[i], n = i + 2;
       const extra = l.final
-        ? { plantilla: 'oferta', titular: l.titular, subtitulo: l.subtitulo || '', cta: l.cta || p.cta }
-        : { plantilla: 'tip', titular: l.titular, subtitulo: l.subtitulo || '', sinCta: true, etiqueta: l.etiqueta || `${String(n).padStart(2, '0')} / ${String(total).padStart(2, '0')}` };
+        ? { foto: l.foto || null, plantilla: 'oferta', titular: l.titular, subtitulo: l.subtitulo || '', cta: l.cta || p.cta }
+        : l.foto ? { foto: l.foto, titular: l.titular, subtitulo: l.subtitulo || '', sinCta: true }
+        : { foto: null, plantilla: 'tip', titular: l.titular, subtitulo: l.subtitulo || '', sinCta: true, etiqueta: l.etiqueta || `${String(n).padStart(2, '0')} / ${String(total).padStart(2, '0')}` };
       writeFileSync(join(ROOT, 'media', `${p.id}-c${n}.png`), await dibujar(p, 'vertical', extra));
     }
   }
