@@ -1,0 +1,16 @@
+{
+ "id": "iv-empresas",
+ "marca": "invitaciones",
+ "fecha": "2026-10-30",
+ "hora": "20:00",
+ "formato": "Post",
+ "titular": "Tu posada, con registro QR",
+ "gancho": "Tu posada, con registro QR en la entrada.",
+ "texto": "Tu posada, con registro QR en la entrada. 🏢\n\nCon el paquete Gala: pase con código QR para cada invitado, registro de llegadas que funciona sin internet, el logotipo de tu empresa y la lista en Excel. Para posadas, Halloween, aniversarios y congresos.\n\nGala: $1,890 más IVA por evento, con invitados ilimitados. Precio especial hasta el 17 de noviembre. Emitimos factura.\n\nAparta tu precio especial por WhatsApp: 786 162 8600\nMira los modelos: invitacionesbny.netlify.app",
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #EventosCorporativos #Posadas #BNYEventos",
+ "cta": "Aparta tu precio especial",
+ "pilar": "Empresas",
+ "plantilla": "impacto",
+ "estado": "revision",
+ "imagenFija": "biblioteca/invitaciones/campana/iv-empresas.jpg"
+}

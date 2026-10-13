@@ -1,0 +1,22 @@
+{
+ "id": "iv-paq",
+ "marca": "invitaciones",
+ "fecha": "2026-10-22",
+ "hora": "20:00",
+ "formato": "Carrusel",
+ "titular": "Tres paquetes, un solo pago",
+ "gancho": "Tres paquetes, un solo pago por evento.",
+ "texto": "Tres paquetes, un solo pago por evento. Cada invitado recibe la suya con su nombre, sin costo extra (hasta el límite del paquete).\n\nEsencial (hasta 150 invitados): $590 más IVA. Desde el 18 de noviembre, $990 más IVA.\nPremium (hasta 400 invitados, el más elegido): $990 más IVA. Desde el 18 de noviembre, $1,790 más IVA.\nGala (invitados ilimitados): $1,890 más IVA. Desde el 18 de noviembre, $3,490 más IVA.\n\n¿Tu evento es en 2027? Si apartas antes del 17 de noviembre y hay lugar en Fundadores, conservas el precio especial.\nY si contratas también el DJ de BNY Eventos, Gala te queda al precio de Premium.\n\nAparta tu precio especial por WhatsApp: 786 162 8600\nMira los modelos: invitacionesbny.netlify.app",
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #FiestaEnVivo #InvitacionesDeLujo",
+ "cta": "Aparta tu precio especial",
+ "pilar": "Precio especial de lanzamiento",
+ "plantilla": "impacto",
+ "estado": "revision",
+ "imagenesFijas": [
+  "biblioteca/invitaciones/campana/iv-paq-1.jpg",
+  "biblioteca/invitaciones/campana/iv-paq-2.jpg",
+  "biblioteca/invitaciones/campana/iv-paq-3.jpg",
+  "biblioteca/invitaciones/campana/iv-paq-4.jpg",
+  "biblioteca/invitaciones/campana/iv-paq-5.jpg"
+ ]
+}

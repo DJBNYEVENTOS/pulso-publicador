@@ -1,0 +1,23 @@
+{
+ "id": "iv-herr",
+ "marca": "invitaciones",
+ "fecha": "2026-10-17",
+ "hora": "20:00",
+ "formato": "Carrusel",
+ "titular": "Fiesta en vivo",
+ "gancho": "Tu invitación ya no se queda en el WhatsApp.",
+ "texto": "Tu invitación ya no se queda en el WhatsApp: también vive la fiesta contigo. 🎶📸\n\n📸 Cámara de invitados: todas las fotos de tu fiesta en un solo álbum (Premium).\n🎶 Pide tu canción: tus invitados piden y votan canciones y la lista le llega al DJ (Premium).\n🎙️ Mensajes de voz que solo tú escuchas (Premium).\n🗺️ Pase QR y Encuentra tu mesa, con la ruta desde la entrada (Gala).\n\nUn solo pago por evento, desde $590 más IVA. El precio especial termina el 17 de noviembre.\n\nAparta tu precio especial por WhatsApp: 786 162 8600\nMira los modelos: invitacionesbny.netlify.app",
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #FiestaEnVivo #InvitacionesDeLujo",
+ "cta": "Aparta tu precio especial",
+ "pilar": "Precio especial de lanzamiento",
+ "plantilla": "impacto",
+ "estado": "revision",
+ "imagenesFijas": [
+  "biblioteca/invitaciones/campana/iv-herr-1.jpg",
+  "biblioteca/invitaciones/campana/iv-herr-2.jpg",
+  "biblioteca/invitaciones/campana/iv-herr-3.jpg",
+  "biblioteca/invitaciones/campana/iv-herr-4.jpg",
+  "biblioteca/invitaciones/campana/iv-herr-5.jpg",
+  "biblioteca/invitaciones/campana/iv-herr-6.jpg"
+ ]
+}

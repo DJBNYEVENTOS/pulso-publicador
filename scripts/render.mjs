@@ -58,7 +58,7 @@ function tamano(p) {
 }
 function huella(p) {
   const m = marcas[p.marca] || {};
-  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, p.foto, p.imagenFija, p.videoFijo, m, 6])).digest('hex').slice(0, 12);
+  return createHash('sha1').update(JSON.stringify([p.titular, p.gancho, p.subtitulo, p.cta, p.plantilla, p.formato, p.escenas, p.laminas, p.texto, p.foto, p.imagenFija, p.videoFijo, p.imagenesFijas, p.agregarMusica, m, 6])).digest('hex').slice(0, 12);
 }
 
 const posts = readdirSync(join(ROOT, 'cola')).filter(f => f.endsWith('.json'))
@@ -106,9 +106,25 @@ for (const p of pendientes) {
   // Piezas ya terminadas (fotos editadas o reels montados con material real): se copian tal cual.
   if (p.videoFijo && existsSync(join(ROOT, p.videoFijo))) {
     copyFileSync(join(ROOT, p.videoFijo), join(ROOT, 'media', p.id + '.mp4'));
+    if (p.agregarMusica) {
+      // Video mudo terminado: se le pone música libre de derechos de la marca.
+      const dur = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', join(ROOT, p.videoFijo)]).toString()) || 15;
+      const wav = join(ROOT, 'media', p.id + '.wav');
+      const origen = await musicaPara(ROOT, p.marca, p.id + (p.titular || ''), dur, wav);
+      if (origen) {
+        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', join(ROOT, p.videoFijo), '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', join(ROOT, 'media', p.id + '.mp4')]);
+        try { (await import('node:fs')).unlinkSync(wav); } catch {}
+        console.log('  música:', origen);
+      }
+    }
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', '1', '-i', join(ROOT, p.videoFijo), '-frames:v', '1', png]);
     copyFileSync(png, join(ROOT, 'media', p.id + '-vertical.png'));
     writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p)); console.log('Copiado', p.id, '(video terminado)'); continue;
+  }
+  if (Array.isArray(p.imagenesFijas) && p.imagenesFijas.length && p.imagenesFijas.every(f => existsSync(join(ROOT, f)))) {
+    // Carrusel terminado: la primera es la portada y las demás las láminas (-c2, -c3...).
+    p.imagenesFijas.forEach((f, i) => execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', join(ROOT, f), i === 0 ? png : join(ROOT, 'media', `${p.id}-c${i + 1}.png`)]));
+    writeFileSync(join(ROOT, 'media', p.id + '.huella'), huella(p)); console.log('Copiado', p.id, '(carrusel terminado)'); continue;
   }
   if (p.imagenFija && existsSync(join(ROOT, p.imagenFija))) {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', join(ROOT, p.imagenFija), png]);

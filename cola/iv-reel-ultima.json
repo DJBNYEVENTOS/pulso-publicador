@@ -1,0 +1,17 @@
+{
+ "id": "iv-reel-ultima",
+ "marca": "invitaciones",
+ "fecha": "2026-11-10",
+ "hora": "20:00",
+ "formato": "Reel",
+ "titular": "Última semana",
+ "gancho": "Última semana del precio especial.",
+ "texto": "Última semana del precio especial de lanzamiento. ⏳\n\nEsencial: ahorras $400 más IVA.\nPremium: ahorras $800 más IVA.\nGala: ahorras $1,600 más IVA.\n\nHoy: Esencial $590 más IVA · Premium $990 más IVA · Gala $1,890 más IVA, por evento. Desde el 18 de noviembre suben los precios.\n\nAparta tu precio especial por WhatsApp: 786 162 8600\nMira los modelos: invitacionesbny.netlify.app",
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #FiestaEnVivo #InvitacionesDeLujo",
+ "cta": "Aparta tu precio especial",
+ "pilar": "Precio especial de lanzamiento",
+ "plantilla": "impacto",
+ "estado": "revision",
+ "videoFijo": "biblioteca/invitaciones/campana/iv-reel-ultima.mp4",
+ "agregarMusica": true
+}
