@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "render": "node scripts/render.mjs",
-    "publicar": "node scripts/publicar.mjs",
-    "sitio": "node scripts/sitio.mjs"
+    "publicar": "node scripts/voz.mjs || true; node scripts/publicar.mjs && (node scripts/metricas.mjs || true)",
+    "sitio": "node scripts/sitio.mjs && (git add -A metricas voz/listas 2>/dev/null || true)"
   },
   "dependencies": {
     "playwright": "1.47.2"

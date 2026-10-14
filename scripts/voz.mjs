@@ -11,7 +11,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const env = Object.assign({}, process.env, process.env.SECRETS_JSON ? JSON.parse(process.env.SECRETS_JSON) : {});
 const PED = join(ROOT, 'voz/pedidos'), LISTAS = join(ROOT, 'voz/listas'), TMP = join(ROOT, 'voz/_tmp');
 mkdirSync(LISTAS, { recursive: true });
-// Voces de ElevenLabs: pon tus favoritas (de la Voice Library, acento mexicano) en las variables o secretos
+// Voces de ElevenLabs: pon tus favoritas (de la Voice Library, acento mexicano) en los secretos
 // ELEVENLABS_VOZ_HOMBRE y ELEVENLABS_VOZ_MUJER. Si no, usa voces multilingües de la biblioteca base.
 const EL_VOZ = { hombre: env.ELEVENLABS_VOZ_HOMBRE || 'ErXwobaYiN019PkySvjV', mujer: env.ELEVENLABS_VOZ_MUJER || '21m00Tcm4TlvDq8ikWAM' };
 // Ecualización y compresión de locutor de radio, igual para los dos motores.
@@ -35,10 +35,26 @@ async function eleven(lineas, voz, vel, dir) {
   }
   return archivos;
 }
+// Instala Kokoro y baja el modelo solo cuando hay voces por hacer (no corre en cada publicación).
+let kokoroListo = false;
+async function prepararKokoro() {
+  if (kokoroListo) return;
+  const dir = env.KOKORO_DIR || join(process.env.HOME || '/tmp', '.cache/kokoro');
+  mkdirSync(dir, { recursive: true });
+  try { execFileSync('python3', ['-c', 'import kokoro_onnx, soundfile']); }
+  catch { execFileSync('python3', ['-m', 'pip', 'install', '--quiet', '--user', '--break-system-packages', 'kokoro-onnx==0.6.1', 'soundfile'], { stdio: 'inherit' }); }
+  for (const f of ['kokoro-v1.0.onnx', 'voices-v1.0.bin']) {
+    if (existsSync(join(dir, f))) continue;
+    const res = await fetch(`https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/${f}`);
+    if (!res.ok) throw new Error('No se pudo bajar el modelo de voz: ' + res.status);
+    writeFileSync(join(dir, f), Buffer.from(await res.arrayBuffer()));
+  }
+  env.KOKORO_DIR = dir; kokoroListo = true;
+}
 function kokoro(lineas, voz, vel, dir) {
   const cfg = join(dir, 'pedido.json');
   writeFileSync(cfg, JSON.stringify({ lineas, voz: voz === 'mujer' ? 'ef_dora' : 'em_alex', vel, dir }));
-  execFileSync('python3', [join(ROOT, 'scripts/voz_kokoro.py'), cfg], { stdio: 'inherit' });
+  execFileSync('python3', [join(ROOT, 'scripts/voz_kokoro.py'), cfg], { stdio: 'inherit', env: Object.assign({}, process.env, { KOKORO_DIR: env.KOKORO_DIR }) });
   return lineas.map((_, i) => join(dir, `l${i}.wav`));
 }
 
@@ -54,8 +70,8 @@ for (const f of existsSync(PED) ? readdirSync(PED).filter(f => f.endsWith('.json
   const dir = join(TMP, id); mkdirSync(dir, { recursive: true });
   try {
     let archivos, motor;
-    try { archivos = usarEL ? await eleven(lineas, voz, vel, dir) : kokoro(lineas, voz, vel, dir); motor = usarEL ? 'elevenlabs' : 'kokoro'; }
-    catch (e) { if (!usarEL) throw e; console.log('· ElevenLabs falló, se usa Kokoro:', e.message); archivos = kokoro(lineas, voz, vel, dir); motor = 'kokoro'; }
+    try { if (!usarEL) await prepararKokoro(); archivos = usarEL ? await eleven(lineas, voz, vel, dir) : kokoro(lineas, voz, vel, dir); motor = usarEL ? 'elevenlabs' : 'kokoro'; }
+    catch (e) { if (!usarEL) throw e; console.log('· ElevenLabs falló, se usa Kokoro:', e.message); await prepararKokoro(); archivos = kokoro(lineas, voz, vel, dir); motor = 'kokoro'; }
     // Une las líneas con 0.55 s de silencio y aplica la cadena de locutor.
     const sil = join(dir, 'sil.wav'); ff(['-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=mono', '-t', '0.55', sil]);
     const lista = join(dir, 'lista.txt');
