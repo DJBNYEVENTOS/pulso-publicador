@@ -1,0 +1,21 @@
+{
+  "id": "s8",
+  "marca": "varelia",
+  "formato": "Carrusel",
+  "actualizado": "2026-10-14T05:16:41.405Z",
+  "duracion": null,
+  "instagram": {
+    "views": 2,
+    "reach": 1,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0
+  },
+  "facebook": {},
+  "derivados": {
+    "interaccionInstagram": 0,
+    "vistas": 2
+  }
+}

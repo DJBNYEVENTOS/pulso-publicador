@@ -1,0 +1,24 @@
+{
+  "id": "s2",
+  "marca": "bny",
+  "formato": "Reel",
+  "actualizado": "2026-10-14T05:16:26.752Z",
+  "duracion": 14.4,
+  "instagram": {
+    "views": 42,
+    "reach": 23,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 5209,
+    "ig_reels_video_view_total_time": 130233
+  },
+  "facebook": {},
+  "derivados": {
+    "vistoPromedioInstagram": 36.2,
+    "interaccionInstagram": 0,
+    "vistas": 42
+  }
+}
