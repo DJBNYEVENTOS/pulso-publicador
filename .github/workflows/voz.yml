@@ -1,7 +1,6 @@
 name: Voz IA
+# Normalmente las voces se generan dentro de "Publicar" (cada 20 minutos). Este flujo sirve para correrlo a mano.
 on:
-  push:
-    paths: ['voz/pedidos/**']
   workflow_dispatch:
 concurrency:
   group: voz

@@ -22,6 +22,35 @@ jobs:
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg >/dev/null
+      - name: ¿Hay voces por generar?
+        id: voz
+        run: |
+          n=0; for f in voz/pedidos/*.json; do [ -e "$f" ] || continue; id=$(basename "$f" .json); [ -e "voz/listas/$id.json" ] || n=$((n+1)); done; echo "n=$n" >> "$GITHUB_OUTPUT"; echo "Pedidos de voz: $n"
+      - if: steps.voz.outputs.n != '0'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: steps.voz.outputs.n != '0'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1.0
+      - name: Voz IA
+        if: steps.voz.outputs.n != '0'
+        env:
+          SECRETS_JSON: ${{ toJSON(secrets) }}
+          ELEVENLABS_VOZ_HOMBRE: ${{ vars.ELEVENLABS_VOZ_HOMBRE }}
+          ELEVENLABS_VOZ_MUJER: ${{ vars.ELEVENLABS_VOZ_MUJER }}
+        run: |
+          pip install --quiet kokoro-onnx==0.6.1 soundfile
+          mkdir -p ~/.cache/kokoro
+          [ -f ~/.cache/kokoro/kokoro-v1.0.onnx ] || curl -sSL -o ~/.cache/kokoro/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          [ -f ~/.cache/kokoro/voices-v1.0.bin ] || curl -sSL -o ~/.cache/kokoro/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+          node scripts/voz.mjs
+          git config user.name "Pulso"
+          git config user.email "pulso@users.noreply.github.com"
+          git add voz/listas
+          if ! git diff --cached --quiet; then git commit -m "Pulso: voces listas" && git pull --rebase && git push; fi
       - name: Dibujar imágenes y videos
         run: npm run render
       - name: Subir archivos nuevos

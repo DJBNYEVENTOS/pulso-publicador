@@ -46,7 +46,7 @@ let hechos = 0;
 for (const f of existsSync(PED) ? readdirSync(PED).filter(f => f.endsWith('.json')) : []) {
   const p = JSON.parse(readFileSync(join(PED, f), 'utf8'));
   const id = String(p.id || f.replace(/\.json$/, '')).replace(/[^a-zA-Z0-9_-]/g, '');
-  if (existsSync(join(LISTAS, id + '.mp3'))) continue;
+  if (existsSync(join(LISTAS, id + '.mp3')) || existsSync(join(LISTAS, id + '.json'))) continue; // ya hecha o con error (para reintentar, borra el .json)
   const lineas = (Array.isArray(p.lineas) ? p.lineas : String(p.texto || '').split(/\n\s*\n/)).map(x => String(x).replace(/\s+/g, ' ').trim()).filter(Boolean).slice(0, 40);
   if (!lineas.length) continue;
   const vel = +p.velocidad || 1.05, voz = p.voz === 'mujer' ? 'mujer' : 'hombre';
