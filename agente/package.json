@@ -1,0 +1,7 @@
+{
+  "name": "agente-bny",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node generar.mjs", "prueba": "node prueba.mjs" },
+  "dependencies": { "@netlify/blobs": "^11.1.4" }
+}
