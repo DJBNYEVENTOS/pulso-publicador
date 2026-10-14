@@ -32,8 +32,8 @@ function drawDesign(cv,d,m,img){
     c.fillText(cta,x+40,y+54);c.restore();return y+84}
   function ornaments(dark){
     if(est==='nocturno'){
-      var g=c.createRadialGradient(W*0.85,H*0.08,10,W*0.85,H*0.08,W*0.9);g.addColorStop(0,hexA(A,dark?0.45:0.18));g.addColorStop(1,hexA(A,0));c.fillStyle=g;c.fillRect(0,0,W,H);
-      c.strokeStyle=hexA(G,0.75);c.lineWidth=2;c.strokeRect(44,44,W-88,H-88);
+      var g=c.createRadialGradient(W*0.85,H*0.08,10,W*0.85,H*0.08,W*0.9);if(BNY){g.addColorStop(0,hexA('#F7F2EB',dark?0.06:0.0));g.addColorStop(1,hexA('#F7F2EB',0));}else{g.addColorStop(0,hexA(A,dark?0.45:0.18));g.addColorStop(1,hexA(A,0));}c.fillStyle=g;c.fillRect(0,0,W,H);
+      c.strokeStyle=hexA(G,BNY?0.5:0.75);c.lineWidth=2;c.strokeRect(44,44,W-88,H-88);
       spaced('Experiencia BNY',M,M+30,24,G,'600 24px "'+bf+'"',7);
     } else if(est==='tecnico'){
       c.save();c.fillStyle=hexA(dark?'#FFFFFF':T,0.06);for(var gx=48;gx<W;gx+=48)for(var gy=48;gy<H;gy+=48){c.beginPath();c.arc(gx,gy,2.2,0,6.29);c.fill()}c.restore();
