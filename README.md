@@ -58,5 +58,24 @@ Cada video llega a tu bandeja de TikTok como borrador: abres la app y tocas Publ
 ### 7. WhatsApp
 WhatsApp no permite publicar estados ni canales de forma automática. Pulso deja cada día la imagen vertical lista para subirla desde la app.
 
+## Spot50 (videos de venta)
+Spot50 Estudio manda aquí los videos que apruebas. El puente (tarea programada cada hora de 7:00 a 23:00) hace esto:
+1. Baja cada video aprobado de Spot50, lo convierte a MP4 vertical compatible con Instagram y lo deja en `biblioteca/spot50/`.
+2. Escribe su publicación en `cola/` con `videoFijo`, sus textos por red y `"redes"` (solo las que elegiste en Spot50).
+3. Después de publicarse, regresa a Spot50 los enlaces (`estado/`) y las métricas (`metricas/`).
+
+**Métricas.** `scripts/metricas.mjs` corre después de cada publicación y guarda cada 6 horas, durante 45 días, las vistas, alcance,
+interacciones y tiempo promedio de cada Reel (Instagram) y las vistas de 3 s, impresiones y vistas de 15 s (Facebook).
+Necesita que el token tenga `instagram_manage_insights` (o `instagram_business_manage_insights`) y `read_insights`; si falta, simplemente queda vacío.
+
+**Voz IA.** Spot50 pide voces en `voz/pedidos/`; el flujo **Voz IA** las genera en `voz/listas/` (una línea por escena, con medio segundo de pausa).
+- Gratis: Kokoro (voz latina), sin configurar nada.
+- Mejor calidad: agrega el secreto `ELEVENLABS_API_KEY` (plan de pago, uso comercial) y, si quieres, las variables
+  `ELEVENLABS_VOZ_HOMBRE` y `ELEVENLABS_VOZ_MUJER` con el *Voice ID* de tus voces mexicanas favoritas de la Voice Library.
+
+**Clientes.** Para publicar en las redes de un cliente, tu Facebook debe ser administrador de su página (y su Instagram de empresa
+debe estar ligado a ella). Pon en Spot50 el nombre exacto de su página; el puente lo anota en `config/clientes.json`.
+Después corre **Actions → Conectar Meta** con un `META_USER_TOKEN` nuevo en el que marques también esa página.
+
 ## Probar sin publicar
 **Actions → Publicar → Run workflow**. Para simular sin tocar las redes, agrega la variable `PULSO_PRUEBA=1`.

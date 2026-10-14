@@ -183,7 +183,7 @@ async function youtube(p) {
   const mp4 = join(ROOT, 'media', p.id + '.mp4');
   if (!existsSync(mp4)) throw new Error('No hay video para esta pieza');
   const { data: tok } = await api('https://oauth2.googleapis.com/token', { method: 'POST', body: form({ client_id: cid, client_secret: secret, refresh_token: refresh, grant_type: 'refresh_token' }) });
-  const meta = { snippet: { title: `${(p.titular || p.gancho || marcas[p.marca].nombre).slice(0, 90)} #Shorts`, description: caption(p, 'youtube').slice(0, 4900), categoryId: '22', defaultLanguage: 'es' },
+  const meta = { snippet: { title: `${(p.titular || p.gancho || (marcas[p.marca] || {}).nombre || '').slice(0, 90)} #Shorts`, description: caption(p, 'youtube').slice(0, 4900), categoryId: '22', defaultLanguage: 'es' },
     status: { privacyStatus: 'public', selfDeclaredMadeForKids: false } };
   const b = 'pulso' + Date.now();
   const body = Buffer.concat([
@@ -225,7 +225,8 @@ function redesDe(p) {
   const video = p.formato === 'Reel' || r.videoParaTodo;
   if (r.youtube && video) lista.push('youtube');
   if (r.tiktok && video) lista.push('tiktok');
-  return lista;
+  // Una publicación puede pedir solo algunas redes (p. ej. videos de Spot50): "redes": ["instagram", "facebook"]
+  return Array.isArray(p.redes) && p.redes.length ? lista.filter(x => p.redes.includes(x)) : lista;
 }
 
 const ahora = new Date();

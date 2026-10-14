@@ -12,13 +12,13 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { cifrar, descifrar, marcaDePagina } from './meta-boveda.mjs';
+import { cifrar, descifrar, marcaDePagina, clientes } from './meta-boveda.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const env = Object.assign({}, process.env, process.env.SECRETS_JSON ? JSON.parse(process.env.SECRETS_JSON) : {});
 const GV = env.META_GRAPH_VERSION || 'v25.0';
 const RENOVAR = process.argv.includes('--renovar');
-const MARCAS = ['bny', 'kotizo', 'varelia', 'invitaciones'];
+const MARCAS = ['bny', 'kotizo', 'varelia', 'invitaciones', ...Object.keys(clientes())];
 const BOVEDA = join(ROOT, 'config/meta.enc');
 const REDES = join(ROOT, 'config/redes.json');
 
