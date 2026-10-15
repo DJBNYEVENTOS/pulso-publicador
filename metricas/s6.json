@@ -2,23 +2,23 @@
   "id": "s6",
   "marca": "kotizo",
   "formato": "Reel",
-  "actualizado": "2026-10-14T23:46:18.246Z",
+  "actualizado": "2026-10-15T05:46:23.729Z",
   "duracion": 14.4,
   "instagram": {
-    "views": 2,
-    "reach": 2,
-    "likes": 0,
+    "views": 22,
+    "reach": 17,
+    "likes": 1,
     "comments": 0,
-    "shares": 0,
+    "shares": 1,
     "saved": 0,
-    "total_interactions": 0,
-    "ig_reels_avg_watch_time": 2120,
-    "ig_reels_video_view_total_time": 4241
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 1599,
+    "ig_reels_video_view_total_time": 27195
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 14.7,
-    "interaccionInstagram": 0,
-    "vistas": 2
+    "vistoPromedioInstagram": 11.1,
+    "interaccionInstagram": 17.65,
+    "vistas": 22
   }
 }

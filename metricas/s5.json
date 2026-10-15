@@ -2,20 +2,20 @@
   "id": "s5",
   "marca": "kotizo",
   "formato": "Post",
-  "actualizado": "2026-10-14T23:46:16.613Z",
+  "actualizado": "2026-10-15T05:46:22.055Z",
   "duracion": null,
   "instagram": {
-    "views": 2,
-    "reach": 2,
-    "likes": 0,
+    "views": 3,
+    "reach": 3,
+    "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
-    "total_interactions": 0
+    "total_interactions": 2
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 0,
-    "vistas": 2
+    "interaccionInstagram": 66.67,
+    "vistas": 3
   }
 }

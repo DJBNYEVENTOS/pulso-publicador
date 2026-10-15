@@ -2,20 +2,20 @@
   "id": "s7",
   "marca": "kotizo",
   "formato": "Carrusel",
-  "actualizado": "2026-10-14T23:46:20.976Z",
+  "actualizado": "2026-10-15T05:46:27.635Z",
   "duracion": null,
   "instagram": {
-    "views": 4,
-    "reach": 2,
-    "likes": 0,
+    "views": 24,
+    "reach": 18,
+    "likes": 1,
     "comments": 0,
-    "shares": 0,
+    "shares": 1,
     "saved": 0,
-    "total_interactions": 0
+    "total_interactions": 3
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 0,
-    "vistas": 4
+    "interaccionInstagram": 16.67,
+    "vistas": 24
   }
 }
