@@ -2,11 +2,11 @@
   "id": "s8",
   "marca": "varelia",
   "formato": "Carrusel",
-  "actualizado": "2026-10-16T00:16:35.080Z",
+  "actualizado": "2026-10-16T06:16:47.899Z",
   "duracion": null,
   "instagram": {
-    "views": 2,
-    "reach": 1,
+    "views": 3,
+    "reach": 2,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 0,
-    "vistas": 2
+    "vistas": 3
   }
 }

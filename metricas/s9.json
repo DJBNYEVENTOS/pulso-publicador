@@ -2,11 +2,11 @@
   "id": "s9",
   "marca": "varelia",
   "formato": "Post",
-  "actualizado": "2026-10-16T00:16:36.183Z",
+  "actualizado": "2026-10-16T06:16:49.224Z",
   "duracion": null,
   "instagram": {
-    "views": 1,
-    "reach": 0,
+    "views": 2,
+    "reach": 1,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 1
+    "interaccionInstagram": 100,
+    "vistas": 2
   }
 }

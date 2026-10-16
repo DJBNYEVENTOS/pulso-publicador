@@ -2,11 +2,11 @@
   "id": "s10",
   "marca": "varelia",
   "formato": "Carrusel",
-  "actualizado": "2026-10-16T00:16:26.351Z",
+  "actualizado": "2026-10-16T06:16:35.969Z",
   "duracion": null,
   "instagram": {
-    "views": 5,
-    "reach": 1,
+    "views": 6,
+    "reach": 2,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 100,
-    "vistas": 5
+    "interaccionInstagram": 50,
+    "vistas": 6
   }
 }
