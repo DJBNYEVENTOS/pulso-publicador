@@ -2,23 +2,23 @@
   "id": "iv-reel-lanzamiento",
   "marca": "invitaciones",
   "formato": "Reel",
-  "actualizado": "2026-10-16T14:16:12.145Z",
+  "actualizado": "2026-10-16T20:30:58.300Z",
   "duracion": 16.2,
   "instagram": {
-    "views": 37,
-    "reach": 33,
+    "views": 59,
+    "reach": 48,
     "likes": 1,
     "comments": 0,
     "shares": 1,
     "saved": 0,
     "total_interactions": 5,
-    "ig_reels_avg_watch_time": 2958,
-    "ig_reels_video_view_total_time": 103560
+    "ig_reels_avg_watch_time": 3654,
+    "ig_reels_video_view_total_time": 182734
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 18.3,
-    "interaccionInstagram": 15.15,
-    "vistas": 37
+    "vistoPromedioInstagram": 22.6,
+    "interaccionInstagram": 10.42,
+    "vistas": 59
   }
 }
