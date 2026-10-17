@@ -2,10 +2,10 @@
   "id": "s1",
   "marca": "bny",
   "formato": "Post",
-  "actualizado": "2026-10-16T18:31:42.851Z",
+  "actualizado": "2026-10-17T00:46:08.664Z",
   "duracion": null,
   "instagram": {
-    "views": 66,
+    "views": 67,
     "reach": 32,
     "likes": 1,
     "comments": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 3.13,
-    "vistas": 66
+    "vistas": 67
   }
 }
