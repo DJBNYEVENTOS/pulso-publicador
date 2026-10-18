@@ -2,7 +2,7 @@
   "id": "pb-butterfly-historia",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-10-17T21:31:05.851Z",
+  "actualizado": "2026-10-18T03:31:08.556Z",
   "duracion": null,
   "instagram": {
     "views": 76,
@@ -14,5 +14,6 @@
   "derivados": {
     "interaccionInstagram": 1.47,
     "vistas": 76
-  }
+  },
+  "vacio": true
 }
