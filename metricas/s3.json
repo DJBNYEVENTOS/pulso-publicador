@@ -2,11 +2,11 @@
   "id": "s3",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-10-19T14:16:18.048Z",
+  "actualizado": "2026-10-19T20:31:16.906Z",
   "duracion": null,
   "instagram": {
-    "views": 70,
-    "reach": 20,
+    "views": 71,
+    "reach": 21,
     "likes": 2,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 10,
-    "vistas": 70
+    "interaccionInstagram": 9.52,
+    "vistas": 71
   }
 }
