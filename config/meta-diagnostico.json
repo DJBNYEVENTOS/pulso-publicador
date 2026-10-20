@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-10-20T18:32:40.718Z",
+  "fecha": "2026-10-20T22:27:24.419Z",
   "facebook": [
     {
-      "error": "Error validating access token: Session has expired on Tuesday, 06-Oct-26 20:00:00 PDT. The current time is Tuesday, 20-Oct-26 11:32:40 PDT."
+      "error": "Error validating access token: Session has expired on Tuesday, 06-Oct-26 20:00:00 PDT. The current time is Tuesday, 20-Oct-26 15:27:24 PDT."
     }
   ],
   "instagram": [
@@ -21,7 +21,9 @@
   ],
   "tiktok": [
     {
-      "error": "Client key does not match authorization record."
+      "marca": "varelia",
+      "usuario": "Varelia Weddings",
+      "ok": true
     }
   ]
 }
