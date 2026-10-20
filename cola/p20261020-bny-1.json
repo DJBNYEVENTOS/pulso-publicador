@@ -1,0 +1,45 @@
+{
+ "marca": "bny",
+ "fecha": "2026-10-20",
+ "hora": "20:00",
+ "formato": "Reel",
+ "gancho": "Tu abuela también vino a platicar contigo.",
+ "texto": "Tu abuela también vino a platicar contigo.\n\nDurante la cena, la música se queda un paso atrás: acompaña, no compite. Se escuchan las copas, las anécdotas, las risas de la mesa de tus primos.\n\nLa pista despierta cuando llega su hora. Ni antes ni después.\n\nLeer el salón también es parte del oficio.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 🥂",
+ "textos": {
+  "facebook": "Tu abuela también vino a platicar contigo.\n\nDurante la cena, la música se queda un paso atrás: acompaña, no compite. Se escuchan las copas, las anécdotas y las risas de cada mesa, y nadie tiene que levantar la voz.\n\nLa pista despierta cuando llega su hora. Ni antes ni después. Leer el salón también es parte del oficio.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 🥂",
+  "instagram": "Tu abuela también vino a platicar contigo.\n\nDurante la cena, la música se queda un paso atrás: acompaña, no compite. Se escuchan las copas, las anécdotas, las risas de la mesa de tus primos.\n\nLa pista despierta cuando llega su hora. Ni antes ni después.\n\nLeer el salón también es parte del oficio.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 🥂",
+  "tiktok": "Tu abuela también vino a platicar contigo. En la cena, la música acompaña; la pista despierta a su hora. Propuesta privada por WhatsApp 🥂"
+ },
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "titular": "Tu abuela también vino a platicar",
+ "subtitulo": "La cena tiene su propio volumen",
+ "cta": "Aparta tu fecha",
+ "plantilla": "cita",
+ "guion": "Reel vertical 15-18 s, fundidos lentos. 0-3 s: fondo marfil (#F7F2EB), en Tinos negro: 'Tu abuela también vino a platicar'. 3-6 s: detalle en luz cálida de dos manos sobre un mantel, copas a contraluz. 6-9 s: mesa larga en penumbra, velas, siluetas conversando. 9-12 s: pista vacía con luz baja esperando. 12-15 s: siluetas entrando a la pista, mucho espacio negro (#0D0D0F). 15-18 s: firma 'No es un evento, es una Experiencia BNY.' y logo oficial BNY sin modificar. Piano suave. Sin bocinas, cables ni luces de antro.",
+ "escenas": [
+  {
+   "titular": "Tu abuela también vino a platicar"
+  },
+  {
+   "subtitulo": "Música que acompaña, nunca interrumpe",
+   "titular": "La cena tiene su propio volumen"
+  },
+  {
+   "titular": "Se escuchan las copas y las risas"
+  },
+  {
+   "titular": "La pista despierta cuando llega su hora"
+  },
+  {
+   "titular": "Cada momento de tu noche suena distinto"
+  },
+  {
+   "cta": "Aparta tu fecha",
+   "final": true,
+   "subtitulo": "Propuesta privada por WhatsApp",
+   "titular": "Aparta tu fecha"
+  }
+ ],
+ "estado": "listo",
+ "id": "p20261020-bny-1"
+}

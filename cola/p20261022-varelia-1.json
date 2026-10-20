@@ -1,0 +1,44 @@
+{
+ "marca": "varelia",
+ "fecha": "2026-10-22",
+ "hora": "20:00",
+ "formato": "Carrusel",
+ "gancho": "La semana de la boda se gana el lunes, no el sábado.",
+ "texto": "La semana de la boda se gana el lunes, no el sábado.\n\nChecklist de la semana de la boda:\nLunes: confirma proveedores, horarios de llegada y contactos.\nMartes: cierra lista de invitados y mesas.\nMiércoles: salda pendientes de pago.\nJueves: manda el cronograma final a todo tu equipo.\nViernes: descansa. De verdad.\n\nEn Varelia, proveedores, invitados, mesas, pagos y el link del día de la boda viven en un mismo lugar.\n\nGuárdalo para tu próxima boda. Prueba 14 días gratis: varelia.netlify.app",
+ "textos": {
+  "facebook": "La semana de la boda se gana el lunes, no el sábado.\n\nLunes: proveedores. Martes: lista y mesas. Miércoles: pagos. Jueves: cronograma final al equipo. Viernes: descansa.\n\nEn Varelia todo eso vive en un mismo lugar. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "instagram": "La semana de la boda se gana el lunes, no el sábado.\n\nChecklist de la semana de la boda:\nLunes: confirma proveedores, horarios de llegada y contactos.\nMartes: cierra lista de invitados y mesas.\nMiércoles: salda pendientes de pago.\nJueves: manda el cronograma final a todo tu equipo.\nViernes: descansa. De verdad.\n\nEn Varelia, proveedores, invitados, mesas, pagos y el link del día de la boda viven en un mismo lugar.\n\nGuárdalo para tu próxima boda. Prueba 14 días gratis: varelia.netlify.app"
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #PlaneacionDeBodas",
+ "titular": "Checklist de la semana de la boda",
+ "subtitulo": "Guárdalo para tu próxima boda",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "tip",
+ "guion": "Carrusel 4:5 editorial: fondo #F6F1E8, días de la semana en Playfair Display con detalle dorado #B8955A, subtítulos en Manrope. Portada estilo página de revista. Última lámina con cta y firma 'El centro de operación de tu estudio'.",
+ "laminas": [
+  {
+   "subtitulo": "Horario de llegada y contacto de cada uno.",
+   "titular": "Lunes: confirma proveedores"
+  },
+  {
+   "subtitulo": "La versión final, sin cambios de último minuto.",
+   "titular": "Martes: cierra lista y mesas"
+  },
+  {
+   "subtitulo": "Que ningún pago llegue al día de la boda.",
+   "titular": "Miércoles: salda pendientes"
+  },
+  {
+   "subtitulo": "Todos con la misma versión, minuto a minuto.",
+   "titular": "Jueves: cronograma al equipo"
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Prueba Varelia 14 días gratis, sin tarjeta",
+   "titular": "Todo en un solo lugar"
+  }
+ ],
+ "estado": "listo",
+ "id": "p20261022-varelia-1"
+}

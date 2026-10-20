@@ -1,0 +1,45 @@
+{
+ "marca": "kotizo",
+ "fecha": "2026-10-22",
+ "hora": "14:00",
+ "formato": "Carrusel",
+ "gancho": "Si cotizar un evento te toma una hora, te falta esta lista.",
+ "texto": "Si cotizar un evento te toma una hora, te falta esta lista.\n\nChecklist para cotizar en 2 minutos:\n1. Fecha y horario: ¿tienes libre ese día?\n2. Número de invitados: de ahí salen las cantidades.\n3. Lugar y entrega: salón, jardín o casa, y si lleva flete.\n4. Paquete o piezas sueltas: opciones claras para que decida rápido.\n\nCon estas 4 respuestas cotizas sin ida y vuelta. Y con Kotizo, tu cotizador las pregunta por ti.\n\nGuárdalo para tu próximo cliente.",
+ "textos": {
+  "facebook": "Si cotizar un evento te toma una hora, te falta esta lista.\n\n1. Fecha y horario.\n2. Número de invitados.\n3. Lugar y entrega.\n4. Paquete o piezas sueltas.\n\nCon esas 4 respuestas cotizas sin ida y vuelta. Y con Kotizo, tu cotizador las pregunta por ti. Guárdalo para tu próximo cliente.",
+  "instagram": "Si cotizar un evento te toma una hora, te falta esta lista.\n\nChecklist para cotizar en 2 minutos:\n1. Fecha y horario: ¿tienes libre ese día?\n2. Número de invitados: de ahí salen las cantidades.\n3. Lugar y entrega: salón, jardín o casa, y si lleva flete.\n4. Paquete o piezas sueltas: opciones claras para que decida rápido.\n\nCon estas 4 respuestas cotizas sin ida y vuelta. Y con Kotizo, tu cotizador las pregunta por ti.\n\nGuárdalo para tu próximo cliente.",
+  "tiktok": "Checklist para cotizar un evento en 2 minutos: fecha, invitados, lugar y paquete. Guárdalo para tu próximo cliente."
+ },
+ "hashtags": "#Kotizo #NegociosMorelia #EmprendedoresMichoacan #Banquetes #VentasPorWhatsApp",
+ "titular": "Cotiza un evento en 2 minutos",
+ "subtitulo": "La checklist que te ahorra el ida y vuelta",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "tip",
+ "guion": "Carrusel 4:5 tipo checklist, fondo #F5F6F9, números grandes en #E6016E, titulares en Young Serif. Portada con el titular y un ícono de reloj. Última lámina con cta 'Quiero mi cotizador' y firma.",
+ "laminas": [
+  {
+   "subtitulo": "Lo primero: ¿tienes libre ese día?",
+   "titular": "1. Fecha y horario"
+  },
+  {
+   "subtitulo": "De ahí salen las cantidades de todo lo demás.",
+   "titular": "2. Número de invitados"
+  },
+  {
+   "subtitulo": "Salón, jardín o casa, y si lleva flete.",
+   "titular": "3. Lugar y entrega"
+  },
+  {
+   "subtitulo": "Opciones claras para que decida rápido.",
+   "titular": "4. Paquete o piezas sueltas"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "O deja que tu cotizador lo pregunte por ti",
+   "titular": "Guárdalo para tu próximo cliente"
+  }
+ ],
+ "estado": "listo",
+ "id": "p20261022-kotizo-1"
+}

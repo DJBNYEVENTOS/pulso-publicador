@@ -1,0 +1,44 @@
+{
+ "marca": "kotizo",
+ "fecha": "2026-10-21",
+ "hora": "13:30",
+ "formato": "Reel",
+ "gancho": "Sábado, 9 de la noche: te piden 120 sillas y 12 mesas.",
+ "texto": "Sábado, 9 de la noche: te piden 120 sillas y 12 mesas.\n\nY tú, otra vez con la calculadora en una mano y la cena en la otra.\n\nAsí cotiza una renta de mobiliario en 2026:\n1. Tu cliente abre el link de tu cotizador.\n2. Elige sillas, mesas, mantelería y fecha.\n3. La cotización te llega directo a tu WhatsApp, lista para apartar.\n\nTú contestas cuando quieras, no cuando te escriben.\n\nMira la demo en kotizo-app.netlify.app\nSíguenos para más ideas que te regresan tus noches.",
+ "textos": {
+  "facebook": "Sábado, 9 de la noche: te piden 120 sillas y 12 mesas.\n\nAsí cotiza una renta de mobiliario en 2026: tu cliente abre tu cotizador, elige sillas, mesas, mantelería y fecha, y la cotización te llega directo a tu WhatsApp.\n\nTú contestas cuando quieras, no cuando te escriben. Mira la demo en kotizo-app.netlify.app",
+  "instagram": "Sábado, 9 de la noche: te piden 120 sillas y 12 mesas.\n\nY tú, otra vez con la calculadora en una mano y la cena en la otra.\n\nAsí cotiza una renta de mobiliario en 2026:\n1. Tu cliente abre el link de tu cotizador.\n2. Elige sillas, mesas, mantelería y fecha.\n3. La cotización te llega directo a tu WhatsApp, lista para apartar.\n\nTú contestas cuando quieras, no cuando te escriben.\n\nMira la demo en kotizo-app.netlify.app\nSíguenos para más ideas que te regresan tus noches.",
+  "tiktok": "Sábado 9 pm: 120 sillas y 12 mesas. Así cotiza una renta de mobiliario sin que tú escribas nada. Demo en kotizo-app.netlify.app"
+ },
+ "hashtags": "#Kotizo #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan #CotizadorWeb",
+ "titular": "Sábado 9 pm: 120 sillas",
+ "subtitulo": "Así cotiza una renta de mobiliario en 2026",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "impacto",
+ "guion": "Reel vertical 15 s, paleta Kotizo (#181E2E, #E6016E, #F5F6F9), Young Serif + Figtree. 1) reloj '9:00 pm' y chat con '¿cuánto por 120 sillas?'; 2-4) pantalla del cotizador de renta de mobiliario de la demo en un celular, selección de piezas y fecha; 5) notificación de WhatsApp con la cotización; 6) cta y firma 'Tus clientes cotizan solos.'",
+ "escenas": [
+  {
+   "titular": "Sábado 9 pm: 120 sillas y 12 mesas"
+  },
+  {
+   "titular": "Tu cliente abre tu cotizador"
+  },
+  {
+   "titular": "Elige sillas, mesas, mantelería y fecha"
+  },
+  {
+   "titular": "Ve su cotización con tus precios"
+  },
+  {
+   "titular": "Y te llega directo a tu WhatsApp"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+   "titular": "Quiero mi cotizador"
+  }
+ ],
+ "estado": "listo",
+ "id": "p20261021-kotizo-1"
+}
