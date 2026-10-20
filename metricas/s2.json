@@ -2,23 +2,23 @@
   "id": "s2",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-10-20T02:31:25.578Z",
+  "actualizado": "2026-10-20T08:46:25.670Z",
   "duracion": 14.4,
   "instagram": {
-    "views": 48,
-    "reach": 26,
+    "views": 49,
+    "reach": 27,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 5147,
-    "ig_reels_video_view_total_time": 154417
+    "ig_reels_avg_watch_time": 5027,
+    "ig_reels_video_view_total_time": 155844
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 35.7,
+    "vistoPromedioInstagram": 34.9,
     "interaccionInstagram": 0,
-    "vistas": 48
+    "vistas": 49
   }
 }
