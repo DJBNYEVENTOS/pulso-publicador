@@ -2,11 +2,11 @@
   "id": "iv-herr",
   "marca": "invitaciones",
   "formato": "Carrusel",
-  "actualizado": "2026-10-20T15:16:13.313Z",
+  "actualizado": "2026-10-20T21:30:59.817Z",
   "duracion": null,
   "instagram": {
-    "views": 44,
-    "reach": 18,
+    "views": 46,
+    "reach": 19,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 5.56,
-    "vistas": 44
+    "interaccionInstagram": 5.26,
+    "vistas": 46
   }
 }
