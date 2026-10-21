@@ -49,7 +49,7 @@ async function api(url, opts = {}) {
   const res = await fetch(url, opts);
   const txt = await res.text();
   let data; try { data = JSON.parse(txt); } catch { data = { raw: txt }; }
-  if (!res.ok || data.error) throw new Error(`${res.status} ${JSON.stringify(data.error || data).slice(0, 400)}`);
+  if (!res.ok || (data.error && data.error.code !== 'ok')) throw new Error(
   return { data, headers: res.headers };
 }
 const form = (o) => new URLSearchParams(Object.entries(o).filter(([, v]) => v != null && v !== ''));
