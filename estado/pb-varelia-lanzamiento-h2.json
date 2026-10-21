@@ -1,0 +1,18 @@
+{
+  "id": "pb-varelia-lanzamiento-h2",
+  "marca": "varelia",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1628353402304240",
+      "url": "https://www.facebook.com/1428539057002041",
+      "en": "2026-10-21T23:31:24.377Z"
+    },
+    "instagram": {
+      "ok": false,
+      "error": "400 {\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"A-7ACqtKPo0o2Q8E_HHid7D\"}",
+      "intentos": 1,
+      "en": "2026-10-21T23:31:28.892Z"
+    }
+  }
+}
