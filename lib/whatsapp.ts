@@ -75,6 +75,37 @@ export function enviarPlantilla(tel: string, tipo: TipoWa, params: string[], tok
 export const enviarTexto = (tel: string, body: string) => graph({ to: tel, type: 'text', text: { body: body.slice(0, 1500), preview_url: true } });
 
 // Firma del aviso de Meta (encabezado X-Hub-Signature-256) con WA_APP_SECRET.
+// Diagnóstico: revisa la configuración, el número, la tabla del paso 12 y la suscripción de la cuenta de WhatsApp a la app.
+async function graphGet(ruta: string, metodo: 'GET' | 'POST' = 'GET') {
+  const r = await fetch(API() + '/' + VER + '/' + ruta, { method: metodo, cache: 'no-store', headers: { authorization: 'Bearer ' + process.env.WA_TOKEN } }).catch(() => null);
+  const j = r ? await r.json().catch(() => ({})) : {};
+  return r && r.ok ? { ok: true as const, j } : { ok: false as const, error: errorWa(j) };
+}
+export async function diagnostico(waba: string, suscribir: boolean) {
+  const res: Record<string, any> = {
+    'Claves de WhatsApp (WA_TOKEN y WA_PHONE_ID)': !!(process.env.WA_TOKEN && process.env.WA_PHONE_ID),
+    'Clave secreta de la app (WA_APP_SECRET)': !!process.env.WA_APP_SECRET,
+    'Palabra de verificación (WA_VERIFY_TOKEN)': !!process.env.WA_VERIFY_TOKEN,
+    'Asistente con IA (ANTHROPIC_API_KEY)': iaLista() ? 'sí' : 'no (opcional)',
+    'Supabase': supabaseListo()
+  };
+  if (supabaseListo()) {
+    const { data, error } = await supabaseAdmin().from('wa_mensajes').select('dir, tipo, estado, error, creado').order('creado', { ascending: false }).limit(5);
+    res['Tabla del paso 12'] = error ? 'FALTA: corre el paso 12 en Supabase (' + error.message.slice(0, 80) + ')' : 'ok';
+    res['Últimos mensajes guardados'] = error ? [] : (data || []).map((m: any) => m.creado.slice(0, 16).replace('T', ' ') + ' · ' + (m.dir === 'entra' ? 'llegó' : 'salió') + ' · ' + m.tipo + ' · ' + m.estado + (m.error ? ' · ' + m.error : ''));
+  }
+  if (process.env.WA_TOKEN && process.env.WA_PHONE_ID) {
+    const n = await graphGet(process.env.WA_PHONE_ID + '?fields=display_phone_number,verified_name,quality_rating');
+    res['Número'] = n.ok ? (n.j.display_phone_number || '') + ' · ' + (n.j.verified_name || '') + (n.j.quality_rating ? ' · calidad ' + n.j.quality_rating : '') : 'ERROR: ' + n.error;
+    if (/^\d{6,20}$/.test(waba)) {
+      if (suscribir) { const s = await graphGet(waba + '/subscribed_apps', 'POST'); res['Suscribir cuenta a la app'] = s.ok ? 'hecho' : 'ERROR: ' + s.error; }
+      const l = await graphGet(waba + '/subscribed_apps');
+      res['Apps suscritas a la cuenta de WhatsApp'] = l.ok ? ((l.j.data || []).map((x: any) => x?.whatsapp_business_api_data?.name || x?.name || 'app').join(', ') || 'NINGUNA: abre esta página con &suscribir=1') : 'ERROR: ' + l.error;
+    }
+  }
+  return res;
+}
+
 export function firmaWaValida(cuerpo: string, firma: string) {
   const sec = process.env.WA_APP_SECRET || '';
   if (!sec || !firma?.startsWith('sha256=')) return false;
@@ -253,7 +284,7 @@ async function mensajeEntrante(sb: any, m: any) {
   const c = await contexto(sb, tel, idBoton || '');
   // Se guarda primero: si Meta repite el aviso, el segundo choca con el mismo wamid y no se procesa dos veces.
   const { data: fila, error } = await sb.from('wa_mensajes').insert({ evento_id: c?.e.id || null, invitado_id: c?.g.id || null, tel, dir: 'entra', tipo, texto, wamid: String(m.id), estado: 'recibido' }).select('id').single();
-  if (error) return;
+  if (error) { console.warn('[whatsapp] no se pudo guardar el mensaje:', error.message); return; }
   const atender = async (aviso?: string) => {
     await sb.from('wa_mensajes').update({ atencion: true }).eq('id', fila.id);
     // Un solo aviso automático cada 12 horas para no llenarle el chat.
