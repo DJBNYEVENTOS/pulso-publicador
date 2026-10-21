@@ -6,7 +6,7 @@
     "threads": false,
     "linkedin": false,
     "youtube": false,
-    "tiktok": false,
+    "tiktok": true,
     "videoParaTodo": true
   },
   "kotizo": {
