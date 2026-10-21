@@ -15,10 +15,11 @@
       "en": "2026-10-21T02:01:59.845Z"
     },
     "tiktok": {
-      "ok": false,
-      "error": "200 {\"code\":\"ok\",\"message\":\"\",\"log_id\":\"2026102110020049F1CD9B8094FA5BC72E\"}",
-      "intentos": 1,
-      "en": "2026-10-21T02:02:01.226Z"
+      "ok": true,
+      "id": "v_inbox_file~v2.7698938998164621330",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-10-21T02:16:17.487Z"
     }
   }
 }
