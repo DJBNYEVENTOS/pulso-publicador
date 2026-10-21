@@ -1,0 +1,22 @@
+{
+ "id": "pb-varelia-lanzamiento-h3",
+ "marca": "varelia",
+ "fecha": "2026-10-21",
+ "hora": "18:00",
+ "formato": "Historia",
+ "pilar": "Lanzamiento de Varelia",
+ "gancho": "Estamos en vivo.",
+ "titular": "Estamos en vivo.",
+ "subtitulo": "",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "imagenFija": "biblioteca/varelia/pb-varelia-lanzamiento-h3.png",
+ "texto": "Estamos en vivo: https://meet.google.com/wxt-kynr-ruu",
+ "textos": {
+  "instagram": "Estamos en vivo: https://meet.google.com/wxt-kynr-ruu",
+  "facebook": "Estamos en vivo: https://meet.google.com/wxt-kynr-ruu"
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+ "guion": "Pieza terminada para el lanzamiento en vivo del 21 de octubre.",
+ "estado": "listo"
+}

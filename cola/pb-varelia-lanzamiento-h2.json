@@ -1,0 +1,22 @@
+{
+ "id": "pb-varelia-lanzamiento-h2",
+ "marca": "varelia",
+ "fecha": "2026-10-21",
+ "hora": "17:30",
+ "formato": "Historia",
+ "pilar": "Lanzamiento de Varelia",
+ "gancho": "En 30 minutos empezamos.",
+ "titular": "En 30 minutos empezamos.",
+ "subtitulo": "",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "imagenFija": "biblioteca/varelia/pb-varelia-lanzamiento-h2.png",
+ "texto": "En 30 minutos presentamos Varelia: https://meet.google.com/wxt-kynr-ruu",
+ "textos": {
+  "instagram": "En 30 minutos presentamos Varelia: https://meet.google.com/wxt-kynr-ruu",
+  "facebook": "En 30 minutos presentamos Varelia: https://meet.google.com/wxt-kynr-ruu"
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+ "guion": "Pieza terminada para el lanzamiento en vivo del 21 de octubre.",
+ "estado": "listo"
+}

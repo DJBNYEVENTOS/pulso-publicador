@@ -1,0 +1,22 @@
+{
+ "id": "pb-varelia-lanzamiento-h4",
+ "marca": "varelia",
+ "fecha": "2026-10-21",
+ "hora": "19:15",
+ "formato": "Historia",
+ "pilar": "Lanzamiento de Varelia",
+ "gancho": "Varelia ya está abierta.",
+ "titular": "Varelia ya está abierta.",
+ "subtitulo": "",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "imagenFija": "biblioteca/varelia/pb-varelia-lanzamiento-h4.png",
+ "texto": "Varelia ya está abierta. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app · Fundadoras: 30% de por vida para las primeras 20 con el código FUNDADORA.",
+ "textos": {
+  "instagram": "Varelia ya está abierta. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app · Fundadoras: 30% de por vida para las primeras 20 con el código FUNDADORA.",
+  "facebook": "Varelia ya está abierta. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app · Fundadoras: 30% de por vida para las primeras 20 con el código FUNDADORA."
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+ "guion": "Pieza terminada para el lanzamiento en vivo del 21 de octubre.",
+ "estado": "listo"
+}

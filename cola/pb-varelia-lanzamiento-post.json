@@ -1,0 +1,22 @@
+{
+ "id": "pb-varelia-lanzamiento-post",
+ "marca": "varelia",
+ "fecha": "2026-10-21",
+ "hora": "12:30",
+ "formato": "Post",
+ "pilar": "Lanzamiento de Varelia",
+ "gancho": "Hoy presentamos Varelia.",
+ "titular": "Hoy presentamos Varelia.",
+ "subtitulo": "",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "imagenFija": "biblioteca/varelia/pb-varelia-lanzamiento-post.png",
+ "texto": "Hoy presentamos Varelia. ✨\n\nDurante meses escuchamos a wedding planners que hacen bodas impecables mientras su operación vive en Excel, Word y 40 chats. Varelia nació para eso: el centro de operación de tu estudio, donde cotizas, cierras, cobras y coordinas cada boda en un solo lugar, con tu marca.\n\nPresentación en vivo hoy a las 6:00 pm por Google Meet:\nhttps://meet.google.com/wxt-kynr-ruu\n\nMándaselo a otra planner que lo necesite.",
+ "textos": {
+  "instagram": "Hoy presentamos Varelia. ✨\n\nDurante meses escuchamos a wedding planners que hacen bodas impecables mientras su operación vive en Excel, Word y 40 chats. Varelia nació para eso: el centro de operación de tu estudio, donde cotizas, cierras, cobras y coordinas cada boda en un solo lugar, con tu marca.\n\nPresentación en vivo hoy a las 6:00 pm por Google Meet:\nhttps://meet.google.com/wxt-kynr-ruu\n\nMándaselo a otra planner que lo necesite.",
+  "facebook": "Hoy presentamos Varelia. ✨\n\nDurante meses escuchamos a wedding planners que hacen bodas impecables mientras su operación vive en Excel, Word y 40 chats. Varelia nació para eso: el centro de operación de tu estudio, donde cotizas, cierras, cobras y coordinas cada boda en un solo lugar, con tu marca.\n\nPresentación en vivo hoy a las 6:00 pm por Google Meet:\nhttps://meet.google.com/wxt-kynr-ruu\n\nMándaselo a otra planner que lo necesite."
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+ "guion": "Pieza terminada para el lanzamiento en vivo del 21 de octubre.",
+ "estado": "listo"
+}
