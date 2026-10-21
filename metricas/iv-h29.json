@@ -2,7 +2,7 @@
   "id": "iv-h29",
   "marca": "invitaciones",
   "formato": "Historia",
-  "actualizado": "2026-10-20T21:01:12.450Z",
+  "actualizado": "2026-10-21T03:16:04.801Z",
   "duracion": null,
   "instagram": {
     "views": 142,
@@ -14,5 +14,6 @@
   "derivados": {
     "interaccionInstagram": 2.63,
     "vistas": 142
-  }
+  },
+  "vacio": true
 }
