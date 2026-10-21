@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-10-21T01:32:46.507Z",
+  "fecha": "2026-10-21T01:56:22.640Z",
   "facebook": [
     {
-      "error": "Error validating access token: Session has expired on Tuesday, 06-Oct-26 20:00:00 PDT. The current time is Tuesday, 20-Oct-26 18:32:46 PDT."
+      "error": "Error validating access token: Session has expired on Tuesday, 06-Oct-26 20:00:00 PDT. The current time is Tuesday, 20-Oct-26 18:56:22 PDT."
     }
   ],
   "instagram": [
@@ -22,7 +22,7 @@
   "tiktok": [
     {
       "marca": "bny",
-      "usuario": "Varelia Weddings",
+      "usuario": "dj BNY eventos",
       "ok": true
     }
   ]
