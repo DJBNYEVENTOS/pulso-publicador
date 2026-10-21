@@ -1,0 +1,44 @@
+{
+  "id": "p20261023-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-10-23",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "\"¿Cuánto por la sesión?\" Sin fecha, sin horas, sin nada.",
+  "texto": "\"¿Cuánto por la sesión?\" Sin fecha, sin horas, sin nada.\n\nY empieza el interrogatorio: ¿qué día?, ¿cuántas horas?, ¿boda o XV?, ¿quieres álbum?\n\nCon un cotizador para fotógrafos, tu cliente elige horas, tipo de evento y extras, y la cotización te llega completa a tu WhatsApp.\n\nTú respondes con una fecha, no con más preguntas.\n\nMira la demo en kotizo-app.netlify.app\nCompártelo con un colega fotógrafo que lo necesite.",
+  "textos": {
+    "facebook": "\"¿Cuánto por la sesión?\" Sin fecha, sin horas, sin nada.\n\nCon un cotizador para fotógrafos, tu cliente elige horas, tipo de evento y extras, y la cotización te llega completa a tu WhatsApp. Tú respondes con una fecha, no con más preguntas.\n\nMira la demo en kotizo-app.netlify.app",
+    "instagram": "\"¿Cuánto por la sesión?\" Sin fecha, sin horas, sin nada.\n\nY empieza el interrogatorio: ¿qué día?, ¿cuántas horas?, ¿boda o XV?, ¿quieres álbum?\n\nCon un cotizador para fotógrafos, tu cliente elige horas, tipo de evento y extras, y la cotización te llega completa a tu WhatsApp.\n\nTú respondes con una fecha, no con más preguntas.\n\nMira la demo en kotizo-app.netlify.app\nCompártelo con un colega fotógrafo que lo necesite.",
+    "tiktok": "\"¿Cuánto por la sesión?\" y ni la fecha te dan. Así cotiza solo un fotógrafo. Compártelo con un colega."
+  },
+  "hashtags": "#Kotizo #FotografosMexico #NegociosMorelia #EmprendedoresMichoacan #CotizadorWeb",
+  "titular": "“¿Cuánto?” Sin fecha ni horas",
+  "subtitulo": "Fotógrafos: así se cotiza solo",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Reel vertical 15 s, paleta Kotizo. 1) chat con '¿cuánto?' y tres puntos escribiendo; 2) titular sobre fondo #181E2E; 3) cotizador de fotografía en un celular (demo); 4) notificación de WhatsApp con la cotización; 5) respuesta 'Tengo libre el 14, ¿lo apartamos?'; 6) cta y firma.",
+  "escenas": [
+    {
+      "titular": "“¿Cuánto?” Sin fecha, sin horas, sin nada"
+    },
+    {
+      "titular": "Fotógrafos: así se cotiza solo"
+    },
+    {
+      "titular": "Tu cliente elige horas, tipo de evento y extras"
+    },
+    {
+      "titular": "La cotización llega lista a tu WhatsApp"
+    },
+    {
+      "titular": "Tú respondes con fecha, no con preguntas"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Compártelo con un colega fotógrafo",
+      "titular": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "p20261023-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-10-23",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Tu cronograma vive en un PDF que nadie abre el día de la boda.",
+  "texto": "Tu cronograma vive en un PDF que nadie abre el día de la boda.\n\nY a las 7 pm el fotógrafo te pregunta, otra vez, a qué hora es el brindis.\n\nEn Varelia cada boda tiene su link del día: el cronograma en una sola versión para todo tu equipo y tus proveedores.\n\nTú te quedas con la novia, no con el teléfono.\n\nGuárdalo para tu próxima boda. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "Tu cronograma vive en un PDF que nadie abre el día de la boda.\n\nEn Varelia cada boda tiene su link del día: el cronograma en una sola versión para tu equipo y tus proveedores. Tú te quedas con la novia, no con el teléfono.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Tu cronograma vive en un PDF que nadie abre el día de la boda.\n\nY a las 7 pm el fotógrafo te pregunta, otra vez, a qué hora es el brindis.\n\nEn Varelia cada boda tiene su link del día: el cronograma en una sola versión para todo tu equipo y tus proveedores.\n\nTú te quedas con la novia, no con el teléfono.\n\nGuárdalo para tu próxima boda. Prueba 14 días gratis, sin tarjeta: varelia.netlify.app"
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerGuadalajara #OrganizadoraDeBodas #BodasMexico",
+  "titular": "El PDF que nadie abre",
+  "subtitulo": "Tu cronograma merece algo mejor",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "impacto",
+  "guion": "Reel vertical 15 s, estética editorial. 1) PDF en un celular con muchas páginas; 2) burbuja de chat del fotógrafo; 3) link del día de la boda abierto en un celular; 4) misma pantalla en tres celulares; 5) planner acomodando el velo de una novia (silueta, sin rostro); 6) cta y firma.",
+  "escenas": [
+    {
+      "titular": "Tu cronograma, en un PDF que nadie abre"
+    },
+    {
+      "subtitulo": "Pregunta el fotógrafo, otra vez",
+      "titular": "“¿A qué hora es el brindis?”"
+    },
+    {
+      "titular": "Con Varelia: un link del día de la boda"
+    },
+    {
+      "titular": "Una sola versión para todo tu equipo"
+    },
+    {
+      "titular": "Tú, con la novia. No con el teléfono"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próxima boda",
+      "titular": "Prueba 14 días gratis"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "p20261023-varelia-2",
+  "marca": "varelia",
+  "fecha": "2026-10-23",
+  "hora": "21:00",
+  "formato": "Historia",
+  "gancho": "¿Cuántas versiones de tu cronograma mandas por boda?",
+  "texto": "¿Cuántas versiones de tu cronograma mandas por boda?\n\nEncuesta: 1 o 2 / 3 o más / Ya perdí la cuenta",
+  "textos": {
+    "facebook": "¿Cuántas versiones de tu cronograma mandas por boda: 1 o 2, 3 o más, o ya perdiste la cuenta?",
+    "instagram": "¿Cuántas versiones de tu cronograma mandas por boda?\n\nEncuesta: 1 o 2 / 3 o más / Ya perdí la cuenta"
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #PlaneacionDeBodas",
+  "titular": "¿Cuántas versiones mandas por boda?",
+  "subtitulo": "Vota: una, dos o ya perdiste la cuenta",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Historia 9:16 fondo #24221F, titular en Playfair marfil, sticker de encuesta con tres opciones. Logo Varelia abajo.",
+  "estado": "listo"
+}

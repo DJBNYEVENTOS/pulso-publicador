@@ -1,0 +1,20 @@
+{
+  "id": "p20261023-bny-2",
+  "marca": "bny",
+  "fecha": "2026-10-23",
+  "hora": "21:00",
+  "formato": "Historia",
+  "gancho": "Tu primer baile: ¿clásico o con sorpresa?",
+  "texto": "Tu primer baile: ¿clásico o con sorpresa?\n\nEncuesta: 🤍 Clásico, de principio a fin / ✨ Con un giro a mitad de canción\n\nSi ya tienes la canción, cuéntanos cuál es.",
+  "textos": {
+    "facebook": "Tu primer baile: ¿clásico de principio a fin o con un giro a mitad de canción? Cuéntanos cuál es tu canción.",
+    "instagram": "Tu primer baile: ¿clásico o con sorpresa?\n\nEncuesta: 🤍 Clásico, de principio a fin / ✨ Con un giro a mitad de canción\n\nSi ya tienes la canción, cuéntanos cuál es."
+  },
+  "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+  "titular": "Tu primer baile: ¿clásico o sorpresa?",
+  "subtitulo": "Vota y cuéntanos cuál es tu canción",
+  "cta": "Aparta tu fecha",
+  "plantilla": "cita",
+  "guion": "Historia 9:16, fondo negro (#0D0D0F), titular en Tinos marfil, sticker de encuesta con dos opciones: 'Clásico' / 'Con sorpresa'. Debajo, sticker de pregunta: '¿Cuál es tu canción?'. Logo oficial BNY pequeño abajo, sin modificar.",
+  "estado": "listo"
+}
