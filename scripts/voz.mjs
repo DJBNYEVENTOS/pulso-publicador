@@ -119,6 +119,12 @@ for (const f of existsSync(PED) ? readdirSync(PED).filter(f => f.endsWith('.json
   if (existsSync(join(LISTAS, id + '.mp3')) || existsSync(join(LISTAS, id + '.json'))) continue; // ya hecha o con error (para reintentar, borra el .json)
   const lineas = (Array.isArray(p.lineas) ? p.lineas : String(p.texto || '').split(/\n\s*\n/)).map(x => String(x).replace(/\s+/g, ' ').trim()).filter(Boolean).slice(0, 40);
   if (!lineas.length) continue;
+  // Voz propia: los datos de la voz pueden venir en el pedido o en voz/clon/<id>.json (los escribe la tarea "Spot50 · voces propias").
+  if (p.voz === 'clon' && !p.clon) {
+    const extra = join(ROOT, 'voz/clon', id + '.json');
+    if (existsSync(extra)) Object.assign(p, JSON.parse(readFileSync(extra, 'utf8')));
+    else { console.log(`· Voz ${id}: esperando la muestra de la voz propia.`); continue; }
+  }
   const vel = +p.velocidad || 1.05, clon = p.voz === 'clon' ? String(p.clon || '').replace(/[^a-zA-Z0-9_-]/g, '') : '', voz = (clon ? p.base : p.voz) === 'mujer' ? 'mujer' : 'hombre';
   const usarEL = env.ELEVENLABS_API_KEY && p.motor !== 'kokoro';
   const dir = join(TMP, id); mkdirSync(dir, { recursive: true });
