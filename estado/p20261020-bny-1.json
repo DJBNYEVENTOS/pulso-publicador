@@ -1,0 +1,24 @@
+{
+  "id": "p20261020-bny-1",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1772073804050783",
+      "url": "https://www.facebook.com/145245832842598/videos/1772073804050783",
+      "en": "2026-10-21T02:01:20.742Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17908010859350289",
+      "url": "https://www.instagram.com/reel/DevSYWcisgE/",
+      "en": "2026-10-21T02:01:59.845Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "200 {\"code\":\"ok\",\"message\":\"\",\"log_id\":\"2026102110020049F1CD9B8094FA5BC72E\"}",
+      "intentos": 1,
+      "en": "2026-10-21T02:02:01.226Z"
+    }
+  }
+}
