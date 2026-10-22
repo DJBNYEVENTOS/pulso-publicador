@@ -2,11 +2,11 @@
   "id": "pb-varelia-lanzamiento-post",
   "marca": "varelia",
   "formato": "Post",
-  "actualizado": "2026-10-22T00:45:59.713Z",
+  "actualizado": "2026-10-22T06:51:40.497Z",
   "duracion": null,
   "instagram": {
-    "views": 31,
-    "reach": 26,
+    "views": 44,
+    "reach": 36,
     "likes": 1,
     "comments": 0,
     "shares": 12,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 53.85,
-    "vistas": 31
+    "interaccionInstagram": 38.89,
+    "vistas": 44
   }
 }
