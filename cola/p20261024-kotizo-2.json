@@ -1,0 +1,20 @@
+{
+  "id": "p20261024-kotizo-2",
+  "marca": "kotizo",
+  "fecha": "2026-10-24",
+  "hora": "20:30",
+  "formato": "Historia",
+  "gancho": "¿A qué hora te piden más precios?",
+  "texto": "¿A qué hora te piden más precios?\n\nEncuesta: ☀️ En la mañana / 🌙 En la noche\n\nSi fue en la noche, ya sabes lo que te está costando.",
+  "textos": {
+    "facebook": "¿A qué hora te piden más precios: en la mañana o en la noche? Cuéntanos.",
+    "instagram": "¿A qué hora te piden más precios?\n\nEncuesta: ☀️ En la mañana / 🌙 En la noche\n\nSi fue en la noche, ya sabes lo que te está costando."
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "¿A qué hora te piden precios?",
+  "subtitulo": "Vota y te contamos qué hacer",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Historia 9:16, fondo #181E2E, titular en Young Serif blanco, sticker de encuesta 'Mañana / Noche'. Logo Kotizo abajo.",
+  "estado": "listo"
+}

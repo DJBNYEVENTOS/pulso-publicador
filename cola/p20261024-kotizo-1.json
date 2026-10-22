@@ -1,0 +1,44 @@
+{
+  "id": "p20261024-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-10-24",
+  "hora": "13:30",
+  "formato": "Reel",
+  "gancho": "Te piden pastel para 80 por mensaje. Y no dicen el sabor.",
+  "texto": "Te piden pastel para 80 por mensaje. Y no dicen el sabor.\n\n¿Cuántos pisos? ¿Relleno? ¿Para qué día? Diez mensajes después, todavía no tienes el pedido.\n\nCon un cotizador para pastelerías, tu cliente elige porciones, sabor, relleno y fecha, y la cotización te llega a tu WhatsApp lista para apartar.\n\nMira la demo en kotizo-app.netlify.app\nGuárdalo para tu próximo pedido.",
+  "textos": {
+    "facebook": "Te piden pastel para 80 por mensaje. Y no dicen el sabor.\n\nCon un cotizador para pastelerías, tu cliente elige porciones, sabor, relleno y fecha, y la cotización te llega a tu WhatsApp lista para apartar.\n\nMira la demo en kotizo-app.netlify.app",
+    "instagram": "Te piden pastel para 80 por mensaje. Y no dicen el sabor.\n\n¿Cuántos pisos? ¿Relleno? ¿Para qué día? Diez mensajes después, todavía no tienes el pedido.\n\nCon un cotizador para pastelerías, tu cliente elige porciones, sabor, relleno y fecha, y la cotización te llega a tu WhatsApp lista para apartar.\n\nMira la demo en kotizo-app.netlify.app\nGuárdalo para tu próximo pedido.",
+    "tiktok": "Pastel para 80... y no dicen el sabor. Así cotiza sola una pastelería. Guárdalo."
+  },
+  "hashtags": "#Kotizo #Pastelerias #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "Pastel para 80, sin sabor",
+  "subtitulo": "Pastelerías: así se cotiza solo",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Reel vertical 15 s, paleta Kotizo. 1) chat '¿cuánto un pastel para 80?'; 2) tres preguntas apareciendo en #E6016E; 3-4) cotizador de pastelería en un celular (demo); 5) notificación de WhatsApp; 6) cta y firma.",
+  "escenas": [
+    {
+      "titular": "Te piden pastel para 80 por mensaje"
+    },
+    {
+      "titular": "¿Sabor? ¿Pisos? ¿Para cuándo?"
+    },
+    {
+      "titular": "Tu cliente lo elige todo en tu cotizador"
+    },
+    {
+      "titular": "Ve su cotización con tus precios"
+    },
+    {
+      "titular": "Y te llega lista para apartar"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próximo pedido",
+      "titular": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}
