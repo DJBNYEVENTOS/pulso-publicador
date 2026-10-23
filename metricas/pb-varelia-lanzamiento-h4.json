@@ -2,7 +2,7 @@
   "id": "pb-varelia-lanzamiento-h4",
   "marca": "varelia",
   "formato": "Historia",
-  "actualizado": "2026-10-22T20:49:11.768Z",
+  "actualizado": "2026-10-23T03:01:11.960Z",
   "duracion": null,
   "instagram": {
     "views": 1,
@@ -13,5 +13,6 @@
   "facebook": {},
   "derivados": {
     "vistas": 1
-  }
+  },
+  "vacio": true
 }

@@ -2,11 +2,11 @@
   "id": "p20261022-kotizo-1",
   "marca": "kotizo",
   "formato": "Carrusel",
-  "actualizado": "2026-10-22T20:49:08.863Z",
+  "actualizado": "2026-10-23T03:01:10.522Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 2,
+    "reach": 2,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 2
   }
 }
