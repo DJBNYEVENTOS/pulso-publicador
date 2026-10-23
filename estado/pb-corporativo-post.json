@@ -1,0 +1,24 @@
+{
+  "id": "pb-corporativo-post",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "145245832842598_1592599499557791",
+      "url": "https://www.facebook.com/145245832842598_1592599499557791",
+      "en": "2026-10-23T01:01:07.601Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18129604258692370",
+      "url": "https://www.instagram.com/p/De0VEgGG0qg/",
+      "en": "2026-10-23T01:01:21.526Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-10-23T01:01:21.527Z"
+    }
+  }
+}
