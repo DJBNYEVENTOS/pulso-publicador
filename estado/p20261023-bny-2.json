@@ -1,0 +1,25 @@
+{
+  "id": "p20261023-bny-2",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1393114917215249",
+      "url": "https://www.facebook.com/145245832842598",
+      "en": "2026-10-24T03:01:14.732Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18157032211522146",
+      "url": "https://www.instagram.com/stories/dj.bny.eventos/4014711068077387497",
+      "en": "2026-10-24T03:01:22.193Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7700063892479133717",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-10-24T03:01:26.413Z"
+    }
+  }
+}
