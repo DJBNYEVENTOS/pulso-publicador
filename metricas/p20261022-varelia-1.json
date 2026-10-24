@@ -2,11 +2,11 @@
   "id": "p20261022-varelia-1",
   "marca": "varelia",
   "formato": "Carrusel",
-  "actualizado": "2026-10-23T20:46:00.355Z",
+  "actualizado": "2026-10-24T02:46:10.105Z",
   "duracion": null,
   "instagram": {
-    "views": 7,
-    "reach": 2,
+    "views": 9,
+    "reach": 3,
     "likes": 2,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 150,
-    "vistas": 7
+    "interaccionInstagram": 100,
+    "vistas": 9
   }
 }
