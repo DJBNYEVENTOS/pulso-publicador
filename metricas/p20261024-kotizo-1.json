@@ -2,11 +2,11 @@
   "id": "p20261024-kotizo-1",
   "marca": "kotizo",
   "formato": "Reel",
-  "actualizado": "2026-10-24T19:31:45.702Z",
+  "actualizado": "2026-10-25T01:46:05.063Z",
   "duracion": 16.9,
   "instagram": {
     "views": 0,
-    "reach": 0,
+    "reach": 1,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -17,6 +17,7 @@
   },
   "facebook": {},
   "derivados": {
+    "interaccionInstagram": 0,
     "vistas": 0
   }
 }
