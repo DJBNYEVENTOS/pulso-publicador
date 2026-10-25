@@ -2,7 +2,7 @@
   "id": "p20261023-bny-2",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-10-24T21:31:42.679Z",
+  "actualizado": "2026-10-25T03:46:06.527Z",
   "duracion": 8,
   "instagram": {
     "views": 83,
@@ -14,5 +14,6 @@
   "derivados": {
     "interaccionInstagram": 1.37,
     "vistas": 83
-  }
+  },
+  "vacio": true
 }
