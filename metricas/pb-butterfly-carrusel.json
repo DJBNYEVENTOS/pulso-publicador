@@ -2,20 +2,20 @@
   "id": "pb-butterfly-carrusel",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-10-25T18:16:06.943Z",
+  "actualizado": "2026-10-26T00:16:08.964Z",
   "duracion": null,
   "instagram": {
-    "views": 205,
+    "views": 209,
     "reach": 100,
-    "likes": 4,
+    "likes": 5,
     "comments": 0,
     "shares": 1,
     "saved": 0,
-    "total_interactions": 7
+    "total_interactions": 8
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 7,
-    "vistas": 205
+    "interaccionInstagram": 8,
+    "vistas": 209
   }
 }
