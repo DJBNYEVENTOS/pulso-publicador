@@ -2,7 +2,7 @@
   "id": "p20261024-kotizo-2",
   "marca": "kotizo",
   "formato": "Historia",
-  "actualizado": "2026-10-25T21:01:15.771Z",
+  "actualizado": "2026-10-26T03:16:20.504Z",
   "duracion": null,
   "instagram": {
     "views": 3,
@@ -13,5 +13,6 @@
   "facebook": {},
   "derivados": {
     "vistas": 3
-  }
+  },
+  "vacio": true
 }
