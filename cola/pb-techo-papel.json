@@ -1,0 +1,30 @@
+{
+ "id": "pb-techo-papel",
+ "marca": "bny",
+ "fecha": "2026-10-29",
+ "hora": "19:00",
+ "formato": "Carrusel",
+ "foto": "biblioteca/bny/cabina-flores.jpg",
+ "titular": "La música también se diseña",
+ "subtitulo": "Una cabina que se vuelve parte de tu decoración",
+ "cta": "Agenda tu cita",
+ "gancho": "La música también se diseña.",
+ "texto": "La música también se diseña.\n\nEn esta boda la cabina no se escondió: se volvió parte del jardín. Marfil, flores silvestres y luz cálida, a la altura de un techo de papel que dejaba sin aliento.\n\nCuidamos que todo lo que ven tus invitados hable el mismo idioma que tu boda, incluida la música.\n\nRecibimos pocas bodas por temporada para cuidar cada detalle.\n\nNo es un evento, es una Experiencia BNY.\nAgenda tu cita privada por WhatsApp: 786 162 8600",
+ "laminas": [
+  {
+   "titular": "Integrada a tu decoración",
+   "subtitulo": "Del techo a la cabina, todo en el mismo tono.",
+   "foto": "biblioteca/bny/techo-papel.jpg"
+  },
+  {
+   "titular": "Reserva tu fecha",
+   "subtitulo": "Propuesta privada por WhatsApp: 786 162 8600",
+   "cta": "Agenda tu cita",
+   "final": true
+  }
+ ],
+ "pilar": "Detrás de la experiencia",
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "plantilla": "galeria",
+ "estado": "listo"
+}
