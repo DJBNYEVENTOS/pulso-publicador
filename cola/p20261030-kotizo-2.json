@@ -1,0 +1,21 @@
+{
+ "id": "p20261030-kotizo-2",
+ "marca": "kotizo",
+ "fecha": "2026-10-30",
+ "hora": "20:30",
+ "formato": "Historia",
+ "gancho": "¿Qué te frena para dejar que tus clientes coticen solos?",
+ "texto": "¿Qué te frena para dejar que tus clientes coticen solos? Vota y te respondemos en un próximo reel. Demos: kotizo-app.netlify.app",
+ "textos": {
+  "facebook": "¿Qué te frena para dejar que tus clientes coticen solos? Vota y te respondemos en un próximo reel. Demos: kotizo-app.netlify.app",
+  "instagram": "¿Qué te frena para dejar que tus clientes coticen solos? Vota y te respondemos en un próximo reel. Demos: kotizo-app.netlify.app",
+  "tiktok": "¿Qué te frena para dejar que tus clientes coticen solos? Vota y te respondemos en un próximo reel. Demos: kotizo-app.netlify.app"
+ },
+ "hashtags": "#Kotizo #CotizadorWeb #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+ "titular": "¿Qué te frena?",
+ "subtitulo": "Vota y te respondemos en un reel",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "impacto",
+ "guion": "Historia con encuesta sobre fondo #F5F6F9, titular Young Serif #181E2E con acento #E6016E. Opciones: 'Mis precios cambian mucho' / 'No sé si mis clientes lo usarán'. Sticker de enlace 'Quiero mi cotizador'.",
+ "estado": "listo"
+}

@@ -1,0 +1,44 @@
+{
+ "id": "p20261030-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-10-30",
+ "hora": "13:30",
+ "formato": "Reel",
+ "gancho": "\"¿Tienen libre el 12 de diciembre?\" Y tú, revisando la agenda.",
+ "texto": "\"¿Tienen libre el 12 de diciembre?\" Y tú, revisando la agenda a las 10 de la noche.\n\nLuego viene: ¿para cuántos?, ¿cuántas horas?, ¿incluye mobiliario?\n\nCon un cotizador para salones, tu cliente elige fecha, número de invitados, horario y paquete, y la cotización te llega completa a tu WhatsApp.\n\nTú solo confirmas la fecha.\n\nMira la demo en kotizo-app.netlify.app\nSíguenos para más ideas que te regresan tus noches.",
+ "textos": {
+  "facebook": "\"¿Tienen libre el 12 de diciembre?\"\n\nCon un cotizador para salones, tu cliente elige fecha, invitados, horario y paquete, y la cotización te llega completa a tu WhatsApp. Tú solo confirmas la fecha.\n\nMira la demo en kotizo-app.netlify.app",
+  "instagram": "\"¿Tienen libre el 12 de diciembre?\" Y tú, revisando la agenda a las 10 de la noche.\n\nLuego viene: ¿para cuántos?, ¿cuántas horas?, ¿incluye mobiliario?\n\nCon un cotizador para salones, tu cliente elige fecha, número de invitados, horario y paquete, y la cotización te llega completa a tu WhatsApp.\n\nTú solo confirmas la fecha.\n\nMira la demo en kotizo-app.netlify.app\nSíguenos para más ideas que te regresan tus noches.",
+  "tiktok": "\"¿Tienen libre el 12 de diciembre?\" Así cotiza solo un salón de eventos, directo a tu WhatsApp."
+ },
+ "hashtags": "#Kotizo #SalonesDeEventos #NegociosMorelia #EmprendedoresMichoacan #CotizadorWeb",
+ "titular": "“¿Tienen libre el 12?”",
+ "subtitulo": "Salones de eventos: así se cotiza solo",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "impacto",
+ "guion": "Reel vertical 15 s, paleta Kotizo (#181E2E, #E6016E, #F5F6F9). 1) chat con la pregunta; 2) titular; 3-4) cotizador de salón en un celular (demo); 5) notificación de WhatsApp; 6) cta y firma 'Tus clientes cotizan solos.'",
+ "escenas": [
+  {
+   "titular": "“¿Tienen libre el 12 de diciembre?”"
+  },
+  {
+   "titular": "Salones: así se cotiza solo"
+  },
+  {
+   "titular": "Tu cliente elige fecha, invitados y horario"
+  },
+  {
+   "titular": "Suma lo que necesita de tus paquetes"
+  },
+  {
+   "titular": "Y te llega completo a tu WhatsApp"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+   "titular": "Quiero mi cotizador"
+  }
+ ],
+ "estado": "listo"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "p20261029-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-10-29",
+ "hora": "20:30",
+ "formato": "Reel",
+ "gancho": "Tu lista de precios vive en una libreta. Así se convierte en cotizador.",
+ "texto": "Tu lista de precios vive en una libreta. Así se convierte en cotizador.\n\nDetrás de cámaras de cómo armamos uno para una renta de mobiliario:\n\n1. Nos mandas tu lista: sillas, mesas, mantelería, carpas, y las zonas donde entregas.\n2. La armamos con tu logo, tus paquetes y tus precios exactos.\n3. Lo revisas como si fueras tu cliente, lo apruebas y firmamos contrato y carta de aprobación antes de publicarlo.\n\nTú no aprendes nada técnico. Solo recibes tu link para ponerlo en WhatsApp y Facebook.\n\nY la próxima vez que alguien pregunte \"¿cuánto por 100 sillas?\" a las 11 de la noche, el cotizador contesta por ti.\n\nMira el demo de tu giro: kotizo-app.netlify.app\nQuiero mi cotizador 👉 escríbenos y te contamos los planes.",
+ "textos": {
+  "facebook": "Tu lista de precios vive en una libreta. Así se convierte en cotizador.\n\nTe enseñamos cómo armamos uno para una renta de mobiliario:\n\n1. Nos mandas tu lista (sillas, mesas, mantelería, carpas) y tus zonas de entrega.\n2. La armamos con tu logo, tus paquetes y tus precios exactos.\n3. Lo pruebas como si fueras tu cliente, lo apruebas y firmamos contrato y carta de aprobación antes de publicarlo.\n\nNo tienes que aprender nada técnico: recibes tu link y lo pones en WhatsApp y Facebook.\n\nMira el demo de tu giro: kotizo-app.netlify.app\n¿Quieres el tuyo? Escríbenos y te contamos los planes.",
+  "instagram": "Tu lista de precios vive en una libreta. Así se convierte en cotizador.\n\nDetrás de cámaras de cómo armamos uno para una renta de mobiliario:\n\n1. Nos mandas tu lista: sillas, mesas, mantelería, carpas, y las zonas donde entregas.\n2. La armamos con tu logo, tus paquetes y tus precios exactos.\n3. Lo revisas como si fueras tu cliente, lo apruebas y firmamos contrato y carta de aprobación antes de publicarlo.\n\nTú no aprendes nada técnico. Solo recibes tu link para ponerlo en WhatsApp y Facebook.\n\nY la próxima vez que alguien pregunte \"¿cuánto por 100 sillas?\" a las 11 de la noche, el cotizador contesta por ti.\n\nMira el demo de tu giro: kotizo-app.netlify.app\nQuiero mi cotizador 👉 escríbenos y te contamos los planes.",
+  "linkedin": "Detrás de cámaras: cómo convertimos la lista de precios de un negocio local en un cotizador web.\n\nEl reto no es la tecnología, es traducir cómo cotiza el dueño: paquetes, zonas de entrega, mínimos. Por eso el proceso empieza con su lista tal como la tiene, y termina con una revisión donde él prueba el cotizador como cliente y firma una carta de aprobación antes de publicar.\n\nResultado: el cliente cotiza solo y el pedido llega armado a WhatsApp. Demo con 9 giros: kotizo-app.netlify.app",
+  "threads": "Tu lista de precios vive en una libreta, ¿verdad?\n\nAsí la convertimos en cotizador: nos la mandas, la armamos con tu logo y precios exactos, la pruebas como cliente y apruebas antes de publicar. Tú no aprendes nada técnico.\n\n¿En qué tienes tu lista hoy: libreta, Excel o en la cabeza? Demo: kotizo-app.netlify.app",
+  "tiktok": "Tu lista de precios en una libreta → cotizador con tu logo en 3 pasos. Sin aprender nada técnico. kotizo-app.netlify.app",
+  "youtube": "Cotizador web para renta de mobiliario: cómo pasamos tu lista de precios a un cotizador con tu marca, en 3 pasos."
+ },
+ "hashtags": "#Kotizo #CotizadorWeb #RentaDeMobiliario #NegociosMichoacan #VentasPorWhatsApp",
+ "titular": "De la libreta al cotizador",
+ "subtitulo": "Así armamos tu cotizador con tus precios, sin que aprendas nada técnico",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "tip",
+ "guion": "Vertical, estilo detrás de cámaras. 0-3 s: libreta con precios escritos a mano sobre el mostrador de una bodega de sillas y mesas; texto del gancho. 3-6 s: foto de la libreta llegando por WhatsApp. 6-10 s: grabación de pantalla armando el cotizador con logo y paquetes. 10-14 s: el dueño prueba el demo en su celular y firma la carta de aprobación. 14-17 s: link compartido en un chat de WhatsApp. 17-20 s: celular sobre el mostrador de noche, apagado; firma 'Tus clientes cotizan solos.' Ritmo ligero.",
+ "escenas": [
+  {
+   "subtitulo": "Así se convierte en cotizador",
+   "titular": "Tu lista de precios vive en una libreta"
+  },
+  {
+   "titular": "1. Nos mandas tu lista y tus zonas"
+  },
+  {
+   "titular": "2. La armamos con tu logo y precios"
+  },
+  {
+   "titular": "3. La pruebas, apruebas y firmamos"
+  },
+  {
+   "titular": "Tu link, listo para WhatsApp y Facebook"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Mira el demo de tu giro: kotizo-app.netlify.app",
+   "titular": "Tú recuperas tus noches"
+  }
+ ],
+ "estado": "listo"
+}

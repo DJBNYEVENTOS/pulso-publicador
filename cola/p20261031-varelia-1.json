@@ -1,0 +1,45 @@
+{
+ "id": "p20261031-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-10-31",
+ "hora": "13:00",
+ "formato": "Reel",
+ "gancho": "Las primeras 48 horas después de firmar definen cómo te va a ver esa pareja.",
+ "texto": "Las primeras 48 horas después de firmar definen cómo te va a ver esa pareja.\n\nAcaban de confiarte el día más importante de su vida. Lo que reciban ahora les confirma que eligieron bien:\n\n· Una bienvenida con sus nombres, no un PDF genérico.\n· Su calendario de pagos, claro desde el primer día.\n· Su checklist, para que sepan qué sigue sin preguntarte.\n· Un solo lugar para todo, en lugar de mensajes sueltos.\n\nEn Varelia, cada pareja recibe su propio portal con tu marca: contrato, pagos y pendientes a la vista. Tú te ves como el estudio que eres desde el día uno.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "facebook": "Las primeras 48 horas después de firmar definen cómo te va a ver esa pareja.\n\nSi eres wedding planner, lo sabes: acaban de confiarte el día más importante de su vida, y lo que reciban ahora les confirma que eligieron bien.\n\nUna bienvenida con sus nombres, su calendario de pagos claro desde el primer día, su checklist para saber qué sigue y un solo lugar para todo, en lugar de mensajes sueltos.\n\nEn Varelia, cada pareja recibe su propio portal con tu marca: contrato, pagos y pendientes a la vista.\n\nPrueba 14 días gratis, sin tarjeta. El link está en nuestra página.",
+  "instagram": "Las primeras 48 horas después de firmar definen cómo te va a ver esa pareja.\n\nAcaban de confiarte el día más importante de su vida. Lo que reciban ahora les confirma que eligieron bien:\n\n· Una bienvenida con sus nombres, no un PDF genérico.\n· Su calendario de pagos, claro desde el primer día.\n· Su checklist, para que sepan qué sigue sin preguntarte.\n· Un solo lugar para todo, en lugar de mensajes sueltos.\n\nEn Varelia, cada pareja recibe su propio portal con tu marca: contrato, pagos y pendientes a la vista. Tú te ves como el estudio que eres desde el día uno.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio."
+ },
+ "hashtags": "#Varelia #WeddingPlanner #BodasMexico #PlaneacionDeBodas #EstudioDeBodas",
+ "titular": "Las 48 horas después de firmar",
+ "subtitulo": "Así empieza una pareja que confía en tu estudio",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "tip",
+ "guion": "0-3 s: fondo marfil (#F6F1E8), Playfair Display en #24221F: 'Las 48 horas después de firmar'. 3-6 s: manos firmando un contrato sobre mesa de madera clara con muestras de papelería y flores. 6-9 s: celular de la pareja abriendo su portal con la marca del estudio (grabación real de pantalla de Varelia). 9-12 s: sección de pagos con fechas claras. 12-15 s: checklist con pendientes palomeados. 15-18 s: la planner cierra su laptop con calma, luz de tarde. 18-21 s: 'Prueba 14 días gratis · sin tarjeta' y firma 'El centro de operación de tu estudio' con detalle dorado #B8955A. Audio: piano editorial ligero.",
+ "escenas": [
+  {
+   "titular": "Las 48 horas después de firmar"
+  },
+  {
+   "subtitulo": "No un PDF genérico",
+   "titular": "Una bienvenida con sus nombres"
+  },
+  {
+   "titular": "Sus pagos, claros desde el día uno"
+  },
+  {
+   "titular": "Su checklist, sin tener que preguntarte"
+  },
+  {
+   "subtitulo": "En lugar de 40 chats",
+   "titular": "Un portal con tu marca"
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Sin tarjeta. Link en bio.",
+   "titular": "Prueba 14 días gratis"
+  }
+ ],
+ "estado": "listo"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "p20261027-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-10-27",
+ "hora": "13:30",
+ "formato": "Reel",
+ "gancho": "Te piden banquete para 150 y sigues con la calculadora.",
+ "texto": "Tu cliente pide banquete para 150. Tú todavía estás sacando la calculadora.\n\nAsí se ve un cotizador de banquetes en 15 segundos:\n\n1. Elige fecha y número de invitados.\n2. Escoge menú: tres tiempos, taquiza o buffet.\n3. Suma extras: meseros, loza, mantelería.\n4. Ve su total y lo manda a tu WhatsApp, ya armado.\n\nTú solo contestas: \"Listo, ¿apartamos la fecha?\"\n\nMira el demo de tu giro en kotizo-app.netlify.app\nGuárdalo para tu próximo cliente. Quiero mi cotizador 👉 escríbenos y te contamos los planes.",
+ "textos": {
+  "facebook": "Tu cliente pide banquete para 150. Tú todavía estás sacando la calculadora.\n\nAsí se ve un cotizador de banquetes en 15 segundos:\n\n1. Elige fecha y número de invitados.\n2. Escoge menú: tres tiempos, taquiza o buffet.\n3. Suma extras: meseros, loza, mantelería.\n4. Ve su total y lo manda a tu WhatsApp, ya armado.\n\nTú solo contestas: \"Listo, ¿apartamos la fecha?\"\n\nMira el demo de tu giro en kotizo-app.netlify.app\nCompártelo con alguien que tenga banquetes. Quiero mi cotizador 👉 escríbenos y te contamos los planes.",
+  "instagram": "Tu cliente pide banquete para 150. Tú todavía estás sacando la calculadora.\n\nAsí se ve un cotizador de banquetes en 15 segundos:\n\n1. Elige fecha y número de invitados.\n2. Escoge menú: tres tiempos, taquiza o buffet.\n3. Suma extras: meseros, loza, mantelería.\n4. Ve su total y lo manda a tu WhatsApp, ya armado.\n\nTú solo contestas: \"Listo, ¿apartamos la fecha?\"\n\nMira el demo de tu giro en kotizo-app.netlify.app\nGuárdalo para tu próximo cliente. Quiero mi cotizador 👉 escríbenos y te contamos los planes.",
+  "linkedin": "Demo por giro: banquetes.\n\nEn banquetes, cada cotización cambia por invitados, menú y extras. Un cotizador web convierte esas variables en un total que el cliente arma solo, y el pedido llega completo al WhatsApp del negocio. El dueño deja de calcular y empieza a cerrar.\n\nDemo con 9 giros: kotizo-app.netlify.app",
+  "threads": "Te piden banquete para 150 y sigues con la calculadora.\n\nCon un cotizador, tu cliente elige fecha, invitados, menú y extras, y te llega a WhatsApp el pedido armado. Tú solo confirmas la fecha.\n\n¿Cuánto tardas hoy en cotizar un banquete? Demo: kotizo-app.netlify.app",
+  "tiktok": "Banquete para 150, cotizado en 15 s sin que contestes un mensaje. Demo: kotizo-app.netlify.app",
+  "youtube": "Cotizador de banquetes por WhatsApp: tu cliente elige invitados, menú y extras y recibes la cotización armada."
+ },
+ "hashtags": "#Kotizo #CotizadorWeb #Banquetes #NegociosMorelia #EmprendedoresMichoacan",
+ "titular": "Banquete para 150, cotizado solo",
+ "subtitulo": "Tu cliente elige menú y extras; tú recibes el pedido armado",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "tip",
+ "guion": "Vertical 15-18 s. 0-1 s: mano con calculadora y libreta sobre la mesa de una cocina de banquetes, texto del gancho grande. 1-12 s: grabación de pantalla del demo de banquetes en un celular: invitados, menú, extras, total. 12-15 s: notificación de WhatsApp con la cotización armada. Cierre en fondo #F5F6F9, titular Young Serif #181E2E, acento #E6016E y 'Síguenos para más ideas que te regresan tus noches'.",
+ "escenas": [
+  {
+   "subtitulo": "Y sigues con la calculadora",
+   "titular": "Te piden banquete para 150"
+  },
+  {
+   "titular": "1. Elige fecha e invitados"
+  },
+  {
+   "titular": "2. Escoge menú: tiempos, taquiza o buffet"
+  },
+  {
+   "titular": "3. Suma meseros, loza y mantelería"
+  },
+  {
+   "titular": "Llega a tu WhatsApp, ya armado"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Guárdalo para tu próximo cliente",
+   "titular": "Tú solo apartas la fecha"
+  }
+ ],
+ "estado": "listo"
+}

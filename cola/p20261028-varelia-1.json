@@ -1,0 +1,40 @@
+{
+ "id": "p20261028-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-10-28",
+ "hora": "20:00",
+ "formato": "Carrusel",
+ "gancho": "La pareja te escribe: \"¿qué nos falta?\". Por tercera vez esta semana.",
+ "texto": "La pareja te escribe: \"¿qué nos falta?\". Por tercera vez esta semana.\n\nY tú abres el Excel, revisas el checklist, buscas el último pago en el chat y contestas con todo el cuidado del mundo. A las 10:40 de la noche.\n\nAntes:\n· El checklist en tu computadora.\n· Los pagos en otra pestaña.\n· Las dudas, en WhatsApp a cualquier hora.\n\nCon Varelia:\n· Cada pareja tiene su portal con tu marca.\n· Ve sus pagos, sus pendientes y sus proveedores.\n· Tú sigues al mando; ellos ya no tienen que preguntarte lo básico.\n\nTu servicio no cambia. Cambia la tranquilidad con la que lo das.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "facebook": "La pareja te escribe: \"¿qué nos falta?\". Por tercera vez esta semana.\n\nY tú abres el Excel, revisas el checklist, buscas el último pago en el chat y contestas con todo el cuidado del mundo. A las 10:40 de la noche.\n\nAntes:\n· El checklist en tu computadora.\n· Los pagos en otra pestaña.\n· Las dudas, en WhatsApp a cualquier hora.\n\nCon Varelia:\n· Cada pareja tiene su portal con tu marca.\n· Ve sus pagos, sus pendientes y sus proveedores.\n· Tú sigues al mando; ellos ya no tienen que preguntarte lo básico.\n\nTu servicio no cambia. Cambia la tranquilidad con la que lo das.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+  "instagram": "La pareja te escribe: \"¿qué nos falta?\". Por tercera vez esta semana.\n\nY tú abres el Excel, revisas el checklist, buscas el último pago en el chat y contestas con todo el cuidado del mundo. A las 10:40 de la noche.\n\nAntes:\n· El checklist en tu computadora.\n· Los pagos en otra pestaña.\n· Las dudas, en WhatsApp a cualquier hora.\n\nCon Varelia:\n· Cada pareja tiene su portal con tu marca.\n· Ve sus pagos, sus pendientes y sus proveedores.\n· Tú sigues al mando; ellos ya no tienen que preguntarte lo básico.\n\nTu servicio no cambia. Cambia la tranquilidad con la que lo das.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio."
+ },
+ "hashtags": "#Varelia #WeddingPlanner #BodasMexico #PlaneacionDeBodas #EstudioDeBodas",
+ "titular": "¿Qué nos falta?, por tercera vez",
+ "subtitulo": "Un portal con tu marca para que cada pareja lo vea sola",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "guion": "Portada: fondo crema (#F6F1E8), titular en Playfair Display carbón (#24221F) con las comillas en dorado (#B8955A), celular con un chat de WhatsApp desenfocado. Lámina 1: escritorio con laptop y tres pestañas abiertas, luz de lámpara de noche. Lámina 2: pantalla del portal de la pareja con la marca del estudio. Lámina 3: detalle de la lista de pagos y pendientes. Lámina final: fondo carbón, titular crema, CTA dorado. Estilo editorial de revista de bodas.",
+ "laminas": [
+  {
+   "subtitulo": "Checklist, pagos y dudas, cada uno en un lugar distinto.",
+   "titular": "Antes: tres pestañas y un chat"
+  },
+  {
+   "subtitulo": "Con tu marca, listo para compartir.",
+   "titular": "Después: un portal por pareja"
+  },
+  {
+   "subtitulo": "La pareja lo consulta sin escribirte.",
+   "titular": "Pagos, pendientes y proveedores"
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Prueba 14 días gratis, sin tarjeta. Link en bio.",
+   "titular": "Tú sigues al mando"
+  }
+ ],
+ "estado": "listo"
+}

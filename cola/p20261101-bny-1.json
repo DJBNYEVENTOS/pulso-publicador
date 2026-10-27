@@ -1,0 +1,44 @@
+{
+ "id": "p20261101-bny-1",
+ "marca": "bny",
+ "fecha": "2026-11-01",
+ "hora": "19:30",
+ "formato": "Reel",
+ "gancho": "Cuando tu papá se pone de pie, todo lo demás espera.",
+ "texto": "Cuando tu papá se pone de pie, todo lo demás espera.\n\nLa copa en la mano. Un papel doblado que lleva semanas en su saco. Tu mamá ya está llorando.\n\nEse silencio también se prepara: la música baja en el segundo exacto, el micrófono suena claro desde su primera palabra y nadie tiene que pedir silencio.\n\nY cuando termina, entra la canción que elegiste para abrazarlo.\n\nSon cosas que nadie nota. Por eso se sienten.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 🥂",
+ "textos": {
+  "facebook": "Cuando tu papá se pone de pie, todo lo demás espera.\n\nLa copa en la mano. Un papel doblado que lleva semanas guardado en su saco. Tu mamá ya está llorando, y tú también.\n\nEse silencio también se prepara. La música baja en el segundo exacto, el micrófono suena claro desde su primera palabra y nadie tiene que pedir silencio. Cuando termina, entra la canción que elegiste para abrazarlo.\n\nSon cosas que nadie nota. Por eso se sienten.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 🥂",
+  "instagram": "Cuando tu papá se pone de pie, todo lo demás espera.\n\nLa copa en la mano. Un papel doblado que lleva semanas en su saco. Tu mamá ya está llorando.\n\nEse silencio también se prepara: la música baja en el segundo exacto, el micrófono suena claro desde su primera palabra y nadie tiene que pedir silencio.\n\nY cuando termina, entra la canción que elegiste para abrazarlo.\n\nSon cosas que nadie nota. Por eso se sienten.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 🥂",
+  "tiktok": "Cuando tu papá se pone de pie, todo espera. Ese silencio también se prepara. Propuesta privada por WhatsApp 🥂"
+ },
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "titular": "Cuando tu papá se pone de pie",
+ "subtitulo": "Ese silencio también se prepara",
+ "cta": "Aparta tu fecha",
+ "plantilla": "cita",
+ "guion": "0-3 s: negro profundo (#0D0D0F), aparece en Tinos marfil: 'Cuando tu papá se pone de pie'. 3-6 s: detalle en luz cálida de una mano que saca un papel doblado del saco. 6-9 s: copa de cristal levantada a contraluz, fondo desenfocado de velas. 9-12 s: silueta del papá hablando, mesa en penumbra, invitados quietos. 12-15 s: papá e hija abrazados en la pista, luz cálida baja, mucho espacio vacío. 15-18 s: firma 'No es un evento, es una Experiencia BNY.' y logo oficial BNY sin modificar sobre negro. Audio: piano suave. Sin cables, bocinas ni gente saltando.",
+ "escenas": [
+  {
+   "titular": "Cuando tu papá se pone de pie"
+  },
+  {
+   "titular": "Un papel doblado, semanas en su saco"
+  },
+  {
+   "titular": "La música baja en el segundo exacto"
+  },
+  {
+   "titular": "Su voz, clara desde la primera palabra"
+  },
+  {
+   "titular": "Y entra la canción para abrazarlo"
+  },
+  {
+   "cta": "Aparta tu fecha",
+   "final": true,
+   "subtitulo": "Propuesta privada por WhatsApp",
+   "titular": "Aparta tu fecha"
+  }
+ ],
+ "estado": "listo"
+}

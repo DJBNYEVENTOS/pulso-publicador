@@ -1,0 +1,45 @@
+{
+ "id": "p20261030-bny-1",
+ "marca": "bny",
+ "fecha": "2026-10-30",
+ "hora": "19:00",
+ "formato": "Carrusel",
+ "gancho": "Tu canción de entrada se elige con los ojos cerrados.",
+ "texto": "Tu canción de entrada se elige con los ojos cerrados.\n\nImagínate en la puerta. Antes de pensar en qué canción, hazte cuatro preguntas:\n\n1. ¿Cuánto dura tu camino? Del umbral al altar, la canción debe llegar a su mejor parte justo ahí.\n2. ¿Qué quieres que sientan? Emoción, elegancia o sorpresa suenan distinto.\n3. ¿Original o instrumental? Unas cuerdas pueden volver íntima una canción que todos conocen.\n4. ¿En qué segundo se abren las puertas? Eso lo marcamos contigo.\n\nGuárdalo para cuando empieces a elegir tu música.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+ "textos": {
+  "facebook": "Tu canción de entrada se elige con los ojos cerrados.\n\nCuatro preguntas antes de elegirla: ¿cuánto dura tu camino al altar?, ¿qué quieres que sientan tus invitados?, ¿versión original o instrumental?, ¿en qué segundo se abren las puertas?\n\nGuárdalo para cuando empieces a elegir tu música.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "instagram": "Tu canción de entrada se elige con los ojos cerrados.\n\nImagínate en la puerta. Antes de pensar en qué canción, hazte cuatro preguntas:\n\n1. ¿Cuánto dura tu camino? Del umbral al altar, la canción debe llegar a su mejor parte justo ahí.\n2. ¿Qué quieres que sientan? Emoción, elegancia o sorpresa suenan distinto.\n3. ¿Original o instrumental? Unas cuerdas pueden volver íntima una canción que todos conocen.\n4. ¿En qué segundo se abren las puertas? Eso lo marcamos contigo.\n\nGuárdalo para cuando empieces a elegir tu música.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "tiktok": "Tu canción de entrada se elige con los ojos cerrados. 4 preguntas antes de elegirla. Guárdalo ✨"
+ },
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "titular": "Cómo elegir tu canción de entrada",
+ "subtitulo": "Cuatro preguntas antes de que se abran las puertas",
+ "cta": "Aparta tu fecha",
+ "plantilla": "tip",
+ "guion": "Carrusel 4:5 en paleta BNY. Portada negra (#0D0D0F) con titular en Tinos marfil y una línea fina #A31E55; mucho espacio vacío. Láminas alternan marfil y negro, una pregunta grande y un subtítulo corto. Última lámina: 'Aparta tu fecha', firma y logo oficial sin modificar. Sin precios ni equipo.",
+ "laminas": [
+  {
+   "subtitulo": "Del umbral al altar, la canción debe llegar a su mejor parte justo ahí.",
+   "titular": "¿Cuánto dura tu camino?"
+  },
+  {
+   "subtitulo": "Emoción, elegancia o sorpresa: cada una suena distinto.",
+   "titular": "¿Qué quieres que sientan?"
+  },
+  {
+   "subtitulo": "Unas cuerdas pueden volver íntima una canción que todos conocen.",
+   "titular": "¿Original o instrumental?"
+  },
+  {
+   "subtitulo": "Lo marcamos contigo para que las puertas y la nota coincidan.",
+   "titular": "¿En qué segundo se abren?"
+  },
+  {
+   "cta": "Aparta tu fecha",
+   "final": true,
+   "subtitulo": "Propuesta privada por WhatsApp",
+   "titular": "Aparta tu fecha"
+  }
+ ],
+ "estado": "listo"
+}

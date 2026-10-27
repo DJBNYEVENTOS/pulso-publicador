@@ -1,0 +1,48 @@
+{
+ "id": "p20261028-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-10-28",
+ "hora": "14:00",
+ "formato": "Carrusel",
+ "gancho": "Cotizar por WhatsApp no es el problema. Estos 5 errores sí.",
+ "texto": "Cotizar por WhatsApp no es el problema. Estos 5 errores sí.\n\n1. Contestar \"¿cuánto cuesta?\" con otra pregunta… y que el cliente ya no regrese.\n2. Mandar precios sueltos en audios que nadie vuelve a escuchar.\n3. Olvidar el flete o la zona de entrega y comerte la diferencia.\n4. Tardar horas mientras otro negocio contesta en minutos.\n5. Que tu cotización no tenga tu logo y se vea igual que la de todos.\n\nUn cotizador web evita los cinco: tu cliente elige, ve su total y te llega el pedido completo a WhatsApp.\n\nGuárdalo y revisa cuál te está pasando.\nQuiero mi cotizador 👉 demos en kotizo-app.netlify.app",
+ "textos": {
+  "facebook": "Cotizar por WhatsApp no es el problema. Estos 5 errores sí.\n\n1. Contestar \"¿cuánto cuesta?\" con otra pregunta… y que el cliente ya no regrese.\n2. Mandar precios sueltos en audios que nadie vuelve a escuchar.\n3. Olvidar el flete o la zona de entrega y comerte la diferencia.\n4. Tardar horas mientras otro negocio contesta en minutos.\n5. Que tu cotización no tenga tu logo y se vea igual que la de todos.\n\nUn cotizador web evita los cinco: tu cliente elige, ve su total y te llega el pedido completo a WhatsApp.\n\nCompártelo con otro negocio y revisen cuál te está pasando.\nQuiero mi cotizador 👉 demos en kotizo-app.netlify.app",
+  "instagram": "Cotizar por WhatsApp no es el problema. Estos 5 errores sí.\n\n1. Contestar \"¿cuánto cuesta?\" con otra pregunta… y que el cliente ya no regrese.\n2. Mandar precios sueltos en audios que nadie vuelve a escuchar.\n3. Olvidar el flete o la zona de entrega y comerte la diferencia.\n4. Tardar horas mientras otro negocio contesta en minutos.\n5. Que tu cotización no tenga tu logo y se vea igual que la de todos.\n\nUn cotizador web evita los cinco: tu cliente elige, ve su total y te llega el pedido completo a WhatsApp.\n\nGuárdalo y revisa cuál te está pasando.\nQuiero mi cotizador 👉 demos en kotizo-app.netlify.app",
+  "linkedin": "5 errores frecuentes al cotizar por WhatsApp en negocios locales: respuestas lentas, precios en audios, costos de entrega olvidados, cotizaciones sin marca y preguntas que enfrían al cliente. Un cotizador web estandariza la respuesta y entrega el pedido completo. Demo: kotizo-app.netlify.app",
+  "threads": "Cotizar por WhatsApp no es el problema. Estos errores sí: precios en audios, olvidar el flete, tardar horas, cotizaciones sin tu logo.\n\n¿Cuál te ha costado un cliente? Demo: kotizo-app.netlify.app",
+  "tiktok": "5 errores al cotizar por WhatsApp que te cuestan clientes. ¿Cuál te pasa? kotizo-app.netlify.app",
+  "youtube": "Errores al cotizar por WhatsApp: 5 que te hacen perder clientes y cómo evitarlos con un cotizador web."
+ },
+ "hashtags": "#Kotizo #VentasPorWhatsApp #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan",
+ "titular": "5 errores al cotizar por WhatsApp",
+ "subtitulo": "¿Cuál te está costando clientes esta semana?",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "tip",
+ "guion": "Carrusel 4:5, fondo #F5F6F9, titulares Young Serif #181E2E, números en magenta #E6016E. Portada: celular con chat lleno de audios y la pregunta '¿cuánto cuesta?'. Cada lámina un error con ícono simple. Final: pantalla del cotizador con total y CTA.",
+ "laminas": [
+  {
+   "subtitulo": "El cliente pidió un precio, no un interrogatorio.",
+   "titular": "1. Responder con otra pregunta"
+  },
+  {
+   "subtitulo": "Nadie los vuelve a escuchar para decidir.",
+   "titular": "2. Precios en audios"
+  },
+  {
+   "subtitulo": "La diferencia sale de tu bolsa.",
+   "titular": "3. Olvidar flete y zona"
+  },
+  {
+   "subtitulo": "Gana quien contesta primero y con su marca.",
+   "titular": "4 y 5. Tardar y verse igual"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Guárdalo para tu próximo cliente",
+   "titular": "Tu cotizador evita los cinco"
+  }
+ ],
+ "estado": "listo"
+}

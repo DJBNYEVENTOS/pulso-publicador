@@ -1,0 +1,48 @@
+{
+ "id": "p20261031-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-10-31",
+ "hora": "13:30",
+ "formato": "Reel",
+ "gancho": "¿Cuánto te cuesta cotizar a mano? Haz la cuenta.",
+ "texto": "Haz esta cuenta con calma. Solo te toma un minuto.\n\n1. ¿Cuántos \"¿cuánto cuesta?\" te llegan a la semana?\n2. ¿Cuántos minutos le dedicas a cada uno?\n3. ¿Cuántos se fueron porque contestaste tarde?\n4. Multiplica esos clientes por lo que vale tu pedido promedio.\n\nSi te llegan 20 y tardas 10 minutos en cada uno, son más de 3 horas a la semana solo cotizando. Y eso sin contar los que nunca regresaron.\n\nUn cotizador contesta en segundos, a cualquier hora, con tus precios.\n\nGuárdalo y haz tu cuenta hoy.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+ "textos": {
+  "facebook": "Haz esta cuenta con calma. Solo te toma un minuto.\n\n1. ¿Cuántos \"¿cuánto cuesta?\" te llegan a la semana?\n2. ¿Cuántos minutos le dedicas a cada uno?\n3. ¿Cuántos se fueron porque contestaste tarde?\n4. Multiplica esos clientes por lo que vale tu pedido promedio.\n\nSi te llegan 20 y tardas 10 minutos en cada uno, son más de 3 horas a la semana solo cotizando. Y eso sin contar los que nunca regresaron.\n\nUn cotizador contesta en segundos, a cualquier hora, con tus precios.\n\nHaz tu cuenta y cuéntanos en comentarios.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "instagram": "Haz esta cuenta con calma. Solo te toma un minuto.\n\n1. ¿Cuántos \"¿cuánto cuesta?\" te llegan a la semana?\n2. ¿Cuántos minutos le dedicas a cada uno?\n3. ¿Cuántos se fueron porque contestaste tarde?\n4. Multiplica esos clientes por lo que vale tu pedido promedio.\n\nSi te llegan 20 y tardas 10 minutos en cada uno, son más de 3 horas a la semana solo cotizando. Y eso sin contar los que nunca regresaron.\n\nUn cotizador contesta en segundos, a cualquier hora, con tus precios.\n\nGuárdalo y haz tu cuenta hoy.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "linkedin": "El costo oculto de cotizar a mano: tiempo por cotización, clientes que se van por respuesta lenta y pedido promedio perdido. Con 20 solicitudes semanales de 10 minutos, son más de 3 horas solo cotizando. Un cotizador web responde al instante. kotizo-app.netlify.app",
+  "threads": "Haz la cuenta: si te llegan 20 '¿cuánto cuesta?' a la semana y tardas 10 min en cada uno, son más de 3 horas solo cotizando. Sin contar los que se fueron.\n\n¿Cuánto te sale a ti?",
+  "tiktok": "20 cotizaciones × 10 min = más de 3 horas a la semana. ¿Cuánto te cuesta cotizar a mano?",
+  "youtube": "Cuánto cuesta cotizar a mano por WhatsApp: haz la cuenta de tiempo y clientes perdidos."
+ },
+ "hashtags": "#Kotizo #VentasPorWhatsApp #Banquetes #NegociosMorelia #EmprendedoresMichoacan",
+ "titular": "¿Cuánto te cuesta cotizar a mano?",
+ "subtitulo": "Haz la cuenta en un minuto: tiempo y clientes",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "impacto",
+ "guion": "Vertical 18 s. 0-1 s: manos escribiendo en calculadora junto a un celular que no deja de vibrar, gancho en grande. Cada pregunta aparece sobre fondo #181E2E con números en magenta #E6016E. Cierre en #F5F6F9 con el cotizador en pantalla y 'Síguenos para más ideas que te regresan tus noches'.",
+ "escenas": [
+  {
+   "subtitulo": "Haz la cuenta",
+   "titular": "¿Cuánto te cuesta cotizar a mano?"
+  },
+  {
+   "titular": "¿Cuántos \"¿cuánto cuesta?\" a la semana?"
+  },
+  {
+   "titular": "¿Cuántos minutos en cada uno?"
+  },
+  {
+   "titular": "20 × 10 minutos = más de 3 horas"
+  },
+  {
+   "titular": "Y los que nunca regresaron"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Guárdalo y haz tu cuenta hoy",
+   "titular": "Tu cotizador contesta en segundos"
+  }
+ ],
+ "estado": "listo"
+}

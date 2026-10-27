@@ -1,0 +1,41 @@
+{
+ "id": "p20261102-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-11-02",
+ "hora": "13:00",
+ "formato": "Reel",
+ "gancho": "Cobrar el segundo pago no debería sentirse incómodo.",
+ "texto": "Cobrar el segundo pago no debería sentirse incómodo.\n\nPero ahí estás: revisando el Excel, buscando la transferencia en el chat, redactando el mensaje con cuidado para no sonar a cobradora. Otra vez a las 11 de la noche.\n\nEn Varelia, los pagos de todas tus bodas viven en un solo lugar:\n· lo que cada pareja ya pagó\n· lo que falta\n· qué bodas tienen saldo pendiente\n\nSigues siendo la planner impecable que te contrataron. Ahora, con las cuentas igual de impecables.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "facebook": "Cobrar el segundo pago no debería sentirse incómodo.\n\nSi eres wedding planner, conoces la escena: el Excel abierto, la transferencia perdida entre mensajes y ese texto que reescribes tres veces para no sonar a cobradora.\n\nEn Varelia, los pagos de todas tus bodas viven en un solo lugar: lo que cada pareja ya pagó, lo que falta y qué bodas tienen saldo pendiente.\n\nTu trabajo merece verse impecable también por dentro.\n\nPrueba 14 días gratis, sin tarjeta. El link está en nuestra página.",
+  "instagram": "Cobrar el segundo pago no debería sentirse incómodo.\n\nPero ahí estás: revisando el Excel, buscando la transferencia en el chat, redactando el mensaje con cuidado para no sonar a cobradora. Otra vez a las 11 de la noche.\n\nEn Varelia, los pagos de todas tus bodas viven en un solo lugar:\n· lo que cada pareja ya pagó\n· lo que falta\n· qué bodas tienen saldo pendiente\n\nSigues siendo la planner impecable que te contrataron. Ahora, con las cuentas igual de impecables.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio."
+ },
+ "hashtags": "#Varelia #WeddingPlanner #BodasMexico #PlaneacionDeBodas #EstudioDeBodas",
+ "titular": "Cobrar sin sentirte incómoda",
+ "subtitulo": "Los pagos de todas tus bodas, en un solo lugar",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "guion": "0-3 s: fondo marfil (#F6F1E8), Playfair Display: 'Cobrar no debería sentirse incómodo'. 3-6 s: escritorio de noche, laptop con un Excel lleno y el celular con chats, luz de lámpara cálida. 6-10 s: grabación real de pantalla de la sección de pagos de Varelia mostrando pagado y pendiente. 10-13 s: la planner cierra la laptop y sonríe, flores y muestrario de papelería al fondo. 13-16 s: 'Prueba 14 días gratis · sin tarjeta' y firma 'El centro de operación de tu estudio'. Audio: piano editorial ligero.",
+ "escenas": [
+  {
+   "titular": "Cobrar no debería sentirse incómodo"
+  },
+  {
+   "titular": "El Excel, el chat, la transferencia perdida"
+  },
+  {
+   "titular": "Todos tus pagos, en un solo lugar"
+  },
+  {
+   "subtitulo": "De cada boda, a la vista",
+   "titular": "Lo que pagaron y lo que falta"
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Sin tarjeta. Link en bio.",
+   "titular": "Prueba 14 días gratis"
+  }
+ ],
+ "estado": "listo"
+}

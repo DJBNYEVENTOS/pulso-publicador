@@ -1,0 +1,48 @@
+{
+ "id": "p20261029-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-10-29",
+ "hora": "13:00",
+ "formato": "Reel",
+ "gancho": "La primera cita no se gana con el portafolio.",
+ "texto": "La primera cita no se gana con el portafolio. Se gana con las preguntas.\n\n5 que separan una plática bonita de una boda firmada:\n\n1. \"¿Cómo quieren que se sienta su boda?\" (antes que fecha y presupuesto).\n2. \"¿Quién más decide con ustedes?\"\n3. \"¿Qué es lo que no quieren vivir ese día?\"\n4. \"¿Qué parte ya tienen resuelta y cuál les quita el sueño?\"\n5. \"¿Cómo prefieren que les mande avances?\"\n\nLa última es la que más planners se saltan, y la que define toda la relación.\n\nGuárdalo para tu próxima cita. Mándaselo a otra planner que lo necesite.\nY cuando firmen, que su portal ya esté listo con tu marca: prueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "facebook": "La primera cita no se gana con el portafolio. Se gana con las preguntas.\n\n5 que separan una plática bonita de una boda firmada:\n\n1. \"¿Cómo quieren que se sienta su boda?\" (antes que fecha y presupuesto).\n2. \"¿Quién más decide con ustedes?\"\n3. \"¿Qué es lo que no quieren vivir ese día?\"\n4. \"¿Qué parte ya tienen resuelta y cuál les quita el sueño?\"\n5. \"¿Cómo prefieren que les mande avances?\"\n\nLa última es la que más planners se saltan, y la que define toda la relación.\n\nGuárdalo para tu próxima cita. Mándaselo a otra planner que lo necesite.\nY cuando firmen, que su portal ya esté listo con tu marca: prueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+  "instagram": "La primera cita no se gana con el portafolio. Se gana con las preguntas.\n\n5 que separan una plática bonita de una boda firmada:\n\n1. \"¿Cómo quieren que se sienta su boda?\" (antes que fecha y presupuesto).\n2. \"¿Quién más decide con ustedes?\"\n3. \"¿Qué es lo que no quieren vivir ese día?\"\n4. \"¿Qué parte ya tienen resuelta y cuál les quita el sueño?\"\n5. \"¿Cómo prefieren que les mande avances?\"\n\nLa última es la que más planners se saltan, y la que define toda la relación.\n\nGuárdalo para tu próxima cita. Mándaselo a otra planner que lo necesite.\nY cuando firmen, que su portal ya esté listo con tu marca: prueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+  "linkedin": "Para wedding planners: la primera cita se gana con preguntas, no con el portafolio. Emoción, quién decide, qué temen, qué ya resolvieron y cómo quieren recibir avances. Esa última define la relación de servicio. Varelia, prueba 14 días gratis.",
+  "threads": "La primera cita no se gana con el portafolio, se gana con las preguntas.\n\nLa que más planners se saltan: '¿cómo prefieren que les mande avances?'. Define toda la relación.\n\n¿Cuál es tu pregunta infaltable?",
+  "tiktok": "5 preguntas para la primera cita con la pareja que convierten una plática en boda firmada.",
+  "youtube": "Preguntas para la primera cita de wedding planner con la pareja: 5 que ayudan a cerrar la boda."
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #PlaneacionDeBodas",
+ "titular": "5 preguntas para la primera cita",
+ "subtitulo": "Las que convierten una plática bonita en una boda firmada",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "cita",
+ "guion": "Vertical 18 s, estilo editorial. 0-1 s: libreta de piel abierta y dos tazas en una mesa de café, gancho en Playfair Display carbón #24221F sobre crema #F6F1E8. Cada pregunta entre comillas doradas #B8955A, mucho espacio. Cierre: portal de la pareja en una laptop, CTA dorado y 'Mándaselo a otra planner'.",
+ "escenas": [
+  {
+   "titular": "La primera cita no se gana con el portafolio"
+  },
+  {
+   "titular": "¿Cómo quieren que se sienta su boda?"
+  },
+  {
+   "titular": "¿Quién más decide con ustedes?"
+  },
+  {
+   "titular": "¿Qué no quieren vivir ese día?"
+  },
+  {
+   "subtitulo": "La que más planners se saltan",
+   "titular": "¿Cómo prefieren recibir avances?"
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Prueba Varelia 14 días gratis",
+   "titular": "Guárdalo para tu próxima cita"
+  }
+ ],
+ "estado": "listo"
+}

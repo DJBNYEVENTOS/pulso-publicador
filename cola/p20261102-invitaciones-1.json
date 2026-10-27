@@ -1,0 +1,43 @@
+{
+ "id": "p20261102-invitaciones-1",
+ "marca": "invitaciones",
+ "fecha": "2026-11-02",
+ "hora": "20:00",
+ "formato": "Reel",
+ "gancho": "¿Quién va a tomar las fotos que tu fotógrafo no alcanza?",
+ "texto": "¿Quién va a tomar las fotos que tu fotógrafo no alcanza?\n\nTu prima bailando con el abuelo. La mesa de tus amigas a las 2 de la mañana. Ese abrazo que nadie esperaba.\n\nCon la Cámara de invitados, cada quien las toma desde tu invitación y todas llegan a un mismo lugar. Sin grupos de WhatsApp, sin \"pásamelas\".\n\nIncluida en Premium y Gala. Precio especial de lanzamiento hasta el 17 de noviembre: Premium $990 más IVA y Gala $1,890 más IVA. Aparta hoy aunque tu evento sea el próximo año.\n\nEscríbenos por WhatsApp: 786 162 8600 · invitacionesbny.netlify.app",
+ "textos": {
+  "facebook": "¿Quién va a tomar las fotos que tu fotógrafo no alcanza?\n\nCon la Cámara de invitados, cada quien las toma desde tu invitación y todas llegan a un mismo lugar. Sin grupos de WhatsApp, sin \"pásamelas\".\n\nIncluida en Premium y Gala. Precio especial de lanzamiento hasta el 17 de noviembre: Premium $990 más IVA y Gala $1,890 más IVA.\n\nEscríbenos por WhatsApp: 786 162 8600 🤍",
+  "instagram": "¿Quién va a tomar las fotos que tu fotógrafo no alcanza?\n\nTu prima bailando con el abuelo. La mesa de tus amigas a las 2 de la mañana. Ese abrazo que nadie esperaba.\n\nCon la Cámara de invitados, cada quien las toma desde tu invitación y todas llegan a un mismo lugar. Sin grupos de WhatsApp, sin \"pásamelas\".\n\nIncluida en Premium y Gala. Precio especial de lanzamiento hasta el 17 de noviembre: Premium $990 más IVA y Gala $1,890 más IVA. Aparta hoy aunque tu evento sea el próximo año.\n\nEscríbenos por WhatsApp: 786 162 8600 · invitacionesbny.netlify.app"
+ },
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #BodasMichoacan #FiestaEnVivo",
+ "titular": "Las fotos que nadie más ve",
+ "subtitulo": "Tus invitados también las toman",
+ "cta": "Aparta tu precio especial",
+ "plantilla": "impacto",
+ "guion": "Reel vertical 15 s en paleta Invitaciones (#1F2328, #C2186A, #F8F7F4, #8E9399), Cormorant Garamond y Jost. Cada escena muestra la invitación en un celular: 1) titular sobre marfil; 2) botón 'Cámara de invitados' tocado; 3) galería que se llena con fotos ilustradas de ambiente (copas, pista, luces; sin personas reales ni niños); 4) chat tachado; 5) etiqueta 'Premium y Gala'; 6) logo oficial sin modificar y cta.",
+ "escenas": [
+  {
+   "titular": "¿Y las fotos que tu fotógrafo no alcanza?"
+  },
+  {
+   "titular": "Tus invitados las toman desde tu invitación"
+  },
+  {
+   "titular": "Todas llegan a un mismo lugar"
+  },
+  {
+   "titular": "Sin grupos de WhatsApp ni “pásamelas”"
+  },
+  {
+   "titular": "Cámara de invitados, en Premium y Gala"
+  },
+  {
+   "cta": "Aparta tu precio especial",
+   "final": true,
+   "subtitulo": "Precio de lanzamiento hasta el 17 de noviembre",
+   "titular": "Aparta tu precio especial"
+  }
+ ],
+ "estado": "listo"
+}

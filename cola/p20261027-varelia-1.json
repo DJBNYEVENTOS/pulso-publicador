@@ -1,0 +1,47 @@
+{
+ "id": "p20261027-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-10-27",
+ "hora": "20:00",
+ "formato": "Reel",
+ "gancho": "Un martes de wedding planner, sin el caos.",
+ "texto": "Un martes cualquiera, sin el caos.\n\n9:00 · La pareja firma. El contrato se llenó solo con sus datos.\n12:00 · Llega el segundo pago y queda registrado sin que lo persigas.\n17:00 · La novia revisa su checklist en su portal, en lugar de escribirte.\n19:30 · Acomodas invitados y mesas en un solo lugar.\n21:00 · Cierras la laptop. De verdad.\n\nTu talento sigue siendo el centro de cada boda. Lo que cambia es dónde vive la operación.\n\nMándaselo a otra planner que merece cerrar la laptop a las 9.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "facebook": "Un martes cualquiera, sin el caos.\n\n9:00 · La pareja firma. El contrato se llenó solo con sus datos.\n12:00 · Llega el segundo pago y queda registrado sin que lo persigas.\n17:00 · La novia revisa su checklist en su portal, en lugar de escribirte.\n19:30 · Acomodas invitados y mesas en un solo lugar.\n21:00 · Cierras la laptop. De verdad.\n\nTu talento sigue siendo el centro de cada boda. Lo que cambia es dónde vive la operación.\n\nMándaselo a otra planner que merece cerrar la laptop a las 9.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+  "instagram": "Un martes cualquiera, sin el caos.\n\n9:00 · La pareja firma. El contrato se llenó solo con sus datos.\n12:00 · Llega el segundo pago y queda registrado sin que lo persigas.\n17:00 · La novia revisa su checklist en su portal, en lugar de escribirte.\n19:30 · Acomodas invitados y mesas en un solo lugar.\n21:00 · Cierras la laptop. De verdad.\n\nTu talento sigue siendo el centro de cada boda. Lo que cambia es dónde vive la operación.\n\nMándaselo a otra planner que merece cerrar la laptop a las 9.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+  "linkedin": "Un día de operación de un estudio de bodas cuando todo vive en un solo lugar: contratos que se llenan solos, pagos registrados, portal de la pareja y control de invitados y mesas. El talento de la planner no cambia; cambia dónde vive la operación. Varelia, prueba 14 días gratis.",
+  "threads": "Un martes de planner, sin el caos: contrato que se llena solo a las 9, pago registrado a las 12, la novia revisando su portal a las 5, laptop cerrada a las 9.\n\n¿A qué hora cerraste la tuya ayer?",
+  "tiktok": "Un día de wedding planner sin 40 chats: contrato, pagos, checklist y mesas en un solo lugar.",
+  "youtube": "Un día en la vida de una wedding planner: cómo organizar contratos, pagos y mesas en un solo lugar."
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerGuadalajara #OrganizadoraDeBodas #EstudioDeBodas",
+ "titular": "Un día de planner, sin el caos",
+ "subtitulo": "Contrato, pagos, portal y mesas en un solo lugar",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "impacto",
+ "guion": "Vertical 20 s, ritmo de diario editorial. 0-1 s: reloj de escritorio y agenda de piel, gancho en Playfair Display. Cada hora en dorado #B8955A sobre crema #F6F1E8 con un detalle de la pantalla correspondiente. Cierre: laptop cerrándose bajo luz cálida, fondo carbón #24221F, CTA dorado y 'Mándaselo a otra planner'.",
+ "escenas": [
+  {
+   "titular": "Un martes de planner, sin el caos"
+  },
+  {
+   "titular": "9:00 · El contrato se llenó solo"
+  },
+  {
+   "titular": "12:00 · El pago quedó registrado"
+  },
+  {
+   "titular": "17:00 · La novia revisa su portal"
+  },
+  {
+   "titular": "21:00 · Cierras la laptop. De verdad."
+  },
+  {
+   "cta": "Prueba 14 días gratis",
+   "final": true,
+   "subtitulo": "Prueba 14 días gratis, sin tarjeta",
+   "titular": "Tu talento, sin el caos"
+  }
+ ],
+ "estado": "listo"
+}

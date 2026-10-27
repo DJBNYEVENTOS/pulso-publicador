@@ -1,0 +1,45 @@
+{
+ "id": "p20261027-bny-1",
+ "marca": "bny",
+ "fecha": "2026-10-27",
+ "hora": "19:30",
+ "formato": "Reel",
+ "gancho": "La última canción también se elige.",
+ "texto": "La última canción también se elige.\n\nSon casi las tres. Quedan los de siempre: tus amigas descalzas, tu papá con la corbata en la bolsa, ustedes dos en medio de la pista.\n\nEse cierre no se improvisa. Lo platicamos contigo semanas antes: qué canción, cuándo bajar la luz, en qué segundo se hace el silencio.\n\nPorque cómo termina tu noche es lo que te llevas a casa.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+ "textos": {
+  "facebook": "La última canción también se elige.\n\nSon casi las tres. Quedan los de siempre: tus amigas descalzas, tu papá con la corbata en la bolsa, ustedes dos en medio de la pista.\n\nEse cierre no se improvisa. Lo platicamos contigo semanas antes: qué canción, cuándo bajar la luz, en qué segundo se hace el silencio. Porque cómo termina tu noche es lo que te llevas a casa.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "instagram": "La última canción también se elige.\n\nSon casi las tres. Quedan los de siempre: tus amigas descalzas, tu papá con la corbata en la bolsa, ustedes dos en medio de la pista.\n\nEse cierre no se improvisa. Lo platicamos contigo semanas antes: qué canción, cuándo bajar la luz, en qué segundo se hace el silencio.\n\nPorque cómo termina tu noche es lo que te llevas a casa.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "tiktok": "La última canción también se elige. Cómo termina tu noche es lo que te llevas a casa. Propuesta privada por WhatsApp ✨"
+ },
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "titular": "La última canción también se elige",
+ "subtitulo": "Cómo termina tu noche es lo que te llevas a casa",
+ "cta": "Aparta tu fecha",
+ "plantilla": "cita",
+ "guion": "0-3 s: negro profundo (#0D0D0F), aparece en Tinos marfil: 'La última canción'. 3-7 s: pista casi vacía, luz cálida baja, silueta de una pareja abrazada en el centro. 7-10 s: detalle de unos zapatos de novia sobre una silla y velas casi consumidas. 10-13 s: la luz baja lentamente hasta quedar en penumbra. 13-16 s: firma 'No es un evento, es una Experiencia BNY.' y logo oficial BNY sobre negro. Audio: piano o cuerdas suaves. Sin cables, bocinas ni gente saltando.",
+ "escenas": [
+  {
+   "titular": "La última canción también se elige"
+  },
+  {
+   "titular": "Casi las tres. Quedan los de siempre"
+  },
+  {
+   "titular": "Ustedes dos, en medio de la pista"
+  },
+  {
+   "subtitulo": "Lo platicamos contigo semanas antes",
+   "titular": "La luz baja en el segundo exacto"
+  },
+  {
+   "titular": "Lo que te llevas a casa"
+  },
+  {
+   "cta": "Aparta tu fecha",
+   "final": true,
+   "subtitulo": "Propuesta privada por WhatsApp",
+   "titular": "Aparta tu fecha"
+  }
+ ],
+ "estado": "listo"
+}
