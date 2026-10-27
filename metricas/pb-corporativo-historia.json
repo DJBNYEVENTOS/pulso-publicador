@@ -2,17 +2,17 @@
   "id": "pb-corporativo-historia",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-10-27T07:31:19.311Z",
+  "actualizado": "2026-10-27T14:03:12.401Z",
   "duracion": null,
   "instagram": {
-    "views": 67,
-    "reach": 61,
+    "views": 70,
+    "reach": 64,
     "shares": 0,
     "total_interactions": 1
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 1.64,
-    "vistas": 67
+    "interaccionInstagram": 1.56,
+    "vistas": 70
   }
 }
