@@ -1,0 +1,24 @@
+{
+  "id": "pb-corporativo-historia",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "3650836981749206",
+      "url": "https://www.facebook.com/145245832842598",
+      "en": "2026-10-27T01:16:51.640Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17871085347631471",
+      "url": "https://www.instagram.com/stories/dj.bny.eventos/4016832859826642492",
+      "en": "2026-10-27T01:17:04.165Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-10-27T01:17:04.166Z"
+    }
+  }
+}
