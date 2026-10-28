@@ -2,16 +2,17 @@
   "id": "iv-hal-hist",
   "marca": "invitaciones",
   "formato": "Historia",
-  "actualizado": "2026-10-28T02:31:25.328Z",
+  "actualizado": "2026-10-28T08:46:15.169Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 43,
+    "reach": 39,
     "shares": 0,
     "total_interactions": 0
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 43
   }
 }
