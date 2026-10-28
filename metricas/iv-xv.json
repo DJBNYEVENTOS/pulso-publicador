@@ -2,20 +2,20 @@
   "id": "iv-xv",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-10-28T14:47:47.987Z",
+  "actualizado": "2026-10-28T21:01:30.312Z",
   "duracion": null,
   "instagram": {
-    "views": 129,
-    "reach": 80,
-    "likes": 1,
+    "views": 132,
+    "reach": 81,
+    "likes": 2,
     "comments": 0,
     "shares": 1,
     "saved": 0,
-    "total_interactions": 3
+    "total_interactions": 4
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 3.75,
-    "vistas": 129
+    "interaccionInstagram": 4.94,
+    "vistas": 132
   }
 }
