@@ -1,0 +1,47 @@
+{
+ "id": "p20261030-varelia-1",
+ "marca": "varelia",
+ "fecha": "2026-10-30",
+ "hora": "13:00",
+ "formato": "Reel",
+ "gancho": "La mamá de la novia te escribe a las 11 pm: \"¿ya pagaron el florista?\"",
+ "texto": "La mamá de la novia te escribe a las 11 pm: \"¿ya pagaron el florista?\"\n\nTú sabes que sí. Pero el comprobante está en un chat, el monto en un Excel y la fecha en tu cabeza.\n\nUn estudio de alto nivel responde en segundos:\n· Cada proveedor con su pago y su fecha.\n· Cada pendiente palomeado.\n· Un solo lugar, con tu marca.\n\nTu oficio se ve impecable. Tu operación puede verse igual.\n\nMándaselo a otra planner que lo necesite y guárdalo para tu próxima boda.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+ "textos": {
+  "instagram": "La mamá de la novia te escribe a las 11 pm: \"¿ya pagaron el florista?\"\n\nTú sabes que sí. Pero el comprobante está en un chat, el monto en un Excel y la fecha en tu cabeza.\n\nUn estudio de alto nivel responde en segundos:\n· Cada proveedor con su pago y su fecha.\n· Cada pendiente palomeado.\n· Un solo lugar, con tu marca.\n\nMándaselo a otra planner que lo necesite y guárdalo para tu próxima boda.\n\nPrueba 14 días gratis, sin tarjeta. Link en bio.",
+  "facebook": "La mamá de la novia te escribe a las 11 pm: \"¿ya pagaron el florista?\" Si eres wedding planner, conoces la escena: el comprobante en un chat, el monto en un Excel.\n\nVarelia reúne cada proveedor, pago y pendiente en un solo lugar con tu marca.\n\nPrueba 14 días gratis, sin tarjeta. El link está en nuestra página.",
+  "tiktok": "11 pm: ¿ya pagaron el florista? Un solo lugar para pagos y pendientes. 14 días gratis.",
+  "threads": "Wedding planners: ¿dónde vive hoy el comprobante del florista? ¿En un chat, en un Excel o en tu memoria? Cuéntanos cómo lo resuelves.",
+  "youtube": "Cómo llevar los pagos a proveedores de una boda en un solo lugar (wedding planner)"
+ },
+ "hashtags": "#Varelia #WeddingPlannerMexico #OrganizadoraDeBodas #WeddingPlannerMorelia #PlaneacionDeBodas",
+ "titular": "11 pm. ¿Ya pagaron el florista?",
+ "subtitulo": "Que tu estudio lo sepa sin buscar",
+ "cta": "Prueba 14 días gratis",
+ "plantilla": "tip",
+ "guion": "0-3 s: fondo marfil #F6F1E8, Playfair Display en #24221F: '11 pm. Te escribe la mamá de la novia'. 3-6 s: celular sobre escritorio de madera clara con mensaje entrante, luz cálida de lámpara. 6-9 s: recorrido de chats y Excel desordenados. 9-12 s: grabación real de pantalla de Varelia con pagos por proveedor. 12-15 s: pendientes palomeados. 15-18 s: 'Prueba 14 días gratis · sin tarjeta' con detalle dorado #B8955A. Audio: piano editorial ligero.",
+ "escenas": [
+  {
+   "titular": "11 pm. Te escribe la mamá de la novia"
+  },
+  {
+   "titular": "¿Ya pagaron el florista?",
+   "subtitulo": "Lo sabes. Pero ¿dónde está el comprobante?"
+  },
+  {
+   "titular": "Un chat, un Excel, tu memoria"
+  },
+  {
+   "titular": "Cada proveedor con su pago y su fecha"
+  },
+  {
+   "titular": "Responde en segundos, con tu marca"
+  },
+  {
+   "titular": "Prueba 14 días gratis",
+   "subtitulo": "Mándaselo a otra planner",
+   "final": true,
+   "cta": "Prueba 14 días gratis"
+  }
+ ],
+ "estado": "listo"
+}
