@@ -1,0 +1,25 @@
+{
+  "id": "p20261027-bny-1",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "29237606925857392",
+      "url": "https://www.facebook.com/145245832842598/videos/29237606925857392",
+      "en": "2026-10-28T01:33:02.241Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17989354305068666",
+      "url": "https://www.instagram.com/reel/DfBQt3diqzH/",
+      "en": "2026-10-28T01:33:46.113Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7701525008530556949",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-10-28T01:33:49.955Z"
+    }
+  }
+}
