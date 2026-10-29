@@ -1,0 +1,30 @@
+{
+ "id": "pb-testimonio-mariana",
+ "marca": "bny",
+ "fecha": "2026-11-04",
+ "hora": "19:00",
+ "formato": "Carrusel",
+ "foto": "biblioteca/bny/techo-papel.jpg",
+ "titular": "“¡Increíble de principio a fin!”",
+ "subtitulo": "Mariana y Andreas · Su boda, octubre 2026",
+ "cta": "Agenda tu cita",
+ "gancho": "“No pudimos haber elegido a un mejor DJ para nuestra boda.”",
+ "laminas": [
+  {
+   "titular": "“Superó todas nuestras expectativas”",
+   "subtitulo": "“Fue una parte fundamental para que nuestra boda fuera tan mágica.”",
+   "foto": "biblioteca/bny/cabina-flores.jpg"
+  },
+  {
+   "titular": "Tu boda puede ser la siguiente",
+   "subtitulo": "Propuesta privada por WhatsApp: 786 162 8600",
+   "cta": "Agenda tu cita",
+   "final": true
+  }
+ ],
+ "texto": "“No pudimos haber elegido a un mejor DJ para nuestra boda.”\n\nAsí nos escribió Mariana después de su boda con Andreas, bajo un techo de papel y con la pista llena hasta el último tema.\n\n“Las sorpresas que preparó hicieron que la fiesta fuera todavía más especial, divertida e inolvidable… Fue una parte fundamental para que nuestra boda fuera tan mágica.”\n\nGracias, Mariana y Andreas, por dejarnos ser parte de su noche. 🤍\n\nNo es un evento, es una Experiencia BNY.\nAgenda tu cita privada por WhatsApp: 786 162 8600",
+ "pilar": "Testimonios reales",
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "plantilla": "galeria",
+ "estado": "listo"
+}
