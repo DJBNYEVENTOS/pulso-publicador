@@ -1,0 +1,25 @@
+{
+  "id": "pb-techo-papel",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "145245832842598_1599628955521512",
+      "url": "https://www.facebook.com/145245832842598_1599628955521512",
+      "en": "2026-10-30T01:01:14.362Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18133066351740737",
+      "url": "https://www.instagram.com/p/DfGWr6ylOIR/",
+      "en": "2026-10-30T01:01:46.752Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7702259617485146120",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-10-30T01:01:52.342Z"
+    }
+  }
+}
