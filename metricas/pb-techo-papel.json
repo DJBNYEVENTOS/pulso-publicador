@@ -2,11 +2,11 @@
   "id": "pb-techo-papel",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-10-30T01:01:52.406Z",
+  "actualizado": "2026-10-30T07:16:05.140Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 29,
+    "reach": 10,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 29
   }
 }
