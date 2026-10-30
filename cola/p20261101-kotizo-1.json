@@ -1,0 +1,47 @@
+{
+ "id": "p20261101-kotizo-1",
+ "marca": "kotizo",
+ "fecha": "2026-11-01",
+ "hora": "20:30",
+ "formato": "Reel",
+ "gancho": "Domingo, 2 de la tarde, y un cliente te pide precio de 80 sillas y 8 mesas.",
+ "texto": "Domingo, 2 de la tarde, y un cliente te pide precio de 80 sillas y 8 mesas.\n\nTú estás en la comida de la familia. Contestas con el celular bajo la mesa, haces la cuenta de memoria y a la hora de mandarla ya se fue con otro.\n\nAsí se ve lo mismo con un cotizador de renta de mobiliario:\n1. Tu cliente elige sillas y mesas.\n2. Pone su fecha.\n3. Su cotización te llega al WhatsApp, lista.\n\nTu domingo se queda tuyo. Tu cliente ya tiene su respuesta.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: demo en kotizo-app.netlify.app",
+ "textos": {
+  "facebook": "Domingo, 2 de la tarde, y un cliente te pide precio de 80 sillas y 8 mesas. Tú, en la comida familiar, contestando con el celular bajo la mesa.\n\nCon un cotizador web, tu cliente elige, pone su fecha y su cotización te llega al WhatsApp, lista. Tu domingo se queda tuyo.\n\nGuárdalo para tu próximo cliente. Demo gratis en kotizo-app.netlify.app",
+  "instagram": "Domingo, 2 de la tarde, y un cliente te pide precio de 80 sillas y 8 mesas.\n\nTú estás en la comida de la familia. Contestas con el celular bajo la mesa, haces la cuenta de memoria y a la hora de mandarla ya se fue con otro.\n\nCon un cotizador:\n1. Tu cliente elige sillas y mesas.\n2. Pone su fecha.\n3. Su cotización te llega al WhatsApp, lista.\n\nTu domingo se queda tuyo.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: demo en kotizo-app.netlify.app",
+  "threads": "¿Cuántos domingos has contestado precios de sillas y mesas con el celular bajo la mesa? Un cotizador lo hace por ti: tu cliente elige, tú recibes la cotización lista en WhatsApp.",
+  "tiktok": "Domingo y cotizando sillas por WhatsApp. Que cotice solo. Demo en kotizo-app.netlify.app",
+  "youtube": "Cotizador para renta de mobiliario: tu cliente cotiza solo y te llega al WhatsApp"
+ },
+ "hashtags": "#Kotizo #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+ "titular": "Domingo, y sigues cotizando",
+ "subtitulo": "Tu cliente pudo cotizar solo",
+ "cta": "Quiero mi cotizador",
+ "plantilla": "impacto",
+ "guion": "0-3 s: fondo #F5F6F9, Young Serif en #181E2E: 'Domingo, 2 de la tarde'. 3-6 s: pantalla de celular con un mensaje de WhatsApp pidiendo sillas y mesas, sobre mesa de comedor. 6-9 s: demo real de pantalla del cotizador de renta de mobiliario eligiendo sillas y mesas. 9-12 s: calendario con fecha. 12-15 s: notificación de WhatsApp con la cotización lista. 15-18 s: cierre con 'Quiero mi cotizador' y acento #E6016E. Audio: pulso ligero, energía tranquila.",
+ "escenas": [
+  {
+   "titular": "Domingo, 2 de la tarde"
+  },
+  {
+   "subtitulo": "Y tú, en la comida familiar",
+   "titular": "80 sillas, 8 mesas. ¿Cuánto?"
+  },
+  {
+   "titular": "Tu cliente elige solo"
+  },
+  {
+   "titular": "Pone su fecha y listo"
+  },
+  {
+   "titular": "La cotización llega a tu WhatsApp"
+  },
+  {
+   "cta": "Quiero mi cotizador",
+   "final": true,
+   "subtitulo": "Guárdalo para tu próximo cliente",
+   "titular": "Quiero mi cotizador"
+  }
+ ],
+ "estado": "listo"
+}
