@@ -2,11 +2,11 @@
   "id": "iv-empresas",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-10-31T20:31:12.527Z",
+  "actualizado": "2026-11-01T02:31:22.740Z",
   "duracion": null,
   "instagram": {
-    "views": 26,
-    "reach": 14,
+    "views": 28,
+    "reach": 15,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 0,
-    "vistas": 26
+    "vistas": 28
   }
 }
