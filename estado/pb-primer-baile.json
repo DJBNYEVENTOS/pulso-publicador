@@ -1,0 +1,25 @@
+{
+  "id": "pb-primer-baile",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "2067854244617924",
+      "url": "https://www.facebook.com/145245832842598/videos/2067854244617924",
+      "en": "2026-11-01T01:01:50.820Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18111229253629154",
+      "url": "https://www.instagram.com/reel/DfLgXEVElmq/",
+      "en": "2026-11-01T01:02:48.225Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7703002099826853896",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-11-01T01:02:58.683Z"
+    }
+  }
+}
