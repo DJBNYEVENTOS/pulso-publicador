@@ -2,7 +2,7 @@
   "id": "p20261030-kotizo-2",
   "marca": "kotizo",
   "formato": "Historia",
-  "actualizado": "2026-10-31T21:16:28.398Z",
+  "actualizado": "2026-11-01T03:31:21.637Z",
   "duracion": null,
   "instagram": {
     "views": 3,
@@ -13,5 +13,6 @@
   "facebook": {},
   "derivados": {
     "vistas": 3
-  }
+  },
+  "vacio": true
 }
