@@ -1,0 +1,45 @@
+{
+  "id": "p20261103-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-03",
+  "hora": "20:00",
+  "formato": "Carrusel",
+  "gancho": "Son las 11 pm y sigues persiguiendo el segundo pago.",
+  "texto": "Son las 11 pm y sigues persiguiendo el segundo pago.\n\nCómo cobrar anticipos sin perseguir a nadie:\n\n1. Fecha de pago acordada desde el contrato\n2. Recordatorio automático antes de la fecha\n3. Un solo lugar donde la pareja ve lo que paga y lo que falta\n\nCobrar bien también es parte de una experiencia de lujo.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "Son las 11 pm y sigues persiguiendo el segundo pago.\n\nCómo cobrar anticipos sin perseguir a nadie:\n\n1. Fecha de pago acordada desde el contrato\n2. Recordatorio automático antes de la fecha\n3. Un solo lugar donde la pareja ve lo que paga y lo que falta\n\nCobrar bien también es parte de una experiencia de lujo.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Son las 11 pm y sigues persiguiendo el segundo pago.\n\nCómo cobrar anticipos sin perseguir a nadie:\n\n1. Fecha de pago acordada desde el contrato\n2. Recordatorio automático antes de la fecha\n3. Un solo lugar donde la pareja ve lo que paga y lo que falta\n\nCobrar bien también es parte de una experiencia de lujo.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "tiktok": "Cómo cobrar anticipos sin perseguir a nadie: 3 pasos. Mándaselo a otra planner."
+  },
+  "hashtags": "#Varelia #WeddingPlanner #WeddingPlannerMexico #OrganizadoraDeBodas #WeddingPlannerMorelia",
+  "titular": "Cobra sin perseguir a nadie",
+  "subtitulo": "Tres pasos para que el pago llegue a tiempo.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Carrusel 4:5 editorial Varelia (#24221F, acento #B8955A, Playfair Display). Mucho espacio, estilo revista de bodas. Una idea por lámina.",
+  "laminas": [
+    {
+      "subtitulo": "Guárdalo para tu próxima boda",
+      "titular": "Cobra sin perseguir a nadie"
+    },
+    {
+      "subtitulo": "Cada pago, acordado desde el inicio",
+      "titular": "1. Fechas desde el contrato"
+    },
+    {
+      "subtitulo": "Que no dependa de tu memoria",
+      "titular": "2. Recordatorio automático"
+    },
+    {
+      "subtitulo": "La pareja ve lo pagado y lo que falta",
+      "titular": "3. Un solo portal"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba 14 días gratis, sin tarjeta",
+      "titular": "Opera como estudio"
+    }
+  ],
+  "estado": "listo"
+}

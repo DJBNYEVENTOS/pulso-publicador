@@ -1,0 +1,48 @@
+{
+  "id": "p20261102-kotizo-2",
+  "marca": "kotizo",
+  "fecha": "2026-11-02",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Domingo, 8 pm. Tres clientas piden precio de arreglos florales.",
+  "texto": "Domingo, 8 de la noche. Una florería y tres clientas preguntando lo mismo: ¿cuánto sale el arreglo para 10 mesas?\n\nTú, con la calculadora en una mano y el celular en la otra.\n\nCon un cotizador para florerías, la clienta elige mesas, flores y entrega, y la cotización llega completa a tu WhatsApp.\n\nTú solo confirmas.\n\nMira la demo en kotizo-app.netlify.app\nGuárdalo para tu próximo cliente. Síguenos para más ideas que te regresan tus noches.",
+  "textos": {
+    "facebook": "Domingo, 8 de la noche. Una florería y tres clientas preguntando lo mismo: ¿cuánto sale el arreglo para 10 mesas?\n\nTú, con la calculadora en una mano y el celular en la otra.\n\nCon un cotizador para florerías, la clienta elige mesas, flores y entrega, y la cotización llega completa a tu WhatsApp.\n\nTú solo confirmas.\n\nMira la demo en kotizo-app.netlify.app\nSíguenos para más ideas que te regresan tus noches.",
+    "instagram": "Domingo, 8 de la noche. Una florería y tres clientas preguntando lo mismo: ¿cuánto sale el arreglo para 10 mesas?\n\nTú, con la calculadora en una mano y el celular en la otra.\n\nCon un cotizador para florerías, la clienta elige mesas, flores y entrega, y la cotización llega completa a tu WhatsApp.\n\nTú solo confirmas.\n\nMira la demo en kotizo-app.netlify.app\nGuárdalo para tu próximo cliente. Síguenos para más ideas que te regresan tus noches.",
+    "linkedin": "Una florería recibe tres cotizaciones en una noche. El cuello de botella es contestar a mano. Un cotizador convierte esas preguntas en pedidos claros.",
+    "threads": "¿Cuántas cotizaciones contestas a mano en una noche? Una florería lo resolvió con un cotizador que llega al WhatsApp. ¿Tú qué giro tienes?",
+    "tiktok": "Así cotiza sola una florería: mesas, flores y entrega, directo a tu WhatsApp. Demo en kotizo-app.netlify.app",
+    "youtube": "Cotizador para florerías: demo en 15 segundos | Kotizo"
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #Florerias #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "Tres clientas, un domingo",
+  "subtitulo": "Así cotiza sola una florería",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Vertical 15 s, estilo técnico. 0-1 s: celular con tres mensajes de clientas sobre fondo #181E2E, gancho en Young Serif blanco. Luego pantalla del cotizador de florería con acento #E6016E y la cotización cayendo en WhatsApp. Cierre con CTA.",
+  "escenas": [
+    {
+      "titular": "Domingo, 8 pm. Tres clientas piden precio"
+    },
+    {
+      "titular": "Tú, con calculadora y celular"
+    },
+    {
+      "subtitulo": "Sin escribirte",
+      "titular": "Ella elige mesas, flores y entrega"
+    },
+    {
+      "titular": "La cotización llega a tu WhatsApp"
+    },
+    {
+      "titular": "Tú solo confirmas"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Demo en kotizo-app.netlify.app",
+      "titular": "Guárdalo para tu próximo cliente"
+    }
+  ],
+  "estado": "listo"
+}

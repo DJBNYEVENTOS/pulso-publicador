@@ -1,0 +1,45 @@
+{
+  "id": "p20261103-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-03",
+  "hora": "20:30",
+  "formato": "Carrusel",
+  "gancho": "Son las 11 pm y sigues mandando precios. Haz esto antes.",
+  "texto": "Son las 11 pm y sigues mandando precios. Haz esto antes.\n\nChecklist para cotizar un evento en 2 minutos:\n\n1. Fecha y lugar\n2. Número de personas\n3. Qué necesita (mesas, sillas, mantelería…)\n4. Entrega y recolección\n5. Total y anticipo\n\nSi tu cliente llena esto solo, tú te quedas con tu noche.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Son las 11 pm y sigues mandando precios. Haz esto antes.\n\nChecklist para cotizar un evento en 2 minutos:\n\n1. Fecha y lugar\n2. Número de personas\n3. Qué necesita (mesas, sillas, mantelería…)\n4. Entrega y recolección\n5. Total y anticipo\n\nSi tu cliente llena esto solo, tú te quedas con tu noche.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Son las 11 pm y sigues mandando precios. Haz esto antes.\n\nChecklist para cotizar un evento en 2 minutos:\n\n1. Fecha y lugar\n2. Número de personas\n3. Qué necesita (mesas, sillas, mantelería…)\n4. Entrega y recolección\n5. Total y anticipo\n\nSi tu cliente llena esto solo, tú te quedas con tu noche.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Son las 11 pm y sigues mandando precios. Checklist para cotizar en 2 minutos. Guárdalo."
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "Cotiza un evento en 2 minutos",
+  "subtitulo": "Cinco datos y listo. Sin 40 mensajes.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Carrusel 4:5 técnico Kotizo (#181E2E, acento #E6016E). Portada con escena nocturna: celular con chat de precios. Láminas limpias tipo checklist, una idea por lámina. Sin precios.",
+  "laminas": [
+    {
+      "subtitulo": "Guarda este checklist",
+      "titular": "Cotiza un evento en 2 minutos"
+    },
+    {
+      "subtitulo": "Sin esto no hay cotización que valga",
+      "titular": "1. Fecha y lugar"
+    },
+    {
+      "subtitulo": "De aquí sale casi todo el precio",
+      "titular": "2. Cuántas personas"
+    },
+    {
+      "subtitulo": "Mesas, sillas, mantelería, entrega",
+      "titular": "3. Qué necesita"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Y te llegue a tu WhatsApp",
+      "titular": "Que tu cliente lo llene solo"
+    }
+  ],
+  "estado": "listo"
+}
