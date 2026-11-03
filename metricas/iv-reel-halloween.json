@@ -2,23 +2,23 @@
   "id": "iv-reel-halloween",
   "marca": "invitaciones",
   "formato": "Reel",
-  "actualizado": "2026-11-03T08:01:01.054Z",
+  "actualizado": "2026-11-03T14:02:04.872Z",
   "duracion": 15.8,
   "instagram": {
-    "views": 46,
-    "reach": 36,
+    "views": 47,
+    "reach": 37,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 2602,
-    "ig_reels_video_view_total_time": 93690
+    "ig_reels_avg_watch_time": 2567,
+    "ig_reels_video_view_total_time": 94998
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 16.5,
-    "interaccionInstagram": 5.56,
-    "vistas": 46
+    "vistoPromedioInstagram": 16.2,
+    "interaccionInstagram": 5.41,
+    "vistas": 47
   }
 }

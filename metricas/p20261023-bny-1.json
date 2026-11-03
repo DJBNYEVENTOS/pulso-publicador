@@ -2,11 +2,11 @@
   "id": "p20261023-bny-1",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-11-03T08:01:11.213Z",
+  "actualizado": "2026-11-03T14:02:13.442Z",
   "duracion": null,
   "instagram": {
-    "views": 80,
-    "reach": 36,
+    "views": 81,
+    "reach": 37,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 5.56,
-    "vistas": 80
+    "interaccionInstagram": 5.41,
+    "vistas": 81
   }
 }
