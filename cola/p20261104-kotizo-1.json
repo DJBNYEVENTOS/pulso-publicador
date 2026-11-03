@@ -1,0 +1,48 @@
+{
+  "id": "p20261104-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-04",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Domingo, 9 pm. Tres clientes piden precio de banquete y tu cena se enfría.",
+  "texto": "Domingo, 9 pm. Tres clientes piden precio de banquete para 120 personas.\n\nTú contestas uno por uno, con la calculadora en la mano y la cena fría.\n\nCon un cotizador, cada cliente elige platillos, mesas y número de invitados, y el total le llega solo, con tu marca. Tú recibes la solicitud ya armada en tu WhatsApp.\n\nMás noches tranquilas. Menos precios copiados a mano.\n\nSíguenos para más ideas que te regresan tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Domingo, 9 pm. Tres clientes piden precio de banquete para 120 personas.\n\nTú contestas uno por uno, con la calculadora en la mano y la cena fría.\n\nCon un cotizador, cada cliente elige platillos, mesas y número de invitados, y el total le llega solo, con tu marca. Tú recibes la solicitud ya armada en tu WhatsApp.\n\nMás noches tranquilas. Menos precios copiados a mano.\n\nCuéntanos en comentarios: ¿a qué hora te escriben más clientes?\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "instagram": "Domingo, 9 pm. Tres clientes piden precio de banquete para 120 personas.\n\nTú contestas uno por uno, con la calculadora en la mano y la cena fría.\n\nCon un cotizador, cada cliente elige platillos, mesas y número de invitados, y el total le llega solo, con tu marca. Tú recibes la solicitud ya armada en tu WhatsApp.\n\nMás noches tranquilas. Menos precios copiados a mano.\n\nSíguenos para más ideas que te regresan tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "Cotizar banquetes a mano cuesta noches. Un cotizador deja que el cliente arme su menú y tú recibes la solicitud lista. Aprendizaje: tu tiempo vale más que copiar precios.",
+    "threads": "¿Cuántas noches pierdes contestando precios de banquete? Un cotizador lo hace por ti, con tus platillos y tu marca.",
+    "tiktok": "Banquete para 120 personas: el cliente cotiza solo, tú recibes la solicitud armada. Quiero mi cotizador 👉 kotizo-app.netlify.app",
+    "youtube": "Cotizador para banquetes: tus clientes arman su menú solos | Kotizo"
+  },
+  "hashtags": "#Kotizo #Banquetes #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "Tres clientes, un domingo",
+  "subtitulo": "Y tu cena se enfría",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Vertical 18 s. Fondo #181E2E, números en magenta #E6016E. Escena 1 mesa con celular vibrando y tres globos de chat; luego pantalla del cotizador eligiendo platillos. Cierre en #F5F6F9 con logo Kotizo.",
+  "escenas": [
+    {
+      "subtitulo": "Banquete para 120 personas",
+      "titular": "Domingo, 9 pm. Tres clientes piden precio"
+    },
+    {
+      "titular": "Tú, con la calculadora en la mano"
+    },
+    {
+      "titular": "El cliente arma su menú solo"
+    },
+    {
+      "titular": "El total le llega con tu marca"
+    },
+    {
+      "titular": "Tú recibes la solicitud armada"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próximo cliente",
+      "titular": "Tu cena, caliente"
+    }
+  ],
+  "estado": "listo"
+}

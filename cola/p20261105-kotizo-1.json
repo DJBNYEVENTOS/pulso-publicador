@@ -1,0 +1,48 @@
+{
+  "id": "p20261105-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-05",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Son las 11 pm y sigues mandando precios. Esto lo resuelve en 3 pasos.",
+  "texto": "Cómo funciona tu cotizador, en 3 pasos:\n\n1. Nos dices qué vendes y cuánto cobras.\n2. Lo armamos con tu marca y lo revisas.\n3. Compartes el link: tus clientes cotizan solos y la solicitud llega a tu WhatsApp.\n\nSin apps raras. Sin aprender nada técnico.\n\nGuárdalo para cuando quieras recuperar tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Cómo funciona tu cotizador, en 3 pasos:\n\n1. Nos dices qué vendes y cuánto cobras.\n2. Lo armamos con tu marca y lo revisas.\n3. Compartes el link: tus clientes cotizan solos y la solicitud llega a tu WhatsApp.\n\nSin apps raras. Sin aprender nada técnico.\n\nCompártelo con ese colega que cotiza hasta tarde.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "instagram": "Cómo funciona tu cotizador, en 3 pasos:\n\n1. Nos dices qué vendes y cuánto cobras.\n2. Lo armamos con tu marca y lo revisas.\n3. Compartes el link: tus clientes cotizan solos y la solicitud llega a tu WhatsApp.\n\nSin apps raras. Sin aprender nada técnico.\n\nGuárdalo para cuando quieras recuperar tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "Un cotizador web en 3 pasos: define tu oferta, personalízalo y compártelo. Menos tiempo cotizando, más tiempo vendiendo.",
+    "threads": "Lo difícil de dejar de cotizar a mano no es la tecnología, es dar el primer paso. Son solo 3.",
+    "tiktok": "3 pasos: dinos qué vendes, lo armamos con tu marca, compartes el link. Quiero mi cotizador 👉 kotizo-app.netlify.app",
+    "youtube": "Cómo funciona un cotizador web en 3 pasos | Kotizo"
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #NegociosMichoacan #Emprendedores #RentaDeMobiliario",
+  "titular": "Tu cotizador, en 3 pasos",
+  "subtitulo": "Sin apps raras",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Vertical 18 s. Escena nocturna con celular y chats, luego tres tarjetas numeradas en magenta sobre #181E2E. Cierre #F5F6F9 con logo.",
+  "escenas": [
+    {
+      "titular": "Las 11 pm y sigues mandando precios"
+    },
+    {
+      "titular": "Paso 1: nos dices qué vendes"
+    },
+    {
+      "titular": "Paso 2: lo armamos con tu marca"
+    },
+    {
+      "titular": "Paso 3: compartes el link"
+    },
+    {
+      "subtitulo": "La solicitud llega a tu WhatsApp",
+      "titular": "Tus clientes cotizan solos"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próximo cliente",
+      "titular": "Recupera tus noches"
+    }
+  ],
+  "estado": "listo"
+}

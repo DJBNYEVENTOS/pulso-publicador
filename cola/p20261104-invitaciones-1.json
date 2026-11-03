@@ -1,0 +1,41 @@
+{
+  "id": "p20261104-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-04",
+  "hora": "20:00",
+  "formato": "Carrusel",
+  "gancho": "Once de la noche, una lista de 180 nombres y ningún “sí” seguro.",
+  "texto": "Once de la noche, una lista de 180 nombres y ningún “sí” seguro.\n\nAsí se ve organizar una fiesta cuando las confirmaciones viven en mil chats.\n\nCon tu invitación digital cada invitado recibe la suya por WhatsApp con su nombre y sus pases, confirma en un toque y tú ves quién la abrió y quién ya respondió.\n\nTu fiesta, sin perseguir a nadie.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre. Escríbenos por WhatsApp al 786 162 8600 y guarda este post para cuando lo necesites.",
+  "textos": {
+    "facebook": "Once de la noche, una lista de 180 nombres y ningún “sí” seguro.\n\nAsí se ve organizar una fiesta cuando las confirmaciones viven en mil chats.\n\nCon tu invitación digital cada invitado recibe la suya por WhatsApp con su nombre y sus pases, confirma en un toque y tú ves quién la abrió y quién ya respondió.\n\nTu fiesta, sin perseguir a nadie.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre. Escríbenos por WhatsApp al 786 162 8600 y guarda este post para cuando lo necesites.",
+    "instagram": "Once de la noche, una lista de 180 nombres y ningún “sí” seguro.\n\nAsí se ve organizar una fiesta cuando las confirmaciones viven en mil chats.\n\nCon tu invitación digital cada invitado recibe la suya por WhatsApp con su nombre y sus pases, confirma en un toque y tú ves quién la abrió y quién ya respondió.\n\nTu fiesta, sin perseguir a nadie.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre. Escríbenos por WhatsApp al 786 162 8600 y guarda este post para cuando lo necesites.",
+    "tiktok": "180 invitados y ningún sí seguro. Invitación digital con confirmación en un toque."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #XVAños #FiestaEnVivo",
+  "titular": "Deja de contar confirmaciones",
+  "subtitulo": "Cada invitado confirma en un toque.",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "tip",
+  "guion": "Carrusel 4:5 Invitaciones BNY (#1F2328, #C2186A, #F8F7F4, Cormorant Garamond/Jost). Portada con escena cálida de la clienta con lista y celular; láminas con invitación mostrada en un celular. Sin precios.",
+  "laminas": [
+    {
+      "subtitulo": "Cada invitado confirma en un toque",
+      "titular": "Deja de contar confirmaciones"
+    },
+    {
+      "subtitulo": "La recibe por WhatsApp, personalizada",
+      "titular": "Su nombre y sus pases"
+    },
+    {
+      "subtitulo": "Y quién ya confirmó",
+      "titular": "Tú ves quién la abrió"
+    },
+    {
+      "cta": "Aparta tu precio especial",
+      "final": true,
+      "subtitulo": "Precio especial hasta el 17 de noviembre",
+      "titular": "Tu fiesta, sin perseguir a nadie"
+    }
+  ],
+  "estado": "listo"
+}

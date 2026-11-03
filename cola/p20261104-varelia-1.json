@@ -1,0 +1,48 @@
+{
+  "id": "p20261104-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-04",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Un portal para la pareja, con tu marca. En 30 segundos.",
+  "texto": "Son las 11 pm y la pareja te escribe: \"¿y dónde vemos el contrato?\".\n\nCon Varelia, cada pareja tiene su portal: contrato que se llena solo, pagos, checklist y proveedores en un mismo lugar, con tu marca.\n\nTú dejas de buscar entre 40 chats. Ellos ven una boda ordenada.\n\n30 segundos para conocerlo.\n\nGuárdalo para tu próxima boda. Mándaselo a otra planner que lo necesite.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+  "textos": {
+    "facebook": "Son las 11 pm y la pareja te escribe: \"¿y dónde vemos el contrato?\".\n\nCon Varelia, cada pareja tiene su portal: contrato que se llena solo, pagos, checklist y proveedores en un mismo lugar, con tu marca.\n\nTú dejas de buscar entre 40 chats. Ellos ven una boda ordenada.\n\n30 segundos para conocerlo.\n\nGuárdalo para tu próxima boda. Mándaselo a otra planner que lo necesite.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+    "instagram": "Son las 11 pm y la pareja te escribe: \"¿y dónde vemos el contrato?\".\n\nCon Varelia, cada pareja tiene su portal: contrato que se llena solo, pagos, checklist y proveedores en un mismo lugar, con tu marca.\n\nTú dejas de buscar entre 40 chats. Ellos ven una boda ordenada.\n\n30 segundos para conocerlo.\n\nGuárdalo para tu próxima boda. Mándaselo a otra planner que lo necesite.\nPrueba Varelia 14 días gratis, sin tarjeta. Link en bio.",
+    "linkedin": "Las parejas que invierten en su boda esperan una experiencia ordenada. Un portal con tu marca la hace visible desde el primer día.",
+    "threads": "Planners: ¿dónde vive hoy el contrato de tu próxima boda? Hay una forma de que la pareja lo vea todo en un portal con tu marca.",
+    "tiktok": "Portal de la pareja con tu marca: contrato, pagos y checklist en un solo lugar. Prueba 14 días gratis.",
+    "youtube": "Portal de la pareja para wedding planners en 30 segundos | Varelia"
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #PlaneacionDeBodas",
+  "titular": "Su boda, en un solo portal",
+  "subtitulo": "Con tu marca, en 30 segundos",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "cita",
+  "guion": "Vertical 18 s, estilo editorial. 0-1 s: celular con notificación nocturna sobre crema #F6F1E8, gancho en Playfair Display #24221F. Luego portal de la pareja en laptop con detalles dorados #B8955A y mucho espacio. Cierre con CTA.",
+  "escenas": [
+    {
+      "titular": "Son las 11 pm: \"¿dónde está el contrato?\""
+    },
+    {
+      "subtitulo": "Con tu marca",
+      "titular": "Cada pareja, su propio portal"
+    },
+    {
+      "titular": "Contrato que se llena solo"
+    },
+    {
+      "titular": "Pagos y checklist a la vista"
+    },
+    {
+      "titular": "Tú, sin buscar en 40 chats"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba Varelia 14 días gratis",
+      "titular": "Mándaselo a otra planner"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p20261105-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-05",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Falta una semana para la boda y tu WhatsApp ya no cabe en el celular.",
+  "texto": "Faltan 7 días para la boda y tu WhatsApp ya no cabe en el celular.\n\nEl checklist de la semana de la boda:\n\n• Confirmar proveedores y horarios de llegada.\n• Último pago liquidado.\n• Cronograma del día en manos de todo el equipo.\n• Lista de invitados y mesas cerrada.\n• Plan B de clima y traslados.\n\nEn Varelia todo esto vive en un solo lugar, con tu marca.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+  "textos": {
+    "facebook": "Faltan 7 días para la boda y tu WhatsApp ya no cabe en el celular.\n\nEl checklist de la semana de la boda:\n\n• Confirmar proveedores y horarios de llegada.\n• Último pago liquidado.\n• Cronograma del día en manos de todo el equipo.\n• Lista de invitados y mesas cerrada.\n• Plan B de clima y traslados.\n\nEn Varelia todo esto vive en un solo lugar, con tu marca.\n\nGuárdalo para tu próxima boda y cuéntanos qué agregarías.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+    "instagram": "Faltan 7 días para la boda y tu WhatsApp ya no cabe en el celular.\n\nEl checklist de la semana de la boda:\n\n• Confirmar proveedores y horarios de llegada.\n• Último pago liquidado.\n• Cronograma del día en manos de todo el equipo.\n• Lista de invitados y mesas cerrada.\n• Plan B de clima y traslados.\n\nEn Varelia todo esto vive en un solo lugar, con tu marca.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+    "linkedin": "Checklist de la semana de la boda: proveedores, pagos, cronograma, mesas y plan B. Un orden claro evita el caos de último minuto.",
+    "threads": "¿Qué es lo primero que revisas la semana antes de una boda? Yo empezaría por proveedores y pagos.",
+    "tiktok": "Checklist de la semana de la boda para planners. Guárdalo. Prueba 14 días gratis 👉 varelia.netlify.app",
+    "youtube": "Checklist de la semana de la boda para wedding planners | Varelia"
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #OrganizadoraDeBodas #WeddingPlannerMorelia #PlaneacionDeBodas",
+  "titular": "La semana de la boda",
+  "subtitulo": "Tu checklist, en una página",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "impacto",
+  "guion": "Vertical 18 s. Fondo marfil #F6F1E8, tipografía Playfair, detalles dorados #B8955A. Una casilla se marca por escena; cierre con el portal Varelia.",
+  "escenas": [
+    {
+      "titular": "Falta una semana y tu WhatsApp no cabe"
+    },
+    {
+      "titular": "Proveedores y horarios, confirmados"
+    },
+    {
+      "titular": "Último pago, liquidado"
+    },
+    {
+      "titular": "Cronograma en manos de todo el equipo"
+    },
+    {
+      "titular": "Invitados y mesas, cerrados"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próxima boda",
+      "titular": "Una boda tranquila"
+    }
+  ],
+  "estado": "listo"
+}

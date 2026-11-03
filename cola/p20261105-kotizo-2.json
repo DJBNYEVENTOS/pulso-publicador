@@ -1,0 +1,24 @@
+{
+  "id": "p20261105-kotizo-2",
+  "marca": "kotizo",
+  "fecha": "2026-11-05",
+  "hora": "14:00",
+  "formato": "Historia",
+  "gancho": "¿Cuántos precios mandaste este fin de semana?",
+  "texto": "¿Cuántos precios mandaste este fin de semana?\n\nContesta en la encuesta: menos de 5, de 5 a 15 o más de 15.\n\nCada uno de esos mensajes se escribió a mano, casi siempre de noche.\n\nSíguenos para más ideas que te regresan tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "¿Cuántos precios mandaste este fin de semana?\n\nContesta en la encuesta: menos de 5, de 5 a 15 o más de 15.\n\nCada uno de esos mensajes se escribió a mano, casi siempre de noche.\n\nSíguenos para más ideas que te regresan tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "instagram": "¿Cuántos precios mandaste este fin de semana?\n\nContesta en la encuesta: menos de 5, de 5 a 15 o más de 15.\n\nCada uno de esos mensajes se escribió a mano, casi siempre de noche.\n\nSíguenos para más ideas que te regresan tus noches.\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "Cada cotización escrita a mano es tiempo que no inviertes en vender. ¿Cuántas hiciste esta semana?",
+    "threads": "¿Cuántos precios mandaste a mano este fin de semana? Menos de 5, entre 5 y 15 o más de 15. Cuéntanos.",
+    "tiktok": "¿Cuántos precios mandaste este fin de semana? Cuéntalos. Quiero mi cotizador 👉 kotizo-app.netlify.app",
+    "youtube": "Cuántas cotizaciones haces a mano por WhatsApp | Kotizo"
+  },
+  "hashtags": "#Kotizo #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp #CotizadorWeb",
+  "titular": "¿Cuántos precios mandaste este fin?",
+  "subtitulo": "Cuéntalos: menos de 5, de 5 a 15 o más",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Historia vertical con fondo #181E2E y pregunta grande en #F5F6F9; sticker de encuesta con tres opciones en magenta #E6016E. Mucho espacio; sin precios.",
+  "estado": "listo"
+}
