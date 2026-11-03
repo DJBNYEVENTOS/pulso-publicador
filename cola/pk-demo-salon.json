@@ -1,0 +1,18 @@
+{
+ "id": "pk-demo-salon",
+ "marca": "kotizo",
+ "fecha": "2026-11-06",
+ "hora": "21:00",
+ "formato": "Reel",
+ "titular": "Así se cotiza solo tu cliente",
+ "gancho": "Son las 11 de la noche y sigues cotizando a mano.",
+ "texto": "Son las 11 de la noche y sigues contestando “¿cuánto cuesta?”.\n\nMira cómo se ve un cotizador Kotizo para un salón de eventos: tu cliente elige su evento, pone invitados y horario, escoge paquete y extras… y ve su total al instante. La cotización te llega lista por WhatsApp.\n\nTú solo cierras.\n\nPrueba el demo en kotizo-app.netlify.app y pide el tuyo.\nGuárdalo para cuando un cliente te vuelva a pedir precio a medianoche.",
+ "textos": {"tiktok": "Tu cliente se cotiza solo y te llega por WhatsApp. Prueba el demo: kotizo-app.netlify.app"},
+ "cta": "Quiero mi cotizador",
+ "videoFijo": "biblioteca/kotizo/demo-salon.mp4",
+ "agregarMusica": true,
+ "pilar": "Demo real",
+ "hashtags": "#Kotizo #Cotizador #NegociosLocales #SalonDeEventos #Emprendedores",
+ "plantilla": "impacto",
+ "estado": "listo"
+}
