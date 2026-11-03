@@ -2,11 +2,11 @@
   "id": "iv-paq",
   "marca": "invitaciones",
   "formato": "Carrusel",
-  "actualizado": "2026-11-03T02:01:53.632Z",
+  "actualizado": "2026-11-03T08:15:53.614Z",
   "duracion": null,
   "instagram": {
-    "views": 63,
-    "reach": 19,
+    "views": 64,
+    "reach": 20,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 5.26,
-    "vistas": 63
+    "interaccionInstagram": 5,
+    "vistas": 64
   }
 }
