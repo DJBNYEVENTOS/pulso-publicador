@@ -2,11 +2,11 @@
   "id": "p20261103-varelia-1",
   "marca": "varelia",
   "formato": "Carrusel",
-  "actualizado": "2026-11-04T02:02:21.910Z",
+  "actualizado": "2026-11-04T08:16:47.386Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 2,
+    "reach": 1,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 2
   }
 }
