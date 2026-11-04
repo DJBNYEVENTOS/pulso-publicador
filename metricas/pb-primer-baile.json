@@ -2,23 +2,23 @@
   "id": "pb-primer-baile",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-04T15:01:58.567Z",
+  "actualizado": "2026-11-04T21:44:15.130Z",
   "duracion": 33.2,
   "instagram": {
-    "views": 1314,
-    "reach": 1193,
+    "views": 1315,
+    "reach": 1194,
     "likes": 22,
     "comments": 0,
     "shares": 2,
     "saved": 2,
     "total_interactions": 27,
-    "ig_reels_avg_watch_time": 9016,
-    "ig_reels_video_view_total_time": 10757175
+    "ig_reels_avg_watch_time": 9036,
+    "ig_reels_video_view_total_time": 10789693
   },
   "facebook": {},
   "derivados": {
     "vistoPromedioInstagram": 27.2,
     "interaccionInstagram": 2.26,
-    "vistas": 1314
+    "vistas": 1315
   }
 }
