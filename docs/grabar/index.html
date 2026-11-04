@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grabar mi voz · Spot50</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f4f5f8;--panel:#fff;--ink:#141821;--muted:#5b6272;--line:#d4d8e0;--rec:#e23b3f;--ok:#1d8a5b;--blue:#2846d8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--panel:#171b23;--ink:#e7eaf0;--muted:#8e96a6;--line:#2a303c;--rec:#ff5559;--ok:#3fc18a;--blue:#8297ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:620px;margin:0 auto;padding:20px 16px 40px;display:flex;flex-direction:column;gap:14px}
+h1{margin:0;font-size:22px}h1 b{color:var(--rec)}
+p{margin:0}.muted{color:var(--muted);font-size:13px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.texto{font-size:17px;line-height:1.6;white-space:pre-wrap}
+.ctrl{display:flex;flex-direction:column;align-items:center;gap:10px}
+.big{width:96px;height:96px;border-radius:50%;border:0;background:var(--rec);color:#fff;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 0 0 6px color-mix(in srgb,var(--rec) 20%,transparent)}
+.big.on{border-radius:18px;animation:p 1.2s infinite}
+@keyframes p{50%{box-shadow:0 0 0 14px color-mix(in srgb,var(--rec) 10%,transparent)}}
+.time{font:600 26px ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.meter{width:100%;height:8px;background:var(--bg);border-radius:4px;overflow:hidden}.meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .08s}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:10px 14px;font:inherit;font-weight:600;cursor:pointer}
+.btn.blue{background:var(--blue);border-color:var(--blue);color:#fff}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1 1 160px}
+audio{width:100%}
+.msg{border-radius:8px;padding:10px 12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+.msg.ok{border-color:var(--ok)}.msg.bad{border-color:var(--rec)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <h1>Spot<b>50</b> · Grabar mi voz</h1>
+  <p class="muted">Lee el texto con naturalidad, como si platicaras con un cliente, en un lugar callado. De 1 a 2 minutos. El audio solo sale de tu equipo cuando tú lo envías a Spot50.</p>
+  <div class="card texto" id="texto"></div>
+  <div class="card ctrl">
+    <button class="big" id="rec" aria-label="Grabar">● Grabar</button>
+    <div class="time" id="time">0:00</div>
+    <div class="meter" aria-hidden="true"><i id="lvl"></i></div>
+    <p class="muted" id="hint">Toca Grabar y permite el micrófono cuando el navegador lo pida.</p>
+  </div>
+  <div class="card" id="listo" hidden style="display:flex;flex-direction:column;gap:10px">
+    <b>Escúchala antes de enviarla</b>
+    <audio id="prev" controls></audio>
+    <div class="row">
+      <button class="btn blue" id="enviar">Enviar a Spot50</button>
+      <button class="btn" id="bajar">Descargar el audio</button>
+    </div>
+  </div>
+  <div class="msg" id="msg" hidden></div>
+</main>
+<script>
+const TEXTO=`Hola, soy yo, y esta es mi voz. Te voy a contar cómo trabajamos. Primero escuchamos lo que necesitas: la fecha, el lugar, el presupuesto y lo que tienes en mente. Después armamos una propuesta clara, con todo incluido, para que no haya sorpresas.
+¿Sabías que la mayoría de los problemas se pueden evitar con una buena planeación? Por eso preparamos todo con tiempo y revisamos cada detalle.
+¡Y cuando llega el gran día, todo sale como lo imaginaste! Lo hacemos con gusto, con cuidado y con mucha energía.
+Si tienes dudas, escríbenos por WhatsApp. Te respondemos rápido, te explicamos las opciones y te mandamos tu cotización sin compromiso.
+Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve y diez. Lunes, martes, miércoles, jueves, viernes, sábado y domingo.
+Gracias por escucharme. ¡Nos vemos muy pronto!`;
+const $=s=>document.querySelector(s);
+$('#texto').textContent=TEXTO;
+let rec=null,stream=null,chunks=[],t0=0,timer=0,blob=null,ac=null,raf=0;
+const msg=(t,c)=>{const m=$('#msg');m.hidden=false;m.className='msg '+(c||'');m.textContent=t};
+const fmt=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+function tipo(){for(const t of ['audio/webm;codecs=opus','audio/mp4','audio/webm','audio/ogg;codecs=opus'])if(window.MediaRecorder&&MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported(t))return t;return ''}
+async function iniciar(){
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia||!window.MediaRecorder){msg('Este navegador no puede grabar audio. Abre esta página en Chrome, Edge o Safari actualizados.','bad');return}
+  try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:true,autoGainControl:true,channelCount:1}})}
+  catch(e){msg(e&&e.name==='NotAllowedError'?'No se dio permiso al micrófono. Toca el candado junto a la dirección, permite el micrófono y vuelve a intentarlo.':e&&e.name==='NotFoundError'?'No se encontró un micrófono conectado.':'No se pudo abrir el micrófono. Si abriste esta página desde Spot50 y no funciona, copia la dirección y ábrela directamente en Chrome.','bad');return}
+  const mt=tipo();chunks=[];rec=new MediaRecorder(stream,mt?{mimeType:mt,audioBitsPerSecond:128000}:undefined);
+  rec.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
+  rec.onstop=terminar;rec.start(1000);
+  t0=Date.now();timer=setInterval(()=>{const s=(Date.now()-t0)/1000;$('#time').textContent=fmt(s);if(s>=180)rec.stop()},250);
+  try{ac=new (window.AudioContext||window.webkitAudioContext)();const an=ac.createAnalyser();an.fftSize=512;ac.createMediaStreamSource(stream).connect(an);const d=new Uint8Array(an.fftSize);
+    const loop=()=>{an.getByteTimeDomainData(d);let m=0;for(const v of d)m=Math.max(m,Math.abs(v-128));$('#lvl').style.width=Math.min(100,m/1.1)+'%';raf=requestAnimationFrame(loop)};loop()}catch(e){}
+  $('#rec').textContent='■ Terminar';$('#rec').classList.add('on');$('#hint').textContent='Grabando… lee el texto con calma. Toca Terminar al acabar.';$('#listo').hidden=true;$('#msg').hidden=true}
+function terminar(){
+  clearInterval(timer);cancelAnimationFrame(raf);$('#lvl').style.width='0';try{ac&&ac.close()}catch(e){}
+  stream&&stream.getTracks().forEach(t=>t.stop());
+  const s=(Date.now()-t0)/1000;blob=new Blob(chunks,{type:(rec&&rec.mimeType)||'audio/webm'});rec=null;
+  $('#rec').textContent='● Grabar de nuevo';$('#rec').classList.remove('on');
+  if(s<30){msg(`Duró ${Math.round(s)} s. Graba al menos 30 segundos (mejor de 1 a 2 minutos).`,'bad');$('#hint').textContent='Vuelve a intentarlo leyendo todo el texto.';return}
+  $('#prev').src=URL.createObjectURL(blob);$('#listo').hidden=false;$('#hint').textContent='Listo. Escúchala y envíala.';
+  $('#listo').scrollIntoView({behavior:'smooth',block:'nearest'})}
+$('#rec').onclick=()=>{if(rec&&rec.state==='recording')rec.stop();else iniciar()};
+$('#bajar').onclick=()=>{if(!blob)return;const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mi-voz'+(blob.type.includes('mp4')?'.m4a':blob.type.includes('ogg')?'.ogg':'.webm');document.body.appendChild(a);a.click();a.remove();
+  msg('Descargado. En Spot50 → Voz → Mi voz, toca «Subir audio o video» y elige este archivo.','ok')};
+$('#enviar').onclick=()=>{if(!blob)return;
+  if(window.opener&&!window.opener.closed){try{window.opener.postMessage({tipo:'s50voz',blob},'*');msg('Enviada. Regresa a Spot50: tu muestra ya está lista para guardar. Puedes cerrar esta ventana.','ok');return}catch(e){}}
+  $('#bajar').click()};
+</script>
+</body>
