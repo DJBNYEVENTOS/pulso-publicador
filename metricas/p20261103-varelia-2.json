@@ -2,7 +2,7 @@
   "id": "p20261103-varelia-2",
   "marca": "varelia",
   "formato": "Historia",
-  "actualizado": "2026-11-04T13:31:25.052Z",
+  "actualizado": "2026-11-04T19:46:01.440Z",
   "duracion": null,
   "instagram": {
     "views": 0,
@@ -13,5 +13,6 @@
   "facebook": {},
   "derivados": {
     "vistas": 0
-  }
+  },
+  "vacio": true
 }
