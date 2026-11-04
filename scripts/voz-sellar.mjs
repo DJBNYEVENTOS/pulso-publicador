@@ -9,10 +9,13 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const [entrada, salida] = process.argv.slice(2);
 if (!entrada || !salida) { console.error('Uso: node scripts/voz-sellar.mjs <audio> voz/muestras/<id>.enc'); process.exit(1); }
 const pub = readFileSync(join(ROOT, 'config/voz-publica.pem'), 'utf8');
+// Spot50 guarda la muestra de iPhone como texto "S50WAV1:<wav en base64>": se convierte de vuelta a WAV.
+let crudo = readFileSync(entrada), ext = extname(entrada).slice(1) || 'bin';
+if (crudo.subarray(0, 8).toString() === 'S50WAV1:') { crudo = Buffer.from(crudo.subarray(8).toString().trim(), 'base64'); ext = 'wav'; }
 const k = randomBytes(32), iv = randomBytes(12), c = createCipheriv('aes-256-gcm', k, iv);
-const datos = Buffer.concat([c.update(readFileSync(entrada)), c.final()]);
+const datos = Buffer.concat([c.update(crudo), c.final()]);
 mkdirSync(dirname(salida), { recursive: true });
-writeFileSync(salida, JSON.stringify({ v: 1, alg: 'rsa-oaep-256+aes-256-gcm', ext: extname(entrada).slice(1) || 'bin',
+writeFileSync(salida, JSON.stringify({ v: 1, alg: 'rsa-oaep-256+aes-256-gcm', ext,
   k: publicEncrypt({ key: pub, padding: constants.RSA_PKCS1_OAEP_PADDING, oaepHash: 'sha256' }, k).toString('base64'),
   iv: iv.toString('base64'), tag: c.getAuthTag().toString('base64'), datos: datos.toString('base64') }));
 console.log('Muestra cifrada:', salida, (datos.length / 1048576).toFixed(1) + ' MB');
