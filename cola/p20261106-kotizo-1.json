@@ -1,0 +1,44 @@
+{
+  "id": "p20261106-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-06",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Tu cliente escribe a las 4 pm. Tú contestas a las 11 pm. Ya compró con otro.",
+  "texto": "Tu cliente escribe a las 4 pm. Tú contestas a las 11 pm. Ya compró con otro.\n\nTres errores al cotizar por WhatsApp que te cuestan ventas:\n\n1. Contestar al día siguiente. Quien responde primero, vende.\n2. Cotizar de memoria. Un descuido y regalas tu margen.\n3. No pedir la fecha desde el primer mensaje. Terminas cotizando dos veces.\n\nLa solución cabe en un link: tu cliente llena fecha, personas y lo que necesita, y la cotización llega directo a tu WhatsApp.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Tu cliente escribe a las 4 pm. Tú contestas a las 11 pm. Ya compró con otro.\n\nTres errores al cotizar por WhatsApp que te cuestan ventas:\n\n1. Contestar al día siguiente. Quien responde primero, vende.\n2. Cotizar de memoria. Un descuido y regalas tu margen.\n3. No pedir la fecha desde el primer mensaje. Terminas cotizando dos veces.\n\nLa solución cabe en un link: tu cliente llena fecha, personas y lo que necesita, y la cotización llega directo a tu WhatsApp.\n\nGuárdalo para tu próximo cliente y sigue nuestra página para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Tu cliente escribe a las 4 pm. Tú contestas a las 11 pm. Ya compró con otro.\n\nTres errores al cotizar por WhatsApp que te cuestan ventas:\n\n1. Contestar al día siguiente. Quien responde primero, vende.\n2. Cotizar de memoria. Un descuido y regalas tu margen.\n3. No pedir la fecha desde el primer mensaje. Terminas cotizando dos veces.\n\nLa solución cabe en un link: tu cliente llena fecha, personas y lo que necesita, y la cotización llega directo a tu WhatsApp.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Contestas a las 11 pm y tu cliente ya compró con otro. 3 errores al cotizar por WhatsApp. Guárdalo. kotizo-app.netlify.app"
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "3 errores al cotizar por WhatsApp",
+  "subtitulo": "El segundo te cuesta clientes",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Reel vertical 9:16 técnico Kotizo (#181E2E, acento #E6016E). Escena 1: celular en una mesa, chat con hora 4:02 pm y respuesta 11:07 pm, cliente que escribe 'ya lo conseguí con otro'. Escenas 2-4: tarjeta limpia con número del error y un icono simple; una idea por escena. Última: pantalla del cotizador llenándose y llegando a WhatsApp. Sin precios.",
+  "escenas": [
+    {
+      "titular": "Escribe a las 4. Contestas a las 11 pm."
+    },
+    {
+      "subtitulo": "Quien responde primero, vende",
+      "titular": "Error 1: contestar mañana"
+    },
+    {
+      "subtitulo": "Un descuido y regalas tu margen",
+      "titular": "Error 2: cotizar de memoria"
+    },
+    {
+      "subtitulo": "Terminas cotizando dos veces",
+      "titular": "Error 3: no pedir la fecha"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próximo cliente",
+      "titular": "Que cotice solo, hasta de noche"
+    }
+  ],
+  "estado": "listo"
+}

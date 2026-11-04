@@ -1,0 +1,48 @@
+{
+  "id": "p20261106-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-06",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Cuarenta chats abiertos y la pareja pregunta lo mismo que ayer.",
+  "texto": "Cuarenta chats abiertos y la pareja pregunta lo mismo que ayer.\n\nEl contrato en Word. Los pagos en Excel. El cronograma en un PDF que nadie encuentra.\n\nCon Varelia, la pareja tiene un portal con tu marca: contrato, pagos y checklist en un solo lugar. Tú dejas de buscar y vuelves a diseñar.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+  "textos": {
+    "facebook": "Cuarenta chats abiertos y la pareja pregunta lo mismo que ayer.\n\nEl contrato en Word. Los pagos en Excel. El cronograma en un PDF que nadie encuentra.\n\nCon Varelia, la pareja tiene un portal con tu marca: contrato, pagos y checklist en un solo lugar. Tú dejas de buscar y vuelves a diseñar.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+    "instagram": "Cuarenta chats abiertos y la pareja pregunta lo mismo que ayer.\n\nEl contrato en Word. Los pagos en Excel. El cronograma en un PDF que nadie encuentra.\n\nCon Varelia, la pareja tiene un portal con tu marca: contrato, pagos y checklist en un solo lugar. Tú dejas de buscar y vuelves a diseñar.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\nPrueba 14 días gratis 👉 varelia.netlify.app",
+    "linkedin": "Centralizar contrato, pagos y checklist en un portal reduce la fricción con el cliente y las omisiones en bodas.",
+    "threads": "Antes: 40 chats, Word y Excel. Después: un portal con tu marca para cada pareja. ¿Con cuál te quedas?",
+    "tiktok": "De 40 chats a un solo portal para tu pareja. Prueba 14 días gratis 👉 varelia.netlify.app",
+    "youtube": "Portal para wedding planners: de 40 chats a uno solo | Varelia"
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #OrganizadoraDeBodas #WeddingPlannerMorelia #EstudioDeBodas",
+  "titular": "De 40 chats a un solo portal",
+  "subtitulo": "Tu operación, a la altura de tu estudio",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "impacto",
+  "guion": "Vertical 18 s. Fondo #24221F con tipografía Playfair en marfil #F6F1E8 y detalles dorados #B8955A. Escena 1 pantalla llena de burbujas de chat; luego transición limpia a un portal ordenado. Cierre con logo Varelia.",
+  "escenas": [
+    {
+      "subtitulo": "Otra vez: “¿ya mandaron el cronograma?”",
+      "titular": "Cuarenta chats y la misma pregunta"
+    },
+    {
+      "titular": "El contrato en Word, los pagos en Excel"
+    },
+    {
+      "titular": "La pareja pregunta. Tú buscas"
+    },
+    {
+      "titular": "Un portal con tu marca"
+    },
+    {
+      "titular": "Contrato, pagos y checklist en un lugar"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Guárdalo para tu próxima boda",
+      "titular": "Tu estudio, con orden de estudio"
+    }
+  ],
+  "estado": "listo"
+}
