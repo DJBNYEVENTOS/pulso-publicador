@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style></head><body>
+<title>Panel ARM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<style>
+/* Layout: barra superior con negocio y pestañas; en Conversaciones, lista a la izquierda y chat + ficha a la derecha */
+:root{
+  --bg:#f3f4f7; --surface:#ffffff; --ink:#15171c; --muted:#5d6271; --line:#dfe1e8;
+  --accent:#a31e55; --accent-soft:#f7e6ee; --chat:#eceee9; --in:#ffffff; --out:#dcefe3; --human:#e4e9fb;
+  --good:#1f7a4d; --warn:#a86207; --bad:#b42318;
+  --f-display:"Bricolage Grotesque","Figtree",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111318; --surface:#1a1d24; --ink:#eceef3; --muted:#9aa0ad; --line:#2c303a;
+  --accent:#e0588f; --accent-soft:#3a1d2a; --chat:#151a17; --in:#242a27; --out:#1f4030; --human:#232c4a;
+  --good:#5cc98f; --warn:#e3a33c; --bad:#f07466; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1a1d24; --ink:#eceef3; --muted:#9aa0ad; --line:#2c303a;
+  --accent:#e0588f; --accent-soft:#3a1d2a; --chat:#151a17; --in:#242a27; --out:#1f4030; --human:#232c4a;
+  --good:#5cc98f; --warn:#e3a33c; --bad:#f07466; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45}
+button{font:inherit;font-weight:600;border-radius:999px;padding:7px 14px;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button:disabled{opacity:.5;cursor:default}
+input,textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin:12px 0 4px}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.demo-band{background:var(--accent-soft);font-size:13px;padding-block:6px;text-align:center}
+header.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;padding-block:14px;border-bottom:1px solid var(--line);background:var(--surface)}
+.brand{font-family:var(--f-display);font-weight:700;font-size:20px}
+.brand small{font-family:var(--f-mono);font-size:11px;color:var(--accent);letter-spacing:.08em;margin-left:6px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tabs button{border:0;background:none;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--accent-soft);color:var(--accent)}
+.spacer{flex:1}
+select.neg{width:auto;max-width:260px}
+main{padding-block:18px 32px}
+/* login */
+.login{max-width:380px;margin:10vh auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.login h1{font-family:var(--f-display);margin:0 0 4px;font-size:24px}
+/* conversaciones */
+.conv{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr) minmax(0,280px);gap:16px;align-items:start}
+@media (max-width:1100px){.conv{grid-template-columns:minmax(0,300px) minmax(0,1fr)}.ficha{grid-column:2}}
+@media (max-width:760px){.conv{grid-template-columns:minmax(0,1fr)}.ficha{grid-column:auto}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;min-width:0}
+.filtros{display:flex;gap:6px;flex-wrap:wrap;padding:12px}
+.filtros button{font-size:12px;padding:5px 11px}
+.filtros button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.lista{list-style:none;margin:0;padding:0;max-height:62vh;overflow-y:auto}
+.lista li button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;gap:2px 8px;width:100%;padding:10px 14px;border-top:1px solid var(--line);cursor:pointer}
+.lista li button[aria-current="true"]{background:var(--accent-soft)}
+.lista b{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lista .sub{grid-column:1/-1;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lista time{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.d-frio{background:var(--muted)} .d-tibio{background:var(--warn)} .d-caliente{background:var(--bad)}
+.tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;border:1px solid currentColor}
+.tag.h{color:var(--accent)}
+.chathead{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line)}
+.chathead h2{font-family:var(--f-display);font-size:17px;margin:0;flex:1;min-width:0}
+.mensajes{background:var(--chat);height:52vh;min-height:300px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:80%;padding:7px 10px 5px;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.m time{display:block;text-align:right;font-family:var(--f-mono);font-size:10px;color:var(--muted)}
+.m.cliente{align-self:flex-start;background:var(--in)}
+.m.agente{align-self:flex-end;background:var(--out)}
+.m.humano{align-self:flex-end;background:var(--human)}
+.m .quien{font-size:11px;font-weight:600;color:var(--muted)}
+.m.sistema{align-self:center;background:transparent;color:var(--warn);font-size:12px;text-align:center;max-width:90%}
+.responder{display:flex;gap:8px;padding:10px}
+.vacio{padding:40px 20px;text-align:center;color:var(--muted)}
+.ficha{padding:16px}
+.ficha h3{font-family:var(--f-display);font-size:16px;margin:0 0 10px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+dt{color:var(--muted)} dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.alerta{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin-top:12px}
+.err{color:var(--bad);font-size:13px;min-height:1em;margin:6px 10px}
+/* cerebro y reporte */
+.dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:860px){.dos{grid-template-columns:minmax(0,1fr)}}
+.pad{padding:18px}
+.pad h2{font-family:var(--f-display);font-size:18px;margin:0 0 4px}
+.hint{color:var(--muted);font-size:13px;margin:0 0 6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sim{background:var(--chat);height:340px;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;border-radius:10px;margin-top:10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi b{display:block;font-family:var(--f-display);font-size:28px;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:12px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);font-weight:600}
+.tw{overflow-x:auto}
+.reporte-txt{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13px}
+.ok{color:var(--good);font-size:13px}
+</style>
+
+<div id="app"></div>
+
+<script>
+/* ===== Configuración: pega aquí los datos de tu proyecto de Supabase =====
+   Déjalos vacíos para ver el panel en modo demostración con datos de ejemplo. */
+const SUPABASE_URL = "https://whrxqecychafgqenydad.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndocnhxZWN5Y2hhZmdxZW55ZGFkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAzNzc0MjUsImV4cCI6MjEwNTk1MzQyNX0.VkhxGWqaslZxdrEaB0xCvRWJ8crKjJ8BfvSLe_uQSPY";
+/* ======================================================================== */
+
+const DEMO = !SUPABASE_URL || !SUPABASE_ANON_KEY || typeof supabase === "undefined";
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hora = d => new Date(d).toLocaleTimeString("es-MX", {hour:"2-digit", minute:"2-digit"});
+const cuando = d => { const x = new Date(d), h = new Date(); return x.toDateString() === h.toDateString() ? hora(d) : x.toLocaleDateString("es-MX", {day:"numeric", month:"short"}); };
+const TEMP = {frio:"Frío", tibio:"Tibio", caliente:"Caliente"};
+const ETAPA = {1:"Saludo", 2:"Calificando", 3:"Cotizado", 4:"Listo para pagar o agendar"};
+
+/* ---------- Datos de ejemplo (modo demostración) ---------- */
+function datosDemo(){
+  const ahora = Date.now(), min = m => new Date(ahora - m*60000).toISOString();
+  const neg = {id:"demo", nombre:"Pastelería Dulce Encanto (ejemplo)", giro:"Pastelería", ciudad:"Zitácuaro, Michoacán", horario:"Lun a sáb 9:00 a 20:00",
+    precios:"Pastel 3 leches 20 personas $450\nPastel de XV o boda 60 personas $1,350\nPastel 3 pisos 120 personas $3,200\nCupcakes docena $240\nEnvío en Zitácuaro $80",
+    faq:"Pedidos con 3 días de anticipación (bodas y XV: 2 semanas)\nAnticipo del 50% por transferencia o liga de pago\nSabores: chocolate, vainilla, tres leches, zanahoria",
+    reglas_humano:"queja, pedido de más de $5,000, diseño especial con fotos", objetivo:"apartar con anticipo", tono:"cálido, de tú, breve",
+    aviso_whatsapp:"5217150000000", aviso_plantilla:"", activo:true};
+  const cs = [
+    {id:"c1", wa_id:"5217151112233", nombre:"Mariana López", temperatura:"caliente", etapa:4, interes:"Pastel 3 pisos XV", fecha:"14 de diciembre", cantidad:"120 personas", presupuesto:"$3,200", siguiente_paso:"Enviar liga de anticipo", modo:"agente", motivo_humano:"", origen:"XV-DIC", ultimo_mensaje:min(4)},
+    {id:"c2", wa_id:"5214471234567", nombre:"Jorge Ruiz", temperatura:"tibio", etapa:2, interes:"Pastel 3 leches", fecha:"", cantidad:"20 personas", presupuesto:"", siguiente_paso:"Confirmar envío a Maravatío", modo:"humano", motivo_humano:"Envío fuera de la ciudad; se cotiza aparte", origen:"", ultimo_mensaje:min(26)},
+    {id:"c3", wa_id:"5217159876543", nombre:"Sofía", temperatura:"frio", etapa:1, interes:"Cupcakes", fecha:"", cantidad:"", presupuesto:"", siguiente_paso:"Preguntar cantidad y fecha", modo:"agente", motivo_humano:"", origen:"", ultimo_mensaje:min(190)},
+    {id:"c4", wa_id:"5214431112222", nombre:"Laura Méndez", temperatura:"caliente", etapa:3, interes:"Pastel de boda", fecha:"28 de noviembre", cantidad:"60 personas", presupuesto:"$1,350", siguiente_paso:"Esperar sabor y anticipo", modo:"agente", motivo_humano:"", origen:"BODA-NOV", ultimo_mensaje:min(1500)},
+  ];
+  const ms = {
+    c1:[["cliente","Hola, ¿precio de pastel para XV?",40],["agente","Hola, soy el asistente virtual de Dulce Encanto. Si prefieres hablar con una persona, escribe \"persona\".\n\nEl pastel de XV para 60 personas cuesta $1,350. ¿Para cuántas personas y qué fecha es tu evento?",40],["cliente","Somos 120, es el 14 de diciembre",12],["agente","Para 120 personas te recomiendo el pastel de 3 pisos, $3,200. ¿Qué sabor te gustaría?",12],["cliente","Tres leches. ¿Cómo aparto?",5],["agente","Se aparta con el 50% de anticipo por transferencia o liga de pago. ¿A nombre de quién lo registro?",4]],
+    c2:[["cliente","Buenas, ¿lo pueden llevar a Maravatío?",30],["agente","Hola, soy el asistente virtual de Dulce Encanto.\n\nDentro de Zitácuaro el envío cuesta $80. A Maravatío se cotiza aparte; le pido a una persona del equipo que te confirme el costo.",29],["sistema","Aviso enviado al dueño: envío fuera de la ciudad",29],["cliente","Va, gracias",26]],
+    c3:[["cliente","Hola, ¿tienen cupcakes?",191],["agente","Hola, soy el asistente virtual de Dulce Encanto.\n\nSí, la docena de cupcakes cuesta $240. ¿Cuántas docenas y para qué día?",190]],
+    c4:[["cliente","Info de pastel de boda para 60",1520],["agente","Hola, soy el asistente virtual de Dulce Encanto.\n\nEl pastel de boda para 60 personas cuesta $1,350. ¿Para qué fecha es?",1519],["cliente","28 de noviembre",1500],["agente","Perfecto, aún estamos a tiempo. ¿Qué sabor te gustaría?",1500]],
+  };
+  const mensajes = {};
+  for (const k in ms) mensajes[k] = ms[k].map(([rol,texto,m],i) => ({id:k+i, rol, texto, creado:min(m), latencia_ms: rol==="agente" ? 2400 + i*300 : null}));
+  const avisos = [{id:1, contacto_id:"c2", motivo:"Envío fuera de la ciudad; se cotiza aparte", atendido:false, creado:min(29)}];
+  return {neg, cs, mensajes, avisos};
+}
+
+/* ---------- Capa de datos ---------- */
+function apiDemo(){
+  const D = datosDemo(); let subs = [];
+  const avisar = () => subs.forEach(f => f());
+  return {
+    demo:true,
+    async sesion(){ return {email:"demo@arm"}; },
+    async salir(){},
+    async negocios(){ return [D.neg]; },
+    async contactos(){ return [...D.cs].sort((a,b) => b.ultimo_mensaje.localeCompare(a.ultimo_mensaje)); },
+    async mensajes(cid){ return D.mensajes[cid] || []; },
+    async avisos(){ return D.avisos.filter(a => !a.atendido); },
+    suscribir(_, f){ subs.push(f); },
+    async modo(cid, modo){ const c = D.cs.find(x => x.id===cid); c.modo = modo; c.motivo_humano = modo==="humano" ? "Lo tomó el dueño" : ""; if (modo==="agente") D.avisos.forEach(a => { if (a.contacto_id===cid) a.atendido = true; }); avisar(); },
+    async responder(cid, texto){ (D.mensajes[cid] ||= []).push({id:Math.random(), rol:"humano", texto, creado:new Date().toISOString()}); const c = D.cs.find(x => x.id===cid); c.modo = "humano"; c.ultimo_mensaje = new Date().toISOString(); avisar(); },
+    async guardar(n){ Object.assign(D.neg, n); },
+    async probar(_, historial){ return simularDemo(D.neg, historial); },
+    async metricas(){ return [
+      {semana:"2026-10-19", prospectos:9, mensajes_cliente:41, respuestas_agente:44, respuesta_seg:3.1, calientes:3},
+      {semana:"2026-10-26", prospectos:14, mensajes_cliente:63, respuestas_agente:66, respuesta_seg:2.8, calientes:5},
+      {semana:"2026-11-02", prospectos:4, mensajes_cliente:15, respuestas_agente:15, respuesta_seg:2.7, calientes:2},
+    ]; },
+  };
+}
+function simularDemo(n, h){
+  const t = (h.at(-1)?.texto || "").toLowerCase();
+  if (/persona|humano/.test(t)) return {respuesta:"Gracias por tu paciencia. Le pido a una persona del equipo que te escriba en cuanto pueda.", cambios:{modo:"humano"}, aviso:"El cliente pidió hablar con una persona", bloqueado:null};
+  if (/descuento|caro/.test(t)) return {respuesta:"Gracias por tu paciencia. Le pido a una persona del equipo que te escriba en cuanto pueda.", cambios:{modo:"humano"}, aviso:"Pide descuento", bloqueado:null};
+  if (/aparto|anticipo|pago/.test(t)) return {respuesta:"Se aparta con el 50% de anticipo por transferencia o liga de pago. ¿A nombre de quién lo registro?", cambios:{temperatura:"caliente", etapa:4}, aviso:null, bloqueado:null};
+  return {respuesta:(h.length<2 ? "Hola, soy el asistente virtual de "+n.nombre+".\n\n" : "")+"El pastel de XV para 60 personas cuesta $1,350. ¿Para cuántas personas y qué fecha es tu evento?", cambios:{temperatura:"tibio", etapa:2}, aviso:null, bloqueado:null};
+}
+
+function apiReal(){
+  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  const fn = async (body) => {
+    const { data: { session } } = await sb.auth.getSession();
+    const r = await fetch(SUPABASE_URL + "/functions/v1/arm-whatsapp/panel", {
+      method:"POST", headers:{ "Content-Type":"application/json", Authorization:"Bearer " + session?.access_token, apikey:SUPABASE_ANON_KEY },
+      body: JSON.stringify(body),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || "No se pudo completar la acción");
+    return j;
+  };
+  const chk = ({data, error}) => { if (error) throw new Error(error.message); return data; };
+  return {
+    demo:false,
+    async sesion(){ return (await sb.auth.getSession()).data.session?.user || null; },
+    async entrar(email, pass){ const { error } = await sb.auth.signInWithPassword({email, password:pass}); if (error) throw new Error("Correo o contraseña incorrectos"); },
+    async salir(){ await sb.auth.signOut(); },
+    async negocios(){ return chk(await sb.from("arm_negocios").select("*").order("nombre")); },
+    async contactos(nid){ return chk(await sb.from("arm_contactos").select("*").eq("negocio_id", nid).order("ultimo_mensaje", {ascending:false}).limit(300)); },
+    async mensajes(cid){ return chk(await sb.from("arm_mensajes").select("*").eq("contacto_id", cid).order("creado").limit(500)); },
+    async avisos(nid){ return chk(await sb.from("arm_avisos").select("*").eq("negocio_id", nid).eq("atendido", false).order("creado", {ascending:false})); },
+    suscribir(nid, f){
+      sb.channel("arm-"+nid)
+        .on("postgres_changes", {event:"*", schema:"public", table:"arm_mensajes", filter:"negocio_id=eq."+nid}, f)
+        .on("postgres_changes", {event:"*", schema:"public", table:"arm_contactos", filter:"negocio_id=eq."+nid}, f)
+        .on("postgres_changes", {event:"*", schema:"public", table:"arm_avisos", filter:"negocio_id=eq."+nid}, f)
+        .subscribe();
+    },
+    modo:(cid, modo) => fn({accion:"modo", contacto_id:cid, modo}),
+    responder:(cid, texto) => fn({accion:"responder", contacto_id:cid, texto}),
+    async guardar(n){ const {id, ...campos} = n; chk(await sb.from("arm_negocios").update(campos).eq("id", id)); },
+    probar:(nid, historial) => fn({accion:"probar", negocio_id:nid, historial}),
+    async metricas(nid){ return chk(await sb.from("arm_metricas_semana").select("*").eq("negocio_id", nid).order("semana", {ascending:false}).limit(8)).reverse(); },
+  };
+}
+
+/* ---------- Estado y vistas ---------- */
+const api = DEMO ? apiDemo() : apiReal();
+const S = { tab:"conv", negocios:[], neg:null, contactos:[], avisos:[], sel:null, msgs:[], filtro:"todos", sim:[] };
+function tabGuardada(){ try { return localStorage.getItem("arm-tab") || "conv"; } catch { return "conv"; } }
+function guardarTab(t){ try { localStorage.setItem("arm-tab", t); } catch {} }
+
+async function inicio(){
+  const u = await api.sesion();
+  if (!u) return vistaLogin();
+  S.negocios = await api.negocios();
+  if (!S.negocios.length) { $("#app").innerHTML = `<div class="login"><h1>Sin negocios</h1><p class="hint">Tu cuenta aún no tiene un negocio asignado. Pídele a BNY que lo dé de alta.</p><button id="b-salir">Salir</button></div>`; $("#b-salir").onclick = async () => { await api.salir(); location.reload(); }; return; }
+  S.neg = S.negocios[0]; S.tab = tabGuardada();
+  marco();
+  await recargar();
+  api.suscribir(S.neg.id, () => recargar(true));
+}
+
+function vistaLogin(){
+  $("#app").innerHTML = `<form class="login" id="f-login">
+    <h1>Panel ARM</h1><p class="hint">Entra con el correo que te dio BNY.</p>
+    <label for="l-email">Correo</label><input id="l-email" type="email" autocomplete="email" required>
+    <label for="l-pass">Contraseña</label><input id="l-pass" type="password" autocomplete="current-password" required>
+    <p class="err" id="l-err"></p>
+    <button class="primary" type="submit">Entrar</button></form>`;
+  $("#f-login").onsubmit = async e => {
+    e.preventDefault(); $("#l-err").textContent = "";
+    try { await api.entrar($("#l-email").value, $("#l-pass").value); inicio(); } catch(err){ $("#l-err").textContent = err.message; }
+  };
+}
+
+function marco(){
+  $("#app").innerHTML = `
+    ${api.demo ? `<div class="demo-band wrap">Modo demostración: negocio y conversaciones de ejemplo. Al conectar Supabase verás las tuyas.</div>` : ""}
+    <header class="top wrap">
+      <div class="brand">ARM<small>PANEL</small></div>
+      ${S.negocios.length > 1 ? `<select class="neg" id="sel-neg" aria-label="Negocio">${S.negocios.map(n => `<option value="${n.id}">${esc(n.nombre)}</option>`).join("")}</select>` : `<span>${esc(S.neg.nombre)}</span>`}
+      <div class="spacer"></div>
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-tab="conv">Conversaciones</button>
+        <button role="tab" data-tab="cerebro">Cerebro y pruebas</button>
+        <button role="tab" data-tab="reporte">Reporte</button>
+      </nav>
+      ${api.demo ? "" : `<button id="b-salir">Salir</button>`}
+    </header>
+    <main class="wrap" id="vista"></main>`;
+  document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => { S.tab = b.dataset.tab; guardarTab(S.tab); pintar(); });
+  $("#sel-neg")?.addEventListener("change", async e => { S.neg = S.negocios.find(n => n.id === e.target.value); S.sel = null; await recargar(); });
+  $("#b-salir")?.addEventListener("click", async () => { await api.salir(); location.reload(); });
+}
+
+async function recargar(silencioso){
+  [S.contactos, S.avisos] = await Promise.all([api.contactos(S.neg.id), api.avisos(S.neg.id)]);
+  if (S.sel) S.msgs = await api.mensajes(S.sel);
+  if (!silencioso || S.tab === "conv") pintar();
+}
+
+function pintar(){
+  document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === S.tab));
+  if (S.tab === "conv") vistaConv();
+  else if (S.tab === "cerebro") vistaCerebro();
+  else vistaReporte();
+}
+
+/* Conversaciones */
+function vistaConv(){
+  const pend = new Set(S.avisos.map(a => a.contacto_id));
+  const f = S.filtro;
+  const lista = S.contactos.filter(c => f === "todos" || (f === "persona" ? c.modo === "humano" : c.temperatura === f));
+  const c = S.contactos.find(x => x.id === S.sel);
+  const cuenta = k => S.contactos.filter(x => k === "persona" ? x.modo === "humano" : x.temperatura === k).length;
+  $("#vista").innerHTML = `<div class="conv">
+    <section class="card" aria-label="Prospectos">
+      <div class="filtros">
+        ${[["todos","Todos",S.contactos.length],["persona","Necesitan persona",cuenta("persona")],["caliente","Calientes",cuenta("caliente")],["tibio","Tibios",cuenta("tibio")],["frio","Fríos",cuenta("frio")]]
+          .map(([k,t,n]) => `<button data-f="${k}" aria-pressed="${f===k}">${t} · ${n}</button>`).join("")}
+      </div>
+      <ul class="lista">${lista.length ? lista.map(x => `<li><button data-c="${x.id}" aria-current="${x.id===S.sel}">
+          <b><span class="dot d-${x.temperatura}"></span>${esc(x.nombre || "+"+x.wa_id)}</b><time>${cuando(x.ultimo_mensaje)}</time>
+          <span class="sub">${x.modo==="humano" ? `<span class="tag h">${pend.has(x.id) ? "Te necesita" : "Lo atiendes tú"}</span> ` : ""}${esc(x.interes || x.siguiente_paso || "Sin datos todavía")}</span>
+        </button></li>`).join("") : `<li class="vacio">Sin prospectos en este filtro.</li>`}</ul>
+    </section>
+    <section class="card" aria-label="Conversación">${c ? chat(c) : `<div class="vacio">Elige un prospecto para ver la conversación.</div>`}</section>
+    ${c ? ficha(c, pend.has(c.id)) : ""}
+  </div>`;
+  document.querySelectorAll("[data-f]").forEach(b => b.onclick = () => { S.filtro = b.dataset.f; vistaConv(); });
+  document.querySelectorAll("[data-c]").forEach(b => b.onclick = async () => { S.sel = b.dataset.c; S.msgs = await api.mensajes(S.sel); vistaConv(); });
+  const box = $(".mensajes"); if (box) box.scrollTop = box.scrollHeight;
+  $("#b-modo")?.addEventListener("click", async e => {
+    e.target.disabled = true;
+    try { await api.modo(c.id, c.modo === "humano" ? "agente" : "humano"); await recargar(); } catch(err){ $("#c-err").textContent = err.message; e.target.disabled = false; }
+  });
+  $("#f-resp")?.addEventListener("submit", async e => {
+    e.preventDefault(); const t = $("#c-txt").value.trim(); if (!t) return;
+    $("#c-send").disabled = true; $("#c-err").textContent = "";
+    try { await api.responder(c.id, t); $("#c-txt").value = ""; S.msgs = await api.mensajes(c.id); await recargar(); }
+    catch(err){ $("#c-err").textContent = err.message; $("#c-send").disabled = false; }
+  });
+}
+function chat(c){
+  const quien = {agente:"Agente", humano:"Tú"};
+  return `<div class="chathead"><h2>${esc(c.nombre || "+"+c.wa_id)}</h2>
+      <span class="tag ${c.modo==="humano" ? "h" : ""}">${c.modo==="humano" ? "Atiende una persona" : "Atiende el agente"}</span>
+      <button id="b-modo">${c.modo==="humano" ? "Devolver al agente" : "Tomar la conversación"}</button></div>
+    <div class="mensajes">${S.msgs.map(m => `<div class="m ${m.rol}">${quien[m.rol] ? `<div class="quien">${quien[m.rol]}</div>` : ""}${esc(m.texto)}<time>${hora(m.creado)}</time></div>`).join("")}</div>
+    <form class="responder" id="f-resp"><input id="c-txt" autocomplete="off" placeholder="Escribe como el negocio… (el agente se pausa)" aria-label="Respuesta">
+      <button class="primary" id="c-send" type="submit">Enviar</button></form>
+    <p class="err" id="c-err" aria-live="polite"></p>`;
+}
+function ficha(c, pendiente){
+  const fila = (k, v) => `<dt>${k}</dt><dd>${esc(v) || "—"}</dd>`;
+  return `<aside class="card ficha" aria-label="Ficha del prospecto">
+    <h3><span class="dot d-${c.temperatura}"></span>${TEMP[c.temperatura]} · ${ETAPA[c.etapa]}</h3>
+    <dl>${fila("WhatsApp", "+"+c.wa_id)}${fila("Quiere", c.interes)}${fila("Fecha", c.fecha)}${fila("Cantidad", c.cantidad)}${fila("Presupuesto", c.presupuesto)}${fila("Siguiente paso", c.siguiente_paso)}${fila("Llegó por", c.origen)}</dl>
+    ${c.modo==="humano" && c.motivo_humano ? `<div class="alerta">${pendiente ? "<b>Te necesita:</b> " : ""}${esc(c.motivo_humano)}</div>` : ""}
+  </aside>`;
+}
+
+/* Cerebro y pruebas */
+const CAMPOS = [["nombre","Nombre"],["giro","Giro"],["ciudad","Ciudad y zona"],["horario","Horario"],["precios","Precios y productos (única fuente de precios)",1],["faq","Preguntas frecuentes y políticas",1],["reglas_humano","Pasar a una persona cuando…"],["objetivo","Objetivo del agente"],["tono","Tono"],["aviso_whatsapp","WhatsApp del dueño para avisos (521…)"]];
+function vistaCerebro(){
+  const n = S.neg;
+  $("#vista").innerHTML = `<div class="dos">
+    <form class="card pad" id="f-neg"><h2>Lo que sabe el agente</h2>
+      <p class="hint">Si un precio no está aquí, el agente no lo dice: pasa la conversación a una persona.</p>
+      ${CAMPOS.map(([k,t,area]) => `<label for="n-${k}">${t}</label>${area ? `<textarea id="n-${k}" rows="5">${esc(n[k])}</textarea>` : `<input id="n-${k}" value="${esc(n[k])}">`}`).join("")}
+      <p class="hint" style="margin-top:12px">Estado: <b>${n.activo ? "Agente encendido" : "Agente apagado (se enciende después de la Carta de aprobación)"}</b></p>
+      <div style="display:flex;gap:10px;align-items:center;margin-top:10px"><button class="primary" type="submit" id="n-save">Guardar cambios</button><span id="n-ok" class="ok" aria-live="polite"></span></div>
+    </form>
+    <section class="card pad"><h2>Simulador</h2>
+      <p class="hint">Escribe como cliente para probar el cerebro guardado. No manda nada por WhatsApp ni guarda la conversación. Usa estas pruebas para las 50 de la Carta de aprobación.</p>
+      <div class="sim" id="sim">${S.sim.map(m => `<div class="m ${m.rol}">${esc(m.texto)}</div>`).join("") || `<div class="vacio">Prueba: precio, algo que no venden, pedir descuento, escribir en inglés, pedir “persona”.</div>`}</div>
+      <form class="responder" id="f-sim" style="padding:10px 0 0"><input id="s-txt" autocomplete="off" placeholder="Mensaje del cliente…" aria-label="Mensaje de prueba"><button class="primary" id="s-send">Probar</button><button type="button" id="s-reset">Reiniciar</button></form>
+      <p class="hint" id="s-info" aria-live="polite"></p>
+    </section></div>`;
+  $("#f-neg").onsubmit = async e => {
+    e.preventDefault(); const cambios = {id:n.id}; CAMPOS.forEach(([k]) => cambios[k] = $("#n-"+k).value.trim());
+    $("#n-save").disabled = true;
+    try { await api.guardar(cambios); Object.assign(n, cambios); $("#n-ok").textContent = "Guardado. El agente ya usa estos datos."; }
+    catch(err){ $("#n-ok").textContent = err.message; }
+    $("#n-save").disabled = false;
+  };
+  const box = $("#sim"); box.scrollTop = box.scrollHeight;
+  $("#s-reset").onclick = () => { S.sim = []; vistaCerebro(); };
+  $("#f-sim").onsubmit = async e => {
+    e.preventDefault(); const t = $("#s-txt").value.trim(); if (!t) return;
+    S.sim.push({rol:"cliente", texto:t}); $("#s-send").disabled = true; vistaCerebroChat("escribiendo…");
+    try {
+      const r = await api.probar(n.id, S.sim);
+      if (r.respuesta) S.sim.push({rol:"agente", texto:r.respuesta});
+      const notas = [];
+      if (r.bloqueado) notas.push("Candado: " + r.bloqueado);
+      if (r.aviso) notas.push("Avisaría al dueño: " + r.aviso);
+      const datos = Object.entries(r.cambios || {}).filter(([k]) => k !== "modo" && k !== "motivo_humano").map(([k,v]) => k + ": " + v);
+      if (datos.length) notas.push("Guardaría → " + datos.join(" · "));
+      notas.forEach(x => S.sim.push({rol:"sistema", texto:x}));
+      vistaCerebro();
+    } catch(err){ S.sim.pop(); vistaCerebro(); $("#s-info").textContent = err.message; }
+  };
+}
+function vistaCerebroChat(nota){ const box = $("#sim"); box.innerHTML = S.sim.map(m => `<div class="m ${m.rol}">${esc(m.texto)}</div>`).join("") + `<div class="m sistema">${nota}</div>`; box.scrollTop = box.scrollHeight; }
+
+/* Reporte */
+async function vistaReporte(){
+  $("#vista").innerHTML = `<p class="hint">Cargando reporte…</p>`;
+  let filas = [];
+  try { filas = await api.metricas(S.neg.id); } catch(err){ $("#vista").innerHTML = `<p class="err">${esc(err.message)}</p>`; return; }
+  const u = filas.at(-1) || {prospectos:0, mensajes_cliente:0, respuesta_seg:null, calientes:0};
+  const pend = S.avisos.length;
+  const sem = d => new Date(d + (String(d).length === 10 ? "T12:00:00" : "")).toLocaleDateString("es-MX", {day:"numeric", month:"short"});
+  const txt = `Reporte ARM · ${S.neg.nombre}\nSemana del ${filas.length ? sem(u.semana) : "—"}\n\n• Prospectos atendidos: ${u.prospectos}\n• Mensajes de clientes: ${u.mensajes_cliente}\n• Tiempo promedio de respuesta: ${u.respuesta_seg ?? "—"} s\n• Prospectos calientes: ${u.calientes}\n• Conversaciones que esperan a una persona: ${pend}\n\nSiguiente paso: dar seguimiento a los calientes y contestar los pendientes.`;
+  $("#vista").innerHTML = `
+    <div class="kpis">
+      <div class="kpi"><b>${u.prospectos}</b><span>prospectos esta semana</span></div>
+      <div class="kpi"><b>${u.respuesta_seg ?? "—"} s</b><span>respuesta promedio</span></div>
+      <div class="kpi"><b>${u.calientes}</b><span>calientes</span></div>
+      <div class="kpi"><b>${pend}</b><span>esperan a una persona</span></div>
+    </div>
+    <div class="dos">
+      <section class="card pad"><h2>Semanas</h2><div class="tw"><table>
+        <thead><tr><th>Semana del</th><th>Prospectos</th><th>Mensajes</th><th>Respuesta (s)</th><th>Calientes</th></tr></thead>
+        <tbody>${filas.length ? [...filas].reverse().map(f => `<tr><td>${sem(f.semana)}</td><td>${f.prospectos}</td><td>${f.mensajes_cliente}</td><td>${f.respuesta_seg ?? "—"}</td><td>${f.calientes}</td></tr>`).join("") : `<tr><td colspan="5">Todavía no hay mensajes.</td></tr>`}</tbody>
+      </table></div></section>
+      <section class="card pad"><h2>Mensaje del lunes</h2><p class="hint">Cópialo y mándalo al dueño.</p>
+        <div class="reporte-txt" id="rep">${esc(txt)}</div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:10px"><button id="b-copiar">Copiar</button><span id="cp" class="ok" aria-live="polite"></span></div>
+      </section>
+    </div>`;
+  $("#b-copiar").onclick = async () => {
+    try { await navigator.clipboard.writeText(txt); $("#cp").textContent = "Copiado"; }
+    catch { const r = document.createRange(); r.selectNodeContents($("#rep")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("#cp").textContent = "Selecciónalo y copia con Ctrl+C"; }
+  };
+}
+
+inicio().catch(err => { $("#app").innerHTML = `<div class="login"><h1>No se pudo cargar</h1><p class="err">${esc(err.message)}</p></div>`; });
+</script>
+
+</body></html>
