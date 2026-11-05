@@ -9,10 +9,10 @@
       "en": "2026-11-05T01:01:31.564Z"
     },
     "instagram": {
-      "ok": false,
-      "error": "Instagram rechazó el archivo: ERROR",
-      "intentos": 2,
-      "en": "2026-11-05T01:16:52.987Z"
+      "ok": true,
+      "id": "18124068488293106",
+      "url": "https://www.instagram.com/p/DfV24T3kV8H/",
+      "en": "2026-11-05T01:31:43.763Z"
     },
     "tiktok": {
       "ok": true,
