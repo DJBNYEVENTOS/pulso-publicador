@@ -2,11 +2,11 @@
   "id": "iv-musica",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-06T02:01:23.476Z",
+  "actualizado": "2026-11-06T08:15:57.062Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 24,
+    "reach": 11,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 24
   }
 }
