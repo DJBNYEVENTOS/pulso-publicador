@@ -1,139 +1,269 @@
-const INV_PROMO = Date.now() < Date.parse('2026-11-17T23:59:00-06:00');
+// Sitio web de venta de BNY Eventos (marca registrada: logo real, colores y tipografías oficiales sin cambios).
+// Colores: #0D0D0F (negro), #A31E55 (magenta), #F7F2EB (marfil). Tipografías: Tinos (títulos y texto), Arimo (etiquetas).
+// Lo genera scripts/sitio.mjs con cada publicación; las fotos fijas viven en docs/bny/fotos/.
+// Precios: los mismos del cotizador y del catálogo PDF de BNY (más IVA). Para ocultarlos, pon MOSTRAR_PRECIOS = false.
+const MOSTRAR_PRECIOS = true;
+const AHORA = Date.now();
+const INV_PROMO = AHORA < Date.parse('2026-11-17T23:59:00-06:00');
+const CAMPANA_2027 = AHORA < Date.parse('2026-12-31T23:59:00-06:00');
 const INV_PRECIOS = INV_PROMO
   ? '<p><strong>Precio especial de lanzamiento</strong> hasta el 17 de noviembre: Esencial $590, Premium $990 y Gala $1,890, más IVA, por evento. Si tu evento es en 2027, también puedes apartarlo.</p>'
   : '<p>Esencial $990, Premium $1,790 y Gala $3,490, más IVA, por evento.</p>';
-// Sitio web completo de BNY Eventos (marca registrada: logo real, colores y tipografías oficiales sin cambios).
-// Colores: #0D0D0F (negro), #A31E55 (magenta), #F7F2EB (marfil). Tipografías: Tinos (títulos y texto), Arimo (etiquetas).
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const WA = 'https://wa.me/527861628600';
+const TEL = '527861628600';
+const WA = 'https://wa.me/' + TEL;
 const wa = (t) => `${WA}?text=${encodeURIComponent(t)}`;
+const URL_SITIO = 'https://djbnyeventos.github.io/pulso-publicador/bny/';
+const MAPS = 'https://www.google.com/maps/place/?q=place_id:ChIJXfFLBj3L0oURH8mE9SEURT8';
+const RESENAS = 'https://search.google.com/local/reviews?placeid=ChIJXfFLBj3L0oURH8mE9SEURT8';
+const IG = 'https://www.instagram.com/dj.bny.eventos/';
+const FB = 'https://www.facebook.com/145245832842598';
+const SITES = 'https://sites.google.com/view/bny-eventos';
+const precio = (n) => MOSTRAR_PRECIOS ? `<span class="desde">Desde $${n.toLocaleString('es-MX')} <small>más IVA</small></span>` : '';
+
+const EXPERIENCIAS = [
+  { n: 'Petit', cupo: '60 a 100 invitados', h: '4 a 5 horas', p: 8500, t: 'Para celebrar con quienes más quieres, con el mismo cuidado de una gran producción.', inc: ['DJ y audio profesional', 'Micrófono inalámbrico', 'Montaje y desmontaje'] },
+  { n: 'Elegance', cupo: 'Hasta 150 invitados', h: '6 horas', p: 22000, t: 'Para una boda que se recuerda por sus detalles y por el ritmo perfecto de la noche.', inc: ['DJ y audio profesional', 'Iluminación ambiental', 'Coordinación de los momentos clave'], top: true },
+  { n: 'Experience', cupo: 'Hasta 250 invitados', h: '6 horas', p: 45000, t: 'Para una gran celebración donde cada momento está coreografiado de principio a fin.', inc: ['DJ, audio e iluminación escénica', 'Coordinación integral del evento', 'Anfitrionas de protocolo'] },
+  { n: 'Personalizada', cupo: 'A su medida', h: 'Lo que la noche necesite', p: 0, t: 'Para quien imagina algo que todavía no existe. Lo diseñamos desde cero con ustedes.', inc: ['Producción a la medida', 'Pista de baile, efectos y momentos especiales', 'Propuesta privada'] },
+];
+
+const FAQ = [
+  ['¿Cuánto cuesta el DJ para mi boda o XV años?', 'Nuestras experiencias para bodas y XV años van desde $8,500 más IVA (Petit, 60 invitados, 4 horas) hasta $45,000 más IVA (Experience, 250 invitados, producción integral). Bautizos desde $4,500, cumpleaños desde $5,000 y eventos corporativos desde $4,900, más IVA. Por WhatsApp te enviamos tu cotización exacta, con viáticos incluidos.'],
+  ['¿Viajan fuera de Ciudad Hidalgo?', 'Sí. En Cd. Hidalgo no hay costo de traslado. Para otras ciudades se suma una sola vez un monto de viáticos según la zona: por ejemplo $1,500 en Maravatío, Tuxpan o Irimbo; $3,500 en Morelia, Zinapécuaro o Toluca; $4,000 en Valle de Bravo; y $6,000 en Querétaro, más IVA.'],
+  ['¿Cómo aparto mi fecha?', 'Con el 50% de anticipo y contrato. Recibimos pocas bodas por temporada para cuidar cada una, así que te recomendamos consultar disponibilidad en cuanto tengas tu fecha.'],
+  ['¿Qué incluye el servicio?', 'Todas las experiencias incluyen DJ, audio profesional, montaje y desmontaje con prueba de sonido antes de que llegue el primer invitado. Según el paquete se suman iluminación, coordinación de momentos y anfitrionas. También puedes agregar pista de baile, invitación digital y momentos especiales como el Butterfly Moment.'],
+  ['¿Puedo elegir la música?', 'Sí, la música se cura con ustedes: llenan un cuestionario musical, armamos juntos el minuto a minuto (entrada, primer baile, brindis, vals, pista y último tema) y en la pista leemos a sus invitados canción por canción.'],
+  ['¿Hacen eventos corporativos y de gobierno?', 'Sí: reuniones, conferencias, jornadas, posadas y eventos institucionales con audio, micrófonos, proyección y DJ. BNY Eventos está registrado como proveedor ante el INE y en ComprasMX.'],
+];
+
+const LOCAL_LD = {
+  '@context': 'https://schema.org', '@type': 'EntertainmentBusiness', '@id': URL_SITIO + '#negocio',
+  name: 'BNY Eventos', alternateName: 'DJ BNY Eventos', slogan: 'No es un evento, es una Experiencia BNY.',
+  description: 'DJ, audio, iluminación y coordinación de momentos para bodas, XV años, celebraciones y eventos corporativos en Michoacán, Estado de México y Querétaro.',
+  url: URL_SITIO, telephone: '+52 786 162 8600', image: URL_SITIO + 'fotos/og.jpg', logo: URL_SITIO + 'logo.png', priceRange: '$4,500 – $45,000 MXN',
+  address: { '@type': 'PostalAddress', streetAddress: 'C. Lerdo de Tejada 10, int. 1, Centro', addressLocality: 'Ciudad Hidalgo', addressRegion: 'Michoacán', postalCode: '61100', addressCountry: 'MX' },
+  geo: { '@type': 'GeoCoordinates', latitude: 19.6906449, longitude: -100.5563276 },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '11:00', closes: '20:00' }],
+  areaServed: ['Ciudad Hidalgo', 'Maravatío', 'Zitácuaro', 'Tuxpan', 'Morelia', 'Jungapeo', 'Valle de Bravo', 'Toluca', 'Querétaro'].map(n => ({ '@type': 'City', name: n })),
+  hasMap: MAPS, sameAs: [IG, FB, SITES, MAPS],
+};
+const FAQ_LD = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+const ld = (o) => JSON.stringify(o).replace(/</g, '\\u003c');
 
 export function paginaBNY(posts, fecha) {
-  const diario = posts.slice(0, 9).map(p => `
+  const diario = posts.slice(0, 6).map(p => `
       <article class="pieza">
         <img src="../media/${esc(p.id)}.png" alt="${esc(p.titular || p.gancho)}" loading="lazy" width="540" height="540">
         <time datetime="${esc(p.fecha)}">${esc(fecha(p.fecha))}</time>
         <h3>${esc(p.gancho || p.titular)}</h3>
       </article>`).join('');
 
+  const experiencias = EXPERIENCIAS.map(e => `
+        <article class="experiencia${e.top ? ' destacada' : ''}">
+          ${e.top ? '<span class="sello">La más elegida</span>' : ''}
+          <span class="cupo">${esc(e.cupo)} · ${esc(e.h)}</span>
+          <h3>${esc(e.n)}</h3>
+          <p>${esc(e.t)}</p>
+          <ul>${e.inc.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+          ${e.p ? precio(e.p) : '<span class="desde">Propuesta privada</span>'}
+          <a class="boton ${e.top ? 'lleno' : 'linea'}" href="${wa(`Hola, me interesa la experiencia ${e.n} de BNY Eventos. ¿Tienen disponible mi fecha?`)}">Consultar mi fecha</a>
+        </article>`).join('');
+
+  const faq = FAQ.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('');
+
   return `<!doctype html>
 <html lang="es-MX">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BNY Eventos · Experiencias para bodas y celebraciones</title>
-<meta name="description" content="Curaduría musical, audio, iluminación y coordinación de momentos para bodas, XV años y celebraciones en el Oriente de Michoacán y Morelia. No es un evento, es una Experiencia BNY.">
-<meta property="og:title" content="BNY Eventos">
-<meta property="og:description" content="No es un evento, es una Experiencia BNY.">
-<meta property="og:image" content="logo.png">
+<title>DJ para bodas y XV años en Michoacán · BNY Eventos, Cd. Hidalgo</title>
+<meta name="description" content="DJ, audio, iluminación y coordinación de momentos para bodas, XV años y eventos en Cd. Hidalgo, Maravatío, Zitácuaro, Morelia, Valle de Bravo y Querétaro. 5.0 en Google. Consulta tu fecha por WhatsApp.">
+<link rel="canonical" href="${URL_SITIO}">
+<meta name="theme-color" content="#0D0D0F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="BNY Eventos">
+<meta property="og:title" content="BNY Eventos · No es un evento, es una Experiencia BNY">
+<meta property="og:description" content="DJ, audio, iluminación y coordinación de momentos para bodas y XV años en Michoacán. Consulta tu fecha por WhatsApp.">
+<meta property="og:url" content="${URL_SITIO}">
+<meta property="og:image" content="${URL_SITIO}fotos/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo.png">
+<link rel="preload" as="image" href="fotos/mariposas-beso.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Arimo:wght@400;600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Jost:wght@400;500&display=swap">
+<script type="application/ld+json">${ld(LOCAL_LD)}</script>
+<script type="application/ld+json">${ld(FAQ_LD)}</script>
 <style>
-:root{--negro:#0D0D0F;--magenta:#A31E55;--marfil:#F7F2EB;--linea:rgba(13,13,15,.14);--suave:rgba(13,13,15,.68)}
+:root{--negro:#0D0D0F;--magenta:#A31E55;--marfil:#F7F2EB;--linea:rgba(13,13,15,.14);--suave:rgba(13,13,15,.7)}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--marfil);color:var(--negro);font:18px/1.65 "Tinos",Georgia,serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-img{max-width:100%;display:block}
-.envoltura{max-width:1120px;margin:0 auto;padding:0 16px}
+img,video{max-width:100%;display:block}
+.envoltura{max-width:1160px;margin:0 auto;padding:0 16px}
 @media(min-width:720px){.envoltura{padding:0 40px}}
 .etiqueta{font:600 12px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--magenta)}
-.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;font:600 14px/1 "Arimo",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid var(--magenta);transition:background .25s,color .25s}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;font:600 14px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid var(--magenta);transition:background .25s,color .25s,border-color .25s;cursor:pointer;text-align:center}
 .boton.lleno{background:var(--magenta);color:var(--marfil)}
 .boton.lleno:hover{background:var(--negro);border-color:var(--negro)}
-.boton.linea{color:var(--negro);border-color:var(--negro)}
+.boton.linea{color:var(--negro);border-color:var(--negro);background:transparent}
 .boton.linea:hover{background:var(--negro);color:var(--marfil)}
-.oscuro .boton.linea{color:var(--marfil);border-color:rgba(247,242,235,.5)}
-.oscuro .boton.linea:hover{background:var(--marfil);color:var(--negro)}
+.oscuro{background:var(--negro);color:var(--marfil)}
+.oscuro .boton.linea,.portada .boton.linea{color:var(--marfil);border-color:rgba(247,242,235,.6)}
+.oscuro .boton.linea:hover,.portada .boton.linea:hover{background:var(--marfil);color:var(--negro)}
+.boton svg{width:20px;height:20px;fill:currentColor}
 
 /* Barra */
-.barra{position:sticky;top:0;z-index:5;background:rgba(247,242,235,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
-.barra .envoltura{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
-.barra img{height:40px;width:auto}
-.barra nav{display:none;gap:28px;font:600 12px/1 "Arimo",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.barra{position:sticky;top:0;z-index:20;background:rgba(247,242,235,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.barra .envoltura{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.barra img{height:38px;width:auto}
+.barra nav{display:none;gap:26px;font:600 12px/1 "Arimo",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
 .barra nav a{text-decoration:none;opacity:.75}
 .barra nav a:hover{opacity:1;color:var(--magenta)}
-.barra .boton{min-height:40px;padding:0 16px;font-size:12px}
-@media(min-width:900px){.barra nav{display:flex}}
+.barra .boton{min-height:42px;padding:0 16px;font-size:12px}
+@media(min-width:960px){.barra nav{display:flex}}
 
 /* Portada */
-.portada{padding:88px 0 96px;border-bottom:1px solid var(--linea)}
-.portada h1{font:italic 400 clamp(52px,9vw,112px)/1.02 "Tinos",Georgia,serif;margin:22px 0 28px;letter-spacing:-.01em;max-width:11ch}
-.portada p{font-size:clamp(18px,2.2vw,21px);color:var(--suave);max-width:46ch;margin:0 0 40px}
-.portada .acciones{display:flex;flex-wrap:wrap;gap:14px}
-.filete{width:56px;height:2px;background:var(--magenta);margin:0 0 28px}
+.portada{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:var(--marfil);overflow:hidden}
+.portada picture,.portada picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.35) 0%,rgba(13,13,15,.25) 35%,rgba(13,13,15,.88) 100%)}
+.portada .envoltura{position:relative;z-index:1;padding-top:120px;padding-bottom:64px;width:100%}
+.portada .etiqueta{color:#F2B8CE}
+.portada h1{font:italic 400 clamp(46px,8vw,104px)/1.02 "Tinos",Georgia,serif;margin:16px 0 18px;letter-spacing:-.01em;max-width:12ch}
+.portada .sub{font-size:clamp(18px,2.2vw,22px);max-width:44ch;margin:0 0 30px;color:rgba(247,242,235,.9)}
+.portada .sub strong{font-weight:400;font-style:italic}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+.confianza{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;font:600 13px/1.4 "Arimo",Arial,sans-serif;letter-spacing:.06em;color:rgba(247,242,235,.88)}
+.confianza a{text-decoration:none}
+.confianza .estrellas{color:#F4C95D;letter-spacing:.1em}
 
-/* Manifiesto */
-.oscuro{background:var(--negro);color:var(--marfil)}
-.manifiesto{padding:110px 0}
-.manifiesto blockquote{margin:0;font:italic 400 clamp(32px,5vw,58px)/1.15 "Tinos",Georgia,serif;max-width:18ch}
-.manifiesto .columnas{display:grid;gap:28px;margin-top:56px;color:rgba(247,242,235,.78)}
-@media(min-width:800px){.manifiesto .columnas{grid-template-columns:1fr 1fr;gap:56px}}
-.manifiesto p{margin:0}
+/* Campaña */
+.campana{background:var(--magenta);color:var(--marfil)}
+.campana .envoltura{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.campana p{margin:0;font-size:18px;max-width:62ch}
+.campana b{font-weight:700}
+.campana a{font:700 13px/1 "Arimo",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px;white-space:nowrap}
 
 /* Secciones */
-section.bloque{padding:100px 0}
-.encabezado{display:grid;gap:14px;margin-bottom:56px;max-width:640px}
-.encabezado h2{font:400 clamp(36px,5vw,56px)/1.08 "Tinos",Georgia,serif;margin:0}
+section.bloque{padding:96px 0}
+.encabezado{display:grid;gap:14px;margin-bottom:48px;max-width:680px}
+.encabezado h2{font:400 clamp(34px,5vw,54px)/1.08 "Tinos",Georgia,serif;margin:0}
 .encabezado p{margin:0;color:var(--suave)}
-.oscuro .encabezado p{color:rgba(247,242,235,.72)}
+.oscuro .encabezado p{color:rgba(247,242,235,.74)}
+
+/* Manifiesto con foto */
+.manifiesto .rejilla{display:grid;gap:40px;align-items:center}
+@media(min-width:860px){.manifiesto .rejilla{grid-template-columns:1.1fr 1fr;gap:72px}}
+.manifiesto blockquote{margin:16px 0 26px;font:italic 400 clamp(32px,4.6vw,54px)/1.12 "Tinos",Georgia,serif}
+.manifiesto p{margin:0 0 16px;color:rgba(247,242,235,.8)}
+.manifiesto img{width:100%;aspect-ratio:4/5;object-fit:cover}
 
 /* Momentos */
-.momentos{display:grid;gap:0;border-top:1px solid var(--linea)}
-.momento{display:grid;gap:8px;padding:30px 0;border-bottom:1px solid var(--linea)}
-@media(min-width:800px){.momento{grid-template-columns:90px 280px 1fr;gap:32px;align-items:baseline}}
+.momentos{display:grid;border-top:1px solid var(--linea)}
+.momento{display:grid;gap:6px;padding:26px 0;border-bottom:1px solid var(--linea)}
+@media(min-width:800px){.momento{grid-template-columns:80px 260px 1fr;gap:32px;align-items:baseline}}
 .momento span{font:600 12px/1 "Arimo",Arial,sans-serif;letter-spacing:.2em;color:var(--magenta)}
-.momento h3{font:italic 400 30px/1.15 "Tinos",Georgia,serif;margin:0}
+.momento h3{font:italic 400 28px/1.15 "Tinos",Georgia,serif;margin:0}
 .momento p{margin:0;color:var(--suave);max-width:56ch}
 
+/* Video real */
+.real .rejilla{display:grid;gap:40px;align-items:center}
+@media(min-width:860px){.real .rejilla{grid-template-columns:minmax(0,380px) 1fr;gap:80px}}
+.real video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#1a1a1d}
+.real h2{font:italic 400 clamp(34px,5vw,56px)/1.08 "Tinos",Georgia,serif;margin:14px 0 18px}
+.real p{color:rgba(247,242,235,.8);margin:0 0 16px;max-width:48ch}
+
 /* Experiencias */
-.experiencias{display:grid;gap:1px;background:rgba(247,242,235,.16);border:1px solid rgba(247,242,235,.16)}
+.experiencias{display:grid;gap:18px}
 @media(min-width:760px){.experiencias{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1040px){.experiencias{grid-template-columns:repeat(4,1fr)}}
-.experiencia{background:var(--negro);padding:36px 28px;display:flex;flex-direction:column;gap:12px;min-height:280px}
-.experiencia h3{font:italic 400 34px/1.1 "Tinos",Georgia,serif;margin:0}
-.experiencia .cupo{font:600 12px/1.3 "Arimo",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta)}
-.experiencia p{margin:0;color:rgba(247,242,235,.74);font-size:17px}
-.otras{display:grid;gap:18px;margin-top:56px;color:rgba(247,242,235,.8)}
-@media(min-width:800px){.otras{grid-template-columns:repeat(3,1fr);gap:32px}}
-.otras h4{font:600 12px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--marfil);margin:0 0 8px}
-.otras p{margin:0;font-size:17px}
-.privada{margin-top:56px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding-top:36px;border-top:1px solid rgba(247,242,235,.16)}
-.privada p{margin:0;font:italic 400 24px/1.3 "Tinos",Georgia,serif;max-width:30ch}
+@media(min-width:1100px){.experiencias{grid-template-columns:repeat(4,1fr)}}
+.experiencia{position:relative;background:#fff;border:1px solid var(--linea);padding:34px 26px 28px;display:flex;flex-direction:column;gap:12px}
+.experiencia.destacada{border:2px solid var(--magenta)}
+.experiencia .sello{position:absolute;top:-13px;left:24px;background:var(--magenta);color:var(--marfil);font:700 11px/1 "Arimo",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:7px 12px}
+.experiencia h3{font:italic 400 36px/1.05 "Tinos",Georgia,serif;margin:0}
+.experiencia .cupo{font:600 12px/1.4 "Arimo",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.experiencia p{margin:0;color:var(--suave);font-size:17px}
+.experiencia ul{margin:4px 0 6px;padding:0;list-style:none;display:grid;gap:7px;font:400 15px/1.45 "Arimo",Arial,sans-serif}
+.experiencia li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--magenta);vertical-align:middle;margin-right:10px}
+.desde{margin-top:auto;font:700 22px/1.2 "Tinos",Georgia,serif}
+.desde small{font:400 13px/1 "Arimo",Arial,sans-serif;color:var(--suave)}
+.experiencia .boton{width:100%;margin-top:6px}
+.otras{display:grid;gap:18px;margin-top:40px}
+@media(min-width:800px){.otras{grid-template-columns:repeat(3,1fr);gap:18px}}
+.otra{border-top:2px solid var(--negro);padding-top:18px}
+.otra h4{font:600 12px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin:0 0 8px}
+.otra p{margin:0 0 8px;font-size:17px;color:var(--suave)}
+.otra b{font-weight:700;color:var(--negro)}
+.nota{margin-top:28px;font:400 14px/1.6 "Arimo",Arial,sans-serif;color:var(--suave)}
+
+/* Testimonio */
+.testimonio{text-align:center}
+.testimonio .estrellas{color:#C89B2C;font-size:22px;letter-spacing:.2em}
+.testimonio blockquote{margin:18px auto 22px;max-width:30ch;font:italic 400 clamp(30px,4.4vw,50px)/1.18 "Tinos",Georgia,serif}
+.testimonio .cita2{max-width:58ch;margin:0 auto 22px;color:var(--suave)}
+.testimonio cite{display:block;font:600 13px/1.4 "Arimo",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;font-style:normal;margin-bottom:28px}
+
+/* Galería */
+.galeria{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.galeria img{width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+@media(min-width:800px){.galeria{grid-template-columns:2fr 1fr}.galeria picture:first-child img{aspect-ratio:auto;height:100%}}
+.galeria picture:first-child{grid-row:span 2}
 
 /* Proceso */
-.pasos{display:grid;gap:40px;counter-reset:paso}
-@media(min-width:800px){.pasos{grid-template-columns:repeat(4,1fr);gap:32px}}
-.paso{border-top:2px solid var(--negro);padding-top:22px}
+.pasos{display:grid;gap:36px;counter-reset:paso}
+@media(min-width:800px){.pasos{grid-template-columns:repeat(4,1fr);gap:28px}}
+.paso{border-top:2px solid var(--negro);padding-top:20px}
 .paso::before{counter-increment:paso;content:"0" counter(paso);font:600 12px/1 "Arimo",Arial,sans-serif;letter-spacing:.2em;color:var(--magenta)}
-.paso h3{font:italic 400 28px/1.15 "Tinos",Georgia,serif;margin:14px 0 10px}
+.paso h3{font:italic 400 27px/1.15 "Tinos",Georgia,serif;margin:12px 0 8px}
 .paso p{margin:0;color:var(--suave);font-size:17px}
 
+/* Formulario rápido */
+.cotiza .rejilla{display:grid;gap:40px}
+@media(min-width:900px){.cotiza .rejilla{grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}}
+.cotiza h2{font:italic 400 clamp(36px,5vw,58px)/1.06 "Tinos",Georgia,serif;margin:14px 0 18px}
+.cotiza .intro p{color:rgba(247,242,235,.8);margin:0 0 14px}
+form.rapido{display:grid;gap:14px;background:rgba(247,242,235,.06);border:1px solid rgba(247,242,235,.18);padding:24px}
+@media(min-width:560px){form.rapido{grid-template-columns:1fr 1fr}}
+form.rapido label{display:grid;gap:6px;font:600 12px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,242,235,.8)}
+form.rapido .ancho{grid-column:1/-1}
+form.rapido input,form.rapido select{font:400 17px/1.3 "Arimo",Arial,sans-serif;letter-spacing:0;text-transform:none;color:var(--negro);background:var(--marfil);border:1px solid transparent;padding:12px;min-height:48px;width:100%;border-radius:0}
+form.rapido input:focus,form.rapido select:focus{outline:2px solid var(--magenta);outline-offset:1px}
+form.rapido .boton{grid-column:1/-1;width:100%}
+form.rapido small{grid-column:1/-1;font:400 13px/1.5 "Arimo",Arial,sans-serif;color:rgba(247,242,235,.6)}
+
+/* Preguntas */
+.preguntas{max-width:860px}
+details{border-bottom:1px solid var(--linea);padding:6px 0}
+details summary{cursor:pointer;list-style:none;padding:18px 40px 18px 0;position:relative;font:italic 400 24px/1.3 "Tinos",Georgia,serif}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";position:absolute;right:4px;top:14px;font:400 28px/1 "Arimo",Arial,sans-serif;color:var(--magenta)}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 20px;color:var(--suave);max-width:70ch}
+
+/* Zonas */
+.zonas .rejilla{display:grid;gap:36px}
+@media(min-width:860px){.zonas .rejilla{grid-template-columns:1.2fr 1fr;gap:64px}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{border:1px solid var(--linea);padding:8px 14px;font:400 15px/1 "Arimo",Arial,sans-serif;background:#fff}
+.datos{display:grid;gap:14px;font:400 16px/1.6 "Arimo",Arial,sans-serif}
+.datos b{display:block;font:600 12px/1.2 "Arimo",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta);margin-bottom:4px}
+.datos a{color:var(--negro)}
+.sello-gob{margin-top:28px;padding:16px 18px;border-left:3px solid var(--magenta);background:#fff;font:400 15px/1.55 "Arimo",Arial,sans-serif}
+
 /* Diario */
-.diario{display:grid;gap:36px}
-@media(min-width:700px){.diario{grid-template-columns:repeat(3,1fr);gap:28px}}
-.pieza img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;margin-bottom:16px}
+.diario{display:grid;gap:30px}
+@media(min-width:700px){.diario{grid-template-columns:repeat(3,1fr);gap:24px}}
+.pieza img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;margin-bottom:14px}
 .pieza time{font:600 11px/1 "Arimo",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--magenta)}
-.pieza h3{font:italic 400 22px/1.3 "Tinos",Georgia,serif;margin:8px 0 0}
-
-/* Contacto */
-.contacto{padding:120px 0;text-align:center}
-.contacto h2{font:italic 400 clamp(40px,6vw,76px)/1.05 "Tinos",Georgia,serif;margin:22px auto 22px;max-width:14ch}
-.contacto p{margin:0 auto 40px;max-width:46ch;color:rgba(247,242,235,.75)}
-.contacto .acciones{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
-.contacto small{display:block;margin-top:40px;font:400 13px/1.6 "Arimo",Arial,sans-serif;letter-spacing:.08em;color:rgba(247,242,235,.55)}
-
-/* Pie */
-footer{padding:48px 0}
-footer .envoltura{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
-footer img{height:44px;width:auto}
-footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--suave)}
-
+.pieza h3{font:italic 400 21px/1.3 "Tinos",Georgia,serif;margin:8px 0 0}
 
 /* Invitaciones BNY (su propia identidad dentro del sitio) */
-.invitaciones{background:#F8F7F4;color:#1F2328;padding:100px 0;border-top:1px solid var(--linea)}
+.invitaciones{background:#F8F7F4;color:#1F2328;padding:96px 0;border-top:1px solid var(--linea)}
 .invitaciones .rejilla{display:grid;gap:40px;align-items:center}
 @media(min-width:860px){.invitaciones .rejilla{grid-template-columns:1fr 1.2fr;gap:72px}}
 .invitaciones img{width:min(320px,80%);height:auto}
@@ -145,9 +275,31 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
 .invitaciones .boton{border-color:#C2186A;background:#C2186A;color:#F8F7F4;font-family:"Jost","Arimo",Arial,sans-serif}
 .invitaciones .boton:hover{background:#1F2328;border-color:#1F2328}
 
-/* Botón flotante */
-.flotante{position:fixed;right:16px;bottom:16px;z-index:6;width:56px;height:56px;border-radius:50%;background:var(--magenta);display:grid;place-items:center;box-shadow:0 8px 24px rgba(13,13,15,.25)}
-.flotante svg{width:26px;height:26px;fill:var(--marfil)}
+/* Cierre */
+.contacto{padding:110px 0;text-align:center}
+.contacto h2{font:italic 400 clamp(40px,6vw,76px)/1.05 "Tinos",Georgia,serif;margin:20px auto;max-width:14ch}
+.contacto p{margin:0 auto 36px;max-width:46ch;color:rgba(247,242,235,.78)}
+.contacto .acciones{justify-content:center}
+
+/* Pie */
+footer{padding:44px 0 110px}
+@media(min-width:760px){footer{padding-bottom:48px}}
+footer .envoltura{display:grid;gap:24px}
+@media(min-width:760px){footer .envoltura{grid-template-columns:auto 1fr auto;align-items:center}}
+footer img{height:42px;width:auto}
+footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--suave)}
+footer nav{display:flex;flex-wrap:wrap;gap:18px;font:600 12px/1 "Arimo",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+footer nav a{text-decoration:none}
+footer nav a:hover{color:var(--magenta)}
+
+/* WhatsApp: barra fija en celular y botón flotante en computadora */
+.barra-movil{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -6px 24px rgba(13,13,15,.18)}
+.barra-movil a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;font:700 13px/1 "Arimo",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.barra-movil a:first-child{background:var(--negro);color:var(--marfil)}
+.barra-movil a:last-child{background:var(--magenta);color:var(--marfil)}
+.barra-movil svg{width:18px;height:18px;fill:currentColor}
+.flotante{display:none}
+@media(min-width:760px){.barra-movil{display:none}.flotante{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--magenta);display:grid;place-items:center;box-shadow:0 8px 24px rgba(13,13,15,.3)}.flotante svg{width:28px;height:28px;fill:var(--marfil)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.boton{transition:none}}
 </style>
 </head>
@@ -155,40 +307,59 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
 
 <header class="barra">
   <div class="envoltura">
-    <a href="#inicio" aria-label="BNY Eventos, inicio"><img src="logo.png" alt="BNY Eventos" width="83" height="40"></a>
+    <a href="#inicio" aria-label="BNY Eventos, inicio"><img src="logo.png" alt="BNY Eventos" width="79" height="38"></a>
     <nav aria-label="Secciones">
-      <a href="#momentos">Momentos</a>
-      <a href="#experiencias">Experiencias</a>
+      <a href="#experiencias">Paquetes</a>
+      <a href="#momento-real">Momentos</a>
+      <a href="#resenas">Reseñas</a>
       <a href="#invitaciones">Invitaciones</a>
-      <a href="#proceso">Cómo trabajamos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#preguntas">Preguntas</a>
     </nav>
-    <a class="boton lleno" href="${wa('Hola, me gustaría agendar una cita con BNY Eventos.')}">Agenda tu cita</a>
+    <a class="boton lleno" href="#cotiza">Consultar fecha</a>
   </div>
 </header>
 
 <main id="inicio">
   <section class="portada">
+    <picture>
+      <source srcset="fotos/mariposas-beso.webp" type="image/webp">
+      <img src="fotos/mariposas-beso.jpg" alt="Primer baile de una boda con lluvia de mariposas, producción de BNY Eventos" width="1080" height="1350" fetchpriority="high">
+    </picture>
     <div class="envoltura">
-      <div class="etiqueta">Experiencia BNY</div>
+      <div class="etiqueta">DJ y producción para bodas y XV años · Michoacán</div>
       <h1>La primera nota es tuya.</h1>
-      <div class="filete"></div>
-      <p>Curaduría musical, audio, iluminación y coordinación de cada momento para bodas y celebraciones que se sienten, no que se oyen fuerte.</p>
+      <p class="sub">Música curada con ustedes, audio impecable, luz que acompaña cada momento y coordinación de principio a fin. <strong>No es un evento, es una Experiencia BNY.</strong></p>
       <div class="acciones">
-        <a class="boton lleno" href="${wa('Hola, me gustaría recibir una propuesta privada para mi evento.')}">Solicita tu propuesta privada</a>
-        <a class="boton linea" href="#experiencias">Conoce las experiencias</a>
+        <a class="boton lleno" href="#cotiza">Consulta disponibilidad</a>
+        <a class="boton linea" href="#experiencias">Ver paquetes${MOSTRAR_PRECIOS ? ' y precios' : ''}</a>
+      </div>
+      <div class="confianza">
+        <a href="${RESENAS}" target="_blank" rel="noopener"><span class="estrellas">★★★★★</span> 5.0 en Google</a>
+        <span>Bodas · XV años · Corporativos</span>
+        <span>Cd. Hidalgo · Morelia · Zitácuaro · Valle de Bravo · Querétaro</span>
       </div>
     </div>
   </section>
-
-  <section class="oscuro manifiesto" aria-label="Manifiesto">
+${CAMPANA_2027 ? `
+  <aside class="campana" id="campana-2027" aria-label="Promoción vigente">
     <div class="envoltura">
-      <div class="etiqueta">Manifiesto</div>
-      <blockquote>No es un evento, es una Experiencia BNY.</blockquote>
-      <div class="columnas">
+      <p><b>¿Tu boda o XV es en 2027?</b> Aparta antes del 31 de diciembre y te respetamos el precio de 2026. Se aparta con el 50% y contrato.</p>
+      <a href="${wa('Hola, mi evento es en 2027 y quiero apartar con el precio de 2026. ¿Tienen disponible mi fecha?')}">Apartar con precio 2026</a>
+    </div>
+  </aside>` : ''}
+
+  <section class="oscuro bloque manifiesto" aria-label="Manifiesto">
+    <div class="envoltura rejilla">
+      <div>
+        <div class="etiqueta">Por qué BNY</div>
+        <blockquote>No somos un DJ más. Somos una casa de producción que diseña la noche contigo.</blockquote>
         <p>Una boda no se recuerda por el volumen ni por el equipo. Se recuerda por la canción exacta en el segundo exacto: cuando se abren las puertas, cuando empieza el primer baile, cuando nadie quiere que termine la noche.</p>
-        <p>Por eso no somos un DJ más. Somos una casa de producción que diseña la noche contigo: escuchamos su historia, curamos la música, cuidamos la luz y coordinamos cada momento para que tú solo tengas que vivirlo.</p>
+        <p>Escuchamos su historia, curamos la música, cuidamos la luz y coordinamos cada momento para que ustedes solo tengan que vivirlo.</p>
       </div>
+      <picture>
+        <source srcset="fotos/cabina-flores.webp" type="image/webp">
+        <img src="fotos/cabina-flores.jpg" alt="Cabina de DJ de BNY Eventos decorada con flores en una boda" width="1200" height="1110" loading="lazy">
+      </picture>
     </div>
   </section>
 
@@ -208,28 +379,102 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
     </div>
   </section>
 
-  <section class="oscuro bloque" id="experiencias">
+  <section class="oscuro bloque real" id="momento-real">
+    <div class="envoltura rejilla">
+      <video src="fotos/butterfly.mp4" poster="fotos/butterfly-poster.jpg" muted loop playsinline preload="none" controls aria-label="Butterfly Moment en una boda real de BNY Eventos"></video>
+      <div>
+        <div class="etiqueta">Butterfly Moment · boda real</div>
+        <h2>El segundo en que todo se detiene.</h2>
+        <p>Así se vive un primer baile diseñado por BNY: la canción exacta, la luz en su lugar y una lluvia de mariposas en el instante preciso.</p>
+        <p>Es uno de los momentos que puedes sumar a tu experiencia, junto con pista de baile personalizada, anfitrionas e invitación digital.</p>
+        <div class="acciones" style="margin-top:26px">
+          <a class="boton lleno" href="${wa('Hola, quiero el Butterfly Moment para mi evento. ¿Me pueden dar información?')}">Lo quiero en mi boda</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="experiencias">
     <div class="envoltura">
       <div class="encabezado">
-        <div class="etiqueta">Experiencias</div>
+        <div class="etiqueta">Experiencias para bodas y XV años</div>
         <h2>Elige cómo quieres que se sienta tu noche.</h2>
-        <p>Para bodas y XV años. Todas con la misma exigencia: música curada con ustedes, audio que se escucha igual en la primera mesa y en la última, e iluminación que acompaña cada momento.</p>
+        <p>Todas con la misma exigencia: música curada con ustedes, audio que se escucha igual en la primera mesa y en la última, montaje y prueba de sonido antes de que llegue el primer invitado.</p>
       </div>
-      <div class="experiencias">
-        <div class="experiencia"><span class="cupo">60 a 100 invitados</span><h3>Petit</h3><p>Para celebrar con quienes más quieres, con el mismo cuidado de una gran producción.</p></div>
-        <div class="experiencia"><span class="cupo">Hasta 150 invitados</span><h3>Elegance</h3><p>Para una boda que se recuerda por sus detalles y por el ritmo perfecto de la noche.</p></div>
-        <div class="experiencia"><span class="cupo">Hasta 250 invitados</span><h3>Experience</h3><p>Para una gran celebración donde cada momento está coreografiado de principio a fin.</p></div>
-        <div class="experiencia"><span class="cupo">A su medida</span><h3>Personalizada</h3><p>Para quien imagina algo que todavía no existe. Lo diseñamos desde cero con ustedes.</p></div>
+      <div class="experiencias">${experiencias}
       </div>
       <div class="otras">
-        <div><h4>Bautizos</h4><p>Íntimo, Social o Elegante, para recibir a alguien nuevo con calma y elegancia.</p></div>
-        <div><h4>Cumpleaños</h4><p>Íntimo, Social o Elegante, para una celebración que se siente tuya.</p></div>
-        <div><h4>BNY Corporativo</h4><p>Reuniones, conferencias, jornadas y eventos de empresa impecables, con audio e imagen a la altura de su marca.</p></div>
+        <div class="otra"><h4>Bautizos</h4><p>Íntimo, Social o Elegante, para recibir a alguien nuevo con calma y elegancia.</p>${MOSTRAR_PRECIOS ? '<p><b>Desde $4,500</b> más IVA</p>' : ''}</div>
+        <div class="otra"><h4>Cumpleaños</h4><p>Íntimo, Social o Elegante, para una celebración que se siente tuya.</p>${MOSTRAR_PRECIOS ? '<p><b>Desde $5,000</b> más IVA</p>' : ''}</div>
+        <div class="otra"><h4>BNY Corporativo</h4><p>Reuniones, conferencias, jornadas y posadas con audio, micrófonos, proyección y DJ a la altura de su marca.</p>${MOSTRAR_PRECIOS ? '<p><b>Desde $4,900</b> más IVA</p>' : ''}</div>
       </div>
-      <div class="privada">
-        <p>Te enviamos la propuesta completa de forma privada.</p>
-        <a class="boton linea" href="${wa('Hola, me gustaría recibir la propuesta de experiencias de BNY Eventos.')}">Solicitar propuesta</a>
+      <p class="nota">Precios por evento, más IVA. En Cd. Hidalgo no hay costo de traslado; para otras ciudades se suman viáticos según la zona. Te enviamos tu cotización exacta por WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="oscuro bloque testimonio" id="resenas">
+    <div class="envoltura">
+      <div class="etiqueta">Lo que dicen nuestras parejas</div>
+      <div class="estrellas" aria-label="5 de 5 estrellas" style="margin-top:18px">★★★★★</div>
+      <blockquote>“¡Increíble de principio a fin! No pudimos haber elegido a un mejor DJ para nuestra boda.”</blockquote>
+      <p class="cita2" style="color:rgba(247,242,235,.78)">“Las sorpresas que preparó hicieron que la fiesta fuera todavía más especial, divertida e inolvidable. Sin duda, superó todas nuestras expectativas.”</p>
+      <cite>Mariana · Boda de Mariana y Andreas · Reseña en Google</cite>
+      <div class="acciones" style="justify-content:center">
+        <a class="boton linea" href="${RESENAS}" target="_blank" rel="noopener">Leer todas las reseñas · 5.0 en Google</a>
       </div>
+    </div>
+  </section>
+
+  <section class="bloque" aria-label="Galería" style="padding-bottom:0">
+    <div class="envoltura galeria">
+      <picture><source srcset="fotos/mariposas-beso.webp" type="image/webp"><img src="fotos/mariposas-beso.jpg" alt="Butterfly Moment en el primer baile" loading="lazy" width="1080" height="1350"></picture>
+      <picture><source srcset="fotos/techo-papel.webp" type="image/webp"><img src="fotos/techo-papel.jpg" alt="Cabina BNY bajo techo de papel en una boda" loading="lazy" width="1000" height="925"></picture>
+      <picture><source srcset="fotos/cabina-flores.webp" type="image/webp"><img src="fotos/cabina-flores.jpg" alt="Montaje de cabina con flores e iluminación cálida" loading="lazy" width="1200" height="1110"></picture>
+    </div>
+  </section>
+
+  <section class="bloque" id="proceso">
+    <div class="envoltura">
+      <div class="encabezado">
+        <div class="etiqueta">Cómo trabajamos</div>
+        <h2>De la primera cita a la última canción.</h2>
+      </div>
+      <div class="pasos">
+        <div class="paso"><h3>Consulta tu fecha</h3><p>Nos escribes por WhatsApp con tu fecha, lugar e invitados. Te confirmamos disponibilidad.</p></div>
+        <div class="paso"><h3>Tu propuesta</h3><p>Recibes tu cotización exacta con viáticos. La fecha se aparta con el 50% y contrato.</p></div>
+        <div class="paso"><h3>Diseño de la noche</h3><p>Cuestionario musical, coordinación con el lugar y el minuto a minuto de cada momento.</p></div>
+        <div class="paso"><h3>La noche</h3><p>Montaje y prueba de sonido antes de que llegue el primer invitado. Ustedes solo la viven.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="oscuro bloque cotiza" id="cotiza">
+    <div class="envoltura rejilla">
+      <div class="intro">
+        <div class="etiqueta">Disponibilidad</div>
+        <h2>¿Tenemos libre tu fecha?</h2>
+        <p>Recibimos pocas bodas por temporada para cuidar cada una. Déjanos tus datos y te respondemos por WhatsApp con disponibilidad y tu propuesta.</p>
+        <p>Atención de lunes a sábado, de 11:00 a 20:00.</p>
+      </div>
+      <form class="rapido" id="formRapido" novalidate>
+        <label>Tipo de evento
+          <select name="tipo"><option>Boda</option><option>XV años</option><option>Bautizo</option><option>Cumpleaños</option><option>Evento corporativo</option><option>Posada</option><option>Otro</option></select>
+        </label>
+        <label>Fecha
+          <input type="date" name="fecha">
+        </label>
+        <label>Invitados
+          <select name="invitados"><option>Menos de 60</option><option>60 a 100</option><option>100 a 150</option><option>150 a 250</option><option>Más de 250</option></select>
+        </label>
+        <label>Ciudad o lugar
+          <input type="text" name="lugar" placeholder="Ej. Morelia, Hacienda…" autocomplete="address-level2">
+        </label>
+        <label class="ancho">Tu nombre
+          <input type="text" name="nombre" placeholder="Nombre" autocomplete="name">
+        </label>
+        <button class="boton lleno" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Consultar por WhatsApp</button>
+        <small>Se abre WhatsApp con tu mensaje listo. No guardamos tus datos.</small>
+      </form>
     </div>
   </section>
 
@@ -253,17 +498,33 @@ footer p{margin:0;font:italic 400 16px/1.4 "Tinos",Georgia,serif;color:var(--sua
     </div>
   </section>
 
-  <section class="bloque" id="proceso">
+  <section class="bloque" id="preguntas">
     <div class="envoltura">
       <div class="encabezado">
-        <div class="etiqueta">Cómo trabajamos</div>
-        <h2>De la primera cita a la última canción.</h2>
+        <div class="etiqueta">Preguntas frecuentes</div>
+        <h2>Lo que todos nos preguntan.</h2>
       </div>
-      <div class="pasos">
-        <div class="paso"><h3>Cita privada</h3><p>Nos cuentan su historia, su lugar y cómo imaginan la noche.</p></div>
-        <div class="paso"><h3>Su propuesta</h3><p>Una propuesta a su medida. La fecha se aparta con anticipo y contrato.</p></div>
-        <div class="paso"><h3>Diseño de la noche</h3><p>Cuestionario musical, coordinación con el lugar y el minuto a minuto de cada momento.</p></div>
-        <div class="paso"><h3>La noche</h3><p>Montaje y prueba de sonido antes de que llegue el primer invitado. Ustedes solo la viven.</p></div>
+      <div class="preguntas">${faq}</div>
+    </div>
+  </section>
+
+  <section class="bloque zonas" id="zonas" style="padding-top:0">
+    <div class="envoltura rejilla">
+      <div>
+        <div class="encabezado" style="margin-bottom:24px">
+          <div class="etiqueta">Dónde trabajamos</div>
+          <h2>Desde Cd. Hidalgo, a donde sea tu fiesta.</h2>
+        </div>
+        <ul class="chips">
+          <li>Cd. Hidalgo</li><li>Maravatío</li><li>Tuxpan</li><li>Irimbo</li><li>Zitácuaro</li><li>Jungapeo</li><li>Morelia</li><li>Zinapécuaro</li><li>Valle de Bravo</li><li>Toluca</li><li>Acámbaro</li><li>Pátzcuaro</li><li>Querétaro</li><li>San Juan del Río</li>
+        </ul>
+        <div class="sello-gob">Atendemos bodas, XV años y eventos sociales, además de empresas, instituciones y gobierno. Proveedor registrado ante el INE y en ComprasMX.</div>
+      </div>
+      <div class="datos">
+        <div><b>Oficina</b><a href="${MAPS}" target="_blank" rel="noopener">C. Lerdo de Tejada 10, int. 1, Centro, Cd. Hidalgo, Mich.</a></div>
+        <div><b>WhatsApp</b><a href="${wa('Hola, me gustaría información de BNY Eventos.')}">786 162 8600</a></div>
+        <div><b>Horario</b>Lunes a sábado, 11:00 a 20:00</div>
+        <div><b>Síguenos</b><a href="${IG}" target="_blank" rel="noopener">Instagram @dj.bny.eventos</a> · <a href="${FB}" target="_blank" rel="noopener">Facebook</a> · <a href="${MAPS}" target="_blank" rel="noopener">Google Maps</a></div>
       </div>
     </div>
   </section>
@@ -273,6 +534,7 @@ ${diario ? `
       <div class="encabezado">
         <div class="etiqueta">Diario BNY</div>
         <h2>Lo más reciente.</h2>
+        <p>Síguenos en <a href="${IG}" target="_blank" rel="noopener">Instagram</a> y <a href="${FB}" target="_blank" rel="noopener">Facebook</a>.</p>
       </div>
       <div class="diario">${diario}
       </div>
@@ -282,25 +544,60 @@ ${diario ? `
   <section class="oscuro contacto" id="contacto">
     <div class="envoltura">
       <div class="etiqueta">Fechas por temporada</div>
-      <h2>Recibimos pocas bodas por temporada.</h2>
-      <p>Para cuidar cada una. Cuéntanos tu fecha y te enviamos una propuesta privada por WhatsApp.</p>
+      <h2>Tu fecha puede ser la siguiente.</h2>
+      <p>Cuéntanos tu fecha y te enviamos una propuesta privada por WhatsApp.</p>
       <div class="acciones">
         <a class="boton lleno" href="${wa('Hola, quiero consultar disponibilidad para mi fecha.')}">WhatsApp 786 162 8600</a>
-        <a class="boton linea" href="https://www.instagram.com/dj.bny.eventos/">Instagram</a>
+        <a class="boton linea" href="tel:+527861628600">Llamar</a>
       </div>
-      <small>Cd. Hidalgo, Michoacán · Oriente de Michoacán y Morelia</small>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="envoltura">
-    <img src="logo.png" alt="BNY Eventos" width="91" height="44">
-    <p>No es un evento, es una Experiencia BNY.</p>
+    <img src="logo.png" alt="BNY Eventos" width="87" height="42">
+    <p>No es un evento, es una Experiencia BNY.<br><small style="font-style:normal">BNY Eventos S.A.S. · Cd. Hidalgo, Michoacán</small></p>
+    <nav aria-label="Redes y enlaces">
+      <a href="${IG}" target="_blank" rel="noopener">Instagram</a>
+      <a href="${FB}" target="_blank" rel="noopener">Facebook</a>
+      <a href="${MAPS}" target="_blank" rel="noopener">Google</a>
+      <a href="https://invitacionesbny.netlify.app" target="_blank" rel="noopener">Invitaciones BNY</a>
+    </nav>
   </div>
 </footer>
 
+<div class="barra-movil">
+  <a href="#cotiza">Consultar fecha</a>
+  <a href="${wa('Hola, me gustaría información de BNY Eventos.')}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+</div>
 <a class="flotante" href="${wa('Hola, me gustaría información de BNY Eventos.')}" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<script>
+(function(){
+  var TEL='${TEL}';
+  // La promoción 2027 se oculta sola después del 31 de diciembre, aunque la página no se haya regenerado.
+  var c=document.getElementById('campana-2027');
+  if(c && Date.now()>Date.parse('2026-12-31T23:59:00-06:00')) c.remove();
+  var f=document.getElementById('formRapido');
+  if(f) f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f), fecha=d.get('fecha')||'';
+    if(fecha){var p=fecha.split('-');fecha=p[2]+'/'+p[1]+'/'+p[0];}
+    var m='Hola, soy '+(d.get('nombre')||'')+'. Quiero consultar disponibilidad con BNY Eventos.\\n'+
+      'Evento: '+d.get('tipo')+'\\n'+
+      'Fecha: '+(fecha||'por definir')+'\\n'+
+      'Invitados: '+d.get('invitados')+'\\n'+
+      'Lugar: '+(d.get('lugar')||'por definir');
+    window.open('https://wa.me/'+TEL+'?text='+encodeURIComponent(m),'_blank','noopener');
+  });
+  // El video se reproduce solo cuando está a la vista, para no gastar datos.
+  var v=document.querySelector('.real video');
+  if(v && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){v.preload='auto';v.play().catch(function(){});}else v.pause();});},{threshold:.4}).observe(v);
+  }
+})();
+</script>
 </body>
 </html>`;
 }
