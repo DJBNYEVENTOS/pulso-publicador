@@ -1,0 +1,43 @@
+{
+  "id": "p20261107-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-07",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 10 pm. Estás en la fiesta y el celular no para de pedir precios.",
+  "texto": "Sábado, 10 pm. Estás en la fiesta y el celular no para de pedir precios.\n\nCada cotización a mano son 8 minutos. Si te escriben 6 personas en una noche, son casi 50 minutos de tu sábado.\n\nCon un cotizador, tu cliente elige fecha, personas y lo que necesita, y la cotización te llega lista a tu WhatsApp.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+  "textos": {
+    "instagram": "Sábado, 10 pm. Estás en la fiesta y el celular no para de pedir precios.\n\nCada cotización a mano son 8 minutos. Si te escriben 6 personas en una noche, son casi 50 minutos de tu sábado.\n\nCon un cotizador, tu cliente elige fecha, personas y lo que necesita, y la cotización te llega lista a tu WhatsApp.\n\nGuárdalo para tu próximo cliente y síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "facebook": "Sábado, 10 pm. Estás en la fiesta y el celular no para de pedir precios.\n\nSeis cotizaciones a mano son casi 50 minutos de tu noche. Un cotizador las hace por ti y te llegan listas a WhatsApp.\n\nGuárdalo para tu próximo cliente y sigue nuestra página.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Sábado 10 pm y el celular pide precios. Un cotizador contesta por ti. Guárdalo."
+  },
+  "hashtags": "#Kotizo #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "¿Cuántos minutos cuesta tu sábado?",
+  "subtitulo": "Seis cotizaciones a mano son casi 50 minutos",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Escena real: mesa de fiesta, celular que vibra con mensajes. Cuenta de minutos en pantalla, luego pantalla del cotizador de renta de mobiliario. Colores #181E2E y #E6016E, Young Serif. Audio ritmo suave.",
+  "escenas": [
+    {
+      "titular": "Sábado, 10 pm. Otra vez precios"
+    },
+    {
+      "titular": "8 minutos por cotización",
+      "subtitulo": "6 clientes son casi 50 minutos"
+    },
+    {
+      "titular": "Tu cliente cotiza solo",
+      "subtitulo": "Fecha, personas y lo que necesita"
+    },
+    {
+      "titular": "Te llega lista a WhatsApp"
+    },
+    {
+      "titular": "Guárdalo para tu próximo cliente",
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "cta": "Quiero mi cotizador",
+      "final": true
+    }
+  ],
+  "estado": "listo"
+}

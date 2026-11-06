@@ -1,0 +1,44 @@
+{
+  "id": "p20261108-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-08",
+  "hora": "13:00",
+  "formato": "Carrusel",
+  "gancho": "Tres invitaciones, tres formas de decir ‘te esperamos’.",
+  "texto": "Tres invitaciones, tres formas de decir “te esperamos”.\n\nEsencial: nombre y pases por familia, confirmación en un toque y recordatorios por WhatsApp.\nPremium, el más elegido: suma música, galería y mesa de regalos.\nGala: invitados ilimitados, pase QR y plano del salón.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre: $590, $990 y $1,890, todos más IVA.\n\nGuárdalo para elegir con tu familia. Aparta tu precio especial por WhatsApp: 786 162 8600.",
+  "textos": {
+    "instagram": "Tres invitaciones, tres formas de decir “te esperamos”.\n\nEsencial: nombre y pases por familia, confirmación en un toque y recordatorios por WhatsApp.\nPremium, el más elegido: suma música, galería y mesa de regalos.\nGala: invitados ilimitados, pase QR y plano del salón.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre: $590, $990 y $1,890, todos más IVA.\n\nGuárdalo para elegir con tu familia. Aparta tu precio especial por WhatsApp: 786 162 8600.",
+    "facebook": "Tres invitaciones, tres formas de decir “te esperamos”: Esencial, Premium (el más elegido) y Gala. Precio especial de lanzamiento hasta el 17 de noviembre: $590, $990 y $1,890, todos más IVA.\n\nAparta tu precio especial por WhatsApp: 786 162 8600."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #XVAños #BNYEventos #FiestaEnVivo",
+  "titular": "Elige tu invitación",
+  "subtitulo": "Tres formas de decir ‘te esperamos’",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "oferta",
+  "guion": "Fondo #F8F7F4, Cormorant Garamond #1F2328, acento #C2186A, gris #8E9399 para detalles. Un paquete por lámina sobre un celular. Cierre con logo oficial sin modificar.",
+  "laminas": [
+    {
+      "titular": "Elige tu invitación",
+      "subtitulo": "Tres formas de decir te esperamos"
+    },
+    {
+      "titular": "Esencial",
+      "subtitulo": "Nombre, pases y confirmación en un toque"
+    },
+    {
+      "titular": "Premium, el más elegido",
+      "subtitulo": "Suma música, galería y mesa de regalos"
+    },
+    {
+      "titular": "Gala",
+      "subtitulo": "Invitados ilimitados, pase QR y plano del salón"
+    },
+    {
+      "titular": "Aparta tu precio especial",
+      "subtitulo": "Precio especial de lanzamiento hasta el 17 de noviembre, más IVA",
+      "cta": "Aparta tu precio especial",
+      "final": true
+    }
+  ],
+  "estado": "listo"
+}

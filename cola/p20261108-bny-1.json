@@ -1,0 +1,45 @@
+{
+  "id": "p20261108-bny-1",
+  "marca": "bny",
+  "fecha": "2026-11-08",
+  "hora": "19:30",
+  "formato": "Reel",
+  "gancho": "Tres minutos que ya ensayaste en tu cabeza.",
+  "texto": "Tres minutos que ya ensayaste en tu cabeza.\n\nLa luz baja. Él te toma de la mano. Todos se quedan quietos, y por primera vez en todo el día nadie te pide nada.\n\nEl primer baile no es una canción: es el momento que vas a revivir cuando tengas 60 años.\n\nPor eso cuidamos el segundo en que empieza, la luz sobre ustedes y que nada interrumpa.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "textos": {
+    "facebook": "Tres minutos que ya ensayaste en tu cabeza.\n\nLa luz baja. Él te toma de la mano. Todos se quedan quietos y, por primera vez en todo el día, nadie te pide nada.\n\nEl primer baile no es solo una canción: es el momento que vas a recordar toda la vida. Por eso cuidamos el segundo exacto en que empieza, la luz sobre ustedes y que nada lo interrumpa.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 ✨",
+    "instagram": "Tres minutos que ya ensayaste en tu cabeza.\n\nLa luz baja. Él te toma de la mano. Todos se quedan quietos, y por primera vez en todo el día nadie te pide nada.\n\nEl primer baile no es una canción: es el momento que vas a revivir cuando tengas 60 años.\n\nPor eso cuidamos el segundo en que empieza, la luz sobre ustedes y que nada interrumpa.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+    "tiktok": "Tres minutos que ya ensayaste en tu cabeza. Tu primer baile, cuidado al segundo. Propuesta privada por WhatsApp.",
+    "youtube": "Primer baile de boda: el momento que vas a recordar toda la vida | BNY Eventos"
+  },
+  "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+  "titular": "Tres minutos que ya ensayaste",
+  "subtitulo": "Tu primer baile, cuidado al segundo",
+  "cta": "Aparta tu fecha",
+  "plantilla": "cita",
+  "guion": "0-3 s: negro profundo (#0D0D0F), en Tinos marfil: 'Tres minutos que ya ensayaste'. 3-6 s: silueta de pareja al centro de una pista vacía, luz cálida baja. 6-9 s: detalle de manos entrelazadas, fondo desenfocado. 9-12 s: plano amplio, mucho espacio vacío, invitados en penumbra. 12-15 s: luz cálida sobre la pareja, frente con frente. 15-18 s: firma 'No es un evento, es una Experiencia BNY.' y logo oficial BNY sin modificar sobre negro. Audio: piano suave. Sin cables, bocinas ni gente saltando.",
+  "escenas": [
+    {
+      "titular": "Tres minutos que ya ensayaste"
+    },
+    {
+      "titular": "La luz baja. Él toma tu mano"
+    },
+    {
+      "titular": "Nadie te pide nada"
+    },
+    {
+      "titular": "La canción empieza en el segundo exacto"
+    },
+    {
+      "titular": "Lo vas a recordar toda la vida"
+    },
+    {
+      "cta": "Aparta tu fecha",
+      "final": true,
+      "subtitulo": "Propuesta privada por WhatsApp",
+      "titular": "Aparta tu fecha"
+    }
+  ],
+  "estado": "listo"
+}

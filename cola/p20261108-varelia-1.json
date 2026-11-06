@@ -1,0 +1,44 @@
+{
+  "id": "p20261108-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-08",
+  "hora": "20:00",
+  "formato": "Reel",
+  "gancho": "7 am del día de la boda. Alguien te pregunta a qué hora llega el pastel.",
+  "texto": "7 am del día de la boda. Alguien te pregunta a qué hora llega el pastel.\n\nSi la respuesta vive en tu cabeza, el día será largo. Esto debe estar escrito en tu cronograma:\n\n• Hora de llegada de cada proveedor, con su teléfono directo\n• Plan B si llueve, escrito y compartido\n• Un contacto de emergencia por área\n\nAsí el día se mueve solo y tú te quedas con lo importante: la pareja.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba Varelia 14 días gratis: varelia.netlify.app",
+  "textos": {
+    "facebook": "7 am del día de la boda. Alguien te pregunta a qué hora llega el pastel.\n\nSi la respuesta vive en tu cabeza, el día será largo. Esto debe estar escrito en tu cronograma:\n\n• Hora de llegada de cada proveedor, con su teléfono directo\n• Plan B si llueve, escrito y compartido\n• Un contacto de emergencia por área\n\nAsí el día se mueve solo y tú te quedas con lo importante: la pareja.\n\nGuárdalo para tu próxima boda o compártelo con otra planner que lo necesite.\n\nPrueba Varelia 14 días gratis: varelia.netlify.app",
+    "instagram": "7 am del día de la boda. Alguien te pregunta a qué hora llega el pastel.\n\nSi la respuesta vive en tu cabeza, el día será largo. Esto debe estar escrito en tu cronograma:\n\n• Hora de llegada de cada proveedor, con su teléfono directo\n• Plan B si llueve, escrito y compartido\n• Un contacto de emergencia por área\n\nAsí el día se mueve solo y tú te quedas con lo importante: la pareja.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba Varelia 14 días gratis: varelia.netlify.app",
+    "tiktok": "7 am del día D y todos te preguntan a qué hora llega el pastel. 3 cosas que tu cronograma debe tener. Guárdalo. 14 días gratis."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #BodasMexico",
+  "titular": "Tu cronograma del día D",
+  "subtitulo": "Tres cosas que nunca deben faltar",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Reel vertical 9:16 editorial Varelia (#24221F, acento #B8955A, fondo marfil #F6F1E8, Playfair Display). Escena 1: mesa de preparativos al amanecer, celular con mensaje 'a qué hora llega el pastel'. Escenas 2-4: hoja de cronograma elegante que se llena línea por línea, una idea por escena. Última: pantalla de Varelia con el link del día de la boda. Luz suave, sin saturar.",
+  "escenas": [
+    {
+      "titular": "7 am. ¿A qué hora llega el pastel?"
+    },
+    {
+      "subtitulo": "Con su teléfono directo",
+      "titular": "Hora de cada proveedor"
+    },
+    {
+      "subtitulo": "Escrito, no en tu cabeza",
+      "titular": "Plan B si llueve"
+    },
+    {
+      "subtitulo": "Para que nadie te busque a ti",
+      "titular": "Un contacto de emergencia por área"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba Varelia 14 días gratis",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "p20261107-bny-1",
+  "marca": "bny",
+  "fecha": "2026-11-07",
+  "hora": "18:00",
+  "formato": "Carrusel",
+  "gancho": "Antes de elegir canciones, elige los tres momentos que no quieres perderte.",
+  "texto": "Antes de elegir canciones, elige los tres momentos que no quieres perderte.\n\nUna boda bonita no se arma con una lista de 200 temas. Se arma con tres segundos que tú ya imaginaste: la entrada, el primer baile, el último tema.\n\nDesliza y guarda esta guía para platicarla con tu pareja.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+  "textos": {
+    "instagram": "Antes de elegir canciones, elige los tres momentos que no quieres perderte.\n\nUna boda bonita no se arma con una lista de 200 temas. Se arma con tres segundos que tú ya imaginaste: la entrada, el primer baile, el último tema.\n\nDesliza y guarda esta guía para platicarla con tu pareja.\n\nAbrimos pocas fechas por temporada. Aparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600 ✨",
+    "facebook": "Antes de elegir canciones, elige los tres momentos que no quieres perderte.\n\nUna boda bonita no se arma con una lista de 200 temas, sino con tres segundos que ya imaginaste: la entrada, el primer baile y el último tema.\n\nGuarda esta guía para platicarla con tu pareja.\n\nAbrimos pocas fechas por temporada. Escríbenos y te enviamos una propuesta privada por WhatsApp: 786 162 8600 ✨",
+    "tiktok": "Tres momentos que no quieres perderte. Guarda esta guía. Propuesta privada por WhatsApp."
+  },
+  "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+  "titular": "Elige tres momentos",
+  "subtitulo": "Antes que las canciones, lo que de verdad vas a recordar",
+  "cta": "Aparta tu fecha",
+  "plantilla": "cita",
+  "guion": "Fondo #0D0D0F, Tinos marfil #F7F2EB, acento #A31E55 mínimo. Cada lámina con mucho espacio vacío. Cierre: firma 'No es un evento, es una Experiencia BNY.' y logo oficial sin modificar.",
+  "laminas": [
+    {
+      "titular": "Elige tres momentos",
+      "subtitulo": "Antes que las canciones"
+    },
+    {
+      "titular": "La entrada",
+      "subtitulo": "El segundo exacto en que se abre la puerta"
+    },
+    {
+      "titular": "El primer baile",
+      "subtitulo": "Luz baja, nadie interrumpe"
+    },
+    {
+      "titular": "El último tema",
+      "subtitulo": "Lo que suena cuando nadie quiere irse",
+      "cta": "Aparta tu fecha",
+      "final": true
+    }
+  ],
+  "estado": "listo"
+}

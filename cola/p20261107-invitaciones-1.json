@@ -1,0 +1,41 @@
+{
+  "id": "p20261107-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-07",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Quieres que tus XV se vean increíbles, no pasar un mes preguntando quién viene.",
+  "texto": "Quieres que los XV de tu hija se vean increíbles, no pasar un mes preguntando quién viene.\n\nCon una invitación digital, cada invitado la recibe por WhatsApp con su nombre y sus pases, confirma en un toque y tú ves todo en un panel.\n\nNosotros la diseñamos: tú llenas una ficha de 10 minutos y apruebas la vista previa.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre: Esencial $590 más IVA, Premium $990 más IVA, Gala $1,890 más IVA. Aparta tu precio especial por WhatsApp: 786 162 8600.",
+  "textos": {
+    "instagram": "Quieres que los XV de tu hija se vean increíbles, no pasar un mes preguntando quién viene.\n\nCon una invitación digital, cada invitado la recibe por WhatsApp con su nombre y sus pases, confirma en un toque y tú ves todo en un panel.\n\nNosotros la diseñamos: tú llenas una ficha de 10 minutos y apruebas la vista previa.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre: Esencial $590 más IVA, Premium $990 más IVA, Gala $1,890 más IVA. Aparta tu precio especial por WhatsApp: 786 162 8600.",
+    "facebook": "Quieres que los XV de tu hija se vean increíbles, no pasar un mes preguntando quién viene. Cada invitado recibe su invitación por WhatsApp, confirma en un toque y tú lo ves en un panel. Nosotros la diseñamos.\n\nPrecio especial de lanzamiento hasta el 17 de noviembre: Esencial $590 más IVA, Premium $990 más IVA, Gala $1,890 más IVA. Aparta tu precio especial por WhatsApp: 786 162 8600."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #XVAños #BNYEventos #FiestaEnVivo",
+  "titular": "Su invitación, a su altura",
+  "subtitulo": "Con su nombre, sus pases y sin perseguir a nadie",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "impacto",
+  "guion": "Fondo #F8F7F4, Cormorant Garamond #1F2328, acento #C2186A. Invitación en celular (sin rostros reales ni fotos de niños). Cierre con logo oficial sin modificar. Audio cálido instrumental.",
+  "escenas": [
+    {
+      "titular": "Tus XV merecen una invitación a su altura"
+    },
+    {
+      "titular": "Cada invitado recibe la suya",
+      "subtitulo": "Con su nombre y sus pases"
+    },
+    {
+      "titular": "Confirma en un toque"
+    },
+    {
+      "titular": "Tú ves todo en un panel"
+    },
+    {
+      "titular": "Aparta tu precio especial",
+      "subtitulo": "Precio especial de lanzamiento hasta el 17 de noviembre",
+      "cta": "Aparta tu precio especial",
+      "final": true
+    }
+  ],
+  "estado": "listo"
+}
