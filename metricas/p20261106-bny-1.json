@@ -2,16 +2,17 @@
   "id": "p20261106-bny-1",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-11-07T03:02:05.463Z",
+  "actualizado": "2026-11-07T09:16:05.487Z",
   "duracion": 8,
   "instagram": {
-    "views": 0,
-    "reach": 0,
-    "shares": 0,
-    "total_interactions": 0
+    "views": 70,
+    "reach": 59,
+    "shares": 1,
+    "total_interactions": 1
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 1.69,
+    "vistas": 70
   }
 }
