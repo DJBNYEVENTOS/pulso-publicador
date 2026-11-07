@@ -16,9 +16,9 @@
     },
     "tiktok": {
       "ok": false,
-      "error": "400 {\"code\":\"invalid_params\",\"message\":\"The chunk size is invalid\",\"log_id\":\"202611070905330FCAA61094F3814B0CA7\"}",
-      "intentos": 1,
-      "en": "2026-11-07T01:05:33.985Z"
+      "error": "400 {\"code\":\"invalid_params\",\"message\":\"The chunk size is invalid\",\"log_id\":\"2026110709234048BB9A8035604E405970\"}",
+      "intentos": 2,
+      "en": "2026-11-07T01:23:40.294Z"
     }
   }
 }
