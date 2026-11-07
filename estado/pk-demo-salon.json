@@ -1,0 +1,18 @@
+{
+  "id": "pk-demo-salon",
+  "marca": "kotizo",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "4638224029755723",
+      "url": "https://www.facebook.com/1284230344781640/videos/4638224029755723",
+      "en": "2026-11-07T03:01:26.738Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18146691526583127",
+      "url": "https://www.instagram.com/reel/DfbKw6nFLIh/",
+      "en": "2026-11-07T03:02:00.238Z"
+    }
+  }
+}
