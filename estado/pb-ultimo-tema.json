@@ -1,0 +1,24 @@
+{
+  "id": "pb-ultimo-tema",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1113424721451981",
+      "url": "https://www.facebook.com/145245832842598/videos/1113424721451981",
+      "en": "2026-11-07T01:04:57.162Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18196135399397645",
+      "url": "https://www.instagram.com/reel/Dfa9cLoG9io/",
+      "en": "2026-11-07T01:05:32.823Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "400 {\"code\":\"invalid_params\",\"message\":\"The chunk size is invalid\",\"log_id\":\"202611070905330FCAA61094F3814B0CA7\"}",
+      "intentos": 1,
+      "en": "2026-11-07T01:05:33.985Z"
+    }
+  }
+}
