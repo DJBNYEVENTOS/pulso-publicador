@@ -2,11 +2,11 @@
   "id": "i1",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-07T20:16:16.072Z",
+  "actualizado": "2026-11-08T02:31:39.190Z",
   "duracion": null,
   "instagram": {
     "views": 62,
-    "reach": 37,
+    "reach": 38,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 2.7,
+    "interaccionInstagram": 2.63,
     "vistas": 62
   }
 }
