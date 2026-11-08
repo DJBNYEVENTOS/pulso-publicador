@@ -2,7 +2,7 @@
   "id": "p20261106-bny-1",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-11-07T21:31:22.082Z",
+  "actualizado": "2026-11-08T03:46:07.959Z",
   "duracion": 8,
   "instagram": {
     "views": 123,
@@ -14,5 +14,6 @@
   "derivados": {
     "interaccionInstagram": 0.93,
     "vistas": 123
-  }
+  },
+  "vacio": true
 }
