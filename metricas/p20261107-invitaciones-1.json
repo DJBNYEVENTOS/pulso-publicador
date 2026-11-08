@@ -2,23 +2,23 @@
   "id": "p20261107-invitaciones-1",
   "marca": "invitaciones",
   "formato": "Reel",
-  "actualizado": "2026-11-08T07:16:12.301Z",
+  "actualizado": "2026-11-08T13:31:38.930Z",
   "duracion": 14.4,
   "instagram": {
-    "views": 103,
-    "reach": 79,
+    "views": 107,
+    "reach": 81,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 2415,
-    "ig_reels_video_view_total_time": 193270
+    "ig_reels_avg_watch_time": 2423,
+    "ig_reels_video_view_total_time": 198744
   },
   "facebook": {},
   "derivados": {
     "vistoPromedioInstagram": 16.8,
-    "interaccionInstagram": 1.27,
-    "vistas": 103
+    "interaccionInstagram": 1.23,
+    "vistas": 107
   }
 }
