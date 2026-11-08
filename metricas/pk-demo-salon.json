@@ -2,23 +2,23 @@
   "id": "pk-demo-salon",
   "marca": "kotizo",
   "formato": "Reel",
-  "actualizado": "2026-11-08T03:46:09.227Z",
+  "actualizado": "2026-11-08T09:46:14.988Z",
   "duracion": 20,
   "instagram": {
-    "views": 1,
-    "reach": 1,
+    "views": 2,
+    "reach": 2,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 2849,
-    "ig_reels_video_view_total_time": 2849
+    "ig_reels_avg_watch_time": 1903,
+    "ig_reels_video_view_total_time": 3807
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 14.2,
+    "vistoPromedioInstagram": 9.5,
     "interaccionInstagram": 0,
-    "vistas": 1
+    "vistas": 2
   }
 }
