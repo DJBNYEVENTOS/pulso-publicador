@@ -2,23 +2,23 @@
   "id": "p20261107-kotizo-1",
   "marca": "kotizo",
   "formato": "Reel",
-  "actualizado": "2026-11-08T21:17:09.655Z",
+  "actualizado": "2026-11-09T03:31:34.248Z",
   "duracion": 14.4,
   "instagram": {
-    "views": 2,
-    "reach": 2,
+    "views": 3,
+    "reach": 3,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 1606,
-    "ig_reels_video_view_total_time": 3213
+    "ig_reels_avg_watch_time": 1354,
+    "ig_reels_video_view_total_time": 4062
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 11.2,
+    "vistoPromedioInstagram": 9.4,
     "interaccionInstagram": 0,
-    "vistas": 2
+    "vistas": 3
   }
 }
