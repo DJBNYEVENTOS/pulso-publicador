@@ -2,10 +2,10 @@
   "id": "iv-novios",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-09T09:31:09.921Z",
+  "actualizado": "2026-11-09T15:31:16.824Z",
   "duracion": null,
   "instagram": {
-    "views": 112,
+    "views": 113,
     "reach": 71,
     "likes": 0,
     "comments": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 2.82,
-    "vistas": 112
+    "vistas": 113
   }
 }
