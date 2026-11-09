@@ -2,11 +2,11 @@
   "id": "p20261104-invitaciones-1",
   "marca": "invitaciones",
   "formato": "Carrusel",
-  "actualizado": "2026-11-09T11:46:01.665Z",
+  "actualizado": "2026-11-09T17:46:08.333Z",
   "duracion": null,
   "instagram": {
-    "views": 101,
-    "reach": 39,
+    "views": 105,
+    "reach": 40,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 2.56,
-    "vistas": 101
+    "interaccionInstagram": 2.5,
+    "vistas": 105
   }
 }
