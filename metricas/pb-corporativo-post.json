@@ -2,11 +2,11 @@
   "id": "pb-corporativo-post",
   "marca": "bny",
   "formato": "Post",
-  "actualizado": "2026-11-10T00:46:23.708Z",
+  "actualizado": "2026-11-10T06:50:46.229Z",
   "duracion": null,
   "instagram": {
-    "views": 60,
-    "reach": 27,
+    "views": 61,
+    "reach": 28,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 0,
-    "vistas": 60
+    "vistas": 61
   }
 }
