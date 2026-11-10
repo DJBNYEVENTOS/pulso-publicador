@@ -2,23 +2,23 @@
   "id": "p20261027-bny-1",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-09T21:34:08.909Z",
+  "actualizado": "2026-11-10T03:46:21.738Z",
   "duracion": 16.9,
   "instagram": {
-    "views": 32,
-    "reach": 20,
+    "views": 33,
+    "reach": 21,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 2725,
-    "ig_reels_video_view_total_time": 57238
+    "ig_reels_avg_watch_time": 2652,
+    "ig_reels_video_view_total_time": 58365
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 16.1,
-    "interaccionInstagram": 5,
-    "vistas": 32
+    "vistoPromedioInstagram": 15.7,
+    "interaccionInstagram": 4.76,
+    "vistas": 33
   }
 }
