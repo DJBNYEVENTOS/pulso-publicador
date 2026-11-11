@@ -2,11 +2,11 @@
   "id": "pb-testimonio-mariana",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-11-11T17:03:23.190Z",
+  "actualizado": "2026-11-11T23:17:19.897Z",
   "duracion": null,
   "instagram": {
-    "views": 104,
-    "reach": 42,
+    "views": 105,
+    "reach": 43,
     "likes": 2,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 9.52,
-    "vistas": 104
+    "interaccionInstagram": 9.3,
+    "vistas": 105
   }
 }
