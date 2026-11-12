@@ -2,23 +2,23 @@
   "id": "iv-reel-ultima",
   "marca": "invitaciones",
   "formato": "Reel",
-  "actualizado": "2026-11-11T23:16:11.288Z",
+  "actualizado": "2026-11-12T05:16:12.931Z",
   "duracion": 13.4,
   "instagram": {
-    "views": 43,
-    "reach": 27,
+    "views": 45,
+    "reach": 29,
     "likes": 2,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 2727,
-    "ig_reels_video_view_total_time": 76368
+    "ig_reels_avg_watch_time": 2646,
+    "ig_reels_video_view_total_time": 79401
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 20.4,
-    "interaccionInstagram": 11.11,
-    "vistas": 43
+    "vistoPromedioInstagram": 19.7,
+    "interaccionInstagram": 10.34,
+    "vistas": 45
   }
 }
