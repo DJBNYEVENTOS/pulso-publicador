@@ -1,0 +1,22 @@
+{
+ "id": "pn-c-posadas",
+ "marca": "bny",
+ "fecha": "2026-11-20",
+ "hora": "13:00",
+ "formato": "Carrusel",
+ "imagenesFijas": [
+  "biblioteca/bny/nov/cpos-1.png",
+  "biblioteca/bny/nov/cpos-2.png",
+  "biblioteca/bny/nov/cpos-3.png",
+  "biblioteca/bny/nov/cpos-4.png",
+  "biblioteca/bny/nov/cpos-5.png"
+ ],
+ "titular": "Tu posada, sin sustos",
+ "gancho": "Tu posada, sin sustos.",
+ "pilar": "Posadas",
+ "hashtags": "#BNYEventos #PosadasEmpresariales #CierreDeAño #EventosCorporativos #CdHidalgo",
+ "texto": "Tu posada, sin sustos.\n\nTu equipo trabajó todo el año. Que la noche de la empresa salga perfecta:\n· Micrófonos que no fallan para el mensaje del director.\n· Música que deja platicar en la cena y llena la pista a su hora.\n· Un programa coordinado al segundo: reconocimientos, rifa y brindis.\n\nDiciembre se aparta con anticipo. Cuéntanos fecha, número de personas y lugar y te mandamos la propuesta hoy mismo.\nWhatsApp: 786 162 8600",
+ "cta": "Agenda tu cita",
+ "plantilla": "impacto",
+ "estado": "listo"
+}

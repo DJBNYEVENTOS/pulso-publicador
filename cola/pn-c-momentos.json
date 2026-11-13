@@ -1,0 +1,24 @@
+{
+ "id": "pn-c-momentos",
+ "marca": "bny",
+ "fecha": "2026-11-24",
+ "hora": "19:00",
+ "formato": "Carrusel",
+ "imagenesFijas": [
+  "biblioteca/bny/nov/cmom-1.png",
+  "biblioteca/bny/nov/cmom-2.png",
+  "biblioteca/bny/nov/cmom-3.png",
+  "biblioteca/bny/nov/cmom-4.png",
+  "biblioteca/bny/nov/cmom-5.png",
+  "biblioteca/bny/nov/cmom-6.png",
+  "biblioteca/bny/nov/cmom-7.png"
+ ],
+ "titular": "Cinco momentos que tu música debe cuidar",
+ "gancho": "Cinco momentos que tu música debe cuidar.",
+ "pilar": "Guía para novias",
+ "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+ "texto": "Cinco momentos que tu música debe cuidar. Guárdalo para tu planeación 🤍\n\n01 · La entrada\n02 · El primer baile\n03 · El brindis\n04 · El Butterfly Moment\n05 · El último tema\n\nCada uno tiene su canción y su segundo exacto. Lo planeamos contigo, minuto a minuto.\n\n🗓️ ¿Tu boda es en 2027? Si apartas antes del 31 de diciembre, te respetamos el precio de hoy.\n\nNo es un evento, es una Experiencia BNY.\nPropuesta privada por WhatsApp: 786 162 8600",
+ "cta": "Agenda tu cita",
+ "plantilla": "impacto",
+ "estado": "listo"
+}

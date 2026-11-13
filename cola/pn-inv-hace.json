@@ -1,0 +1,22 @@
+{
+ "id": "pn-inv-hace",
+ "marca": "invitaciones",
+ "fecha": "2026-11-25",
+ "hora": "20:00",
+ "formato": "Carrusel",
+ "imagenesFijas": [
+  "biblioteca/invitaciones/nov/inv-hace-1.png",
+  "biblioteca/invitaciones/nov/inv-hace-2.png",
+  "biblioteca/invitaciones/nov/inv-hace-3.png",
+  "biblioteca/invitaciones/nov/inv-hace-4.png",
+  "biblioteca/invitaciones/nov/inv-hace-5.png"
+ ],
+ "titular": "Lo que tu invitación hace por ti",
+ "gancho": "Lo que tu invitación hace por ti mientras tú disfrutas.",
+ "pilar": "Beneficios",
+ "hashtags": "#InvitacionesBNY #InvitacionDigital #XVAños #Bodas2027 #Michoacan",
+ "texto": "Lo que tu invitación hace por ti, mientras tú disfrutas tu temporada de fiestas:\n\n01 · Tus invitados confirman solos y ves quién va en tiempo real.\n02 · Llegan sin perderse: mapa, Waze y la hora de cada momento.\n03 · Cada quien con su nombre y sus pases por familia.\n\nEsencial $990 · Premium $1,790 más IVA. Modelos: invitacionesbny.netlify.app",
+ "cta": "Elige tu modelo",
+ "plantilla": "impacto",
+ "estado": "listo"
+}
