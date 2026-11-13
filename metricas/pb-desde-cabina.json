@@ -2,23 +2,23 @@
   "id": "pb-desde-cabina",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-12T20:01:56.845Z",
+  "actualizado": "2026-11-13T02:02:41.862Z",
   "duracion": 11.9,
   "instagram": {
-    "views": 227,
-    "reach": 203,
+    "views": 228,
+    "reach": 204,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 4408,
-    "ig_reels_video_view_total_time": 881765
+    "ig_reels_avg_watch_time": 4434,
+    "ig_reels_video_view_total_time": 891349
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 37,
+    "vistoPromedioInstagram": 37.3,
     "interaccionInstagram": 0,
-    "vistas": 227
+    "vistas": 228
   }
 }
