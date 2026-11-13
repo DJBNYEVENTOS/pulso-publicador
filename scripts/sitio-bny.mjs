@@ -2,7 +2,7 @@
 // Colores: #0D0D0F (negro), #A31E55 (magenta), #F7F2EB (marfil). Tipografías: Tinos (títulos y texto), Arimo (etiquetas).
 // Lo genera scripts/sitio.mjs con cada publicación; las fotos fijas viven en docs/bny/fotos/.
 // Precios: los mismos del cotizador y del catálogo PDF de BNY (más IVA). Para ocultarlos, pon MOSTRAR_PRECIOS = false.
-const MOSTRAR_PRECIOS = true;
+const MOSTRAR_PRECIOS = false;
 const AHORA = Date.now();
 const INV_PROMO = AHORA < Date.parse('2026-11-17T23:59:00-06:00');
 const CAMPANA_2027 = AHORA < Date.parse('2026-12-31T23:59:00-06:00');
@@ -29,8 +29,12 @@ const EXPERIENCIAS = [
 ];
 
 const FAQ = [
-  ['¿Cuánto cuesta el DJ para mi boda o XV años?', 'Nuestras experiencias para bodas y XV años van desde $8,500 más IVA (Petit, 60 invitados, 4 horas) hasta $45,000 más IVA (Experience, 250 invitados, producción integral). Bautizos desde $4,500, cumpleaños desde $5,000 y eventos corporativos desde $4,900, más IVA. Por WhatsApp te enviamos tu cotización exacta, con viáticos incluidos.'],
-  ['¿Viajan fuera de Ciudad Hidalgo?', 'Sí. En Cd. Hidalgo no hay costo de traslado. Para otras ciudades se suma una sola vez un monto de viáticos según la zona: por ejemplo $1,500 en Maravatío, Tuxpan o Irimbo; $3,500 en Morelia, Zinapécuaro o Toluca; $4,000 en Valle de Bravo; y $6,000 en Querétaro, más IVA.'],
+  MOSTRAR_PRECIOS
+    ? ['¿Cuánto cuesta el DJ para mi boda o XV años?', 'Nuestras experiencias para bodas y XV años van desde $8,500 más IVA (Petit, 60 invitados, 4 horas) hasta $45,000 más IVA (Experience, 250 invitados, producción integral). Bautizos desde $4,500, cumpleaños desde $5,000 y eventos corporativos desde $4,900, más IVA. Por WhatsApp te enviamos tu cotización exacta, con viáticos incluidos.']
+    : ['¿Cuánto cuesta el DJ para mi boda o XV años?', 'Depende del número de invitados, las horas y la producción que imagines. Tenemos experiencias para bodas íntimas y para grandes celebraciones. Escríbenos por WhatsApp con tu fecha, lugar y número de invitados y en minutos te enviamos tu cotización exacta, con viáticos incluidos.'],
+  MOSTRAR_PRECIOS
+    ? ['¿Viajan fuera de Ciudad Hidalgo?', 'Sí. En Cd. Hidalgo no hay costo de traslado. Para otras ciudades se suma una sola vez un monto de viáticos según la zona: por ejemplo $1,500 en Maravatío, Tuxpan o Irimbo; $3,500 en Morelia, Zinapécuaro o Toluca; $4,000 en Valle de Bravo; y $6,000 en Querétaro, más IVA.']
+    : ['¿Viajan fuera de Ciudad Hidalgo?', 'Sí. Atendemos el Oriente de Michoacán, Morelia, Zitácuaro, Maravatío, Valle de Bravo, Toluca y Querétaro. En Cd. Hidalgo no hay costo de traslado; para otras ciudades se suma una sola vez un monto de viáticos según la zona, y te lo incluimos en tu cotización.'],
   ['¿Cómo aparto mi fecha?', 'Con el 50% de anticipo y contrato. Recibimos pocas bodas por temporada para cuidar cada una, así que te recomendamos consultar disponibilidad en cuanto tengas tu fecha.'],
   ['¿Qué incluye el servicio?', 'Todas las experiencias incluyen DJ, audio profesional, montaje y desmontaje con prueba de sonido antes de que llegue el primer invitado. Según el paquete se suman iluminación, coordinación de momentos y anfitrionas. También puedes agregar pista de baile, invitación digital y momentos especiales como el Butterfly Moment.'],
   ['¿Puedo elegir la música?', 'Sí, la música se cura con ustedes: llenan un cuestionario musical, armamos juntos el minuto a minuto (entrada, primer baile, brindis, vals, pista y último tema) y en la pista leemos a sus invitados canción por canción.'],
@@ -41,7 +45,7 @@ const LOCAL_LD = {
   '@context': 'https://schema.org', '@type': 'EntertainmentBusiness', '@id': URL_SITIO + '#negocio',
   name: 'BNY Eventos', alternateName: 'DJ BNY Eventos', slogan: 'No es un evento, es una Experiencia BNY.',
   description: 'DJ, audio, iluminación y coordinación de momentos para bodas, XV años, celebraciones y eventos corporativos en Michoacán, Estado de México y Querétaro.',
-  url: URL_SITIO, telephone: '+52 786 162 8600', image: URL_SITIO + 'fotos/og.jpg', logo: URL_SITIO + 'logo.png', priceRange: '$4,500 – $45,000 MXN',
+  url: URL_SITIO, telephone: '+52 786 162 8600', image: URL_SITIO + 'fotos/og.jpg', logo: URL_SITIO + 'logo.png', priceRange: MOSTRAR_PRECIOS ? '$4,500 – $45,000 MXN' : '$$',
   address: { '@type': 'PostalAddress', streetAddress: 'C. Lerdo de Tejada 10, int. 1, Centro', addressLocality: 'Ciudad Hidalgo', addressRegion: 'Michoacán', postalCode: '61100', addressCountry: 'MX' },
   geo: { '@type': 'GeoCoordinates', latitude: 19.6906449, longitude: -100.5563276 },
   openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '11:00', closes: '20:00' }],
@@ -66,7 +70,7 @@ export function paginaBNY(posts, fecha) {
           <h3>${esc(e.n)}</h3>
           <p>${esc(e.t)}</p>
           <ul>${e.inc.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
-          ${e.p ? precio(e.p) : '<span class="desde">Propuesta privada</span>'}
+          ${e.p ? precio(e.p) : (MOSTRAR_PRECIOS ? '<span class="desde">Propuesta privada</span>' : '')}
           <a class="boton ${e.top ? 'lleno' : 'linea'}" href="${wa(`Hola, me interesa la experiencia ${e.n} de BNY Eventos. ¿Tienen disponible mi fecha?`)}">Consultar mi fecha</a>
         </article>`).join('');
 
@@ -408,7 +412,7 @@ ${CAMPANA_2027 ? `
         <div class="otra"><h4>Cumpleaños</h4><p>Íntimo, Social o Elegante, para una celebración que se siente tuya.</p>${MOSTRAR_PRECIOS ? '<p><b>Desde $5,000</b> más IVA</p>' : ''}</div>
         <div class="otra"><h4>BNY Corporativo</h4><p>Reuniones, conferencias, jornadas y posadas con audio, micrófonos, proyección y DJ a la altura de su marca.</p>${MOSTRAR_PRECIOS ? '<p><b>Desde $4,900</b> más IVA</p>' : ''}</div>
       </div>
-      <p class="nota">Precios por evento, más IVA. En Cd. Hidalgo no hay costo de traslado; para otras ciudades se suman viáticos según la zona. Te enviamos tu cotización exacta por WhatsApp.</p>
+      <p class="nota">${MOSTRAR_PRECIOS ? 'Precios por evento, más IVA. En Cd. Hidalgo no hay costo de traslado; para otras ciudades se suman viáticos según la zona. Te enviamos tu cotización exacta por WhatsApp.' : 'Cada evento es distinto: cuéntanos fecha, lugar e invitados y te enviamos tu cotización exacta por WhatsApp en minutos.'}</p>
     </div>
   </section>
 
