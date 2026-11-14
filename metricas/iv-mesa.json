@@ -2,11 +2,11 @@
   "id": "iv-mesa",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-14T08:31:20.851Z",
+  "actualizado": "2026-11-14T14:31:50.693Z",
   "duracion": null,
   "instagram": {
-    "views": 114,
-    "reach": 70,
+    "views": 116,
+    "reach": 72,
     "likes": 1,
     "comments": 0,
     "shares": 1,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 5.71,
-    "vistas": 114
+    "interaccionInstagram": 5.56,
+    "vistas": 116
   }
 }
