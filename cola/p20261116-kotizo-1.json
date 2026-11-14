@@ -1,0 +1,46 @@
+{
+  "id": "p20261116-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-16",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?»",
+  "texto": "Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?»\n\nPosadas, cierres de año, bodas. Cada mensaje pide algo distinto y tú respondes uno por uno, entre evento y evento.\n\nCon un cotizador web:\n1. Tu cliente elige horas, iluminación, pista y extras.\n2. Ve su cotización con tus precios y tu marca.\n3. Te llega a WhatsApp con fecha, lugar y número de invitados.\n\nTú solo confirmas y apartas la fecha.\n\nGuárdalo antes de que llegue diciembre o mándaselo a un DJ amigo. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "instagram": "Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?»\n\nPosadas, cierres de año, bodas. Cada mensaje pide algo distinto y tú respondes uno por uno, entre evento y evento.\n\nCon un cotizador web:\n1. Tu cliente elige horas, iluminación, pista y extras.\n2. Ve su cotización con tus precios y tu marca.\n3. Te llega a WhatsApp con fecha, lugar y número de invitados.\n\nTú solo confirmas y apartas la fecha.\n\nGuárdalo antes de que llegue diciembre o mándaselo a un DJ amigo. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "facebook": "Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?»\n\nPosadas, cierres de año, bodas. Cada mensaje pide algo distinto y tú respondes uno por uno, entre evento y evento.\n\nCon un cotizador web:\n1. Tu cliente elige horas, iluminación, pista y extras.\n2. Ve su cotización con tus precios y tu marca.\n3. Te llega a WhatsApp con fecha, lugar y número de invitados.\n\nTú solo confirmas y apartas la fecha.\n\nGuárdalo antes de que llegue diciembre o mándaselo a un DJ amigo.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Diciembre: diez «¿cuánto por el DJ?» al día. Que armen su paquete solos y te llegue a WhatsApp.",
+    "linkedin": "La temporada alta de un DJ no se pierde en la pista, se pierde en el WhatsApp. Cuando cada cliente arma su paquete en un cotizador web, el negocio recibe solicitudes completas y responde solo lo que importa: confirmar la fecha.",
+    "threads": "Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?» Diciembre: diez «¿cuánto por el DJ?» al día. Que armen su paquete solos y te llegue a WhatsApp. ¿A ti cuántas veces te pasa a la semana? Mira la demo en kotizo-app.netlify.app",
+    "youtube": "Cotizador web para DJ: Diciembre: diez mensajes al día que dicen «¿cuánto por el DJ?» Así cotiza tu cliente solo y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #DJMexico #NegociosMorelia #EmprendedoresMichoacan #CotizadorWeb",
+  "titular": "Diciembre llena tu WhatsApp de «¿cuánto?»",
+  "subtitulo": "Que cada cliente arme su paquete y te llegue listo para cerrar.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escenas 3-4 simulan el formulario en un celular; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Diciembre: diez «¿cuánto por el DJ?» al día"
+    },
+    {
+      "titular": "Cada uno quiere horas, luz y pista distintas"
+    },
+    {
+      "titular": "Con cotizador, cada quien arma su paquete",
+      "subtitulo": "Horas, iluminación, pista y extras, con tus precios"
+    },
+    {
+      "titular": "Te llega a WhatsApp con fecha y lugar",
+      "subtitulo": "Tú solo confirmas y apartas"
+    },
+    {
+      "titular": "Guárdalo antes de que llegue diciembre",
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "final": true,
+      "cta": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}

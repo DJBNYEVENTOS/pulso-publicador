@@ -1,0 +1,46 @@
+{
+  "id": "p20261114-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-14",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 9 pm. Una novia pide precio de fotos y video.",
+  "texto": "Sábado, 9 pm. Una novia pide precio de fotos y video.\n\nTú estás editando otra boda. Contestas el lunes. Ella ya apartó con alguien más.\n\nCon un cotizador web:\n1. Ella abre tu link y elige horas, sesión previa y álbum.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega directo a WhatsApp con su fecha y sus datos.\n\nTú sigues editando. Ella ya tiene su respuesta.\n\nMándaselo a un fotógrafo que vive pegado al celular. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "instagram": "Sábado, 9 pm. Una novia pide precio de fotos y video.\n\nTú estás editando otra boda. Contestas el lunes. Ella ya apartó con alguien más.\n\nCon un cotizador web:\n1. Ella abre tu link y elige horas, sesión previa y álbum.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega directo a WhatsApp con su fecha y sus datos.\n\nTú sigues editando. Ella ya tiene su respuesta.\n\nMándaselo a un fotógrafo que vive pegado al celular. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "facebook": "Sábado, 9 pm. Una novia pide precio de fotos y video.\n\nTú estás editando otra boda. Contestas el lunes. Ella ya apartó con alguien más.\n\nCon un cotizador web:\n1. Ella abre tu link y elige horas, sesión previa y álbum.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega directo a WhatsApp con su fecha y sus datos.\n\nTú sigues editando. Ella ya tiene su respuesta.\n\nMándaselo a un fotógrafo que vive pegado al celular.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Sábado 9 pm: una novia pide precio y tú editando. Que cotice sola y te llegue a WhatsApp.",
+    "linkedin": "En fotografía de bodas, la primera respuesta suele ganar la fecha. Un cotizador web permite que la pareja elija horas, sesión y álbum y vea su cotización al momento, mientras el fotógrafo sigue editando. Menos tiempo contestando, más tiempo creando.",
+    "threads": "Sábado, 9 pm. Una novia pide precio de fotos y video. Sábado 9 pm: una novia pide precio y tú editando. Que cotice sola y te llegue a WhatsApp. ¿A ti cuántas veces te pasa a la semana? Mira la demo en kotizo-app.netlify.app",
+    "youtube": "Cotizador web para fotógrafos: Sábado, 9 pm. Una novia pide precio de fotos y video. Así cotiza tu cliente solo y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #FotografoDeBodas #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "La novia pide precio. Tú editas.",
+  "subtitulo": "Ella elige horas, sesión y álbum; el precio le llega al momento.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escenas 3-4 simulan el formulario en un celular; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Sábado, 9 pm: «¿cuánto por foto y video?»"
+    },
+    {
+      "titular": "Tú, editando otra boda, sin poder contestar"
+    },
+    {
+      "titular": "Ella elige horas, sesión previa y álbum",
+      "subtitulo": "Desde un link, sin descargar nada"
+    },
+    {
+      "titular": "La cotización llega a tu WhatsApp",
+      "subtitulo": "Con fecha y datos completos, lista para cerrar"
+    },
+    {
+      "titular": "Mándaselo a un fotógrafo que lo necesite",
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "final": true,
+      "cta": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}

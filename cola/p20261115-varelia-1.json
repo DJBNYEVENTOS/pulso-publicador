@@ -1,0 +1,48 @@
+{
+  "id": "p20261115-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-15",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Cinco señales de que tu estudio ya creció más que tu Excel.",
+  "texto": "Cinco señales de que tu estudio ya creció más que tu Excel.\n\n1. Tienes tres versiones del mismo presupuesto y no sabes cuál mandaste.\n2. Para saber si ya pagaron, buscas en el chat.\n3. La pareja te pregunta lo que ya le enviaste.\n4. Tus proveedores trabajan con una versión vieja del plan.\n5. Tu domingo es para ponerte al día.\n\nNo es desorden: es que tu estudio creció. Varelia reúne cotización, contrato, pagos, checklist, proveedores e invitados en un solo lugar, con tu marca.\n\n¿Cuántas te pasan? Guárdalo y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "instagram": "Cinco señales de que tu estudio ya creció más que tu Excel.\n\n1. Tienes tres versiones del mismo presupuesto y no sabes cuál mandaste.\n2. Para saber si ya pagaron, buscas en el chat.\n3. La pareja te pregunta lo que ya le enviaste.\n4. Tus proveedores trabajan con una versión vieja del plan.\n5. Tu domingo es para ponerte al día.\n\nNo es desorden: es que tu estudio creció. Varelia reúne cotización, contrato, pagos, checklist, proveedores e invitados en un solo lugar, con tu marca.\n\n¿Cuántas te pasan? Guárdalo y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "facebook": "Cinco señales de que tu estudio ya creció más que tu Excel.\n\n1. Tienes tres versiones del mismo presupuesto y no sabes cuál mandaste.\n2. Para saber si ya pagaron, buscas en el chat.\n3. La pareja te pregunta lo que ya le enviaste.\n4. Tus proveedores trabajan con una versión vieja del plan.\n5. Tu domingo es para ponerte al día.\n\nNo es desorden: es que tu estudio creció. Varelia reúne cotización, contrato, pagos, checklist, proveedores e invitados en un solo lugar, con tu marca.\n\n¿Cuántas te pasan? Guárdalo y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "tiktok": "5 señales de que tu estudio ya creció más que tu Excel. ¿Cuántas te pasan?",
+    "linkedin": "Cinco señales de que un estudio de bodas ya superó su hoja de cálculo: versiones duplicadas, pagos rastreados por chat, preguntas repetidas, proveedores desactualizados y fines de semana para ponerse al día. Crecer pide operar distinto.",
+    "threads": "Cinco señales de que tu estudio ya creció más que tu Excel. 5 señales de que tu estudio ya creció más que tu Excel. ¿Cuántas te pasan? Prueba 14 días gratis: varelia.netlify.app",
+    "youtube": "Excel vs. sistema para wedding planners: Cinco señales de que tu estudio ya creció más que tu Excel."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerGuadalajara #OrganizadoraDeBodas #PlaneacionDeBodas",
+  "titular": "Tu estudio ya superó a tu Excel",
+  "subtitulo": "Cinco señales que toda planner reconoce. ¿Cuántas te pasan?",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Gancho en el primer segundo con la escena real de la planner; escenas que se leen solas en 3 s; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "5 señales de que tu Excel ya no alcanza"
+    },
+    {
+      "titular": "1. Tres versiones del mismo presupuesto"
+    },
+    {
+      "titular": "2. Buscas los pagos en el chat"
+    },
+    {
+      "titular": "3. La pareja pregunta lo que ya mandaste",
+      "subtitulo": "4. Tus proveedores no tienen la última versión"
+    },
+    {
+      "titular": "5. Tu domingo es para ponerte al día"
+    },
+    {
+      "titular": "¿Cuántas te pasan? Mándaselo a otra planner",
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "final": true,
+      "cta": "Prueba 14 días gratis"
+    }
+  ],
+  "estado": "listo"
+}

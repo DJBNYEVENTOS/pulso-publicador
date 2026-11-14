@@ -1,0 +1,45 @@
+{
+  "id": "p20261114-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-14",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Viernes, 10 pm. Copias nombres y montos a un contrato en Word.",
+  "texto": "Viernes, 10 pm. Copias nombres y montos a un contrato en Word.\n\nPor quinta vez este mes. Y siempre con el miedo de dejar mal escrito el nombre de la novia.\n\nEn Varelia capturas los datos de la boda una sola vez y el contrato se llena solo, con tu marca, listo para revisar y enviar a la pareja.\n\nMenos copiar y pegar. Más viernes para ti.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "instagram": "Viernes, 10 pm. Copias nombres y montos a un contrato en Word.\n\nPor quinta vez este mes. Y siempre con el miedo de dejar mal escrito el nombre de la novia.\n\nEn Varelia capturas los datos de la boda una sola vez y el contrato se llena solo, con tu marca, listo para revisar y enviar a la pareja.\n\nMenos copiar y pegar. Más viernes para ti.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "facebook": "Viernes, 10 pm. Copias nombres y montos a un contrato en Word.\n\nPor quinta vez este mes. Y siempre con el miedo de dejar mal escrito el nombre de la novia.\n\nEn Varelia capturas los datos de la boda una sola vez y el contrato se llena solo, con tu marca, listo para revisar y enviar a la pareja.\n\nMenos copiar y pegar. Más viernes para ti.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "tiktok": "Viernes 10 pm copiando nombres a un contrato. En Varelia el contrato se llena solo.",
+    "linkedin": "Un estudio de bodas de alto nivel no debería redactar cada contrato a mano. Capturar los datos una vez y generar el contrato con la marca del estudio reduce errores y libera horas cada mes.",
+    "threads": "Viernes, 10 pm. Copias nombres y montos a un contrato en Word. Viernes 10 pm copiando nombres a un contrato. En Varelia el contrato se llena solo. Prueba 14 días gratis: varelia.netlify.app",
+    "youtube": "Contrato automático para wedding planners: Viernes, 10 pm. Copias nombres y montos a un contrato en Word."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+  "titular": "El contrato que se llena solo",
+  "subtitulo": "Capturas los datos de la boda una vez y el contrato se arma solo.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Gancho en el primer segundo con la escena real de la planner; escenas que se leen solas en 3 s; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "Viernes, 10 pm. Copiando nombres a un Word."
+    },
+    {
+      "titular": "Fecha, salón y montos, a mano otra vez"
+    },
+    {
+      "titular": "En Varelia capturas la boda una vez"
+    },
+    {
+      "titular": "El contrato se llena solo",
+      "subtitulo": "Con tu marca, listo para revisar y enviar"
+    },
+    {
+      "titular": "Mándaselo a otra planner que lo necesite",
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "final": true,
+      "cta": "Prueba 14 días gratis"
+    }
+  ],
+  "estado": "listo"
+}
