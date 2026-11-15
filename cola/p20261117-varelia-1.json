@@ -1,0 +1,45 @@
+{
+  "id": "p20261117-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-17",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6.",
+  "texto": "La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6.\n\nY la mamá de la novia te manda otra captura con cambios.\n\nEn Varelia, la lista de invitados y el acomodo de mesas viven en un solo lugar, conectados al portal de la pareja. Un cambio, una sola versión, y todos ven lo mismo.\n\nTu energía, para el diseño de la boda; no para el archivo final_final_v6.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6.\n\nY la mamá de la novia te manda otra captura con cambios.\n\nEn Varelia, la lista de invitados y el acomodo de mesas viven en un solo lugar, conectados al portal de la pareja. Un cambio, una sola versión, y todos ven lo mismo.\n\nTu energía, para el diseño de la boda; no para el archivo final_final_v6.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6.\n\nY la mamá de la novia te manda otra captura con cambios.\n\nEn Varelia, la lista de invitados y el acomodo de mesas viven en un solo lugar, conectados al portal de la pareja. Un cambio, una sola versión, y todos ven lo mismo.\n\nTu energía, para el diseño de la boda; no para el archivo final_final_v6.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "linkedin": "El acomodo de mesas es una de las tareas con más versiones en una boda. Centralizar invitados y mesas, conectados al portal de la pareja, elimina archivos duplicados y decisiones perdidas en el chat.",
+    "threads": "La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6. La tía cambió de mesa otra vez y tu Excel va en la versión 6. Invitados y mesas en un solo lugar. Prueba 14 días gratis: varelia.netlify.app",
+    "tiktok": "La tía cambió de mesa otra vez y tu Excel va en la versión 6. Invitados y mesas en un solo lugar.",
+    "youtube": "Invitados y mesas para wedding planners: La tía cambió de mesa. Otra vez. Y tu Excel ya va en la versión 6."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #BodasMexico #OrganizadoraDeBodas",
+  "titular": "Invitados y mesas, sin versión 6",
+  "subtitulo": "Invitados y mesas en un solo lugar, para ti y la pareja.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Gancho en el primer segundo con la escena real de la planner; escenas que se leen solas en 3 s; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "La tía cambió de mesa. Otra vez."
+    },
+    {
+      "titular": "Tu Excel de mesas va en la versión 6"
+    },
+    {
+      "titular": "En Varelia, invitados y mesas en un lugar"
+    },
+    {
+      "subtitulo": "Sin reenviar archivos ni adivinar cuál es la última",
+      "titular": "Tú y la pareja ven la misma lista"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}
