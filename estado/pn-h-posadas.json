@@ -1,0 +1,24 @@
+{
+  "id": "pn-h-posadas",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "2603166843516332",
+      "url": "https://www.facebook.com/145245832842598",
+      "en": "2026-11-15T19:02:04.862Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18119562517818903",
+      "url": "https://www.instagram.com/stories/dj.bny.eventos/4031139749469628837",
+      "en": "2026-11-15T19:02:13.627Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-11-15T19:02:13.628Z"
+    }
+  }
+}
