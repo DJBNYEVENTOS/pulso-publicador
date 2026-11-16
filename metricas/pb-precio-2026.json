@@ -2,23 +2,23 @@
   "id": "pb-precio-2026",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-16T01:32:02.099Z",
+  "actualizado": "2026-11-16T07:46:27.685Z",
   "duracion": 15.3,
   "instagram": {
-    "views": 245,
-    "reach": 210,
+    "views": 249,
+    "reach": 213,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 1,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 4973,
-    "ig_reels_video_view_total_time": 1049464
+    "ig_reels_avg_watch_time": 4946,
+    "ig_reels_video_view_total_time": 1063556
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 32.5,
-    "interaccionInstagram": 0.95,
-    "vistas": 245
+    "vistoPromedioInstagram": 32.3,
+    "interaccionInstagram": 0.94,
+    "vistas": 249
   }
 }
