@@ -2,16 +2,17 @@
   "id": "iv-h2",
   "marca": "invitaciones",
   "formato": "Historia",
-  "actualizado": "2026-11-16T02:32:08.001Z",
+  "actualizado": "2026-11-16T08:46:21.374Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 47,
+    "reach": 41,
     "shares": 0,
     "total_interactions": 0
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 47
   }
 }
