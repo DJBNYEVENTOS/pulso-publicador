@@ -1,0 +1,45 @@
+{
+  "id": "p20261119-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-19",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan.",
+  "texto": "Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan.\n\nY la semana de la boda, la pregunta de siempre: ¿quién confirmó qué?\n\nEn Varelia, cada boda tiene su lista de proveedores con contactos y pendientes a la vista. Sin buscar en 40 chats, sin reenviar el plan otra vez.\n\nSi estás entre las primeras 20, el código FUNDADORA te da 30% de descuento de por vida.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan.\n\nY la semana de la boda, la pregunta de siempre: ¿quién confirmó qué?\n\nEn Varelia, cada boda tiene su lista de proveedores con contactos y pendientes a la vista. Sin buscar en 40 chats, sin reenviar el plan otra vez.\n\nSi estás entre las primeras 20, el código FUNDADORA te da 30% de descuento de por vida.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan.\n\nY la semana de la boda, la pregunta de siempre: ¿quién confirmó qué?\n\nEn Varelia, cada boda tiene su lista de proveedores con contactos y pendientes a la vista. Sin buscar en 40 chats, sin reenviar el plan otra vez.\n\nSi estás entre las primeras 20, el código FUNDADORA te da 30% de descuento de por vida.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "linkedin": "Coordinar proveedores por chats separados genera versiones distintas del mismo plan. Tener contactos y pendientes por boda en un solo sistema da control a la planner y certeza a la pareja.",
+    "threads": "Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan. Florista, DJ, banquete y foto: 4 chats, 4 versiones. Tus proveedores en un solo lugar. Prueba 14 días gratis: varelia.netlify.app",
+    "tiktok": "Florista, DJ, banquete y foto: 4 chats, 4 versiones. Tus proveedores en un solo lugar.",
+    "youtube": "Gestión de proveedores para wedding planners: Florista, DJ, banquete y foto: cuatro chats y cuatro versiones del plan."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerGuadalajara #OrganizadoraDeBodas #EstudioDeBodas",
+  "titular": "Tus proveedores, en un solo lugar",
+  "subtitulo": "Contactos y pendientes de cada proveedor, ordenados por boda.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Gancho en el primer segundo con la escena real de la planner; escenas que se leen solas en 3 s; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "Florista, DJ, banquete y foto: cuatro chats"
+    },
+    {
+      "titular": "Y cada uno tiene otra versión del plan"
+    },
+    {
+      "titular": "En Varelia, cada boda tiene sus proveedores"
+    },
+    {
+      "subtitulo": "Sin buscar en 40 chats quién confirmó qué",
+      "titular": "Contactos y pendientes, a la vista"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "titular": "Mándaselo a otra planner que lo necesite"
+    }
+  ],
+  "estado": "listo"
+}

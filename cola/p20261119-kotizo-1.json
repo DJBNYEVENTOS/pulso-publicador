@@ -1,0 +1,46 @@
+{
+  "id": "p20261119-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-19",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "«¿Cuánto un pastel de tres pisos para 120?» Y tú con las manos en el betún.",
+  "texto": "«¿Cuánto un pastel de tres pisos para 120?»\n\nY tú con las manos en el betún. Luego: «¿de qué sabor?», «¿con flores naturales?», «¿y si son 150?». Contestas al terminar… y ya pidió en otra pastelería.\n\nCon un cotizador web:\n1. Tu clienta elige pisos, invitados, sabor y decoración.\n2. Ve su cotización con tus precios, al momento.\n3. Te llega a WhatsApp lista para confirmar fecha.\n\nTú sigues decorando. Tu cotizador sigue vendiendo.\n\nGuárdalo para tu próximo pedido o compártelo con una pastelera que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "«¿Cuánto un pastel de tres pisos para 120?»\n\nY tú con las manos en el betún. Luego: «¿de qué sabor?», «¿con flores naturales?», «¿y si son 150?». Contestas al terminar… y ya pidió en otra pastelería.\n\nCon un cotizador web:\n1. Tu clienta elige pisos, invitados, sabor y decoración.\n2. Ve su cotización con tus precios, al momento.\n3. Te llega a WhatsApp lista para confirmar fecha.\n\nTú sigues decorando. Tu cotizador sigue vendiendo.\n\nGuárdalo para tu próximo pedido o compártelo con una pastelera que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "instagram": "«¿Cuánto un pastel de tres pisos para 120?»\n\nY tú con las manos en el betún. Luego: «¿de qué sabor?», «¿con flores naturales?», «¿y si son 150?». Contestas al terminar… y ya pidió en otra pastelería.\n\nCon un cotizador web:\n1. Tu clienta elige pisos, invitados, sabor y decoración.\n2. Ve su cotización con tus precios, al momento.\n3. Te llega a WhatsApp lista para confirmar fecha.\n\nTú sigues decorando. Tu cotizador sigue vendiendo.\n\nGuárdalo para tu próximo pedido o compártelo con una pastelera que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En una pastelería, cada cotización por chat interrumpe la producción. Un cotizador web con pisos, invitados, sabor y decoración responde al momento con los precios del negocio y entrega al dueño un pedido completo para confirmar.",
+    "threads": "«¿Cuánto un pastel de tres pisos para 120?» Y tú con las manos en el betún. Luego el sabor, las flores, ¿y si son 150? Con un cotizador web tu clienta elige todo y ve su precio al momento; a ti te llega a WhatsApp listo para confirmar. ¿Cuántos pedidos se te van por contestar tarde?",
+    "tiktok": "«¿Cuánto un pastel de 3 pisos?» y tú con las manos en el betún. Que tu clienta cotice sola. 👉 kotizo-app.netlify.app",
+    "youtube": "Cotizador para pastelerías: tu clienta elige pisos, sabor y decoración y ve su precio al momento."
+  },
+  "hashtags": "#Kotizo #Pastelerias #NegociosMichoacan #EmprendedoresMichoacan #CotizadorWeb",
+  "titular": "Tu pastel se cotiza solo",
+  "subtitulo": "Pisos, sabor y decoración en un link; el pedido llega a tu WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escenas 3-4 simulan el formulario en un celular con opciones de pisos y sabores; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "«¿Cuánto un pastel de tres pisos para 120?»"
+    },
+    {
+      "titular": "Y tú con las manos en el betún"
+    },
+    {
+      "subtitulo": "Pisos, invitados, sabor y decoración",
+      "titular": "Con cotizador, tu clienta elige todo"
+    },
+    {
+      "subtitulo": "Con tu marca y tus precios",
+      "titular": "Ve su precio al momento"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "titular": "Guárdalo para tu próximo pedido"
+    }
+  ],
+  "estado": "listo"
+}

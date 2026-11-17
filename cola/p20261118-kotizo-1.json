@@ -1,0 +1,48 @@
+{
+  "id": "p20261118-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-18",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "«¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?»",
+  "texto": "«¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?»\n\nCinco mensajes de ida y vuelta para dar un solo precio. Y mientras, la máquina parada.\n\nCon un cotizador web:\n1. Tu cliente elige cantidad, papel, tintas y fecha de entrega.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega a WhatsApp completa, lista para producir.\n\nMenos chat. Más trabajos impresos.\n\nMándaselo a una imprenta que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "«¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?»\n\nCinco mensajes de ida y vuelta para dar un solo precio. Y mientras, la máquina parada.\n\nCon un cotizador web:\n1. Tu cliente elige cantidad, papel, tintas y fecha de entrega.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega a WhatsApp completa, lista para producir.\n\nMenos chat. Más trabajos impresos.\n\nMándaselo a una imprenta que conozcas.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "«¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?»\n\nCinco mensajes de ida y vuelta para dar un solo precio. Y mientras, la máquina parada.\n\nCon un cotizador web:\n1. Tu cliente elige cantidad, papel, tintas y fecha de entrega.\n2. Ve su cotización al momento, con tu marca.\n3. Te llega a WhatsApp completa, lista para producir.\n\nMenos chat. Más trabajos impresos.\n\nMándaselo a una imprenta que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En una imprenta, cada cotización depende de cantidad, papel, tintas y entrega. Pedir esos datos por chat cuesta tiempo de producción. Un cotizador web los recoge de una vez y entrega la solicitud completa al WhatsApp del negocio.",
+    "threads": "«¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?» 500 volantes = 5 mensajes para un precio. Que tu cliente elija papel y acabado y te llegue listo. ¿A ti cuántas veces te pasa a la semana? Mira la demo en kotizo-app.netlify.app",
+    "tiktok": "500 volantes = 5 mensajes para un precio. Que tu cliente elija papel y acabado y te llegue listo.",
+    "youtube": "Cotizador web para imprentas: «¿Cuánto por 500 volantes?» Luego: «¿y a color?», «¿y en couché?» Así cotiza tu cliente solo y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #Imprenta #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "Cinco preguntas para un solo precio",
+  "subtitulo": "Tu cliente elige cantidad, papel y acabado, y ve su precio.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escenas 3-4 simulan el formulario en un celular; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "«¿Cuánto por 500 volantes?»"
+    },
+    {
+      "titular": "«¿Y a color? ¿En couché? ¿Para mañana?»"
+    },
+    {
+      "titular": "Cinco mensajes para un solo precio"
+    },
+    {
+      "subtitulo": "Cantidad, papel, tintas y entrega, con tus precios",
+      "titular": "Con cotizador, él elige todo en un link"
+    },
+    {
+      "titular": "Te llega a WhatsApp, listo para producir"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "titular": "Mándaselo a una imprenta que lo necesite"
+    }
+  ],
+  "estado": "listo"
+}

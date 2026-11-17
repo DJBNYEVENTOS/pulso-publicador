@@ -1,0 +1,46 @@
+{
+  "id": "p20261118-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-18",
+  "hora": "19:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 4 pm. El fotógrafo, el DJ y el banquete te preguntan lo mismo: ¿a qué hora entramos?",
+  "texto": "Sábado, 4 pm. El fotógrafo, el DJ y el banquete te preguntan lo mismo: ¿a qué hora entramos?\n\nY tú contestando en tres chats mientras acomodas el ramo de la novia.\n\nEn Varelia, cada boda tiene su link del día: cronograma, horarios de cada proveedor y contactos clave. Lo mandas una vez y todos lo abren desde su celular.\n\nTú, en lo que importa: que la pareja viva su día sin enterarse de nada.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "Sábado, 4 pm. El fotógrafo, el DJ y el banquete te preguntan lo mismo: ¿a qué hora entramos?\n\nY tú contestando en tres chats mientras acomodas el ramo de la novia.\n\nEn Varelia, cada boda tiene su link del día: cronograma, horarios de cada proveedor y contactos clave. Lo mandas una vez y todos lo abren desde su celular.\n\nTú, en lo que importa: que la pareja viva su día sin enterarse de nada.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Sábado, 4 pm. El fotógrafo, el DJ y el banquete te preguntan lo mismo: ¿a qué hora entramos?\n\nY tú contestando en tres chats mientras acomodas el ramo de la novia.\n\nEn Varelia, cada boda tiene su link del día: cronograma, horarios de cada proveedor y contactos clave. Lo mandas una vez y todos lo abren desde su celular.\n\nTú, en lo que importa: que la pareja viva su día sin enterarse de nada.\n\nGuárdalo para tu próxima boda y mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "linkedin": "El día de la boda, cada proveedor que pregunta un horario es una interrupción para la planner. Un link único con cronograma, horarios y contactos convierte la coordinación en un solo envío y deja a la planner enfocada en la pareja.",
+    "threads": "Sábado, 4 pm. El fotógrafo, el DJ y el banquete te preguntan lo mismo: ¿a qué hora entramos? En Varelia mandas un solo link del día con cronograma, horarios y contactos. Todos lo abren desde su celular. ¿Cuántas veces te preguntan la hora el día de una boda? Prueba 14 días gratis: varelia.netlify.app",
+    "tiktok": "4 pm del día de la boda y tres proveedores preguntan la hora. Un link del día y listo. Prueba 14 días gratis.",
+    "youtube": "Link del día de la boda para wedding planners: cronograma y horarios de proveedores en un solo enlace."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+  "titular": "Un link para todo el día",
+  "subtitulo": "Cronograma, horarios y contactos de cada proveedor en un solo enlace.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Escena 1 como notificaciones apiladas en el celular (gancho en el primer segundo); escena 3-4 muestran el link del día limpio, con horarios en columna; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "4 pm. Todos preguntan: ¿a qué hora entramos?"
+    },
+    {
+      "titular": "Tres chats y tú acomodando el ramo"
+    },
+    {
+      "subtitulo": "Cronograma, horarios y contactos clave",
+      "titular": "Varelia arma el link del día"
+    },
+    {
+      "subtitulo": "Tú, enfocada en la pareja",
+      "titular": "Lo mandas una vez. Todos lo abren"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}
