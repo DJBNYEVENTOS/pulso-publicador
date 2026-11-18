@@ -1,0 +1,46 @@
+{
+  "id": "p20261120-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-20",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Te piden precio de un portón y te mandan una foto borrosa.",
+  "texto": "Te piden precio de un portón y te mandan una foto borrosa.\n\nY empieza el interrogatorio: ¿medidas?, ¿material?, ¿con instalación? Tres días después sigues sin dar precio.\n\nCon un cotizador web:\n1. Tu cliente escribe medidas y elige material y acabado.\n2. Ve su cotización con tus precios.\n3. Te llega a WhatsApp con todo lo que necesitas para ir a medir.\n\nMenos vueltas. Más trabajos cerrados.\n\nGuárdalo para tu próximo cliente o compártelo con un herrero que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Te piden precio de un portón y te mandan una foto borrosa.\n\nY empieza el interrogatorio: ¿medidas?, ¿material?, ¿con instalación? Tres días después sigues sin dar precio.\n\nCon un cotizador web:\n1. Tu cliente escribe medidas y elige material y acabado.\n2. Ve su cotización con tus precios.\n3. Te llega a WhatsApp con todo lo que necesitas para ir a medir.\n\nMenos vueltas. Más trabajos cerrados.\n\nGuárdalo para tu próximo cliente o compártelo con un herrero que conozcas.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Te piden precio de un portón y te mandan una foto borrosa.\n\nY empieza el interrogatorio: ¿medidas?, ¿material?, ¿con instalación? Tres días después sigues sin dar precio.\n\nCon un cotizador web:\n1. Tu cliente escribe medidas y elige material y acabado.\n2. Ve su cotización con tus precios.\n3. Te llega a WhatsApp con todo lo que necesitas para ir a medir.\n\nMenos vueltas. Más trabajos cerrados.\n\nGuárdalo para tu próximo cliente o compártelo con un herrero que conozcas. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En talleres y construcción, la cotización se atrasa por datos incompletos. Un cotizador web pide medidas, material y acabado desde el primer contacto, para que el negocio responda con precio y no con preguntas.",
+    "threads": "Te piden precio de un portón y te mandan una foto borrosa. Te piden precio de un portón con una foto borrosa. Que el cliente llene medidas y material y te llegue listo. ¿A ti cuántas veces te pasa a la semana? Mira la demo en kotizo-app.netlify.app",
+    "tiktok": "Te piden precio de un portón con una foto borrosa. Que el cliente llene medidas y material y te llegue listo.",
+    "youtube": "Cotizador web para talleres: Te piden precio de un portón y te mandan una foto borrosa. Así cotiza tu cliente solo y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #Herreria #NegociosMichoacan #EmprendedoresMichoacan #CotizadorWeb",
+  "titular": "Un portón no se cotiza así",
+  "subtitulo": "Medidas, material y acabado en un link; la cotización llega a tu WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escenas 3-4 simulan el formulario en un celular; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "«¿Cuánto por un portón?» y una foto borrosa"
+    },
+    {
+      "titular": "Tú: «¿Medidas? ¿Material? ¿Con instalación?»"
+    },
+    {
+      "subtitulo": "Medidas, material, acabado e instalación",
+      "titular": "Con cotizador, el cliente llena todo"
+    },
+    {
+      "subtitulo": "Con tu marca y tus precios",
+      "titular": "Ve su cotización al momento"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "titular": "Guárdalo para tu próximo cliente"
+    }
+  ],
+  "estado": "listo"
+}

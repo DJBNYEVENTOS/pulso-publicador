@@ -1,0 +1,48 @@
+{
+  "id": "p20261119-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-19",
+  "hora": "13:00",
+  "formato": "Carrusel",
+  "gancho": "¿Esencial, Premium o Gala? Depende de cómo imaginas tu fiesta.",
+  "texto": "¿Esencial, Premium o Gala? Depende de cómo imaginas tu fiesta.\n\nUna comida de XV con la familia cercana, hasta 150 invitados: Esencial. Cada familia con su nombre y sus pases, confirmación en un toque y Maps para llegar.\n\nUna boda grande, hasta 400 invitados: Premium, el más elegido. Suma sobre de lujo con lacre, música, galería y mesa de regalos.\n\nUna noche sin límite de invitados: Gala. Pase QR en la entrada, plano del salón y Encuentra tu mesa.\n\nDesde $990 más IVA por evento. Premium $1,790 más IVA y Gala $3,490 más IVA.\nCon el DJ de BNY Eventos, Gala al precio de Premium.\n\nGuárdalo para decidir con tu familia. Aparta tu precio especial por WhatsApp: 786 162 8600\nModelos: invitacionesbny.netlify.app",
+  "textos": {
+    "instagram": "¿Esencial, Premium o Gala? Depende de cómo imaginas tu fiesta.\n\nUna comida de XV con la familia cercana, hasta 150 invitados: Esencial. Cada familia con su nombre y sus pases, confirmación en un toque y Maps para llegar.\n\nUna boda grande, hasta 400 invitados: Premium, el más elegido. Suma sobre de lujo con lacre, música, galería y mesa de regalos.\n\nUna noche sin límite de invitados: Gala. Pase QR en la entrada, plano del salón y Encuentra tu mesa.\n\nDesde $990 más IVA por evento. Premium $1,790 más IVA y Gala $3,490 más IVA.\nCon el DJ de BNY Eventos, Gala al precio de Premium.\n\nGuárdalo para decidir con tu familia. Aparta tu precio especial por WhatsApp: 786 162 8600\nModelos: invitacionesbny.netlify.app",
+    "facebook": "¿Esencial, Premium o Gala? Depende de cómo imaginas tu fiesta.\n\nUna comida de XV con la familia cercana, hasta 150 invitados: Esencial. Cada familia con su nombre y sus pases, confirmación en un toque y Maps para llegar.\n\nUna boda grande, hasta 400 invitados: Premium, el más elegido. Suma sobre de lujo con lacre, música, galería y mesa de regalos.\n\nUna noche sin límite de invitados: Gala. Pase QR en la entrada, plano del salón y Encuentra tu mesa.\n\nDesde $990 más IVA por evento. Premium $1,790 más IVA y Gala $3,490 más IVA.\nCon el DJ de BNY Eventos, Gala al precio de Premium.\n\nGuárdalo para decidir con tu familia. Aparta tu precio especial por WhatsApp: 786 162 8600\nModelos: invitacionesbny.netlify.app",
+    "tiktok": "¿XV íntimos, boda grande o noche sin límite? Así eliges tu invitación. Desde $990 más IVA.",
+    "linkedin": "Elegir una invitación digital por tamaño y tipo de evento simplifica la decisión: Esencial para eventos de hasta 150 invitados, Premium hasta 400 con música, galería y mesa de regalos, y Gala sin límite con pase QR y plano del salón. Desde $990 más IVA por evento.",
+    "threads": "¿Esencial, Premium o Gala? Hasta 150 invitados: Esencial. Boda grande, hasta 400: Premium, con lacre, música y mesa de regalos. Sin límite: Gala, con pase QR y Encuentra tu mesa. Desde $990 más IVA. ¿Cuál va con tu fiesta? invitacionesbny.netlify.app",
+    "youtube": "Invitación digital para XV y bodas: cómo elegir entre Esencial, Premium y Gala."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #XVAños #BodasMichoacan #BNYEventos",
+  "titular": "¿Cuál va con tu fiesta?",
+  "subtitulo": "Tres invitaciones, pensadas para tres formas de celebrar",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "oferta",
+  "guion": "Identidad fija Invitaciones BNY: fondo #F8F7F4, texto #1F2328, acento #C2186A, detalles #8E9399; logo y tipografías oficiales sin cambios. Cada lámina muestra la invitación en un celular sobre fondo claro con mucho aire: lámina 2 un XV íntimo, lámina 3 sobre con lacre, lámina 4 pase QR y plano del salón. Precios solo en el texto.",
+  "laminas": [
+    {
+      "titular": "¿Cuál va con tu fiesta?",
+      "subtitulo": "Tres invitaciones, tres formas de celebrar"
+    },
+    {
+      "titular": "XV en familia: Esencial",
+      "subtitulo": "Hasta 150 invitados, pases y confirmación en un toque"
+    },
+    {
+      "titular": "Boda grande: Premium",
+      "subtitulo": "Hasta 400 invitados, lacre, música y mesa de regalos"
+    },
+    {
+      "titular": "Sin límite: Gala",
+      "subtitulo": "Pase QR, plano del salón y Encuentra tu mesa"
+    },
+    {
+      "titular": "Con DJ BNY, Gala al precio de Premium",
+      "subtitulo": "Escríbenos por WhatsApp: 786 162 8600",
+      "final": true,
+      "cta": "Aparta tu precio especial"
+    }
+  ],
+  "estado": "listo"
+}
