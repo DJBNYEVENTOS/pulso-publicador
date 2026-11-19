@@ -2,19 +2,20 @@
   "id": "iv-gracias",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-19T03:24:31.217Z",
+  "actualizado": "2026-11-19T09:31:27.981Z",
   "duracion": null,
   "instagram": {
-    "views": 8,
-    "reach": 0,
-    "likes": 0,
+    "views": 47,
+    "reach": 23,
+    "likes": 2,
     "comments": 0,
     "shares": 0,
     "saved": 0,
-    "total_interactions": 0
+    "total_interactions": 4
   },
   "facebook": {},
   "derivados": {
-    "vistas": 8
+    "interaccionInstagram": 17.39,
+    "vistas": 47
   }
 }
