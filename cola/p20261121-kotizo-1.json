@@ -1,0 +1,50 @@
+{
+  "id": "p20261121-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-21",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 8 pm. Manos con grasa y el celular vibra: «¿cuánto el afinado?»",
+  "texto": "Sábado, 8 pm. Tienes las manos llenas de grasa y el celular vibra: «¿cuánto el afinado?».\n\nContestas el lunes. El cliente ya llevó su carro a otro taller.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige marca, modelo y servicio.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con sus datos y el día que quiere traerlo.\n\nTú terminas el carro que tienes en el elevador. Él ya tiene su respuesta.\n\nGuárdalo para tu próximo cliente o mándaselo a un mecánico que vive pegado al celular. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Sábado, 8 pm. Tienes las manos llenas de grasa y el celular vibra: «¿cuánto el afinado?».\n\nContestas el lunes. El cliente ya llevó su carro a otro taller.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige marca, modelo y servicio.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con sus datos y el día que quiere traerlo.\n\nTú terminas el carro que tienes en el elevador. Él ya tiene su respuesta.\n\nGuárdalo para tu próximo cliente o mándaselo a un mecánico que vive pegado al celular.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Sábado, 8 pm. Tienes las manos llenas de grasa y el celular vibra: «¿cuánto el afinado?».\n\nContestas el lunes. El cliente ya llevó su carro a otro taller.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige marca, modelo y servicio.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con sus datos y el día que quiere traerlo.\n\nTú terminas el carro que tienes en el elevador. Él ya tiene su respuesta.\n\nGuárdalo para tu próximo cliente o mándaselo a un mecánico que vive pegado al celular. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En un taller mecánico, el cliente que pregunta precio en fin de semana suele quedarse con quien contesta primero. Un cotizador web permite que elija marca, modelo y servicio y vea su cotización al momento, mientras el mecánico sigue trabajando. Menos tiempo en el celular, más carros terminados.",
+    "threads": "Sábado, 8 pm. Tienes las manos llenas de grasa y el celular vibra: «¿cuánto el afinado?». Contestas el lunes y el cliente ya se fue a otro taller. ¿Y si cotizara solo desde un link y te llegara a WhatsApp con su día y su carro? Mira la demo en kotizo-app.netlify.app",
+    "tiktok": "Sábado 8 pm, manos con grasa y «¿cuánto el afinado?». Que tu cliente cotice solo y te llegue a WhatsApp.",
+    "youtube": "Cotizador web para talleres mecánicos: tu cliente elige servicio, ve su precio al momento y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #TallerMecanico #NegociosMorelia #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "Manos con grasa. Celular vibrando.",
+  "subtitulo": "Tu cliente cotiza solo el servicio y te llega a WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa (gancho en el primer segundo); escena 2 con ícono de llave y reloj 8:00 pm; escenas 3-5 simulan el formulario en un celular; cierre con logo y llamado a guardar/compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Sábado, 8 pm: «¿cuánto el afinado?»"
+    },
+    {
+      "titular": "Tú, con un carro en el elevador"
+    },
+    {
+      "subtitulo": "Desde un link, sin descargar nada",
+      "titular": "Él elige marca, modelo y servicio"
+    },
+    {
+      "subtitulo": "Con tu logo y tus precios",
+      "titular": "Ve su cotización al momento"
+    },
+    {
+      "subtitulo": "Lista para confirmar la cita",
+      "titular": "Te llega a WhatsApp con su día"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "titular": "Mándaselo a un mecánico que lo necesite"
+    }
+  ],
+  "estado": "listo"
+}

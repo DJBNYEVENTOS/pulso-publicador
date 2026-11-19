@@ -1,0 +1,49 @@
+{
+  "id": "p20261121-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-21",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Faltan 30 días para la boda. Tú tienes 23 pendientes en tres libretas.",
+  "texto": "Faltan 30 días para la boda. La novia está tranquila. Tú tienes 23 pendientes en tres libretas.\n\nEl checklist de 30 días que usan los estudios que no corren la última semana:\n1. Segundo pago confirmado y el saldo final con fecha.\n2. Contratos de todos los proveedores firmados y en un solo lugar.\n3. Lista de invitados cerrada y mesas en borrador.\n4. Cronograma del día enviado a cada proveedor.\n5. Prueba de menú y de peinado agendadas.\n\nEn Varelia cada boda trae su checklist, sus pagos y sus proveedores juntos, y la pareja ve su avance en su portal sin escribirte a las 11 pm.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta.",
+  "textos": {
+    "facebook": "Faltan 30 días para la boda. La novia está tranquila. Tú tienes 23 pendientes en tres libretas.\n\nEl checklist de 30 días que usan los estudios que no corren la última semana:\n1. Segundo pago confirmado y el saldo final con fecha.\n2. Contratos de todos los proveedores firmados y en un solo lugar.\n3. Lista de invitados cerrada y mesas en borrador.\n4. Cronograma del día enviado a cada proveedor.\n5. Prueba de menú y de peinado agendadas.\n\nEn Varelia cada boda trae su checklist, sus pagos y sus proveedores juntos, y la pareja ve su avance en su portal sin escribirte a las 11 pm.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta.",
+    "instagram": "Faltan 30 días para la boda. La novia está tranquila. Tú tienes 23 pendientes en tres libretas.\n\nEl checklist de 30 días que usan los estudios que no corren la última semana:\n1. Segundo pago confirmado y el saldo final con fecha.\n2. Contratos de todos los proveedores firmados y en un solo lugar.\n3. Lista de invitados cerrada y mesas en borrador.\n4. Cronograma del día enviado a cada proveedor.\n5. Prueba de menú y de peinado agendadas.\n\nEn Varelia cada boda trae su checklist, sus pagos y sus proveedores juntos, y la pareja ve su avance en su portal sin escribirte a las 11 pm.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta.",
+    "linkedin": "Los estudios de bodas que llegan tranquilos a la última semana suelen cerrar cinco frentes 30 días antes: pagos, contratos, invitados, cronograma y pruebas. Tenerlos en un solo sistema, con un portal para la pareja, reduce mensajes y errores. Así lo resuelve Varelia: prueba 14 días gratis.",
+    "threads": "Faltan 30 días para la boda y tienes 23 pendientes en tres libretas. Mi checklist de 30 días: segundo pago confirmado, contratos firmados en un solo lugar, invitados cerrados, cronograma enviado a proveedores y pruebas agendadas. ¿Cuál se te escapa más seguido? Varelia: prueba 14 días gratis.",
+    "tiktok": "30 días antes de la boda: el checklist que evita correr la última semana. Guárdalo para tu próxima boda.",
+    "youtube": "Checklist para wedding planners 30 días antes de la boda: pagos, contratos, invitados, cronograma y pruebas."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #PlaneacionDeBodas",
+  "titular": "Checklist: 30 días antes",
+  "subtitulo": "Cinco frentes cerrados para llegar tranquila a la última semana.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estilo editorial Varelia, con su paleta y tipografías de marca. Escena 1: libreta abierta y contador '30 días' grande, mucho aire; escenas 2-5 como lista de revista con cada punto marcándose; cierre con logo, 'Guárdalo para tu próxima boda' y prueba 14 días. Música libre de derechos suave y elegante.",
+  "escenas": [
+    {
+      "titular": "Faltan 30 días. Tienes 23 pendientes."
+    },
+    {
+      "subtitulo": "Y el saldo final con fecha",
+      "titular": "1. Segundo pago confirmado"
+    },
+    {
+      "titular": "2. Contratos firmados, en un solo lugar"
+    },
+    {
+      "titular": "3. Invitados cerrados y mesas en borrador"
+    },
+    {
+      "subtitulo": "5. Pruebas de menú y peinado agendadas",
+      "titular": "4. Cronograma enviado a cada proveedor"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Mándaselo a otra planner que lo necesite",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p20261120-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-20",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Lunes, 8 am. Antes abrías 40 chats. Hoy, un café y un solo portal.",
+  "texto": "Lunes, 8 am. Antes abrías 40 chats para saber cómo iba cada boda.\n\nAsí se ve un lunes de planner con todo en un solo lugar:\n\n☕ 8 am. Abres un portal y ves cada boda con su estado: pagos, pendientes y proveedores.\n💳 10 am. El segundo pago llegó desde el portal de la pareja, con tu marca. Sin recordatorios incómodos.\n🪑 12 pm. La pareja actualizó invitados y mesas. Tú revisas; ya no capturas.\n📋 5 pm. Florista, DJ y banquete consultan el mismo link del día, con los mismos horarios.\n🌙 8 pm. Cierras la computadora sin repasar la semana de memoria.\n\nTu talento sigue en el diseño de cada boda. La operación, por fin, deja de perseguirte.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+  "textos": {
+    "instagram": "Lunes, 8 am. Antes abrías 40 chats para saber cómo iba cada boda.\n\nAsí se ve un lunes de planner con todo en un solo lugar:\n\n☕ 8 am. Abres un portal y ves cada boda con su estado: pagos, pendientes y proveedores.\n💳 10 am. El segundo pago llegó desde el portal de la pareja, con tu marca. Sin recordatorios incómodos.\n🪑 12 pm. La pareja actualizó invitados y mesas. Tú revisas; ya no capturas.\n📋 5 pm. Florista, DJ y banquete consultan el mismo link del día, con los mismos horarios.\n🌙 8 pm. Cierras la computadora sin repasar la semana de memoria.\n\nTu talento sigue en el diseño de cada boda. La operación, por fin, deja de perseguirte.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+    "facebook": "Lunes, 8 am. Antes abrías 40 chats para saber cómo iba cada boda.\n\nAsí se ve un lunes de planner con todo en un solo lugar:\n\n☕ 8 am. Abres un portal y ves cada boda con su estado: pagos, pendientes y proveedores.\n💳 10 am. El segundo pago llegó desde el portal de la pareja, con tu marca. Sin recordatorios incómodos.\n🪑 12 pm. La pareja actualizó invitados y mesas. Tú revisas; ya no capturas.\n📋 5 pm. Florista, DJ y banquete consultan el mismo link del día, con los mismos horarios.\n🌙 8 pm. Cierras la computadora sin repasar la semana de memoria.\n\nTu talento sigue en el diseño de cada boda. La operación, por fin, deja de perseguirte.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "tiktok": "Un lunes de planner sin 40 chats: pagos, mesas y proveedores en un solo portal. Prueba 14 días gratis.",
+    "linkedin": "Un estudio de bodas no se mide solo por lo que la pareja ve el día del evento, sino por cómo opera de lunes a viernes. Centralizar pagos, invitados, mesas y proveedores en un portal con la marca del estudio reduce el trabajo de captura y libera tiempo para lo que distingue a una planner: el diseño de cada boda.",
+    "threads": "Lunes, 8 am. Antes eran 40 chats para saber cómo iba cada boda. Ahora: un portal con pagos, pendientes y proveedores; la pareja actualiza sus mesas y el DJ consulta el mismo link del día que el florista. ¿Cuál de estos momentos te regresaría más horas? Prueba 14 días gratis en varelia.netlify.app",
+    "youtube": "Wedding planner: así se ve un lunes con pagos, invitados, mesas y proveedores en un solo portal con tu marca."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+  "titular": "Un lunes de planner, sin caos",
+  "subtitulo": "Pagos, mesas y proveedores de cada boda, en un solo lugar.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "cita",
+  "guion": "Estilo editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A. Escena 1 con un contador de chats sin leer que se apaga (gancho en el primer segundo); escenas 2-5 como páginas de agenda de revista con la hora grande en dorado y un ícono fino (taza, tarjeta, mesa, lista); mucho espacio en blanco; cierre con logo, firma y llamado a compartir. Música libre de derechos, piano suave con pulso.",
+  "escenas": [
+    {
+      "titular": "Lunes, 8 am. Antes: 40 chats abiertos"
+    },
+    {
+      "titular": "Hoy: un café y un solo portal",
+      "subtitulo": "Cada boda, con su estado a la vista"
+    },
+    {
+      "titular": "10 am: el segundo pago ya llegó",
+      "subtitulo": "Desde el portal de la pareja, con tu marca"
+    },
+    {
+      "titular": "12 pm: la pareja acomodó sus mesas",
+      "subtitulo": "Tú revisas; ya no capturas"
+    },
+    {
+      "titular": "5 pm: todos los proveedores, mismo plan",
+      "subtitulo": "Un link del día con los mismos horarios"
+    },
+    {
+      "titular": "Mándaselo a otra planner",
+      "subtitulo": "Prueba 14 días gratis, sin tarjeta",
+      "final": true,
+      "cta": "Prueba 14 días gratis"
+    }
+  ],
+  "estado": "listo"
+}
