@@ -2,7 +2,7 @@
   "id": "pn-h-posadas",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-11-16T07:31:18.989Z",
+  "actualizado": "2026-11-19T03:28:35.768Z",
   "duracion": null,
   "instagram": {
     "views": 65,
@@ -14,5 +14,6 @@
   "derivados": {
     "interaccionInstagram": 0,
     "vistas": 65
-  }
+  },
+  "vacio": true
 }

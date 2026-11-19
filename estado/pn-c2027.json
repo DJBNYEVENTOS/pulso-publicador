@@ -1,0 +1,24 @@
+{
+  "id": "pn-c2027",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "145245832842598_1620748866742854",
+      "url": "https://www.facebook.com/145245832842598_1620748866742854",
+      "en": "2026-11-19T03:23:32.852Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18142864693730724",
+      "url": "https://www.instagram.com/p/Df6G5mpDdk7/",
+      "en": "2026-11-19T03:24:23.476Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-11-19T03:24:23.477Z"
+    }
+  }
+}
