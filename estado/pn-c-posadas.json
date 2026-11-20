@@ -1,0 +1,24 @@
+{
+  "id": "pn-c-posadas",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "145245832842598_1622510009900073",
+      "url": "https://www.facebook.com/145245832842598_1622510009900073",
+      "en": "2026-11-20T19:01:46.016Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17921382831524973",
+      "url": "https://www.instagram.com/p/Df-XFSHo403/",
+      "en": "2026-11-20T19:02:46.425Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-11-20T19:02:46.425Z"
+    }
+  }
+}
