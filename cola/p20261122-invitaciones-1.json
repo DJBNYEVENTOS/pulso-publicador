@@ -1,0 +1,51 @@
+{
+  "id": "p20261122-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-22",
+  "hora": "13:00",
+  "formato": "Reel",
+  "gancho": "Lleva años imaginando sus XV. Su invitación también debería estar a la altura.",
+  "texto": "Lleva años imaginando sus XV. Su invitación también debería estar a la altura.\n\nSu invitación, tan especial como ella: diseñada por nuestro equipo, con su estilo y su nombre.\n\nCada familia la recibe por WhatsApp con su nombre y sus pases, y confirma en un toque. Tú ves quién ya dijo que sí, sin perseguir a nadie.\n\nEn Premium suma su música, su galería y su video, y un libro de buenos deseos para guardar.\n\nTú solo llenas una ficha de 10 minutos, revisas la vista previa y la apruebas. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA · Gala $3,490 más IVA.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+  "textos": {
+    "instagram": "Lleva años imaginando sus XV. Su invitación también debería estar a la altura.\n\nSu invitación, tan especial como ella: diseñada por nuestro equipo, con su estilo y su nombre.\n\nCada familia la recibe por WhatsApp con su nombre y sus pases, y confirma en un toque. Tú ves quién ya dijo que sí, sin perseguir a nadie.\n\nEn Premium suma su música, su galería y su video, y un libro de buenos deseos para guardar.\n\nTú solo llenas una ficha de 10 minutos, revisas la vista previa y la apruebas. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA · Gala $3,490 más IVA.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "facebook": "Lleva años imaginando sus XV. Su invitación también debería estar a la altura.\n\nSu invitación, tan especial como ella: diseñada por nuestro equipo, con su estilo y su nombre.\n\nCada familia la recibe por WhatsApp con su nombre y sus pases, y confirma en un toque. Tú ves quién ya dijo que sí, sin perseguir a nadie.\n\nEn Premium suma su música, su galería y su video, y un libro de buenos deseos para guardar.\n\nTú solo llenas una ficha de 10 minutos, revisas la vista previa y la apruebas. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA · Gala $3,490 más IVA.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "tiktok": "Lleva años imaginando sus XV. Su invitación, tan especial como ella: con su nombre, su música y confirmación en un toque.",
+    "linkedin": "Una invitación digital bien hecha hace más que invitar: personaliza pases por familia, confirma asistencia en un toque y le da a los anfitriones un panel claro de quién viene. Así trabajamos las invitaciones de XV años en BNY.",
+    "threads": "Lleva años imaginando sus XV. ¿Su invitación está a la altura? La diseñamos con su estilo, cada familia la recibe con su nombre y sus pases, y tú ves quién confirmó sin perseguir a nadie. ¿Qué es lo que más te preocupa de las invitaciones de sus XV? invitacionesbny.netlify.app",
+    "youtube": "Invitación digital de XV años: su invitación, tan especial como ella, con nombre, pases y confirmación en un toque."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #XVAños #MisXV #BNYEventos",
+  "titular": "Su invitación, tan especial como ella",
+  "subtitulo": "Con su nombre, su música y la confirmación de cada familia.",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "impacto",
+  "guion": "Identidad fija Invitaciones BNY: fondo #F8F7F4, texto #1F2328, acento #C2186A, detalles #8E9399; logo y tipografías oficiales sin cambios. Escena 1 con mucho espacio y titular centrado (gancho en el primer segundo); escenas 2-4 muestran la invitación de XV en un celular, sin fotos de personas; cierre cálido con el lema. Música libre de derechos, cuerdas suaves.",
+  "escenas": [
+    {
+      "titular": "Lleva años imaginando sus XV"
+    },
+    {
+      "titular": "Su invitación, tan especial como ella",
+      "subtitulo": "Diseñada por nuestro equipo, con su estilo"
+    },
+    {
+      "titular": "Cada familia la recibe con su nombre",
+      "subtitulo": "Sus pases y confirmación en un toque"
+    },
+    {
+      "titular": "Con su música, su galería y su video",
+      "subtitulo": "Incluido en Premium"
+    },
+    {
+      "titular": "Tú solo llenas una ficha de 10 minutos",
+      "subtitulo": "Revisas la vista previa y la apruebas"
+    },
+    {
+      "titular": "Tus invitaciones, como las imaginas",
+      "subtitulo": "WhatsApp 786 162 8600",
+      "cta": "Aparta tu precio especial",
+      "final": true
+    }
+  ],
+  "estado": "listo"
+}

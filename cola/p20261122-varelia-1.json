@@ -1,0 +1,46 @@
+{
+  "id": "p20261122-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-22",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Domingo, 10 am. La boda terminó a las 3. Tu trabajo, todavía no.",
+  "texto": "Domingo, 10 am. La boda terminó a las 3. Tu trabajo, todavía no.\n\nEl checklist del día después (guárdalo):\n✓ Liquidar el saldo final de cada proveedor.\n✓ Confirmar qué se devuelve y a quién: mobiliario, mantelería, decoración.\n✓ Revisar fechas de entrega de foto y video.\n✓ Mandar a la pareja tu agradecimiento, antes de que se vayan de luna de miel.\n✓ Cerrar la boda: contrato, pagos y notas en un solo lugar.\n\nEse último punto es el que más noches cuesta. En Varelia, cada pago y cada proveedor de la boda ya está ahí, con su checklist. Cierras en una mañana, no en una semana.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+  "textos": {
+    "facebook": "Domingo, 10 am. La boda terminó a las 3. Tu trabajo, todavía no.\n\nEl checklist del día después (guárdalo):\n✓ Liquidar el saldo final de cada proveedor.\n✓ Confirmar qué se devuelve y a quién: mobiliario, mantelería, decoración.\n✓ Revisar fechas de entrega de foto y video.\n✓ Mandar a la pareja tu agradecimiento, antes de que se vayan de luna de miel.\n✓ Cerrar la boda: contrato, pagos y notas en un solo lugar.\n\nEse último punto es el que más noches cuesta. En Varelia, cada pago y cada proveedor de la boda ya está ahí, con su checklist. Cierras en una mañana, no en una semana.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Domingo, 10 am. La boda terminó a las 3. Tu trabajo, todavía no.\n\nEl checklist del día después (guárdalo):\n✓ Liquidar el saldo final de cada proveedor.\n✓ Confirmar qué se devuelve y a quién: mobiliario, mantelería, decoración.\n✓ Revisar fechas de entrega de foto y video.\n✓ Mandar a la pareja tu agradecimiento, antes de que se vayan de luna de miel.\n✓ Cerrar la boda: contrato, pagos y notas en un solo lugar.\n\nEse último punto es el que más noches cuesta. En Varelia, cada pago y cada proveedor de la boda ya está ahí, con su checklist. Cierras en una mañana, no en una semana.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "linkedin": "El cierre de una boda define cómo recuerda la pareja el servicio de la planner: saldos de proveedores, devoluciones, entregas de foto y video y un agradecimiento a tiempo. Tener pagos, proveedores y checklist en un solo lugar convierte esa semana de pendientes en una mañana.",
+    "threads": "Domingo, 10 am. La boda terminó a las 3 y aún faltan: saldos de proveedores, devoluciones, entregas de foto y video y el agradecimiento a la pareja. ¿Cuánto te toma cerrar una boda? Con Varelia, todo ya está en un solo lugar. Prueba 14 días gratis: varelia.netlify.app",
+    "tiktok": "La boda terminó a las 3 am. Tu checklist del día después: saldos, devoluciones, entregas y agradecimiento. Guárdalo.",
+    "youtube": "Checklist del día después de la boda para wedding planners: cómo cerrar pagos y proveedores en una mañana."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #WeddingPlannerGuadalajara",
+  "titular": "El checklist del día después",
+  "subtitulo": "Saldos, devoluciones, entregas y agradecimiento: cierra la boda en una mañana.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "tip",
+  "guion": "Estética editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A, mucho aire. Escena 1 como portada de revista con la hora en grande (gancho en el primer segundo); escena 3 checklist en columna con palomitas doradas; escena 4 la vista de pagos y proveedores limpia; cierre con firma y llamado a guardar o mandar a otra planner. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "Domingo, 10 am. La boda terminó a las 3"
+    },
+    {
+      "titular": "Saldos, devoluciones y entregas pendientes"
+    },
+    {
+      "subtitulo": "Proveedores, foto y video, agradecimiento",
+      "titular": "El checklist del día después"
+    },
+    {
+      "subtitulo": "Pagos, proveedores y checklist de cada boda",
+      "titular": "En Varelia, todo ya está ahí"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba gratis 14 días, sin tarjeta",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}

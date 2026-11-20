@@ -1,0 +1,50 @@
+{
+  "id": "p20261122-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-22",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Domingo, 9 pm. «¿Cuánto la carpa con calentadores para la posada?»",
+  "texto": "Domingo, 9 pm. Vienes de recoger las sillas de una posada y el celular vibra: «¿Cuánto la carpa con calentadores para 100 personas?».\n\nEn diciembre ese mensaje no deja de llegar. Y el que contesta primero se queda con la fecha.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige carpa, mesas, sillas y calentadores.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con la fecha, el lugar y lo que eligió.\n\nTú terminas de descargar la camioneta. Él ya tiene su respuesta.\n\nGuárdalo antes de que arranquen las posadas o mándaselo a alguien que renta mobiliario. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Domingo, 9 pm. Vienes de recoger las sillas de una posada y el celular vibra: «¿Cuánto la carpa con calentadores para 100 personas?».\n\nEn diciembre ese mensaje no deja de llegar. Y el que contesta primero se queda con la fecha.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige carpa, mesas, sillas y calentadores.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con la fecha, el lugar y lo que eligió.\n\nTú terminas de descargar la camioneta. Él ya tiene su respuesta.\n\nGuárdalo antes de que arranquen las posadas o mándaselo a alguien que renta mobiliario.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Domingo, 9 pm. Vienes de recoger las sillas de una posada y el celular vibra: «¿Cuánto la carpa con calentadores para 100 personas?».\n\nEn diciembre ese mensaje no deja de llegar. Y el que contesta primero se queda con la fecha.\n\nCon un cotizador web:\n1. Tu cliente abre tu link y elige carpa, mesas, sillas y calentadores.\n2. Ve su cotización al momento, con tu logo.\n3. Te llega a WhatsApp con la fecha, el lugar y lo que eligió.\n\nTú terminas de descargar la camioneta. Él ya tiene su respuesta.\n\nGuárdalo antes de que arranquen las posadas o mándaselo a alguien que renta mobiliario. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En la renta de mobiliario, diciembre concentra las solicitudes de posadas y el cliente suele quedarse con quien contesta primero. Un cotizador web le permite elegir carpa, mesas, sillas y calentadores y ver su cotización al momento, mientras el negocio sigue montando y desmontando eventos. Menos horas en el celular, más fechas apartadas.",
+    "threads": "Domingo, 9 pm. Vienes de recoger sillas y el celular vibra: «¿Cuánto la carpa con calentadores para 100?». En diciembre ese mensaje no para. ¿Y si tu cliente eligiera carpa, mesas y calentadores desde un link y te llegara a WhatsApp con su fecha? Mira la demo en kotizo-app.netlify.app",
+    "tiktok": "Domingo 9 pm y «¿cuánto la carpa para la posada?». Que tu cliente cotice solo y te llegue a WhatsApp.",
+    "youtube": "Cotizador web para renta de mobiliario y carpas: tu cliente arma su posada, ve su precio al momento y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #RentaDeMobiliario #Posadas #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "Tu posada se cotiza sola",
+  "subtitulo": "Tu cliente elige carpa, mesas y calentadores, y te llega a WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa con hora 9:00 pm (gancho en el primer segundo); escena 2 con íconos de silla apilada y camioneta; escenas 3-5 simulan el formulario de carpa, mesas y calentadores en un celular; cierre con logo y llamado a guardar o compartir. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Domingo, 9 pm: «¿cuánto la carpa?»"
+    },
+    {
+      "titular": "Tú, descargando sillas de otra posada"
+    },
+    {
+      "subtitulo": "Desde un link, sin descargar nada",
+      "titular": "Él elige carpa, mesas y calentadores"
+    },
+    {
+      "subtitulo": "Sin esperar a que le contestes",
+      "titular": "Ve su total con tu logo"
+    },
+    {
+      "subtitulo": "Lista para apartar",
+      "titular": "Te llega a WhatsApp con fecha y lugar"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "Síguenos para más ideas que te regresan tus noches",
+      "titular": "Guárdalo antes de las posadas"
+    }
+  ],
+  "estado": "listo"
+}
