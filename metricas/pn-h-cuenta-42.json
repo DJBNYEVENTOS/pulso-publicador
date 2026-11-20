@@ -2,16 +2,17 @@
   "id": "pn-h-cuenta-42",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-11-20T01:03:08.620Z",
+  "actualizado": "2026-11-20T07:16:37.298Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 33,
+    "reach": 30,
     "shares": 0,
     "total_interactions": 0
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 33
   }
 }
