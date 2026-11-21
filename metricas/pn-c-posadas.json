@@ -2,11 +2,11 @@
   "id": "pn-c-posadas",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-11-20T19:02:46.523Z",
+  "actualizado": "2026-11-21T01:03:39.026Z",
   "duracion": null,
   "instagram": {
-    "views": 0,
-    "reach": 0,
+    "views": 50,
+    "reach": 17,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -15,6 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "vistas": 0
+    "interaccionInstagram": 0,
+    "vistas": 50
   }
 }
