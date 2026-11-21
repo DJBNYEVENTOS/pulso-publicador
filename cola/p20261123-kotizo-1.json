@@ -1,0 +1,50 @@
+{
+  "id": "p20261123-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-23",
+  "hora": "21:00",
+  "formato": "Reel",
+  "gancho": "Lunes, 9 am. «Gracias, ya contratamos con otro.»",
+  "texto": "Lunes, 9 am. «Gracias, ya contratamos con otro.»\n\nNo fue tu precio. Fue la hora.\nTe escribieron el sábado a las 6 pm y contestaste el domingo en la noche.\n\nHaz la cuenta de tu fin de semana:\n1. ¿Cuántos «¿cuánto cuesta?» te llegaron?\n2. ¿Cuántos contestaste después de 3 horas?\n3. ¿Cuántos ya no respondieron?\n\nCon un cotizador web, tu cliente ve su precio en el minuto en que pregunta, con tus precios y tu logo, y te llega a WhatsApp listo para cerrar.\n\nGuárdalo y haz la cuenta este lunes. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "instagram": "Lunes, 9 am. «Gracias, ya contratamos con otro.»\n\nNo fue tu precio. Fue la hora.\nTe escribieron el sábado a las 6 pm y contestaste el domingo en la noche.\n\nHaz la cuenta de tu fin de semana:\n1. ¿Cuántos «¿cuánto cuesta?» te llegaron?\n2. ¿Cuántos contestaste después de 3 horas?\n3. ¿Cuántos ya no respondieron?\n\nCon un cotizador web, tu cliente ve su precio en el minuto en que pregunta, con tus precios y tu logo, y te llega a WhatsApp listo para cerrar.\n\nGuárdalo y haz la cuenta este lunes. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "facebook": "Lunes, 9 am. «Gracias, ya contratamos con otro.»\n\nNo fue tu precio. Fue la hora.\nTe escribieron el sábado a las 6 pm y contestaste el domingo en la noche.\n\nHaz la cuenta de tu fin de semana:\n1. ¿Cuántos «¿cuánto cuesta?» te llegaron?\n2. ¿Cuántos contestaste después de 3 horas?\n3. ¿Cuántos ya no respondieron?\n\nCon un cotizador web, tu cliente ve su precio en el minuto en que pregunta, con tus precios y tu logo, y te llega a WhatsApp listo para cerrar.\n\nGuárdalo y haz la cuenta este lunes.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Lunes, 9 am: «Ya contratamos con otro.» No fue tu precio, fue la hora. Que tu cliente cotice solo y te llegue a WhatsApp.",
+    "linkedin": "En negocios de eventos, muchas ventas no se pierden por precio sino por tiempo de respuesta. Un cotizador web permite que el cliente vea su cotización en el momento en que pregunta, con los precios del negocio, y llegue por WhatsApp lista para cerrar. Vale la pena medir cuántas cotizaciones del fin de semana se respondieron después de 3 horas.",
+    "threads": "Lunes, 9 am. «Gracias, ya contratamos con otro.» Casi nunca es el precio: es que contestaste el domingo en la noche. ¿Cuántos «¿cuánto cuesta?» te llegaron este fin y cuántos respondiste tarde? Con un cotizador web tu cliente ve su precio al momento y te llega a WhatsApp. kotizo-app.netlify.app",
+    "youtube": "Cotizar a mano por WhatsApp te hace perder clientes: así responde un cotizador web al momento y te manda la cotización a WhatsApp."
+  },
+  "hashtags": "#Kotizo #VentasPorWhatsApp #RentaDeMobiliario #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "No fue tu precio. Fue la hora.",
+  "subtitulo": "Tu cliente cotiza al momento y te llega a WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escena 1 como burbuja de WhatsApp a pantalla completa con la hora 9:00 visible (gancho en el primer segundo); escena 2 frase grande sola sobre fondo oscuro; escena 3 burbuja con hora 'Dom 22:40'; escena 4 lista de conteo; escena 5 celular con el cotizador; cierre con logo y llamado a guardar. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Lunes, 9 am: «Ya contratamos con otro»"
+    },
+    {
+      "titular": "No fue tu precio. Fue la hora.",
+      "subtitulo": "Preguntó el sábado a las 6 pm"
+    },
+    {
+      "titular": "Tú contestaste el domingo en la noche"
+    },
+    {
+      "titular": "¿Cuántos «¿cuánto?» contestaste tarde?",
+      "subtitulo": "Haz la cuenta de tu fin de semana"
+    },
+    {
+      "titular": "Tu cliente cotiza en el minuto que pregunta",
+      "subtitulo": "Con tus precios y te llega a WhatsApp"
+    },
+    {
+      "titular": "Guárdalo y haz la cuenta este lunes",
+      "subtitulo": "kotizo-app.netlify.app",
+      "final": true,
+      "cta": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}

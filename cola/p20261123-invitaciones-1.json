@@ -1,0 +1,50 @@
+{
+  "id": "p20261123-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-23",
+  "hora": "20:00",
+  "formato": "Reel",
+  "gancho": "«¿Ya confirmó la familia de tu papá?» Faltan tres semanas y tu mamá te lo pregunta por cuarta vez.",
+  "texto": "«¿Ya confirmó la familia de tu papá?»\n\nFaltan tres semanas para la boda y tu mamá te lo pregunta por cuarta vez.\n\nAntes: veinte chats, una libreta y nadie seguro.\nAhora: cada familia recibe su invitación con su nombre y sus pases, y confirma en un toque.\n\nTú abres el panel y ves quién la abrió y quién ya dijo que sí. Y el plan de recordatorios por WhatsApp hace el resto.\n\nTu mamá pregunta. Tú ya sabes la respuesta. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA, un solo pago por evento.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+  "textos": {
+    "facebook": "«¿Ya confirmó la familia de tu papá?»\n\nFaltan tres semanas para la boda y tu mamá te lo pregunta por cuarta vez.\n\nAntes: veinte chats, una libreta y nadie seguro.\nAhora: cada familia recibe su invitación con su nombre y sus pases, y confirma en un toque.\n\nTú abres el panel y ves quién la abrió y quién ya dijo que sí. Y el plan de recordatorios por WhatsApp hace el resto.\n\nTu mamá pregunta. Tú ya sabes la respuesta. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA, un solo pago por evento.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "instagram": "«¿Ya confirmó la familia de tu papá?»\n\nFaltan tres semanas para la boda y tu mamá te lo pregunta por cuarta vez.\n\nAntes: veinte chats, una libreta y nadie seguro.\nAhora: cada familia recibe su invitación con su nombre y sus pases, y confirma en un toque.\n\nTú abres el panel y ves quién la abrió y quién ya dijo que sí. Y el plan de recordatorios por WhatsApp hace el resto.\n\nTu mamá pregunta. Tú ya sabes la respuesta. 💛\n\nEsencial $990 más IVA · Premium $1,790 más IVA, un solo pago por evento.\nAparta tu precio especial: con el DJ de BNY Eventos, Gala al precio de Premium.\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "linkedin": "Las confirmaciones son el punto más desgastante de organizar un evento. Una invitación personalizada por familia, con confirmación en un toque y un panel de seguimiento, convierte veinte conversaciones en una sola vista clara.",
+    "threads": "«¿Ya confirmó la familia de tu papá?» Si la respuesta vive en veinte chats, hay otra forma: cada familia confirma en un toque y tú lo ves en un panel. ¿Cuántas veces te lo han preguntado esta semana? invitacionesbny.netlify.app",
+    "tiktok": "Tu mamá pregunta quién ya confirmó. Tú abres el panel y lo sabes. Invitación con confirmación en un toque.",
+    "youtube": "Invitación digital con confirmación de asistencia: sabe quién viene a tu boda sin perseguir a nadie."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #Boda2027 #NoviasMexico #BNYEventos",
+  "titular": "Ya sabes quién viene",
+  "subtitulo": "Cada familia confirma en un toque. Tú lo ves en tiempo real.",
+  "cta": "Aparta tu precio especial",
+  "plantilla": "cita",
+  "guion": "Identidad fija Invitaciones BNY: fondo #F8F7F4, texto #1F2328, acento #C2186A, detalles #8E9399; logo y tipografías oficiales sin cambios. Escena 1 como mensaje de WhatsApp de mamá en pantalla (gancho en el primer segundo); escenas 3-4 muestran la invitación y el panel de confirmaciones en un celular; cierre cálido con el lema. Música libre de derechos, piano suave.",
+  "escenas": [
+    {
+      "titular": "«¿Ya confirmó la familia de tu papá?»"
+    },
+    {
+      "titular": "Antes: veinte chats y una libreta"
+    },
+    {
+      "subtitulo": "Con su nombre y sus pases",
+      "titular": "Ahora, cada familia confirma en un toque"
+    },
+    {
+      "subtitulo": "Panel en tiempo real",
+      "titular": "Tú ves quién la abrió y quién dijo sí"
+    },
+    {
+      "subtitulo": "Recordatorios por WhatsApp incluidos",
+      "titular": "Tu mamá pregunta. Tú ya sabes."
+    },
+    {
+      "cta": "Aparta tu precio especial",
+      "final": true,
+      "subtitulo": "WhatsApp 786 162 8600",
+      "titular": "Tus invitaciones, como las imaginas"
+    }
+  ],
+  "estado": "listo"
+}
