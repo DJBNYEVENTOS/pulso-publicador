@@ -2,23 +2,23 @@
   "id": "p20261120-varelia-1",
   "marca": "varelia",
   "formato": "Reel",
-  "actualizado": "2026-11-21T13:31:40.848Z",
+  "actualizado": "2026-11-21T19:46:18.639Z",
   "duracion": 16.9,
   "instagram": {
-    "views": 1,
-    "reach": 1,
+    "views": 3,
+    "reach": 2,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 1536,
-    "ig_reels_video_view_total_time": 1536
+    "ig_reels_avg_watch_time": 1575,
+    "ig_reels_video_view_total_time": 3150
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 9.1,
+    "vistoPromedioInstagram": 9.3,
     "interaccionInstagram": 0,
-    "vistas": 1
+    "vistas": 3
   }
 }
