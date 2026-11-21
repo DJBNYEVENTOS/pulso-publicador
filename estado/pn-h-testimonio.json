@@ -1,0 +1,24 @@
+{
+  "id": "pn-h-testimonio",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1858839518451275",
+      "url": "https://www.facebook.com/145245832842598",
+      "en": "2026-11-21T19:01:45.961Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18649325383043482",
+      "url": "https://www.instagram.com/stories/dj.bny.eventos/4035488236201163844",
+      "en": "2026-11-21T19:01:58.770Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-11-21T19:01:58.771Z"
+    }
+  }
+}
