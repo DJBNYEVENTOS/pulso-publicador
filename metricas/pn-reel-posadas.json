@@ -2,23 +2,23 @@
   "id": "pn-reel-posadas",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-21T07:16:51.874Z",
+  "actualizado": "2026-11-21T13:31:44.723Z",
   "duracion": 17.2,
   "instagram": {
-    "views": 46,
-    "reach": 27,
+    "views": 50,
+    "reach": 28,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 3413,
-    "ig_reels_video_view_total_time": 92167
+    "ig_reels_avg_watch_time": 4242,
+    "ig_reels_video_view_total_time": 118781
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 19.8,
-    "interaccionInstagram": 3.7,
-    "vistas": 46
+    "vistoPromedioInstagram": 24.7,
+    "interaccionInstagram": 3.57,
+    "vistas": 50
   }
 }
