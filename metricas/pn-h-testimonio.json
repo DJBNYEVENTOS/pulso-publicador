@@ -2,17 +2,17 @@
   "id": "pn-h-testimonio",
   "marca": "bny",
   "formato": "Historia",
-  "actualizado": "2026-11-22T07:16:24.142Z",
+  "actualizado": "2026-11-22T13:17:12.306Z",
   "duracion": null,
   "instagram": {
-    "views": 64,
-    "reach": 48,
+    "views": 68,
+    "reach": 52,
     "shares": 0,
     "total_interactions": 1
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 2.08,
-    "vistas": 64
+    "interaccionInstagram": 1.92,
+    "vistas": 68
   }
 }
