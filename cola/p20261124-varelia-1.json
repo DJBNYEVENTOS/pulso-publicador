@@ -1,0 +1,51 @@
+{
+  "id": "p20261124-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-24",
+  "hora": "19:30",
+  "formato": "Reel",
+  "gancho": "Una boda de lujo no se cotiza en un Word con tu logo pegado.",
+  "texto": "Una boda de lujo no se cotiza en un Word con tu logo pegado.\n\nAntes: cotización en Word, contrato en PDF y tres versiones por WhatsApp. Y la pareja preguntando cuál es la buena.\n\nAhora, con Varelia:\n1. Un portal con tu marca para cada pareja.\n2. Cotización, contrato y pagos en un solo link.\n3. El contrato se llena solo con los datos que la pareja ya te dio.\n\nTu estudio se ve a la altura de lo que cobras, desde antes de la primera llamada.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+  "textos": {
+    "facebook": "Una boda de lujo no se cotiza en un Word con tu logo pegado.\n\nAntes: cotización en Word, contrato en PDF y tres versiones por WhatsApp. Y la pareja preguntando cuál es la buena.\n\nAhora, con Varelia:\n1. Un portal con tu marca para cada pareja.\n2. Cotización, contrato y pagos en un solo link.\n3. El contrato se llena solo con los datos que la pareja ya te dio.\n\nTu estudio se ve a la altura de lo que cobras, desde antes de la primera llamada.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "Una boda de lujo no se cotiza en un Word con tu logo pegado.\n\nAntes: cotización en Word, contrato en PDF y tres versiones por WhatsApp. Y la pareja preguntando cuál es la buena.\n\nAhora, con Varelia:\n1. Un portal con tu marca para cada pareja.\n2. Cotización, contrato y pagos en un solo link.\n3. El contrato se llena solo con los datos que la pareja ya te dio.\n\nTu estudio se ve a la altura de lo que cobras, desde antes de la primera llamada.\n\nGuárdalo para tu próxima boda o mándaselo a otra planner que lo necesite.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+    "linkedin": "Las parejas que invierten mucho en su boda juzgan al estudio desde la primera cotización. Pasar de Word, PDF y WhatsApp a un portal con tu marca, donde cotización, contrato y pagos viven en un solo link, cambia la percepción de tu servicio antes de la primera llamada.",
+    "threads": "Una boda de lujo no se cotiza en un Word con tu logo pegado. Antes: Word, PDF y tres versiones por WhatsApp. Ahora: un portal con tu marca, cotización, contrato y pagos en un solo link. ¿Cuántas versiones de cotización mandaste esta semana? Prueba 14 días gratis en varelia.netlify.app",
+    "tiktok": "Una boda de lujo no se cotiza en un Word con tu logo pegado. Portal con tu marca, contrato y pagos en un link.",
+    "youtube": "Cotización para wedding planners: una boda de lujo no se cotiza en Word. Portal con tu marca, contrato y pagos en un link."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #WeddingPlannerMorelia #OrganizadoraDeBodas #EstudioDeBodas",
+  "titular": "El lujo no se cotiza en Word",
+  "subtitulo": "Cotización, contrato y pagos en un portal con tu marca.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "impacto",
+  "guion": "Estilo editorial Varelia: fondo #F6F1E8, Playfair Display #24221F, acento dorado #B8955A. Escena 1 con titular grande y mucho aire (gancho en el primer segundo); escena 2 simula archivos Word y PDF amontonados; escenas 3-4 muestran el portal con marca en un celular; cierre con logo y llamado a guardar. Música libre de derechos, piano editorial.",
+  "escenas": [
+    {
+      "titular": "Una boda de lujo no se cotiza en Word"
+    },
+    {
+      "subtitulo": "Y la pareja pregunta cuál es la buena",
+      "titular": "Antes: Word, PDF y tres versiones"
+    },
+    {
+      "subtitulo": "Cotización, contrato y pagos en un solo link",
+      "titular": "Ahora: un portal con tu marca"
+    },
+    {
+      "subtitulo": "Con los datos que la pareja ya te dio",
+      "titular": "El contrato se llena solo"
+    },
+    {
+      "subtitulo": "Desde antes de la primera llamada",
+      "titular": "Tu estudio, a la altura de lo que cobras"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "Prueba 14 días gratis, sin tarjeta",
+      "titular": "Guárdalo para tu próxima boda"
+    }
+  ],
+  "estado": "listo"
+}
