@@ -1,0 +1,25 @@
+{
+  "id": "p20261121-varelia-1",
+  "marca": "varelia",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "1149916077830061",
+      "url": "https://www.facebook.com/1428539057002041/videos/1149916077830061",
+      "en": "2026-11-22T01:01:39.137Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "17967571971208600",
+      "url": "https://www.instagram.com/reel/DgBk-_GI_oQ/",
+      "en": "2026-11-22T01:02:13.090Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7710794838148401158",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-11-22T01:02:17.706Z"
+    }
+  }
+}
