@@ -2,11 +2,11 @@
   "id": "pn-inv-diciembre",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-22T20:31:55.385Z",
+  "actualizado": "2026-11-23T02:32:14.720Z",
   "duracion": null,
   "instagram": {
-    "views": 64,
-    "reach": 40,
+    "views": 86,
+    "reach": 56,
     "likes": 0,
     "comments": 0,
     "shares": 1,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 5,
-    "vistas": 64
+    "interaccionInstagram": 3.57,
+    "vistas": 86
   }
 }
