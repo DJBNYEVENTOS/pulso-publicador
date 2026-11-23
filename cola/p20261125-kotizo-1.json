@@ -1,0 +1,50 @@
+{
+  "id": "p20261125-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-25",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 10 pm. «¿Tienen libre el 12 de diciembre? Somos 150.»",
+  "texto": "Sábado, 10 pm. «¿Tienen libre el 12 de diciembre? Somos 150. ¿Cuánto con banquete y mobiliario?»\n\nTú estás en otro evento y no puedes contestar. El lunes, esa familia ya apartó otro salón.\n\nCon un cotizador web:\n1. Tu cliente elige fecha, número de invitados y paquete.\n2. Ve su cotización con tus precios, a cualquier hora.\n3. Te llega a WhatsApp con todo listo para que tú confirmes la fecha.\n\nDiciembre no espera. Tus clientes tampoco.\n\nGuárdalo para tu próximo cliente. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Sábado, 10 pm. «¿Tienen libre el 12 de diciembre? Somos 150. ¿Cuánto con banquete y mobiliario?»\n\nTú estás en otro evento y no puedes contestar. El lunes, esa familia ya apartó otro salón.\n\nCon un cotizador web:\n1. Tu cliente elige fecha, número de invitados y paquete.\n2. Ve su cotización con tus precios, a cualquier hora.\n3. Te llega a WhatsApp con todo listo para que tú confirmes la fecha.\n\nDiciembre no espera. Tus clientes tampoco.\n\nGuárdalo para tu próximo cliente.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Sábado, 10 pm. «¿Tienen libre el 12 de diciembre? Somos 150. ¿Cuánto con banquete y mobiliario?»\n\nTú estás en otro evento y no puedes contestar. El lunes, esa familia ya apartó otro salón.\n\nCon un cotizador web:\n1. Tu cliente elige fecha, número de invitados y paquete.\n2. Ve su cotización con tus precios, a cualquier hora.\n3. Te llega a WhatsApp con todo listo para que tú confirmes la fecha.\n\nDiciembre no espera. Tus clientes tampoco.\n\nGuárdalo para tu próximo cliente. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En salones de eventos, la temporada de diciembre se gana respondiendo rápido. Un cotizador web deja que el cliente elija fecha, invitados y paquete, vea su cotización con los precios del negocio y la envíe por WhatsApp, aunque el dueño esté atendiendo otro evento.",
+    "threads": "Sábado, 10 pm. «¿Tienen libre el 12 de diciembre? Somos 150.» Y tú en otro evento sin poder contestar. Con un cotizador web tu cliente elige fecha, invitados y paquete, ve su precio y te llega a WhatsApp. ¿Cuántas cotizaciones se te quedaron este fin? Mira la demo: kotizo-app.netlify.app",
+    "tiktok": "Sábado, 10 pm: «¿Tienen libre el 12 de diciembre? Somos 150.» Que tu cliente cotice solo y te llegue a WhatsApp.",
+    "youtube": "Cotizador web para salones de eventos: tu cliente elige fecha, invitados y paquete y la cotización te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #SalonDeEventos #NegociosMorelia #EmprendedoresMichoacan #CotizadorWeb",
+  "titular": "Tu salón cotiza mientras trabajas",
+  "subtitulo": "Fecha, invitados y paquete en un link; te llega a WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo: fondo #F5F6F9, Young Serif #181E2E, acento #E6016E. Escenas 1-2 como burbujas de WhatsApp a pantalla completa con hora visible (gancho en el primer segundo); escena 3 en tono oscuro; escenas 4-5 simulan el formulario del cotizador en un celular; cierre con logo y llamado a guardar. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Sábado, 10 pm: «¿Tienen libre el 12?»"
+    },
+    {
+      "titular": "«Somos 150. ¿Cuánto con banquete y mobiliario?»"
+    },
+    {
+      "subtitulo": "El lunes ya apartaron otro salón",
+      "titular": "Tú, en otro evento, sin poder contestar"
+    },
+    {
+      "subtitulo": "Y ve su cotización con tus precios",
+      "titular": "Tu cliente elige fecha, invitados y paquete"
+    },
+    {
+      "subtitulo": "Tú solo confirmas la fecha",
+      "titular": "Te llega a WhatsApp, lista para confirmar"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "kotizo-app.netlify.app",
+      "titular": "Guárdalo para tu próximo cliente"
+    }
+  ],
+  "estado": "listo"
+}
