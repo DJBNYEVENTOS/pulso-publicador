@@ -2,11 +2,11 @@
   "id": "iv-generacion",
   "marca": "invitaciones",
   "formato": "Post",
-  "actualizado": "2026-11-23T06:02:05.307Z",
+  "actualizado": "2026-11-23T12:16:41.472Z",
   "duracion": null,
   "instagram": {
     "views": 57,
-    "reach": 34,
+    "reach": 35,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 8.82,
+    "interaccionInstagram": 8.57,
     "vistas": 57
   }
 }
