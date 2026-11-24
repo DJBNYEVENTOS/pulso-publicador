@@ -1,0 +1,50 @@
+{
+  "id": "p20261126-varelia-1",
+  "marca": "varelia",
+  "fecha": "2026-11-26",
+  "hora": "20:00",
+  "formato": "Reel",
+  "gancho": "La novia llora en el primer baile. Nadie sabe lo que hiciste a las 5 pm.",
+  "texto": "La novia llora en el primer baile.\nNadie sabe que a las 5 pm cambiaste la entrada, moviste al DJ 20 minutos y calmaste a la mamá.\n\nEso también es tu trabajo:\n· El proveedor que confirmaste tres veces.\n· El segundo pago que cobraste sin incomodar a nadie.\n· La tía que cambió de mesa y nadie lo notó.\n\nTu oficio es que nada se note. Tu operación no tendría por qué vivir en 40 chats para lograrlo.\n\nEn Varelia, el portal de la pareja, el contrato, los pagos, los proveedores y el cronograma del día viven en un solo lugar.\n\nMándaselo a otra planner que lo necesite. Guárdalo para tu próxima boda.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+  "textos": {
+    "facebook": "La novia llora en el primer baile.\nNadie sabe que a las 5 pm cambiaste la entrada, moviste al DJ 20 minutos y calmaste a la mamá.\n\nEso también es tu trabajo:\n· El proveedor que confirmaste tres veces.\n· El segundo pago que cobraste sin incomodar a nadie.\n· La tía que cambió de mesa y nadie lo notó.\n\nTu oficio es que nada se note. Tu operación no tendría por qué vivir en 40 chats para lograrlo.\n\nEn Varelia, el portal de la pareja, el contrato, los pagos, los proveedores y el cronograma del día viven en un solo lugar.\n\nMándaselo a otra planner que lo necesite. Guárdalo para tu próxima boda.\n\nPrueba 14 días gratis, sin tarjeta: varelia.netlify.app",
+    "instagram": "La novia llora en el primer baile.\nNadie sabe que a las 5 pm cambiaste la entrada, moviste al DJ 20 minutos y calmaste a la mamá.\n\nEso también es tu trabajo:\n· El proveedor que confirmaste tres veces.\n· El segundo pago que cobraste sin incomodar a nadie.\n· La tía que cambió de mesa y nadie lo notó.\n\nTu oficio es que nada se note. Tu operación no tendría por qué vivir en 40 chats para lograrlo.\n\nEn Varelia, el portal de la pareja, el contrato, los pagos, los proveedores y el cronograma del día viven en un solo lugar.\n\nMándaselo a otra planner que lo necesite. Guárdalo para tu próxima boda.\n\nPrueba 14 días gratis, sin tarjeta 👉 varelia.netlify.app",
+    "linkedin": "El mejor trabajo de una wedding planner es el que no se nota: cambios de último minuto, proveedores confirmados varias veces, pagos cobrados con tacto. Esa precisión no debería depender de 40 conversaciones abiertas. Centralizar portal de la pareja, contrato, pagos, proveedores y cronograma en una sola plataforma libera tiempo para lo que sí se ve.",
+    "threads": "La novia llora en el primer baile y nadie sabe que a las 5 pm cambiaste la entrada, moviste al DJ y calmaste a la mamá. Tu oficio es que nada se note. ¿Qué es lo que más haces y nadie ve? Cuéntamelo. Y si quieres que tu operación deje de vivir en 40 chats: prueba Varelia 14 días gratis.",
+    "tiktok": "La novia llora en el primer baile. Nadie sabe lo que hiciste a las 5 pm. Mándaselo a otra planner. Prueba 14 días gratis.",
+    "youtube": "Wedding planner: el trabajo invisible del día de la boda y cómo organizarlo en un solo portal con Varelia."
+  },
+  "hashtags": "#Varelia #WeddingPlannerMexico #OrganizadoraDeBodas #WeddingPlannerMorelia #PlaneacionDeBodas",
+  "titular": "Tu oficio es que nada se note",
+  "subtitulo": "Lo que nadie ve, en un solo lugar.",
+  "cta": "Prueba 14 días gratis",
+  "plantilla": "cita",
+  "guion": "Estilo editorial Varelia, de revista de bodas de lujo: fondo marfil, tipografía serif grande, mucho espacio. Escena 1 frase sola centrada (gancho en el primer segundo); escenas 2-3 en tono oscuro y cálido como notas de una libreta de planner; escena 4 frase de cita a pantalla completa; escena 5 vista del portal en un celular; cierre con logo y llamado a compartir. Música libre de derechos suave, de piano.",
+  "escenas": [
+    {
+      "titular": "La novia llora en el primer baile"
+    },
+    {
+      "subtitulo": "Cambiaste la entrada y calmaste a la mamá",
+      "titular": "Nadie sabe lo que hiciste a las 5 pm"
+    },
+    {
+      "titular": "El proveedor que confirmaste tres veces"
+    },
+    {
+      "subtitulo": "Tu operación no tiene que vivir en 40 chats",
+      "titular": "Tu oficio es que nada se note"
+    },
+    {
+      "subtitulo": "Todo en un solo lugar con Varelia",
+      "titular": "Portal, contrato, pagos y cronograma juntos"
+    },
+    {
+      "cta": "Prueba 14 días gratis",
+      "final": true,
+      "subtitulo": "varelia.netlify.app",
+      "titular": "Mándaselo a otra planner"
+    }
+  ],
+  "estado": "listo"
+}
