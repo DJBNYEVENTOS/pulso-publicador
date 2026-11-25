@@ -1,0 +1,48 @@
+{
+  "id": "p20261127-invitaciones-1",
+  "marca": "invitaciones",
+  "fecha": "2026-11-27",
+  "hora": "20:00",
+  "formato": "Reel",
+  "gancho": "Viernes de posada. 180 invitados. ¿Quién sí viene?",
+  "texto": "Viernes de posada. 180 colaboradores invitados.\nY la pregunta de siempre: «¿quién sí viene?»\n\nCon la invitación digital Gala de Invitaciones BNY:\n· Cada colaborador la recibe por WhatsApp con su nombre y el logotipo de tu empresa.\n· Confirma en un toque y tú ves en tu panel quién la abrió y quién viene.\n· En la entrada, su pase QR registra la llegada, aun sin internet.\n· Al final, la lista completa en Excel para tu reporte.\n\nTú te ocupas de la posada. La invitación se ocupa de la lista. 💛\n\nGala, invitados ilimitados: $3,490 más IVA. Emitimos factura.\nDiseño de nuestro equipo, con cambios antes de publicar.\n\nElige tu modelo y escríbenos\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+  "textos": {
+    "facebook": "Viernes de posada, 180 colaboradores invitados y la pregunta de siempre: «¿quién sí viene?»\n\nCon la invitación Gala, cada colaborador la recibe por WhatsApp con su nombre y el logotipo de tu empresa, confirma en un toque y en la entrada su pase QR registra la llegada, aun sin internet. Al final tienes la lista en Excel.\n\nGala, invitados ilimitados: $3,490 más IVA. Emitimos factura.\n\nElige tu modelo y escríbenos 💛\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "instagram": "Viernes de posada. 180 colaboradores invitados.\nY la pregunta de siempre: «¿quién sí viene?»\n\nCon la invitación digital Gala de Invitaciones BNY:\n· Cada colaborador la recibe por WhatsApp con su nombre y el logotipo de tu empresa.\n· Confirma en un toque y tú ves en tu panel quién la abrió y quién viene.\n· En la entrada, su pase QR registra la llegada, aun sin internet.\n· Al final, la lista completa en Excel para tu reporte.\n\nTú te ocupas de la posada. La invitación se ocupa de la lista. 💛\n\nGala, invitados ilimitados: $3,490 más IVA. Emitimos factura.\nDiseño de nuestro equipo, con cambios antes de publicar.\n\nElige tu modelo y escríbenos\nWhatsApp 786 162 8600 · invitacionesbny.netlify.app",
+    "linkedin": "En una posada de empresa, el reto no es la fiesta: es saber quién viene. Una invitación digital con nombre por colaborador, confirmación en un toque, registro de llegadas con QR y la lista final en Excel le ahorra horas al área de Recursos Humanos. Gala: $3,490 más IVA, con factura.",
+    "threads": "Viernes de posada, 180 colaboradores invitados y nadie sabe quién sí viene. ¿Cómo confirman hoy en tu empresa? Nosotros lo resolvemos con una invitación por WhatsApp, pase QR en la entrada y la lista en Excel al final.",
+    "tiktok": "Posada de empresa: invitación por WhatsApp con su nombre, confirmación en un toque y pase QR en la entrada.",
+    "youtube": "Invitación digital para posada de empresa: confirmación por WhatsApp, pase QR y lista de asistencia en Excel."
+  },
+  "hashtags": "#InvitacionesBNY #InvitacionDigital #BNYEventos #PosadaEmpresarial #EventosCorporativos",
+  "titular": "Tu posada, sin perseguir confirmaciones",
+  "subtitulo": "Pase QR, registro de llegadas y lista en Excel.",
+  "cta": "Elige tu modelo",
+  "plantilla": "impacto",
+  "guion": "Estilo Invitaciones BNY con su identidad fija (#1F2328, #C2186A, #F8F7F4, #8E9399; Cormorant Garamond / Jost) y su logo sin cambios. Escena 1 sobre fondo oscuro con la frase del gancho; escenas 2-4 mostrando la invitación en un celular (nombre del colaborador con logotipo genérico 'Tu empresa', botón Confirmar, pase QR); cierre en marfil con logo y 'Elige tu modelo'. Sin fotos de personas. Música libre de derechos, cálida y elegante, ritmo navideño suave.",
+  "escenas": [
+    {
+      "subtitulo": "¿Quién sí viene?",
+      "titular": "Viernes de posada. 180 invitados."
+    },
+    {
+      "subtitulo": "Por WhatsApp, con el logotipo de tu empresa",
+      "titular": "Cada quien recibe su invitación con su nombre"
+    },
+    {
+      "subtitulo": "Y tú ves quién la abrió y quién viene",
+      "titular": "Confirman en un toque"
+    },
+    {
+      "subtitulo": "Registro de llegadas, aun sin internet",
+      "titular": "En la entrada, su pase QR"
+    },
+    {
+      "cta": "Elige tu modelo",
+      "final": true,
+      "subtitulo": "Gala · invitados ilimitados",
+      "titular": "Al final, tu lista en Excel"
+    }
+  ],
+  "estado": "listo"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p20261127-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-27",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Viernes, 7 pm. «¿Cuánto 100 sillas, 10 mesas y mantelería para mañana?»",
+  "texto": "Viernes, 7 pm. «¿Cuánto 100 sillas, 10 mesas y mantelería para mañana?»\n\nAsí cotiza una renta de mobiliario en 2026, sin que tú sueltes la camioneta:\n\n1. Tu cliente abre tu link y elige sillas, mesas, mantelería y carpa.\n2. Pone fecha, lugar y número de invitados. Ve su total al momento, con tus precios y tu logo.\n3. Te llega a WhatsApp la cotización completa, lista para pedir anticipo.\n\nTú no escribiste un solo precio. Y nadie se fue con quien contestó primero.\n\nGuárdalo para tu próximo viernes. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Viernes, 7 pm. «¿Cuánto 100 sillas, 10 mesas y mantelería para mañana?»\n\nAsí cotiza una renta de mobiliario en 2026, sin que tú sueltes la camioneta:\n\n1. Tu cliente abre tu link y elige sillas, mesas, mantelería y carpa.\n2. Pone fecha, lugar y número de invitados. Ve su total al momento, con tus precios y tu logo.\n3. Te llega a WhatsApp la cotización completa, lista para pedir anticipo.\n\nTú no escribiste un solo precio. Guárdalo para tu próximo viernes.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Viernes, 7 pm. «¿Cuánto 100 sillas, 10 mesas y mantelería para mañana?»\n\nAsí cotiza una renta de mobiliario en 2026, sin que tú sueltes la camioneta:\n\n1. Tu cliente abre tu link y elige sillas, mesas, mantelería y carpa.\n2. Pone fecha, lugar y número de invitados. Ve su total al momento, con tus precios y tu logo.\n3. Te llega a WhatsApp la cotización completa, lista para pedir anticipo.\n\nTú no escribiste un solo precio. Y nadie se fue con quien contestó primero.\n\nGuárdalo para tu próximo viernes. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "Para una renta de mobiliario, la cotización de viernes en la noche suele definir la venta del fin de semana. Un cotizador web en 3 pasos (el cliente elige, ve su total con los precios del negocio y la cotización llega por WhatsApp) quita al dueño de la tarea de responder uno por uno y reduce el tiempo de respuesta a cero.",
+    "threads": "Viernes, 7 pm, tú cargando la camioneta y te escriben: «¿cuánto 100 sillas, 10 mesas y mantelería para mañana?». Así cotiza una renta de mobiliario en 2026: el cliente elige en tu link, ve su total con tus precios y te llega a WhatsApp listo para el anticipo. ¿Cuántos viernes así llevas este mes?",
+    "tiktok": "Viernes, 7 pm: «¿cuánto 100 sillas y 10 mesas?» Así se cotiza solo en 3 pasos y te llega a WhatsApp.",
+    "youtube": "Cotizador para renta de mobiliario: así tu cliente cotiza sillas, mesas y carpa en 3 pasos y te llega a WhatsApp."
+  },
+  "hashtags": "#Kotizo #RentaDeMobiliario #CotizadorWeb #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "Así cotiza una renta en 2026",
+  "subtitulo": "Tu cliente elige, ve su total y te llega a WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo con su paleta y tipografías de la ficha. Escena 1 burbuja de WhatsApp a pantalla completa con la hora 19:00 visible (gancho en el primer segundo); escenas 2-4 numeradas 1-2-3 sobre fondo claro con el celular mostrando el cotizador de mobiliario; escena 5 frase grande sola; cierre con logo y llamado a guardar. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "subtitulo": "Y tú cargando la camioneta",
+      "titular": "Viernes, 7 pm: «¿cuánto 100 sillas?»"
+    },
+    {
+      "subtitulo": "Desde tu link, sin descargar nada",
+      "titular": "Paso 1: elige sillas, mesas y mantelería"
+    },
+    {
+      "subtitulo": "Con tus precios, al momento",
+      "titular": "Paso 2: ve su total con tu logo"
+    },
+    {
+      "subtitulo": "Con fecha, lugar y lista para anticipo",
+      "titular": "Paso 3: te llega a WhatsApp"
+    },
+    {
+      "titular": "Tú no escribiste un solo precio"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "kotizo-app.netlify.app",
+      "titular": "Guárdalo para tu próximo viernes"
+    }
+  ],
+  "estado": "listo"
+}
