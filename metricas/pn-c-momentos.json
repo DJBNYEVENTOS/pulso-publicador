@@ -2,11 +2,11 @@
   "id": "pn-c-momentos",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-11-25T13:19:28.528Z",
+  "actualizado": "2026-11-25T19:35:39.636Z",
   "duracion": null,
   "instagram": {
-    "views": 36,
-    "reach": 15,
+    "views": 51,
+    "reach": 20,
     "likes": 1,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 20,
-    "vistas": 36
+    "interaccionInstagram": 15,
+    "vistas": 51
   }
 }
