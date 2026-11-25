@@ -1,0 +1,24 @@
+{
+  "id": "pn-h-cuenta-36",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "29623390040630022",
+      "url": "https://www.facebook.com/145245832842598",
+      "en": "2026-11-25T19:02:05.617Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18106275896574316",
+      "url": "https://www.instagram.com/stories/dj.bny.eventos/4038387509591272055",
+      "en": "2026-11-25T19:02:19.936Z"
+    },
+    "tiktok": {
+      "ok": false,
+      "error": "No hay video para esta pieza",
+      "intentos": 1,
+      "en": "2026-11-25T19:02:19.937Z"
+    }
+  }
+}
