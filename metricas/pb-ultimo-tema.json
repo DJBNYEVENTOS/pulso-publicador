@@ -2,23 +2,23 @@
   "id": "pb-ultimo-tema",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-25T19:35:32.211Z",
+  "actualizado": "2026-11-26T01:48:45.067Z",
   "duracion": 53.133333,
   "instagram": {
-    "views": 168,
-    "reach": 118,
+    "views": 169,
+    "reach": 119,
     "likes": 4,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 5,
-    "ig_reels_avg_watch_time": 6853,
-    "ig_reels_video_view_total_time": 843027
+    "ig_reels_avg_watch_time": 6805,
+    "ig_reels_video_view_total_time": 843824
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 12.9,
-    "interaccionInstagram": 4.24,
-    "vistas": 168
+    "vistoPromedioInstagram": 12.8,
+    "interaccionInstagram": 4.2,
+    "vistas": 169
   }
 }
