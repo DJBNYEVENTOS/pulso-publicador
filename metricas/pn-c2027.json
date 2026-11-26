@@ -2,11 +2,11 @@
   "id": "pn-c2027",
   "marca": "bny",
   "formato": "Carrusel",
-  "actualizado": "2026-11-26T14:18:42.654Z",
+  "actualizado": "2026-11-26T20:19:14.127Z",
   "duracion": null,
   "instagram": {
-    "views": 110,
-    "reach": 49,
+    "views": 115,
+    "reach": 51,
     "likes": 2,
     "comments": 0,
     "shares": 0,
@@ -15,7 +15,7 @@
   },
   "facebook": {},
   "derivados": {
-    "interaccionInstagram": 4.08,
-    "vistas": 110
+    "interaccionInstagram": 3.92,
+    "vistas": 115
   }
 }

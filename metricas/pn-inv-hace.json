@@ -2,11 +2,11 @@
   "id": "pn-inv-hace",
   "marca": "invitaciones",
   "formato": "Carrusel",
-  "actualizado": "2026-11-26T14:18:43.800Z",
+  "actualizado": "2026-11-26T20:19:16.087Z",
   "duracion": null,
   "instagram": {
-    "views": 19,
-    "reach": 5,
+    "views": 29,
+    "reach": 8,
     "likes": 0,
     "comments": 0,
     "shares": 0,
@@ -16,6 +16,6 @@
   "facebook": {},
   "derivados": {
     "interaccionInstagram": 0,
-    "vistas": 19
+    "vistas": 29
   }
 }
