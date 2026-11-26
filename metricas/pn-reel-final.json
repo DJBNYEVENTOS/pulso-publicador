@@ -2,23 +2,23 @@
   "id": "pn-reel-final",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-25T20:01:37.068Z",
+  "actualizado": "2026-11-26T02:03:15.813Z",
   "duracion": 17.9,
   "instagram": {
-    "views": 200,
-    "reach": 177,
+    "views": 202,
+    "reach": 178,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 1,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 4190,
-    "ig_reels_video_view_total_time": 745883
+    "ig_reels_avg_watch_time": 4196,
+    "ig_reels_video_view_total_time": 755426
   },
   "facebook": {},
   "derivados": {
     "vistoPromedioInstagram": 23.4,
     "interaccionInstagram": 1.69,
-    "vistas": 200
+    "vistas": 202
   }
 }
