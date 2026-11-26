@@ -1,0 +1,52 @@
+{
+  "id": "p20261126-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-26",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Jueves, 9 pm. Sigues mandando precios. Haz esta cuenta conmigo.",
+  "texto": "Jueves, 9 pm. Sigues mandando precios.\n\nHaz esta cuenta conmigo (tarda 10 segundos):\n\n1. ¿Cuántos «¿cuánto?» te llegan al día? Anótalo.\n2. Multiplícalo por 10 minutos: preguntar, calcular, escribir y mandar.\n3. Si te llegan 10, son más de hora y media diaria. Casi 12 horas a la semana.\n4. Ahora súmale los que se fueron con quien contestó primero.\n\nEso es lo que te cuesta cotizar a mano. En horas y en ventas.\n\nCon un cotizador web, tu cliente elige, ve su total con tus precios y te llega a WhatsApp. Tú solo cierras.\n\nGuárdalo y haz tu cuenta. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "instagram": "Jueves, 9 pm. Sigues mandando precios.\n\nHaz esta cuenta conmigo (tarda 10 segundos):\n\n1. ¿Cuántos «¿cuánto?» te llegan al día? Anótalo.\n2. Multiplícalo por 10 minutos: preguntar, calcular, escribir y mandar.\n3. Si te llegan 10, son más de hora y media diaria. Casi 12 horas a la semana.\n4. Ahora súmale los que se fueron con quien contestó primero.\n\nEso es lo que te cuesta cotizar a mano. En horas y en ventas.\n\nCon un cotizador web, tu cliente elige, ve su total con tus precios y te llega a WhatsApp. Tú solo cierras.\n\nGuárdalo y haz tu cuenta. Síguenos para más ideas que te regresan tus noches.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "facebook": "Jueves, 9 pm. Sigues mandando precios.\n\nHaz esta cuenta: ¿cuántos «¿cuánto?» te llegan al día? Multiplícalo por 10 minutos. Si te llegan 10, son más de hora y media diaria, casi 12 horas a la semana. Y súmale los clientes que se fueron con quien contestó primero.\n\nCon un cotizador web, tu cliente cotiza solo y te llega a WhatsApp. Guárdalo y haz tu cuenta.\n\nQuiero mi cotizador: kotizo-app.netlify.app",
+    "tiktok": "Jueves, 9 pm y sigues mandando precios. Haz la cuenta: 10 mensajes x 10 min = casi 12 horas a la semana.",
+    "linkedin": "Un ejercicio simple para cualquier negocio que cotiza por WhatsApp: mensajes de precio al día x 10 minutos cada uno. Con 10 mensajes diarios son casi 12 horas a la semana, sin contar las ventas que se van con quien responde primero. Automatizar la cotización libera ese tiempo para cerrar.",
+    "threads": "Jueves, 9 pm, sigues mandando precios. Haz la cuenta: ¿cuántos «¿cuánto?» te llegan al día? Por 10 minutos cada uno. Con 10 al día son casi 12 horas a la semana. ¿A ti cuánto te salió?",
+    "youtube": "Cuánto pierdes cotizando a mano por WhatsApp: haz la cuenta en 10 segundos. Cotizador web Kotizo."
+  },
+  "hashtags": "#Kotizo #CotizadorWeb #VentasPorWhatsApp #NegociosMorelia #EmprendedoresMichoacan",
+  "titular": "¿Cuánto te cuesta cotizar a mano?",
+  "subtitulo": "Haz la cuenta en 10 segundos.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "tip",
+  "guion": "Estilo técnico Kotizo con su paleta y tipografías de la ficha. Escena 1 burbuja de WhatsApp a pantalla completa con la hora 21:00 visible (gancho en el primer segundo); escenas 2-4 como calculadora: números grandes en #E6016E sobre fondo claro; escena 5 frase sola; cierre con logo y llamado a guardar. Música libre de derechos con ritmo ágil.",
+  "escenas": [
+    {
+      "titular": "Jueves, 9 pm. Sigues mandando precios.",
+      "subtitulo": "Haz esta cuenta conmigo"
+    },
+    {
+      "titular": "¿Cuántos «¿cuánto?» te llegan al día?",
+      "subtitulo": "Anótalo"
+    },
+    {
+      "titular": "Multiplícalo por 10 minutos",
+      "subtitulo": "Preguntar, calcular, escribir, mandar"
+    },
+    {
+      "titular": "Súmale los que se fueron",
+      "subtitulo": "Con quien contestó primero"
+    },
+    {
+      "titular": "Eso te cuesta cotizar a mano",
+      "subtitulo": "En horas y en ventas"
+    },
+    {
+      "titular": "Guárdalo y haz tu cuenta",
+      "subtitulo": "kotizo-app.netlify.app",
+      "final": true,
+      "cta": "Quiero mi cotizador"
+    }
+  ],
+  "estado": "listo"
+}

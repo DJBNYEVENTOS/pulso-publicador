@@ -1,0 +1,48 @@
+{
+  "id": "p20261128-bny-1",
+  "marca": "bny",
+  "fecha": "2026-11-28",
+  "hora": "19:00",
+  "formato": "Reel",
+  "gancho": "Las puertas se abren. El salón contiene el aliento.",
+  "texto": "Las puertas se abren. El salón contiene el aliento.\n\nEse silencio no es casualidad. Se cuida tanto como la canción.\n\nLa luz baja, cálida, y sigue tus pasos.\nLa primera nota entra justo en tu primer paso: ni un segundo antes, ni uno después.\nY cuando llegas al frente, ya nadie contiene las lágrimas.\n\nTu entrada dura tres minutos. Tus invitados la van a recordar siempre.\n\n🥂 ¿Tu boda es en 2027? Si apartas antes del 31 de diciembre de 2026, te respetamos el precio de hoy. Pocas fechas por temporada.\n\nNo es un evento, es una Experiencia BNY.\nAparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600",
+  "textos": {
+    "instagram": "Las puertas se abren. El salón contiene el aliento.\n\nEse silencio no es casualidad. Se cuida tanto como la canción.\n\nLa luz baja, cálida, y sigue tus pasos.\nLa primera nota entra justo en tu primer paso: ni un segundo antes, ni uno después.\nY cuando llegas al frente, ya nadie contiene las lágrimas.\n\nTu entrada dura tres minutos. Tus invitados la van a recordar siempre.\n\n🥂 ¿Tu boda es en 2027? Si apartas antes del 31 de diciembre de 2026, te respetamos el precio de hoy. Pocas fechas por temporada.\n\nNo es un evento, es una Experiencia BNY.\nAparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600",
+    "facebook": "Las puertas se abren. El salón contiene el aliento.\n\nEse silencio se cuida tanto como la canción. La luz baja, cálida, y la primera nota entra justo en tu primer paso.\n\nTu entrada dura tres minutos. Tus invitados la van a recordar siempre.\n\n¿Tu boda es en 2027? Si apartas antes del 31 de diciembre de 2026, te respetamos el precio de hoy. Pocas fechas por temporada.\n\nNo es un evento, es una Experiencia BNY.\nAparta tu fecha con una propuesta privada por WhatsApp: 786 162 8600",
+    "tiktok": "Las puertas se abren y el salón contiene el aliento. Tu entrada, en el segundo exacto. Aparta tu fecha ✨",
+    "linkedin": "En una boda, la entrada dura tres minutos y define el tono de toda la noche. Cuidar el silencio previo, la luz y el segundo exacto en que entra la música es oficio de producción, no de playlist. Así trabajamos cada momento clave en BNY Eventos.",
+    "threads": "Las puertas se abren. El salón contiene el aliento. Ese silencio se cuida tanto como la canción: la luz baja, cálida, y la primera nota entra justo en tu primer paso. ¿Ya sabes con qué canción vas a entrar?",
+    "youtube": "Entrada de novia en boda: el segundo exacto en que entra la música, la luz y el silencio. Experiencia BNY."
+  },
+  "hashtags": "#BNYEventos #ExperienciaBNY #BodasMichoacan #DJdeBodas #CdHidalgo",
+  "titular": "El salón contiene el aliento",
+  "subtitulo": "Tu entrada empieza en el silencio de antes.",
+  "cta": "Aparta tu fecha",
+  "plantilla": "impacto",
+  "guion": "Identidad fija BNY (#0D0D0F, #A31E55, #F7F2EB; Tinos/Arimo; logo sin cambios). Fondo oscuro casi negro con mucho espacio vacío; titulares en marfil centrados, una línea fina en #A31E55 como único acento. Fundidos lentos, una escena por frase, ritmo de respiración. Sin equipo, sin bocinas ni cabina en cuadro. Música libre de derechos: piano o cuerdas suaves que crecen hacia la escena 4.",
+  "escenas": [
+    {
+      "titular": "Las puertas se abren",
+      "subtitulo": "Y el salón contiene el aliento"
+    },
+    {
+      "titular": "Antes de la primera nota, silencio",
+      "subtitulo": "Lo cuidamos tanto como la canción"
+    },
+    {
+      "titular": "La luz baja, cálida, contigo",
+      "subtitulo": "Siguiendo cada paso"
+    },
+    {
+      "titular": "La canción entra en tu primer paso",
+      "subtitulo": "Ni un segundo antes"
+    },
+    {
+      "titular": "Tu entrada, como la soñaste",
+      "subtitulo": "Propuesta privada por WhatsApp",
+      "final": true,
+      "cta": "Aparta tu fecha"
+    }
+  ],
+  "estado": "listo"
+}

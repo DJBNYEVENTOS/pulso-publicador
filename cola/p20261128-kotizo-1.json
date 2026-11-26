@@ -1,0 +1,51 @@
+{
+  "id": "p20261128-kotizo-1",
+  "marca": "kotizo",
+  "fecha": "2026-11-28",
+  "hora": "20:30",
+  "formato": "Reel",
+  "gancho": "Sábado, 7 am. Cargando el brincolín y otro «¿cuánto?»",
+  "texto": "Sábado, 7 am. Vas cargando el brincolín y el celular vibra: «¿cuánto el inflable para el domingo?»\n\nContestas en un semáforo. Luego otra mamá. Luego otra.\nPara la tarde ya no sabes a quién le dijiste qué precio.\n\nAsí se ve un cotizador para renta de inflables:\n1. Tu cliente elige el inflable, la fecha y las horas.\n2. Agrega mesas, sillas o el toldo si los rentas.\n3. Ve el total con tus precios y te lo manda a tu WhatsApp, ya listo para apartar.\n\nTú solo confirmas y cargas. Sin repetir precios todo el día.\n\nGuárdalo para tu próximo sábado de entregas. Y síguenos para más ideas que te regresan tus fines de semana.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+  "textos": {
+    "facebook": "Sábado, 7 am. Vas cargando el brincolín y el celular vibra: «¿cuánto el inflable para el domingo?»\n\nContestas en un semáforo. Luego otra mamá. Luego otra. Para la tarde ya no sabes a quién le dijiste qué precio.\n\nCon un cotizador para renta de inflables, tu cliente elige el inflable, la fecha y las horas, agrega mesas o toldo y te manda la cotización lista a tu WhatsApp. Tú solo confirmas y cargas.\n\nCompártelo con alguien que renta inflables. Quiero mi cotizador: kotizo-app.netlify.app",
+    "instagram": "Sábado, 7 am. Vas cargando el brincolín y el celular vibra: «¿cuánto el inflable para el domingo?»\n\nContestas en un semáforo. Luego otra mamá. Luego otra.\nPara la tarde ya no sabes a quién le dijiste qué precio.\n\nAsí se ve un cotizador para renta de inflables:\n1. Tu cliente elige el inflable, la fecha y las horas.\n2. Agrega mesas, sillas o el toldo si los rentas.\n3. Ve el total con tus precios y te lo manda a tu WhatsApp, ya listo para apartar.\n\nTú solo confirmas y cargas. Sin repetir precios todo el día.\n\nGuárdalo para tu próximo sábado de entregas. Y síguenos para más ideas que te regresan tus fines de semana.\n\nQuiero mi cotizador 👉 kotizo-app.netlify.app",
+    "linkedin": "En negocios de renta de inflables y mobiliario, el pico de solicitudes llega justo cuando el equipo está entregando. Un cotizador con los precios del negocio permite que el cliente elija producto, fecha y extras, y que la solicitud llegue completa por WhatsApp: menos mensajes repetidos y menos errores de precio.",
+    "threads": "Sábado, 7 am. Vas cargando el brincolín y el celular no para: «¿cuánto el inflable para el domingo?». Para la tarde ya no sabes a quién le diste qué precio. ¿Cuántas veces repites tus precios un fin de semana normal?",
+    "tiktok": "Sábado 7 am, cargando el brincolín y otro «¿cuánto?». Así cotiza solo tu cliente de inflables y te llega a WhatsApp.",
+    "youtube": "Cotizador para renta de inflables: tu cliente elige inflable, fecha y extras, y la cotización te llega al WhatsApp."
+  },
+  "hashtags": "#Kotizo #RentaDeInflables #RentaDeMobiliario #EmprendedoresMichoacan #VentasPorWhatsApp",
+  "titular": "Tu cliente cotiza el inflable solo",
+  "subtitulo": "Elige, ve el total y te llega a tu WhatsApp.",
+  "cta": "Quiero mi cotizador",
+  "plantilla": "impacto",
+  "guion": "Estilo técnico Kotizo con su paleta (#181E2E, #E6016E, #F5F6F9) y tipografías Young Serif / Figtree. Escena 1: burbuja de WhatsApp sobre fondo oscuro con la hora 7:00 am (gancho en el primer segundo); escena 2 frase sola; escenas 3-5 maqueta de celular con el cotizador de inflables paso a paso (inflable, fecha, extras, total); cierre con logo y llamado a guardar. Música libre de derechos con ritmo ligero.",
+  "escenas": [
+    {
+      "subtitulo": "Y tú cargando el brincolín",
+      "titular": "Sábado, 7 am. Otro «¿cuánto el inflable?»"
+    },
+    {
+      "titular": "Contestas precios entre entrega y entrega"
+    },
+    {
+      "subtitulo": "Con tus precios, sin escribirte",
+      "titular": "Tu cliente elige inflable, fecha y horas"
+    },
+    {
+      "subtitulo": "Ve el total al momento",
+      "titular": "Suma mesas, sillas o toldo"
+    },
+    {
+      "subtitulo": "Tú solo confirmas y cargas",
+      "titular": "Te llega lista a tu WhatsApp"
+    },
+    {
+      "cta": "Quiero mi cotizador",
+      "final": true,
+      "subtitulo": "kotizo-app.netlify.app",
+      "titular": "Guárdalo para tu próximo sábado"
+    }
+  ],
+  "estado": "listo"
+}
