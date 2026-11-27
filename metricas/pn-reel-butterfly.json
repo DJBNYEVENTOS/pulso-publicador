@@ -2,23 +2,23 @@
   "id": "pn-reel-butterfly",
   "marca": "bny",
   "formato": "Reel",
-  "actualizado": "2026-11-27T13:31:36.588Z",
+  "actualizado": "2026-11-27T19:31:38.306Z",
   "duracion": 17.6,
   "instagram": {
-    "views": 456,
-    "reach": 389,
-    "likes": 8,
+    "views": 668,
+    "reach": 588,
+    "likes": 14,
     "comments": 0,
     "shares": 0,
-    "saved": 1,
-    "total_interactions": 10,
-    "ig_reels_avg_watch_time": 6154,
-    "ig_reels_video_view_total_time": 2424733
+    "saved": 2,
+    "total_interactions": 17,
+    "ig_reels_avg_watch_time": 6535,
+    "ig_reels_video_view_total_time": 3803560
   },
   "facebook": {},
   "derivados": {
-    "vistoPromedioInstagram": 35,
-    "interaccionInstagram": 2.57,
-    "vistas": 456
+    "vistoPromedioInstagram": 37.1,
+    "interaccionInstagram": 2.89,
+    "vistas": 668
   }
 }
