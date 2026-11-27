@@ -1,0 +1,25 @@
+{
+  "id": "pn-reel-butterfly",
+  "marca": "bny",
+  "redes": {
+    "facebook": {
+      "ok": true,
+      "id": "2382799378791147",
+      "url": "https://www.facebook.com/145245832842598/videos/2382799378791147",
+      "en": "2026-11-27T01:01:25.498Z"
+    },
+    "instagram": {
+      "ok": true,
+      "id": "18129993601929459",
+      "url": "https://www.instagram.com/reel/DgOc7d1NEvR/",
+      "en": "2026-11-27T01:02:00.219Z"
+    },
+    "tiktok": {
+      "ok": true,
+      "id": "v_inbox_file~v2.7712650136945739794",
+      "url": "",
+      "nota": "En tu bandeja de TikTok: abre la app y toca Publicar. El texto está en Pulso.",
+      "en": "2026-11-27T01:02:04.720Z"
+    }
+  }
+}
